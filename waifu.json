@@ -1,0 +1,4759 @@
+
+
+
+"520":{"no":"520","claim":false,"with":"","number":"","image":"https://i.pinimg.com/originals/d8/2d/53/d82d53574d9413f5ad8ce4c5db8e2cb6.png","anime":"Another","name":"Misaki Mei"},
+"521":{"no":"521","claim":false,"with":"","number":"","image":"https://pbs.twimg.com/profile_images/452672691225374722/kcoQVWXv_400x400.jpeg","anime":"Another","name":"Izumi Akazawa"},
+"522":{"no":"522","claim":false,"with":"","number":"","image":"https://i.pinimg.com/736x/5f/30/24/5f30240ab39cada4f03643baf87d0f81.jpg","anime":"Another","name":"Yukari Sakuragi"},
+"523":{"no":"523","claim":false,"with":"","number":"","image":"https://img.wattpad.com/bfc0e5e6e2ab8a5af00d857f15060caf6be5baff/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6a4d4a4434307253715147376e673d3d2d3732353132353735362e313539393537356363353262306266613134333236383537393033372e6a7067","anime":"Another","name":"Yoichi Sakakibara"},
+"524":{"no":"524","claim":false,"with":"","number":"","image":"https://i.pinimg.com/originals/10/52/c8/1052c8b1b630a948500c8e4d70a7487b.png","anime":"Another","name":"Naoya Teshigawara"},
+"525":{"no":"525","claim":false,"with":"","number":"","image":"https://i.pinimg.com/originals/be/5c/71/be5c71862d1bc02b31145a138f7cd919.jpg","anime":"Another","name":"Tomohiko Kazami"},
+"526":{"no":"526","claim":false,"with":"","number":"","image":"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/242e9e4b-61f4-4819-856c-259f916232af/d6dw654-afc99e1f-7a29-4772-a3f1-11cc68b3daab.jpg/v1/fill/w_1024,h_576,q_75,strp/yuuya_mochizuki_by_wika7815_d6dw654-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMjQyZTllNGItNjFmNC00ODE5LTg1NmMtMjU5ZjkxNjIzMmFmXC9kNmR3NjU0LWFmYzk5ZTFmLTdhMjktNDc3Mi1hM2YxLTExY2M2OGIzZGFhYi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.0EeV4oqmfONNdZUHVHghWnBYd58nXoUs632I04dTKUM","anime":"Another","name":"Yuuya Mochizuki"},
+"527":{"no":"527","claim":false,"with":"","number":"","image":"https://i.pinimg.com/736x/3b/b4/ba/3bb4bac822e49f25dd99db8a7dd05fd3.jpg","anime":"Another","name":"Sanae Mizuno"},
+"528":{"no":"528","claim":false,"with":"","number":"","image":"","anime":"","name":""},
+"529":{"no":"529","claim":false,"with":"","number":"","image":"","anime":"","name":""},
+"530":{"no":"530","claim":false,"with":"","number":"","image":"","anime":"","name":""},
+
+
+"100": {
+    "no": "100",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/gochiusa/images/8/88/Rize2.png/revision/latest?cb=20180616135506",
+    "anime": "Gochuumon wa Usagi Desu ka?",
+    "name": "Rize Tedeza"
+  },
+  "101": {
+    "no": "101",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/yuripedia/images/9/93/1399011558814.jpg/revision/latest/scale-to-width-down/270?cb=20140729134517",
+    "anime": "Gochuumon wa Usagi Desu ka?",
+    "name": "Hoto Cocoa"
+  },
+  "102": {
+    "no": "102",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://cdn.myanimelist.net/images/characters/7/294262.jpg",
+    "anime": "Gochuumon wa Usagi Desu ka?",
+    "name": "Ujimatsu Chiya"
+  },
+  "103": {
+    "no": "103",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.ytimg.com/vi/P19WrgPEGLI/maxresdefault.jpg",
+    "anime": "Gochuumon wa Usagi Desu ka?",
+    "name": "Hoto Mocha"
+  },
+  "104": {
+    "no": "104",
+    "claim": true,
+    "with": "Jiro",
+    "number": "6281211420412@s.whatsapp.net",
+    "image": "https://i.ibb.co/WBhgvyt/104-Amano-Hina.jpg",
+    "anime": "Tenki no Ko",
+    "name": "Amano Hina"
+  },
+  "105": {
+    "no": "105",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/QMcBFZV/105-Nakano-Yotsuba.jpg",
+    "anime": "Go-Toubun no Hanayome",
+    "name": "Nakano Yotsuba"
+  },
+  "106": {
+    "no": "106",
+    "claim": true,
+    "with": "ミルカ. MILK",
+    "number": "6283155770413@s.whatsapp.net",
+    "image": "https://i.ibb.co/g3GfdY0/106-Nakano-Miku.jpg",
+    "anime": "Go-Toubun no Hanayome",
+    "name": "Nakano Miku"
+  },
+  "107": {
+    "no": "107",
+    "claim": true,
+    "with": "𝐂𝐡𝐞𝐬𝐢𝐫𝐞_𝐜𝐚𝐭",
+    "number": "6285712786192@s.whatsapp.net",
+    "image": "https://i.ibb.co/wdXnV1D/107-Nakano-Ichika.jpg",
+    "anime": "Go-Toubun no Hanayome",
+    "name": "Nakano Ichika"
+  },
+  "108": {
+    "no": "108",
+    "claim": true,
+    "with": "emey",
+    "number": "6285755162771@s.whatsapp.net",
+    "image": "https://i.ibb.co/c84n8T2/108-Nakano-Itsuki.jpg",
+    "anime": "Go-Toubun no Hanayome",
+    "name": "Nakano Itsuki"
+  },
+  "109": {
+    "no": "109",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/kGrkHzZ/109-Nakano-Nino.jpg",
+    "anime": "Go-Toubun no Hanayome",
+    "name": "Nakano Nino"
+  },
+  "110": {
+    "no": "110",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/all-worlds-alliance/images/d/d6/Aika_Fuwa.png/revision/latest?cb=20190520111800",
+    "anime": "[Waifu Wednesday] Fuwa Aika",
+    "name": "Fuwa Aika"
+  },
+  "111": {
+    "no": "111",
+    "claim": false,
+    "with": null,
+    "number": "6288218481015@s.whatsapp.net",
+    "image": "https://static.zerochan.net/Elsa.Granhiert.full.3556300.jpg",
+    "anime": "Re:Zero",
+    "name": "Elsa Granhiert"
+  },
+  "112": {
+    "no": "112",
+    "claim": false,
+    "with": null,
+    "number": "6283801441705@s.whatsapp.net",
+    "image": "https://c4.wallpaperflare.com/wallpaper/86/391/768/kantai-collection-shigure-kancolle-wallpaper-preview.jpg",
+    "anime": "Kantai Collection",
+    "name": "Shigure"
+  },
+  "113": {
+    "no": "113",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/haruhi/images/2/29/Mikuru_Asahina-0.png/revision/latest?cb=20200802131152",
+    "anime": "Suzumiya Haruhi no Yuutsu",
+    "name": "Asahina Mikuru"
+  },
+  "114": {
+    "no": "114",
+    "claim": true,
+    "with": "西川さん",
+    "number": "6289647637754@s.whatsapp.net",
+    "image": "https://www.gflanalysis.com/w/images/e/e7/Pic_g36mod_n.png",
+    "anime": "Girls Frontline",
+    "name": "G36"
+  },
+  "115": {
+    "no": "115",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1e66b57a-32e9-4ffd-a779-807173201d06/degke03-778151e8-f225-4ffc-a624-d14659fd1378.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFlNjZiNTdhLTMyZTktNGZmZC1hNzc5LTgwNzE3MzIwMWQwNlwvZGVna2UwMy03NzgxNTFlOC1mMjI1LTRmZmMtYTYyNC1kMTQ2NTlmZDEzNzguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.grWxfgkUcGyNnkxWrz-BS4LX62DkdrQwXVir5_siB0I",
+    "anime": "Kantai Collection",
+    "name": "Bismarck"
+  },
+  "116": {
+    "no": "116",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/550x/f2/c5/49/f2c5492606ed2c1a416259c64cd146f7.jpg",
+    "anime": "Watashi ni Tenshi ga Maiorita!",
+    "name": "Hoshino Miyako"
+  },
+  "117": {
+    "no": "117",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://cdn.anime-planet.com/characters/primary/levi-kazama-1.jpg?t=1625817736",
+    "anime": "trinity seven",
+    "name": "Levi Kazama"
+  },
+  "118": {
+    "no": "118",
+    "claim": false,
+    "with": null,
+    "number": "6287792356504@s.whatsapp.net",
+    "image": "https://iopwiki.com/images/3/3d/Springfield_S.png",
+    "anime": "Girls Frontline",
+    "name": "Springfield"
+  },
+  "119": {
+    "no": "119",
+    "claim": false,
+    "with": null,
+    "number": "6282327871319@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/be/13/d7/be13d79969e314e814d19a6c211772a8.jpg",
+    "anime": "Kaguya-sama wa Kokurasetai",
+    "name": "Hayasaka Ai"
+  },
+  "120": {
+    "no": "120",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/profile_images/1216925857761107968/Y2tLRpsL_400x400.jpg",
+    "anime": "Touhou Project",
+    "name": "Kirisame Marisa"
+  },
+  "121": {
+    "no": "121",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "http://pm1.narvii.com/6729/b8132e0cb95ef61f1e6260b6d4b19c188b1cc50fv2_00.jpg",
+    "anime": "Touhou Project",
+    "name": "Hakurei Reimu"
+  },
+  "122": {
+    "no": "122",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Yura.%28Kantai.Collection%29.full.2450555.png",
+    "anime": "Kantai Collection",
+    "name": "Yura"
+  },
+  "123": {
+    "no": "123",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://cdn.anime-planet.com/characters/primary/chifuyu-orimura-1.jpg?t=1625795438",
+    "anime": "infinite stratos",
+    "name": "Orimura Chifuyu"
+  },
+  "124": {
+    "no": "124",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://c4.wallpaperflare.com/wallpaper/153/246/477/anime-infinite-stratos-laura-bodewig-wallpaper-preview.jpg",
+    "anime": "infinite stratos",
+    "name": "Laura Bodewig"
+  },
+  "125": {
+    "no": "125",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Shinonono.Houki.full.744161.jpg",
+    "anime": "infinite stratos",
+    "name": "Shinonono Houki"
+  },
+  "126": {
+    "no": "126",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Chtholly.Nota.Seniorious.full.2091898.jpg",
+    "anime": "Shuumatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?",
+    "name": "Chtholly Nota Seniorious"
+  },
+  "127": {
+    "no": "127",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://cdn.anime-planet.com/characters/primary/cecilia-alcott-1.jpg?t=1625795439",
+    "anime": "infinite stratos",
+    "name": "Cecilia Alcott"
+  },
+  "128": {
+    "no": "128",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Huang.Lingyin.full.1471079.jpg",
+    "anime": "infinite stratos",
+    "name": "Huang Lingyin"
+  },
+  "129": {
+    "no": "129",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/96/1007/695/artwork-anime-houshou-kancolle-digital-art-wallpaper-preview.jpg",
+    "anime": "Kantai Collection",
+    "name": "Houshou"
+  },
+  "130": {
+    "no": "130",
+    "claim": false,
+    "with": null,
+    "number": "6281703482644@s.whatsapp.net",
+    "image": "https://static.wikia.nocookie.net/naruto/images/6/64/Sakura_Part_1.png/revision/latest?cb=20170726101444",
+    "anime": "Naruto",
+    "name": "Haruno Sakura"
+  },
+  "131": {
+    "no": "131",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://otakotaku.com/asset/img/character/2015/08/tsukahara-hibiki.jpg",
+    "anime": "Amagami SS",
+    "name": "Hibiki Tsukahara"
+  },
+  "132": {
+    "no": "132",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/40/6b/73/406b73ee33a68231709180f62383f3c1.jpg",
+    "anime": "Houseki no Kuni",
+    "name": "Diamond"
+  },
+  "133": {
+    "no": "133",
+    "claim": false,
+    "with": null,
+    "number": "6285709888616@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/cd/57/de/cd57de393633bb6e527ef301891167fa.jpg",
+    "anime": "[Waifu Wednesday] Yamagami Lucy (Disingkat)",
+    "name": "Yamagami Lucy"
+  },
+  "134": {
+    "no": "134",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/76/e9/d2/76e9d2864d8bb929cf15391d6765406b.png",
+    "anime": "yuragi-sou no yuuna-san",
+    "name": "Ameno Sagiri"
+  },
+  "135": {
+    "no": "135",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Nanasaki.Ai.full.1964773.jpg",
+    "anime": "Amagami SS",
+    "name": "Nanasaki Ai"
+  },
+  "136": {
+    "no": "136",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://s1.zerochan.net/Xiera.%28PSO2%29.600.2004901.jpg",
+    "anime": "Phantasy Star Online 2",
+    "name": "Xiera"
+  },
+  "137": {
+    "no": "137",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/6b/f2/f6/6bf2f6279e44ee15d37e3db88f945e7b.jpg",
+    "anime": "shirobako",
+    "name": "Yasuhara Ema"
+  },
+  "138": {
+    "no": "138",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Suzuya.%28Kantai.Collection%29.full.1914040.jpg",
+    "anime": "Kantai Collection",
+    "name": "Suzuya"
+  },
+  "139": {
+    "no": "139",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/56/5a/e9/565ae950368b923c03f14f0b692cd7c0.png",
+    "anime": "shirobako",
+    "name": "Miyamori Aoi"
+  },
+  "140": {
+    "no": "140",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/bhlx/images/6/69/Formidable.png/revision/latest?cb=20190911161945",
+    "anime": "Azur Lane",
+    "name": "Illustrious"
+  },
+  "141": {
+    "no": "141",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Tachibana.Miya.full.232164.jpg",
+    "anime": "Amagami SS",
+    "name": "Tachibana Miya"
+  },
+  "142": {
+    "no": "142",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://m.media-amazon.com/images/M/MV5BMzEzYWFjZDQtOTAyMy00ZDg4LWI4ZDAtYjgwYzA3MzAwMGVjXkEyXkFqcGdeQXVyNzI2MzA2OTE@._V1_.jpg",
+    "anime": "Amagami SS",
+    "name": "Nakata Sae"
+  },
+  "143": {
+    "no": "143",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://64.media.tumblr.com/4a4504b303d8f2b06e99a4aa5ec31f20/0689bc37262e6f44-0e/s1280x1920/8d005bc9e74d322a8ab5e017ad8808d148d4e64e.jpg",
+    "anime": "Girls und Panzer",
+    "name": "Akiyama Yukari"
+  },
+  "144": {
+    "no": "144",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/amagami/images/4/40/RihokoSakuraiProfile.jpg/revision/latest?cb=20110629130403",
+    "anime": "Amagami SS",
+    "name": "Sakurai Rihoko"
+  },
+  "145": {
+    "no": "145",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/ae/e7/04/aee7042ffc6259cf208210beb1487066.png",
+    "anime": "Amagami SS",
+    "name": "Tanamachi Kaoru"
+  },
+  "146": {
+    "no": "146",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Morishima.Haruka.full.210090.jpg",
+    "anime": "Amagami SS",
+    "name": "Morishima Haruka"
+  },
+  "147": {
+    "no": "147",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Izumi.Sagiri.full.2122502.jpg",
+    "anime": "Eromanga Sensei",
+    "name": "Izumi Sagiri"
+  },
+  "148": {
+    "no": "148",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/0e/76/12/0e7612d72f5f794817ef0bbcc350030e.jpg",
+    "anime": "Boku no Hero Academia",
+    "name": "Ashido Mina"
+  },
+  "149": {
+    "no": "149",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/79/68/15/796815b336e6cadee8597b1a252e3c34.jpg",
+    "anime": "Amagami SS",
+    "name": "Ayatsuji Tsukasa"
+  },
+  "150": {
+    "no": "150",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Sarasa.%28Granblue.Fantasy%29.full.1965653.jpg",
+    "anime": "Granblue Fantasy",
+    "name": "Sarasa"
+  },
+  "151": {
+    "no": "151",
+    "claim": true,
+    "with": "Malaikat Terbengkalai",
+    "number": "6281267539123@s.whatsapp.net",
+    "image": "https://static.zerochan.net/Belfast.%28Azur.Lane%29.full.3448196.jpg",
+    "anime": "Azur Lane",
+    "name": "Belfast"
+  },
+  "152": {
+    "no": "152",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/oreimo/images/6/62/Yandere_Ayase.jpg/revision/latest/scale-to-width-down/1440?cb=20130803001344",
+    "anime": "Ore no imouto ga konna ni kawaii wake ga nai",
+    "name": "Aragaki Ayase"
+  },
+  "153": {
+    "no": "153",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/e5/06/ef/e506ef81adef0ed0ef01e578e9b0a2a2.jpg",
+    "anime": "chuunibyou demo koi ga shitai",
+    "name": "Kumin Tsuyuri"
+  },
+  "154": {
+    "no": "154",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/20/08/47/2008470691449daae85293743592683d.jpg",
+    "anime": "Baka to Test to Shoukanjuu",
+    "name": "Shimada Minami"
+  },
+  "155": {
+    "no": "155",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/4K0ZBKS/Kohiruimaki-karen.jpg",
+    "anime": "Sword Art Online",
+    "name": "Kohiruimaki Karen"
+  },
+  "156": {
+    "no": "156",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/profile_images/422255717563629570/JplQa_Ek_400x400.jpeg",
+    "anime": "chuunibyou demo koi ga shitai",
+    "name": "Nibutani Shinka"
+  },
+  "157": {
+    "no": "157",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/f9/27/aa/f927aa3dad2fc0b8c1a27c3568b72944.jpg",
+    "anime": "chuunibyou demo koi ga shitai",
+    "name": "Takanashi Touka"
+  },
+  "158": {
+    "no": "158",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/550x/db/6e/77/db6e77106a10787b339da6e0b590410c.jpg",
+    "anime": "chuunibyou demo koi ga shitai",
+    "name": "Takanashi Rikka"
+  },
+  "159": {
+    "no": "159",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/nisioisin/images/4/40/Nadeko_anime.png/revision/latest?cb=20201204091907",
+    "anime": "Monogatari",
+    "name": "Sengoku Nadeko"
+  },
+  "160": {
+    "no": "160",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://avatarfiles.alphacoders.com/878/87850.jpg",
+    "anime": "Sankarea",
+    "name": "Sanka Rea"
+  },
+  "161": {
+    "no": "161",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Korwa.%28Granblue.Fantasy%29.full.2085066.jpg",
+    "anime": "Granblue Fantasy",
+    "name": "Korwa"
+  },
+  "162": {
+    "no": "162",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/a0/10/21/a0102111d661286e1e31a16723cc8549.jpg",
+    "anime": "Sora yori mo Tooi Basho",
+    "name": "Shiraishi Yuzuki"
+  },
+  "163": {
+    "no": "163",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/69/bc/31/69bc31f82b4ab37a1b015a349fb63aef--idol-heroes.jpg",
+    "anime": "Macross",
+    "name": "Makina Nakajima"
+  },
+  "164": {
+    "no": "164",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/f9/87/a7/f987a73366bdba1bd2e2d098757031a1.jpg",
+    "anime": "Fate",
+    "name": "Illyasviel von Einzbern"
+  },
+  "165": {
+    "no": "165",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Ichigo.%28Darling.in.the.FranXX%29.full.2280370.png",
+    "anime": "DARLING in the FRANXX",
+    "name": "Ichigo"
+  },
+  "166": {
+    "no": "166",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/ad/39/38/ad393886b6f2131d12ce0ca1d5fa5d40.jpg",
+    "anime": "Oregairu",
+    "name": "Isshiki Iroha"
+  },
+  "167": {
+    "no": "167",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://4.bp.blogspot.com/-zFPzNxie7l0/WrFBffFDh_I/AAAAAAAAD04/LAuA9-IExZYQrmp8SwAKzgYdJ69iNYuSQCLcBGAs/s1600/takagi-san.jpg",
+    "anime": "Karakai Jouzu no Takagi-san",
+    "name": "Takagi"
+  },
+  "168": {
+    "no": "168",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://wallpapercave.com/wp/wp7990651.jpg",
+    "anime": "Granblue Fantasy",
+    "name": "Narmaya"
+  },
+  "169": {
+    "no": "169",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/4e/d1/55/4ed155d57534ab6dd6f15ebc793fe834.jpg",
+    "anime": "Fairy Tail",
+    "name": "Lucy Heartfilia"
+  },
+  "170": {
+    "no": "170",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/love-live/images/b/ba/LLSS_S2Ep1_178.png/revision/latest?cb=20171008135107",
+    "anime": "Love Live! Sunshine!!",
+    "name": "Dia Kurosawa"
+  },
+  "171": {
+    "no": "171",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/80/84/fd/8084fd0f1586c35ff6c84a21112cea43.jpg",
+    "anime": "Sword Art Online",
+    "name": "Kirigaya Suguha"
+  },
+  "172": {
+    "no": "172",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/p0hVb45/172-Hinata-Kaho.jpg",
+    "anime": "Blend S",
+    "name": "Hinata Kaho"
+  },
+  "173": {
+    "no": "173",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/600d8Bk/173-Uraraka-Ochako.jpg",
+    "anime": "Boku no Hero Academia",
+    "name": "Uraraka Ochako"
+  },
+  "174": {
+    "no": "174",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/kxcPFVw/174-Queen-Medb.jpg",
+    "anime": "Fate",
+    "name": "Queen Medb"
+  },
+  "175": {
+    "no": "175",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/pfddcfk/175-Misaka-Mikoto.jpg",
+    "anime": "To Aru",
+    "name": "Misaka Mikoto"
+  },
+  "176": {
+    "no": "176",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/h8JJZ24/176-Erina-Nakiri.jpg",
+    "anime": "Shokugeki no Souma",
+    "name": "Erina Nakiri"
+  },
+  "177": {
+    "no": "177",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/bd9vhT4/177-Atago.jpg",
+    "anime": "Azur Lane",
+    "name": "Atago"
+  },
+  "178": {
+    "no": "178",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/vBLpvF2/178-Monika.jpg",
+    "anime": "doki doki literature club",
+    "name": "Monika"
+  },
+  "179": {
+    "no": "179",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/v1swCC2/179-Akemi-Homura.jpg",
+    "anime": "Mahou Shoujo Madoka Magica",
+    "name": "Akemi Homura"
+  },
+  "180": {
+    "no": "180",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/w073Z5s/180-Kaname-Madoka.jpg",
+    "anime": "Mahou Shoujo Madoka Magica",
+    "name": "Kaname Madoka"
+  },
+  "181": {
+    "no": "181",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/3rtRwcy/181-Kyoko-Sakura.jpg",
+    "anime": "Mahou Shoujo Madoka Magica",
+    "name": "Kyoko Sakura"
+  },
+  "182": {
+    "no": "182",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/FgdgDP0/182-Miki-Sayaka.jpg",
+    "anime": "Mahou Shoujo Madoka Magica",
+    "name": "Miki Sayaka"
+  },
+  "183": {
+    "no": "183",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/TYGrr1j/183-Nagato-Yuki.jpg",
+    "anime": "Suzumiya Haruhi no Yuutsu",
+    "name": "Nagato Yuki"
+  },
+  "184": {
+    "no": "184",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/BCpYw3M/184-Shiki-Ichinose.jpg",
+    "anime": "Idolm@ster",
+    "name": "Shiki Ichinose"
+  },
+  "185": {
+    "no": "185",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/4jnwsF4/185-Medaka-Kurokami.jpg",
+    "anime": "medaka box",
+    "name": "Medaka Kurokami"
+  },
+  "186": {
+    "no": "186",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/WBVR99s/186-Eucliwood-Hellscythe.jpg",
+    "anime": "Kore wa Zombie desu ka?",
+    "name": "Eucliwood Hellscythe"
+  },
+  "187": {
+    "no": "187",
+    "claim": true,
+    "with": "The Horrible",
+    "number": "6289528702835@s.whatsapp.net",
+    "image": "https://i.ibb.co/VCnsnRw/187-Jeanne-Alter-dan-Saber-Alter.jpg",
+    "anime": "Fate",
+    "name": "Jeanne Alter dan Saber Alter"
+  },
+  "188": {
+    "no": "188",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/qFgbykz/188-Miyazono-Kaori-1.jpg",
+    "anime": "Shigatsu wa Kimi no Uso",
+    "name": "Miyazono Kaori"
+  },
+  "189": {
+    "no": "189",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/z6Y9f7y/189-Shiina-Mashiro.jpg",
+    "anime": "sakurasou pet na kanojo",
+    "name": "Shiina Mashiro"
+  },
+  "190": {
+    "no": "190",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/P9grSw5/190-Tamamo-no-Mae.jpg",
+    "anime": "Fate",
+    "name": "Tamamo no Mae"
+  },
+  "191": {
+    "no": "191",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/wzy0Qbv/191-Hitomi.jpg",
+    "anime": "Dead or Alive",
+    "name": "Hitomi"
+  },
+  "192": {
+    "no": "192",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/xL2SyR1/192-Tateyama-Ayano.jpg",
+    "anime": "Kagerou Project",
+    "name": "Tateyama Ayano"
+  },
+  "193": {
+    "no": "193",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Yamada.Elf.full.2100526.jpg",
+    "anime": "Eromanga Sensei",
+    "name": "Yamada Elf"
+  },
+  "194": {
+    "no": "194",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/e1/55/94/e15594a1ebed28e40a7836dd7927b150.jpg",
+    "anime": "Oregairu",
+    "name": "Yui Yuigahama"
+  },
+  "195": {
+    "no": "195",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://c4.wallpaperflare.com/wallpaper/432/692/1019/anime-my-teen-romantic-comedy-snafu-yukino-yukinoshita-wallpaper-preview.jpg",
+    "anime": "Oregairu",
+    "name": "Yukino Yukinoshita"
+  },
+  "196": {
+    "no": "196",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://animesher.com/orig/0/74/747/7472/animesher.com_cute-miuna-shiodome-miuna-747259.jpg",
+    "anime": "Nagi no Asukara",
+    "name": "Shiodome Miuna"
+  },
+  "197": {
+    "no": "197",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/564x/94/24/60/942460dac4883896a657e6e4ae9a79e2.jpg",
+    "anime": "mirai nikki",
+    "name": "Yuno Gasai"
+  },
+  "198": {
+    "no": "198",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/4a/4a/41/4a4a416a296936b04dcab3ea3ec2cd94.gif",
+    "anime": "boku wa tomodachi ga sukunai",
+    "name": "Sena Kashiwazaki"
+  },
+  "199": {
+    "no": "199",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Nagato.%28Kantai.Collection%29.full.1945217.jpg",
+    "anime": "Kantai Collection",
+    "name": "Nagato"
+  },
+  "200": {
+    "no": "200",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/38/47/c1/3847c1eedb03ad3a1d446cb8b4570441.jpg",
+    "anime": "Angel Beats",
+    "name": "Nakamura Yuri"
+  },
+  "201": {
+    "no": "201",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/cf/53/02/cf5302559f43bffe64f26bf2d4d2c50f.jpg",
+    "anime": "Koe no Katachi",
+    "name": "Nishimiya Shouko"
+  },
+  "202": {
+    "no": "202",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/34/a0/3f/34a03fbc07117fd134e0a27b4d0f2fa7.jpg",
+    "anime": "Charlotte",
+    "name": "Tomori Nao"
+  },
+  "203": {
+    "no": "203",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/474x/4c/3a/dd/4c3add2a7f506cb6288fea3e799a5c0e--the-face-saika-totsuka.jpg",
+    "anime": "Oregairu",
+    "name": "Totsuka Saika"
+  },
+  "204": {
+    "no": "204",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Hiratsuka.Shizuka.full.3067607.jpg",
+    "anime": "Oregairu",
+    "name": "Shizuka Hiratsuka"
+  },
+  "205": {
+    "no": "205",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/haruhi/images/7/73/HaruhiSuzumiyaHighSchool.png/revision/latest?cb=20111010043033",
+    "anime": "Suzumiya Haruhi no Yuutsu",
+    "name": "Suzumiya Haruhi"
+  },
+  "206": {
+    "no": "206",
+    "claim": false,
+    "with": null,
+    "number": "6285709888616@s.whatsapp.net",
+    "image": "https://i.pinimg.com/564x/f0/40/c7/f040c7f0a4a44db3228e88905e64d4a5.jpg",
+    "anime": "Naruto",
+    "name": "Hinata Hyuuga"
+  },
+  "207": {
+    "no": "207",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://d3fd5j8wprxn3h.cloudfront.net/wp-content/uploads/2020/12/konosuba-fantastic-days-aqua.jpg",
+    "anime": "kono subarashii sekai ni shukufuku o!",
+    "name": "Aqua"
+  },
+  "208": {
+    "no": "208",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://lastfm.freetls.fastly.net/i/u/770x0/b9b5a4109b2bfeb5168a8bc31e4c2780.jpg",
+    "anime": "fuuka",
+    "name": "Fuuka Akitsuki"
+  },
+  "209": {
+    "no": "209",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/profile_images/3356306014/9d88746a38bc1861d67792a1d13d58a9_400x400.jpeg",
+    "anime": "Binbougami Ga!",
+    "name": "Sakura Ichiko"
+  },
+  "210": {
+    "no": "210",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.ibb.co/rddF5yg/Dustiness-Ford-Lalatina.jpg",
+    "anime": "kono subarashii sekai ni shukufuku o!",
+    "name": "Darkness"
+  },
+  "211": {
+    "no": "211",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Beatrix.%28Granblue.Fantasy%29.full.2584978.jpg",
+    "anime": "Granblue Fantasy",
+    "name": "Beatrix"
+  },
+  "212": {
+    "no": "212",
+    "claim": true,
+    "with": "Draaa..",
+    "number": "6288806440825@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/09/d2/38/09d2389b0f1646016bf800f24f43ae03.jpg",
+    "anime": "Hibike! Euphonium",
+    "name": "Tanaka Asuka"
+  },
+  "213": {
+    "no": "213",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Yoroizuka.Mizore.full.2343143.png",
+    "anime": "Hibike! Euphonium",
+    "name": "Yoroizuka Mizore"
+  },
+  "214": {
+    "no": "214",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://sukabumiupdate.com/uploads/news/images/770x413/reina-kousaka-tokoh-di_220210153331-930.jpg",
+    "anime": "Hibike! Euphonium",
+    "name": "Reina Kousaka"
+  },
+  "215": {
+    "no": "215",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://lastfm.freetls.fastly.net/i/u/ar0/c7a322d23171a0a1d306e846d2e10e24.jpg",
+    "anime": "Hibike! Euphonium",
+    "name": "Oumae Kumiko"
+  },
+  "216": {
+    "no": "216",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/9d/bd/4b/9dbd4bba2ab5e0df08f79096d0d72edc.jpg",
+    "anime": "Saiki Kusou no PSI Nan",
+    "name": "Kokomi Teruhashi"
+  },
+  "217": {
+    "no": "217",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/media/E8L2IllUcAM38ew?format=jpg&name=large",
+    "anime": "Granblue Fantasy",
+    "name": "Vira"
+  },
+  "218": {
+    "no": "218",
+    "claim": true,
+    "with": "Hilm",
+    "number": "628983991675@s.whatsapp.net",
+    "image": "https://static.zerochan.net/Mash.Kyrielight.full.1972329.jpg",
+    "anime": "Fate",
+    "name": "Mashu Kyrielight"
+  },
+  "219": {
+    "no": "219",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://joi-storage.s3.amazonaws.com/wp-content/uploads/2016/12/JOI-waifu-wednesday-miyakoshi-hana-2.jpg",
+    "anime": "Working!",
+    "name": "Hana Miyakoshi"
+  },
+  "220": {
+    "no": "220",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/dagashi-kashi/images/b/b2/EP9_snapshot.png/revision/latest?cb=20160616041653",
+    "anime": "Dagashi Kashi",
+    "name": "Hotaru Shidare"
+  },
+  "221": {
+    "no": "221",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Miia.%28Monster.Musume.no.Iru.Nichijou%29.full.3296190.jpg",
+    "anime": "Monster Musume no Iru Nichijou",
+    "name": "Miia"
+  },
+  "222": {
+    "no": "222",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/51/22/40/512240630643df5ae0a4e2d240974c9f.png",
+    "anime": "kimi no na wa",
+    "name": "Mitsuha Miyamizu"
+  },
+  "223": {
+    "no": "223",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Tohsaka.Rin.full.2060968.jpg",
+    "anime": "Fate",
+    "name": "Tohsaka Rin"
+  },
+  "224": {
+    "no": "224",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/81a509d3-4404-4aed-8a15-5395b93b5dc5/d8fpm60-6e1179e9-dd57-471a-b129-369f83680539.jpg/v1/fill/w_1280,h_720,q_75,strp/ashigara__kantai_collection__1080p_by_alpha4681_d8fpm60-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvODFhNTA5ZDMtNDQwNC00YWVkLThhMTUtNTM5NWI5M2I1ZGM1XC9kOGZwbTYwLTZlMTE3OWU5LWRkNTctNDcxYS1iMTI5LTM2OWY4MzY4MDUzOS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.0GfUwSKCjho32WXFUOts6XcA4xYtmHbzn2i_tG00MI0",
+    "anime": "Kantai Collection",
+    "name": "Ashigara"
+  },
+  "225": {
+    "no": "225",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/7f/b9/99/7fb999ef0025d56f618c2d2ecce79a1c.jpg",
+    "anime": "musaigen no phantom world",
+    "name": "Mai Kawakami"
+  },
+  "226": {
+    "no": "226",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/yugioh/images/0/08/T%C3%A9a_Gardner.png/revision/latest?cb=20140520004117",
+    "anime": "Yu-Gi-Oh",
+    "name": "Anzu Mazaki"
+  },
+  "227": {
+    "no": "227",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/fategrandorder/images/9/97/S008_Stage4.webp/revision/latest?cb=20210131055655",
+    "anime": "Fate",
+    "name": "Attila"
+  },
+  "228": {
+    "no": "228",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Taneshima.Popura.full.1172545.jpg",
+    "anime": "Working!",
+    "name": "Taneshima Popura"
+  },
+  "229": {
+    "no": "229",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/macross/images/7/7b/Mikumo_guynemer_0001.jpg/revision/latest?cb=20190408030340",
+    "anime": "Macross",
+    "name": "Mikumo Guynemer"
+  },
+  "230": {
+    "no": "230",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Ai.%28Getsuyoubi.no.Tawawa%29.full.2132431.jpg",
+    "anime": "Getsuyoubi no Tawawa",
+    "name": "Ai-chan"
+  },
+  "231": {
+    "no": "231",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/media/EPlAsWJWsAAWkSK.jpg:large",
+    "anime": "school rumble",
+    "name": "Tsukamoto Yakumo"
+  },
+  "232": {
+    "no": "232",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/09/JOI-waifu-wednesday-maihime-tenkawa-10-700x394.jpg",
+    "anime": "qualidea code",
+    "name": "Maihime Tenkawa"
+  },
+  "233": {
+    "no": "233",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/09/JOI-waifu-wednesday-felix-argyle-1-700x394.jpg",
+    "anime": "Re:Zero",
+    "name": "[Waifu? Wednesday] Felix Argyle"
+  },
+  "234": {
+    "no": "234",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/09/JOI-waifu-wednesday-yukari-yakumo-1-700x425.jpg",
+    "anime": "Touhou Project",
+    "name": "Yukari Yakumo"
+  },
+  "235": {
+    "no": "235",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/08/JOI-waifu-wednesday-haru-onodera-1-700x394.jpg",
+    "anime": "Nisekoi",
+    "name": "Haru Onodera"
+  },
+  "236": {
+    "no": "236",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/08/JOI-waifu-wednesday-yuzuki-eba-1-700x410.jpg",
+    "anime": "kimi no iru machi",
+    "name": "Yuzuki Eba"
+  },
+  "237": {
+    "no": "237",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/08/JOI-waifu-wednesday-shoukaku-1-700x394.jpg",
+    "anime": "Kantai Collection",
+    "name": "Shoukaku"
+  },
+  "238": {
+    "no": "238",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/08/JOI-waifu-wednesday-asada-shino-1-700x382.jpg",
+    "anime": "Sword Art Online",
+    "name": "Asada Shino"
+  },
+  "239": {
+    "no": "239",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/08/rem-ww-4-700x394.jpg",
+    "anime": "Re:Zero",
+    "name": "Rem"
+  },
+  "240": {
+    "no": "240",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/07/JOI-waifu-wednesday-sheryl-nome-1-700x394.jpg",
+    "anime": "Macross",
+    "name": "Sheryl Nome"
+  },
+  "241": {
+    "no": "241",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/07/JOI-waifu-wednesday-lynn-minmay-700x399.jpg",
+    "anime": "Macross",
+    "name": "Lynn Minmay"
+  },
+  "242": {
+    "no": "242",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/07/JOI-waifu-wednesday-fumina-hoshino-1-700x394.jpg",
+    "anime": "Gundam",
+    "name": "Fumina Hoshino"
+  },
+  "243": {
+    "no": "243",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/07/JOI-waifu-wednesday-ayame-yomogawa-1-700x394.jpg",
+    "anime": "Koutetsujou no Kabaneri",
+    "name": "Ayame Yomogawa"
+  },
+  "244": {
+    "no": "244",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/06/JOI-waifu-wednesday-stella-vermillion-1-700x394.jpg",
+    "anime": "Rakudai Kishi no Cavalry",
+    "name": "Stella Vermillion"
+  },
+  "245": {
+    "no": "245",
+    "claim": false,
+    "with": null,
+    "number": "6289647637754@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/06/JOI-waifu-wednesday-claudia-enfield-1-700x394.jpg",
+    "anime": "Gakusen Toshi Asterisk",
+    "name": "Claudia Enfield"
+  },
+  "246": {
+    "no": "246",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/06/WW-Mika-FI-700x451.png",
+    "anime": "Cinderella Girls",
+    "name": "Mika Jougasaki"
+  },
+  "247": {
+    "no": "247",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/06/JOI-waifu-wednesday-emilia-1-700x394.jpg",
+    "anime": "Re:Zero",
+    "name": "Emilia"
+  },
+  "248": {
+    "no": "248",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/06/JOI-waifu-wednesday-Iowa-1-700x427.jpg",
+    "anime": "Kantai Collection",
+    "name": "Iowa"
+  },
+  "249": {
+    "no": "249",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/05/JOI-waifu-wednesday-miyamoto-ruri-1-700x394.jpg",
+    "anime": "Nisekoi",
+    "name": "Miyamoto Ruri"
+  },
+  "250": {
+    "no": "250",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/05/JOI-waifu-wednesday-kagura-1-700x448.jpg",
+    "anime": "Gintama",
+    "name": "Kagura"
+  },
+  "251": {
+    "no": "251",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/05/JOI-waifu-wednesday-tamaki-ako-1-700x394.jpg",
+    "anime": "Netoge no Yome wa Onna no Ko ja nai to Omotta?",
+    "name": "Tamaki Ako"
+  },
+  "252": {
+    "no": "252",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/05/JOI-waifu-wednesday-satsuki-momoi-1-700x437.jpg",
+    "anime": "Kuroko no Basket",
+    "name": "Satsuki Momoi"
+  },
+  "253": {
+    "no": "253",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/04/JOI-waifu-wednesday-kazami-yuuka-1-700x411.jpg",
+    "anime": "Touhou Project",
+    "name": "Kazami Yuuka"
+  },
+  "254": {
+    "no": "254",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/04/JOI-waifu-wednesday-akagi-1-700x394.jpg",
+    "anime": "Kantai Collection",
+    "name": "Akagi"
+  },
+  "255": {
+    "no": "255",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/04/JOI-waifu-wednesday-kaga-1-700x394.jpg",
+    "anime": "Kantai Collection",
+    "name": "Kaga"
+  },
+  "256": {
+    "no": "256",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/04/wwmegumin-fi-700x394.jpg",
+    "anime": "kono subarashii sekai ni shukufuku o!",
+    "name": "Megumin"
+  },
+  "257": {
+    "no": "257",
+    "claim": false,
+    "with": null,
+    "number": "6281703482644@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/03/JOI-FI-waifu-wed-CC-700x463.jpg",
+    "anime": "Code Geass",
+    "name": "C.C"
+  },
+  "258": {
+    "no": "258",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/03/JOI-waifu-wednesday-kotegawa-yui-1-700x449.jpg",
+    "anime": "To-LOVE-Ru",
+    "name": "Kotegawa Yui"
+  },
+  "259": {
+    "no": "259",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/03/UMI-WW06-700x394.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Sonoda Umi"
+  },
+  "260": {
+    "no": "260",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/03/JOI-waifu-wednesday-tsukuyo-1-700x426.jpg",
+    "anime": "Gintama",
+    "name": "Tsukuyo"
+  },
+  "261": {
+    "no": "261",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/03/JOI-waifu-wednesday-kosaki-onodera-1-700x398.jpg",
+    "anime": "Nisekoi",
+    "name": "Kosaki Onodera"
+  },
+  "262": {
+    "no": "262",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/02/JOI-waifu-wednesday-utaha-kasumigaoka-1-700x393.jpg",
+    "anime": "Saenai Kanojo no Sodatekata",
+    "name": "Utaha Kasumigaoka"
+  },
+  "263": {
+    "no": "263",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/02/JOI-waifu-wednesday-seishirou-tsugumi-1-700x394.jpg",
+    "anime": "Nisekoi",
+    "name": "Seishirou Tsugumi"
+  },
+  "264": {
+    "no": "264",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/02/marika9-700x394.jpg",
+    "anime": "Nisekoi",
+    "name": "Tachibana Marika"
+  },
+  "265": {
+    "no": "265",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/02/JOI-waifu-wednesday-chitoge-kirisaki-1-700x394.jpg",
+    "anime": "Nisekoi",
+    "name": "Kirisaki Chitoge"
+  },
+  "266": {
+    "no": "266",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/01/WW01-700x394.jpg",
+    "anime": "Cinderella Girls",
+    "name": "Shibuya Rin"
+  },
+  "267": {
+    "no": "267",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/01/WW-HANAYO09-2-700x394.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Koizumi Hanayo"
+  },
+  "268": {
+    "no": "268",
+    "claim": true,
+    "with": "GOST_bkr",
+    "number": "6285959069150@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/01/saekano1-700x394.jpg",
+    "anime": "Saenai Kanojo no Sodatekata",
+    "name": "Katou Megumi"
+  },
+  "269": {
+    "no": "269",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2016/01/JOI-waifu-wednesday-ushio-3-700x452.jpg",
+    "anime": "Kantai Collection",
+    "name": "Ushio"
+  },
+  "270": {
+    "no": "270",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/12/JOI-waifu-wednesday-sento-isuzu-1-700x445.jpg",
+    "anime": "Amagi Brilliant Park",
+    "name": "Sento Isuzu"
+  },
+  "271": {
+    "no": "271",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/12/JOI-waifu-wednesday-yoko-littner-dan-nia-teppelin-1-700x397.jpg",
+    "anime": "Tengen Toppa Gurren Lagann",
+    "name": "Yoko Littner & Nia Teppelin"
+  },
+  "272": {
+    "no": "272",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/12/JOI-waifu-wednesday-asa-shigure-3-700x391.jpg",
+    "anime": "Shuffle!",
+    "name": "Asa Shigure"
+  },
+  "273": {
+    "no": "273",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/12/wwdmg-fi-700x433.jpg",
+    "anime": "Yu-Gi-Oh",
+    "name": "Dark Magician Girl"
+  },
+  "274": {
+    "no": "274",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/12/wwrinko-fi-700x393.jpg",
+    "anime": "Gundam",
+    "name": "Iori Rinko"
+  },
+  "275": {
+    "no": "275",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/11/JOI-waifu-wednesday-anezaki-mamori-700x450.jpg",
+    "anime": "Eyeshield 21",
+    "name": "Mamori Anezaki"
+  },
+  "276": {
+    "no": "276",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/11/JOI-FI-Waifu-wednesday-fumika-sagisawa-700x454.jpg",
+    "anime": "Cinderella Girls",
+    "name": "Fumika Sagisawa"
+  },
+  "277": {
+    "no": "277",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/11/wwshiki-fi-700x394.jpg",
+    "anime": "Kara no Kyoukai",
+    "name": "Shiki Ryougi"
+  },
+  "278": {
+    "no": "278",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/11/RIN-FI000-700x394.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Rin Hoshizora"
+  },
+  "279": {
+    "no": "279",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/10/JOI-waifu-wednesday-evangeline-mcdowell-4-700x467.jpg",
+    "anime": "Mahou sensei negima",
+    "name": "Evangeline A.K. McDowell"
+  },
+  "280": {
+    "no": "280",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/10/LL-ELI-700x394.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Eli Ayase"
+  },
+  "281": {
+    "no": "281",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/10/JOI-waifu-wednesday-kirino-kousaka-1-700x394.jpg",
+    "anime": "Ore no imouto ga konna ni kawaii wake ga nai",
+    "name": "Kirino Kousaka"
+  },
+  "282": {
+    "no": "282",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/10/waifuwed-megumi6-700x394.jpg",
+    "anime": "Shokugeki no Souma",
+    "name": "Tadokoro Megumi"
+  },
+  "283": {
+    "no": "283",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/09/JOI-waifu-wednesday-double-issue-school-days-1-700x440.jpg",
+    "anime": "School Days",
+    "name": "Kotonoha Katsura & Sekai Saionji"
+  },
+  "284": {
+    "no": "284",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/09/UZUKI03.jpg",
+    "anime": "Idolm@ster",
+    "name": "Uzuki Shimamura"
+  },
+  "285": {
+    "no": "285",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/09/joi-waifu-wednesday-momo-velia-deviluke-1-700x482.jpg",
+    "anime": "To-LOVE-Ru",
+    "name": "Momo Velia Deviluke"
+  },
+  "286": {
+    "no": "286",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/09/joi-waifu-wednesday-kirishima-shouko-1-700x394.jpg",
+    "anime": "Baka to Test to Shoukanjuu",
+    "name": "Shouko Kirishima"
+  },
+  "287": {
+    "no": "287",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/08/JOI-waifu-wednesday-hato-kenjirou-1-700x394.jpg",
+    "anime": "Genshiken",
+    "name": "Kenjirou Hato"
+  },
+  "288": {
+    "no": "288",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/08/ss-2015-08-19-at-10.02.43-700x345.jpg",
+    "anime": "Kantai Collection",
+    "name": "Naka-chan"
+  },
+  "289": {
+    "no": "289",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/profile_images/704344005362864128/mzvN5KYJ_400x400.jpg",
+    "anime": "Gekkan Shoujo Nozaki-kun",
+    "name": "Yuzuki Seo"
+  },
+  "290": {
+    "no": "290",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.akibanation.com/wp-content/uploads/2016/03/Kousaka-Honoka-3-love-live-school-idol-project-37428315-1002-572.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Kousaka Honoka"
+  },
+  "291": {
+    "no": "291",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/aria/images/f/f9/Akira_Young_Adult.png/revision/latest?cb=20210823122431",
+    "anime": "Aria",
+    "name": "Akira E. Ferrari"
+  },
+  "292": {
+    "no": "292",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/07/nico-fi-700x394.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Yazawa Nico"
+  },
+  "293": {
+    "no": "293",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/07/JOI-waifu-wednesday-fi-senjougahara-700x435.jpg",
+    "anime": "Monogatari",
+    "name": "Senjougahara Hitagi"
+  },
+  "294": {
+    "no": "294",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/07/Ayako_Seto_no_Hanayome_-_02_H264_2D1B692C.mkv_snapshot_19.10_2015.07.07_22.22.33-700x394.jpg",
+    "anime": "Seto no Hanayome",
+    "name": "Seto Sun"
+  },
+  "295": {
+    "no": "295",
+    "claim": true,
+    "with": "Miftah Aulya",
+    "number": "6282262422308@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/07/KOTORI09-700x394.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Minami Kotori"
+  },
+  "296": {
+    "no": "296",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Ukanomitama.no.Kami.full.1659802.jpg",
+    "anime": "Koi Iroha",
+    "name": "Uka no Mitama no Kami"
+  },
+  "297": {
+    "no": "297",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/06/waifu-wednesday-tifa-lockhart-5-700x408.jpg",
+    "anime": "Final Fantasy",
+    "name": "Tifa Lockhart"
+  },
+  "298": {
+    "no": "298",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/06/NOZOMI-WAIFU-FI-700x394.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Tojo Nozomi"
+  },
+  "299": {
+    "no": "299",
+    "claim": true,
+    "with": "Miku²¹",
+    "number": "6283834685279@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/06/sample-e9f7b47def35323894da3eca2e0dee64-700x505.jpg",
+    "anime": "Touhou Project",
+    "name": "Koishi Komeiji"
+  },
+  "300": {
+    "no": "300",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/05/MAKI05-700x394.jpg",
+    "anime": "Love Live! School Idol Project",
+    "name": "Nishikino Maki"
+  },
+  "301": {
+    "no": "301",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/05/Fi-kongou-waifu-wednesday-kc-700x462.jpg",
+    "anime": "Kantai Collection",
+    "name": "Kongou"
+  },
+  "302": {
+    "no": "302",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/05/Jun-waifu-wednesday-joi-4-700x438.jpg",
+    "anime": "Happiness!",
+    "name": "Watarase Jun"
+  },
+  "303": {
+    "no": "303",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/05/waifu-wednesday-irisviel-von-einzbern-700x394.jpg",
+    "anime": "Fate",
+    "name": "Irisviel von Einsbern"
+  },
+  "304": {
+    "no": "304",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/04/kanade-waifu-wednesday-joi-10-700x438.jpg",
+    "anime": "Angel Beats",
+    "name": "Tachibana Kanade"
+  },
+  "305": {
+    "no": "305",
+    "claim": false,
+    "with": null,
+    "number": "6285707358287@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2015/04/asuna-waifu-wednesday-3-700x394.jpg",
+    "anime": "Sword Art Online",
+    "name": "Yuuki Asuna"
+  },
+  "306": {
+    "no": "306",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/b5/72/7a/b5727a667f2d469d3aea147e608c05d0.jpg",
+    "anime": "Confession Executive Committee",
+    "name": "Aida Miou"
+  },
+  "307": {
+    "no": "307",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://cdn.myanimelist.net/images/characters/9/385879.jpg",
+    "anime": "Kawaii Hito",
+    "name": "Suzuki Hiyori"
+  },
+  "308": {
+    "no": "308",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://cdn.anime-planet.com/characters/primary/arisa-takamizawa-1-285x399.webp?t=1649657559",
+    "anime": "Confession Executive Committee",
+    "name": "Arisa Takamizawa"
+  },
+  "309": {
+    "no": "309",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.bandori.party/u/c/art/a/1912Eve-Wakamiya-Pure-i3iJGB.png",
+    "anime": "BanG Dream",
+    "name": "Eve Wakamiya"
+  },
+  "310": {
+    "no": "310",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Uehara.Himari.full.2120016.jpg",
+    "anime": "BanG Dream",
+    "name": "Uehara Himari"
+  },
+  "311": {
+    "no": "311",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/akb48/images/3/3f/2020_DASADA_Kanemura_Miku.jpg/revision/latest/scale-to-width-down/250?cb=20200402124633",
+    "anime": "AKB48",
+    "name": "Kanemura Miku"
+  },
+  "312": {
+    "no": "312",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://brokensubs.files.wordpress.com/2021/04/4th-gen-endo-sakura.jpg",
+    "anime": "AKB48",
+    "name": "Sakura Endo"
+  },
+  "313": {
+    "no": "313",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pm1.narvii.com/6821/b5bc6c0c94cd2849e4c308d053def5594025e61cv2_hq.jpg",
+    "anime": "AKB48",
+    "name": "Kageyama Yuka"
+  },
+  "314": {
+    "no": "314",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.gwigwi.com/wp-content/uploads/2021/04/Photobook-Pertama-Kosaka-Nao-Diumumkan.jpg",
+    "anime": "AKB48",
+    "name": "Kosaka Nao"
+  },
+  "315": {
+    "no": "315",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/akb48/images/b/b5/2020_Debut_Morimoto_Mari.jpg/revision/latest/scale-to-width-down/250?cb=20200406150450",
+    "anime": "AKB48",
+    "name": "Marie Marimoto"
+  },
+  "316": {
+    "no": "316",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/akb48/images/0/00/Kamimura_Hinano_H46_Boku_Nanka.jpg/revision/latest?cb=20220331122610",
+    "anime": "AKB48",
+    "name": "Kamimura Hinano"
+  },
+  "317": {
+    "no": "317",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://overseasidol.com/wp-content/uploads/2021/10/asuka1.jpg",
+    "anime": "AKB48",
+    "name": "Asuka Saito"
+  },
+  "318": {
+    "no": "318",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://img-9gag-fun.9cache.com/photo/a619dAq_460s.jpg",
+    "anime": "Touhou Project",
+    "name": "Sakura Izayaoi"
+  },
+  "319": {
+    "no": "319",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://pm1.narvii.com/7348/0455548d9ca3694c233c1d95b0b3481000e87624r1-850-1114v2_00.jpg",
+    "anime": "Touhou Project",
+    "name": "Remilia Scarlet"
+  },
+  "320": {
+    "no": "320",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/villains/images/d/d3/3ade971f2ac72036ffad467b29babd919be32fd3_hq.jpg/revision/latest?cb=20220101184216",
+    "anime": "Touhou Project",
+    "name": "Flandre Scarlet"
+  },
+  "321": {
+    "no": "321",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/taytay-and-friends/images/5/54/Meet_Patchouli%21.jpg/revision/latest?cb=20171016220744",
+    "anime": "Touhou Project",
+    "name": "Patchuoli Knowledge"
+  },
+  "322": {
+    "no": "322",
+    "claim": true,
+    "with": "huanran",
+    "number": "6288211862268@s.whatsapp.net",
+    "image": "http://pm1.narvii.com/7349/100884c874426001cdca24631c720bf7cb6de88dr1-850-1018v2_00.jpg",
+    "anime": "Touhou Project",
+    "name": "Hong Meiling"
+  },
+  "323": {
+    "no": "323",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/28/42/56/284256fc546d1f499f0fa365dd215b5c.jpg",
+    "anime": "Touhou Project",
+    "name": "Cirno"
+  },
+  "324": {
+    "no": "324",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/d0/0c/57/d00c5744fa0b4ef7eca346847a8311dc.png",
+    "anime": "Persona 3",
+    "name": "Minato Ariato"
+  },
+  "325": {
+    "no": "325",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Female.Protagonist.%28PERSONA.3%29.full.1551678.jpg",
+    "anime": "Persona 3",
+    "name": "Minako Arisato"
+  },
+  "326": {
+    "no": "326",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Takeba.Yukari.full.1840495.jpg",
+    "anime": "Persona 3",
+    "name": "Yukari Takeba"
+  },
+  "327": {
+    "no": "327",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Yamagishi.Fuuka.full.1840494.jpg",
+    "anime": "Persona 3",
+    "name": "Fuuka Yamagishi"
+  },
+  "328": {
+    "no": "328",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/86/44/3b/86443bc0638b81087c61628d5ba75323.jpg",
+    "anime": "Persona 3",
+    "name": "Akihiko Sanada"
+  },
+  "329": {
+    "no": "329",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Kirijou.Mitsuru.full.1840498.jpg",
+    "anime": "Persona 3",
+    "name": "Mitsuru Kirijo"
+  },
+  "330": {
+    "no": "330",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://personafans.com/wp-content/uploads/2022/05/Junpei-Lori-Guide-1.png",
+    "anime": "Persona 3",
+    "name": "Junpei Iori"
+  },
+  "331": {
+    "no": "331",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Aragaki.Shinjirou.full.369106.jpg",
+    "anime": "Persona 3",
+    "name": "Aragaki Shinjirou"
+  },
+  "332": {
+    "no": "332",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://cdn.anime-planet.com/characters/primary/ken-amada-1.jpg?t=1625781959",
+    "anime": "Persona 3",
+    "name": "Ken Amada"
+  },
+  "333": {
+    "no": "333",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Aegis.full.228301.jpg",
+    "anime": "Persona 3",
+    "name": "Aigis"
+  },
+  "334": {
+    "no": "334",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Elizabeth.%28PERSONA.3%29.full.1822015.jpg",
+    "anime": "Persona 3",
+    "name": "Elizabeth"
+  },
+  "335": {
+    "no": "335",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/2d/9b/5a/2d9b5a8a0a218198ff064bb825f65f54.jpg",
+    "anime": "Persona 3",
+    "name": "Yoshino Chidori"
+  },
+  "336": {
+    "no": "336",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://pm1.narvii.com/7037/d9c8e27a4a7989491ff83d5d0ce75ee7c219c582r1-811-682v2_uhq.jpg",
+    "anime": "Touhou Project",
+    "name": "Reisen Udongein Inaba"
+  },
+  "337": {
+    "no": "337",
+    "claim": true,
+    "with": "𝐅ra",
+    "number": "6281271192155@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/f6/62/37/f66237edf0b79566f782b4c823cca086.jpg",
+    "anime": "Your Throne(Webtoons)",
+    "name": "Medeia Beliard"
+  },
+  "338": {
+    "no": "338",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i0.wp.com/digstraksi.com/wp-content/uploads/2020/12/psyche1.jpg?resize=760%2C760&ssl=1",
+    "anime": "Your Throne(Webtoons)",
+    "name": "Psyche Poli"
+  },
+  "339": {
+    "no": "339",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/87/cd/41/87cd41cab5b7ba8cd10009092b0a6c04.jpg",
+    "anime": "The Remarried Empress (Webtoons)",
+    "name": "Navier Ellie Trovi"
+  },
+  "340": {
+    "no": "340",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/36/f2/54/36f254eae8eda0ad085062f1c984f800.jpg",
+    "anime": "Who Made Me A Princess",
+    "name": "Athanasia De Alger Obelia"
+  },
+  "341": {
+    "no": "341",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/550x/36/3f/e4/363fe4836a3f6c20b525fd1e3472630b.jpg",
+    "anime": "Who Made Me A Princess",
+    "name": "Zenith (Jennette Margarita)"
+  },
+  "342": {
+    "no": "342",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/f7/56/bd/f756bde94741b252f05b88f8e7e2d96f.jpg",
+    "anime": "Leveling Up my Husband",
+    "name": "Amber Thalesdo"
+  },
+  "343": {
+    "no": "343",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://assets.kompasiana.com/items/album/2022/03/31/gaeul-62452f905a74dc08c758a133.png?t=o&v=770",
+    "anime": "Viral Hit",
+    "name": "Gaeul"
+  },
+  "344": {
+    "no": "344",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://preview.redd.it/spxe1m5c82m81.jpg?width=573&format=pjpg&auto=webp&s=1cadd5684d5af9a38e8581ecf0ef16d3d7fc4f3d",
+    "anime": "Viral Hit",
+    "name": "Choi Bomi"
+  },
+  "345": {
+    "no": "345",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/de/3c/78/de3c78880de7e26d692d7a3482cff407.jpg",
+    "anime": "Viral Hit",
+    "name": "Yeo Rumi"
+  },
+  "346": {
+    "no": "346",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/0d/46/dc/0d46dc7769c522e6c4989b5ec3d388bf.jpg",
+    "anime": "Viral Hit",
+    "name": "Han Gyeoul"
+  },
+  "347": {
+    "no": "347",
+    "claim": true,
+    "with": "VB",
+    "number": "62895636695858@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/8b/13/f9/8b13f987506a2573e09fe76875bb32ed.jpg",
+    "anime": "Omniscient Reader's Viewpoint",
+    "name": "Han Sooyoung"
+  },
+  "348": {
+    "no": "348",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/b5/28/0b/b5280bf0e63e1884fd413ab00d8446f2.jpg",
+    "anime": "Omniscient Reader's Viewpoint",
+    "name": "Yoo Sangah"
+  },
+  "349": {
+    "no": "349",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/30/df/22/30df22197b080f87d7b35d6f8f5ab77a.jpg",
+    "anime": "How to Protect the Heroine Older Brother",
+    "name": "Roxana Agriche"
+  },
+  "350": {
+    "no": "350",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/5c/a4/a2/5ca4a2191472c468eec873132cacc098.png",
+    "anime": "Unholy Blood",
+    "name": "Park Hayan"
+  },
+  "351": {
+    "no": "351",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/e1/7a/63/e17a63c2f0b0bdefeab375e9572816cf.jpg",
+    "anime": "Hibike! Euphonium",
+    "name": "Yuko Yoshikawa"
+  },
+  "352": {
+    "no": "352",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.greenscene.co.id/wp-content/uploads/2022/05/Yor-Briar.webp",
+    "anime": "SPY X Family",
+    "name": "Yor Forger"
+  },
+  "353": {
+    "no": "353",
+    "claim": true,
+    "with": "Forger",
+    "number": "6285717585272@s.whatsapp.net",
+    "image": "https://api.duniagames.co.id/api/content/upload/file/8035183581652854462.jpg",
+    "anime": "SPY X Family",
+    "name": "Loid Forger"
+  },
+  "354": {
+    "no": "354",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/05/14/1125700728.jpg",
+    "anime": "SPY X Family",
+    "name": "Anya Forger"
+  },
+  "355": {
+    "no": "355",
+    "claim": true,
+    "with": "vinny",
+    "number": "6289523931950@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/7e/3b/c1/7e3bc19ba4cef59a460c99ea8ca04475.jpg",
+    "anime": "Tantei wa Mou",
+    "name": "Natsunagi Nagisa"
+  },
+  "356": {
+    "no": "356",
+    "claim": true,
+    "with": "Tio D.Dragon",
+    "number": "6285707358287@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/1d/fd/d1/1dfdd1e2786da32efff0d46abbf27211.jpg",
+    "anime": "Tantei wa Mou",
+    "name": "Siesta"
+  },
+  "357": {
+    "no": "357",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/73/6b/4d/736b4ddae2a54731c110be4ffe4766e9.jpg",
+    "anime": "Tantei wa Mou",
+    "name": "Charlotte Arisaka Anderson"
+  },
+  "358": {
+    "no": "358",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/4d/ea/85/4dea85b687080d57ef4307cc86d8f4a8.jpg",
+    "anime": "Tantei wa Mou",
+    "name": "Yui Saikawa"
+  },
+  "359": {
+    "no": "359",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/35/3f/5b/353f5bfb472df25af9058163bb4fd8e0.jpg",
+    "anime": "Hololive",
+    "name": "Shishiro Botan"
+  },
+  "360": {
+    "no": "360",
+    "claim": true,
+    "with": "CM Herfazalesa",
+    "number": "6287773446859@s.whatsapp.net",
+    "image": "https://areatopik.com/wp-content/uploads/2022/05/B2EF9EEF-D5C8-4E74-B3A9-AF81EBC693CD.png",
+    "anime": "Hololive",
+    "name": "Kobo Kanaeru"
+  },
+  "361": {
+    "no": "361",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/f5/66/f2/f566f231f043a9307a3410ebc4b62649.jpg",
+    "anime": "Hololive",
+    "name": "Nekomata Okayu"
+  },
+  "362": {
+    "no": "362",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/d/d0/Inugami_Korone_Alt_Illustration_by_%E3%83%95%E3%82%AB%E3%83%92%E3%83%AC.jpg/revision/latest/scale-to-width-down/250?cb=20201105061548",
+    "anime": "Hololive",
+    "name": "Inugami Korone"
+  },
+  "363": {
+    "no": "363",
+    "claim": false,
+    "with": null,
+    "number": "6285837962619@s.whatsapp.net",
+    "image": "https://static.zerochan.net/Gawr.Gura.full.3535056.png",
+    "anime": "Hololive",
+    "name": "Gawr Gura"
+  },
+  "364": {
+    "no": "364",
+    "claim": true,
+    "with": "reo",
+    "number": "6283166422321@s.whatsapp.net",
+    "image": "https://i.pinimg.com/550x/88/9a/b6/889ab64ed9ad40c5c9f08dd1a6f20a37.jpg",
+    "anime": "Hololive",
+    "name": "Amelia Watson"
+  },
+  "365": {
+    "no": "365",
+    "claim": true,
+    "with": "I. Shido",
+    "number": "6288218481015@s.whatsapp.net",
+    "image": "https://static.zerochan.net/Mori.Calliope.full.3070320.jpg",
+    "anime": "Hololive",
+    "name": "Mori Calliope"
+  },
+  "366": {
+    "no": "366",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/67/0f/8a/670f8a0d160b84d9fe339a0c19d53156.png",
+    "anime": "Hololive",
+    "name": "Takanashi Kiara"
+  },
+  "367": {
+    "no": "367",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Ninomae.Ina%27nis.full.3077270.png",
+    "anime": "Hololive",
+    "name": "Ninomae Ina'nis"
+  },
+  "368": {
+    "no": "368",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://dumbotaku.com/wp-content/uploads/2021/08/akai-haato-hololive-vtuber-01.jpg",
+    "anime": "Hololive",
+    "name": "Akai Haato"
+  },
+  "369": {
+    "no": "369",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i1.sndcdn.com/artworks-54JDBrgi0GU7WimF-Nz2ZgQ-t500x500.jpg",
+    "anime": "Hololive",
+    "name": "Shirakami Fubuki"
+  },
+  "370": {
+    "no": "370",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://cdn-us.anidb.net/images/main/256624.jpg",
+    "anime": "Hololive",
+    "name": "Natsuiro Matsuri"
+  },
+  "371": {
+    "no": "371",
+    "claim": true,
+    "with": "Afra",
+    "number": "6282269342228@s.whatsapp.net",
+    "image": "https://i.ytimg.com/vi/f8h9n3qFhyU/frame0.jpg",
+    "anime": "Hololive",
+    "name": "Moona Hoshinova"
+  },
+  "372": {
+    "no": "372",
+    "claim": false,
+    "with": null,
+    "number": "6287792356504@s.whatsapp.net",
+    "image": "https://virtuacorner.com/wp-content/uploads/2021/07/Iofi.jpg",
+    "anime": "Hololive",
+    "name": "Airani Iofiteen"
+  },
+  "373": {
+    "no": "373",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Hoshimachi.Suisei.full.2953985.jpg",
+    "anime": "Hololive",
+    "name": "Hoshimachi Suisei"
+  },
+  "374": {
+    "no": "374",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://areatopik.com/wp-content/uploads/2021/07/Usada-Pekora-Collab-2-Tahun-Dengan-Produk-Area-Topik-Sample.jpg",
+    "anime": "Hololive",
+    "name": "Usada Pekora"
+  },
+  "375": {
+    "no": "375",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/media/E868l9xUcAgtOij.jpg",
+    "anime": "Hololive",
+    "name": "Pavolia Reine"
+  },
+  "376": {
+    "no": "376",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://64.media.tumblr.com/402313ae108ac575e79c2e518ab3de01/4edba1aec38150bb-10/s1280x1920/9048b7e9bb18ebe0911eae1820216a1f25ec180b.jpg",
+    "anime": "Hololive",
+    "name": "Anya Melfissa"
+  },
+  "377": {
+    "no": "377",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/youtube/images/5/50/AYUNDA_RISU.jpg/revision/latest?cb=20210414095440",
+    "anime": "Hololive",
+    "name": "Ayunda Risu"
+  },
+  "378": {
+    "no": "378",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/84/2c/50/842c50e1ad911211fc9e0fe8c9b1a7c1.webp",
+    "anime": "Hololive",
+    "name": "Kureiji Ollie"
+  },
+  "379": {
+    "no": "379",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/474x/c8/2b/90/c82b90f0c669b5840c120aea134f9b83.jpg",
+    "anime": "Hololive",
+    "name": "Vestia Zeta"
+  },
+  "380": {
+    "no": "380",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/44/fa/9b/44fa9b3eab39766f2b4a116182e00555.jpg",
+    "anime": "Touhou Project",
+    "name": "Hata no Kokoro"
+  },
+  "381": {
+    "no": "381",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5d01333f-d2b4-4731-a46d-d28f22a601c2/dcykfsx-61db4302-5442-4b82-8680-970b235b673b.png/v1/fill/w_894,h_894,q_70,strp/hypnosis_mic_icon___ichijiku_kadenokoji_by_icayenne_dcykfsx-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzVkMDEzMzNmLWQyYjQtNDczMS1hNDZkLWQyOGYyMmE2MDFjMlwvZGN5a2ZzeC02MWRiNDMwMi01NDQyLTRiODItODY4MC05NzBiMjM1YjY3M2IucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.CitRr8ytk3KQB_lY5VefvA9_cbVZBRokvb0YKsl4X14",
+    "anime": "Hypnosis Mic",
+    "name": "Ichijiku Kadenokoji"
+  },
+  "382": {
+    "no": "382",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Aohitsugi.Nemu.full.3410205.jpg",
+    "anime": "Hypnosis Mic",
+    "name": "Nemu Aohitsugi"
+  },
+  "383": {
+    "no": "383",
+    "claim": true,
+    "with": "Joy",
+    "number": "6285880172827@s.whatsapp.net",
+    "image": "https://id.jugomobile.com/wp-content/uploads/2022/02/Cara-membuka-kunci-pertarungan-bos-mingguan-dengan-Raiden-Shogun-di.jpg",
+    "anime": "Genshin Impact",
+    "name": "Raiden Shogun"
+  },
+  "384": {
+    "no": "384",
+    "claim": true,
+    "with": "𝐊𝐎𝐑𝐔?!",
+    "number": "62895397135656@s.whatsapp.net",
+    "image": "https://kamargaming.com/wp-content/uploads/2022/03/yae-miko-genshin-guide-FI-768x432.jpg",
+    "anime": "Genshin Impact",
+    "name": "Yae Miko"
+  },
+  "385": {
+    "no": "385",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i0.wp.com/www.gimbot.com/wp-content/uploads/2021/02/build-terbaik-klee-genshin-impact-tim.jpg?resize=800%2C450&ssl=1",
+    "anime": "Genshin Impact",
+    "name": "Klee"
+  },
+  "386": {
+    "no": "386",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/87/488/863/lumine-genshin-impact-genshin-impact-anime-girls-hd-wallpaper-preview.jpg",
+    "anime": "Genshin Impact",
+    "name": "Lumine"
+  },
+  "387": {
+    "no": "387",
+    "claim": true,
+    "with": "⎚ִ ⢾  ֺ   ⃟ּ📷",
+    "number": "62882005294092@s.whatsapp.net",
+    "image": "https://blog.unipin.com/wp-content/uploads/2021/11/28-4-screenrantcom.jpg",
+    "anime": "Genshin Impact",
+    "name": "Aether"
+  },
+  "388": {
+    "no": "388",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://cdn.kincir.com/2/WNVEn6psC_r22DBOXa4REeckChgrKyx03lSOeL0AgB0/transform/rs:fill:764:400/src/production/2022-05/16by9/feature-image-hu-tao~c3adceca-1168-4a15-9151-6db25d1cffe8.jpg",
+    "anime": "Genshin Impact",
+    "name": "Hu Tao"
+  },
+  "389": {
+    "no": "389",
+    "claim": false,
+    "with": null,
+    "number": "62882005294092@s.whatsapp.net",
+    "image": "https://id.jugomobile.com/wp-content/uploads/2022/01/Dampak-Genshin-Sahabat-yang-Hilang-dari-Zhongli.jpg",
+    "anime": "Genshin Impact",
+    "name": "Zhongli"
+  },
+  "390": {
+    "no": "390",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/01/01/3337041763.png",
+    "anime": "Genshin Impact",
+    "name": "Shenhe"
+  },
+  "391": {
+    "no": "391",
+    "claim": true,
+    "with": "Ꭱᥲ᥎ꫀᥣᥡᥒ",
+    "number": "6285333286126@s.whatsapp.net",
+    "image": "https://id.jugomobile.com/wp-content/uploads/2022/05/Comps-Tim-Chongyun-Terbaik-di-Genshin-Impact.jpg",
+    "anime": "Genshin Impact",
+    "name": "Chongyun"
+  },
+  "392": {
+    "no": "392",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://media.suara.com/pictures/653x366/2022/02/05/54010-kamisato-ayato-genshin-impact.jpg",
+    "anime": "Genshin Impact",
+    "name": "Ayato Kamisato"
+  },
+  "393": {
+    "no": "393",
+    "claim": true,
+    "with": "𝕽𝖆𝖓 𝕸𝖎𝖑𝖑𝖊𝖗",
+    "number": "6282175009576@s.whatsapp.net",
+    "image": "https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2022/05/21/2992449222.jpg",
+    "anime": "Genshin Impact",
+    "name": "Yelan"
+  },
+  "394": {
+    "no": "394",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://64.media.tumblr.com/1e3998bafbf5785f94ee1b5b6da443fa/297620eb424543a6-e4/s1280x1920/0297359aeb1f7f6405193382d918c8363939a971.jpg",
+    "anime": "Arknight",
+    "name": "Amiya"
+  },
+  "395": {
+    "no": "395",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/c2/d4/da/c2d4da08310b0c1c5fcca3fc7fb269b1.png",
+    "anime": "Arknight",
+    "name": "Silence"
+  },
+  "396": {
+    "no": "396",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://w0.peakpx.com/wallpaper/145/718/HD-wallpaper-video-game-arknights-saileach-arknights.jpg",
+    "anime": "Arknight",
+    "name": "Saileach"
+  },
+  "397": {
+    "no": "397",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://w0.peakpx.com/wallpaper/324/860/HD-wallpaper-video-game-arknights-astesia-arknights.jpg",
+    "anime": "Arknight",
+    "name": "Astesia"
+  },
+  "398": {
+    "no": "398",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Beeswax.full.3058356.png",
+    "anime": "Arknight",
+    "name": "Beeswax"
+  },
+  "399": {
+    "no": "399",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://s0.smartresize.com/wallpaper/964/714/HD-wallpaper-kal-tsit-arknights-animal-ears-gray-hair-monster-creature-anime.jpg",
+    "anime": "Arknight",
+    "name": "Kalt'sit"
+  },
+  "400": {
+    "no": "400",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Ch%E2%80%99en.full.2870942.jpg",
+    "anime": "Arknight",
+    "name": "Ch'en"
+  },
+  "401": {
+    "no": "401",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/W.%28Arknights%29.full.2982424.jpg",
+    "anime": "Arknight",
+    "name": "W"
+  },
+  "402": {
+    "no": "402",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/594/229/244/arknights-surtr-arknights-redhead-anime-girls-anime-hd-wallpaper-preview.jpg",
+    "anime": "Arknight",
+    "name": "Surtr"
+  },
+  "403": {
+    "no": "403",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images-cdn.9gag.com/photo/a4Rrz1p_700b.jpg",
+    "anime": "Arknight",
+    "name": "Specter"
+  },
+  "404": {
+    "no": "404",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://w0.peakpx.com/wallpaper/881/302/HD-wallpaper-anime-anime-girls-digital-art-artwork-2d-portrait-display-vertical-angelina-arknights-arknights-lowro-animal-ears-red-eyes-brunette-twintails-long-hair-open-coat-thigh-highs-leotard.jpg",
+    "anime": "Arknight",
+    "name": "Angelina"
+  },
+  "405": {
+    "no": "405",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Bagpipe.%28Arknights%29.full.2982425.jpg",
+    "anime": "Arknight",
+    "name": "Bagpipe"
+  },
+  "406": {
+    "no": "406",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/68/41/94/6841945513cd83b24f90b58843ed4805.jpg",
+    "anime": "Arknight",
+    "name": "Blaze"
+  },
+  "407": {
+    "no": "407",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://s1.zerochan.net/Arknights.600.3366578.jpg",
+    "anime": "Arknight",
+    "name": "Carnelian"
+  },
+  "408": {
+    "no": "408",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images3.alphacoders.com/109/thumb-1920-1098676.jpg",
+    "anime": "Arknight",
+    "name": "Ceobe"
+  },
+  "409": {
+    "no": "409",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/01939344-c114-40d3-96c2-92fc94f325bb/dedub3n-b8d18ff8-b355-4769-b177-2d8ceca8b0ea.png/v1/fill/w_1280,h_1059,q_80,strp/dusk___arknights_by_ka11ca_dedub3n-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA1OSIsInBhdGgiOiJcL2ZcLzAxOTM5MzQ0LWMxMTQtNDBkMy05NmMyLTkyZmM5NGYzMjViYlwvZGVkdWIzbi1iOGQxOGZmOC1iMzU1LTQ3NjktYjE3Ny0yZDhjZWNhOGIwZWEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.4l6dUpSaS2g54j5NvvipJNGJ2OPXizJp_OZR21JjRF4",
+    "anime": "Arknight",
+    "name": "Dusk"
+  },
+  "410": {
+    "no": "410",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/61/7c/5a/617c5afe4a80f4ecc914b1f1a7234077.jpg",
+    "anime": "Arknight",
+    "name": "Exusiai"
+  },
+  "411": {
+    "no": "411",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/889/977/140/arknights-kuroduki-anime-anime-girls-eyjafjalla-arknights-hd-wallpaper-preview.jpg",
+    "anime": "Arknight",
+    "name": "Eyjafjalla"
+  },
+  "412": {
+    "no": "412",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://w0.peakpx.com/wallpaper/237/330/HD-wallpaper-video-game-arknights-hellagur-arknights.jpg",
+    "anime": "Arknight",
+    "name": "Hellagur"
+  },
+  "413": {
+    "no": "413",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://ae01.alicdn.com/kf/Hadad9815eecd493ab1f534ba2002dc89d/Permainan-Arknights-Hoshiguma-Cosplay-Anime-Kasual-T-shirt-Pria-Wanita-Musim-Panas-Lengan-Pendek-T-shirt.jpg",
+    "anime": "Arknight",
+    "name": "Hoshiguma"
+  },
+  "414": {
+    "no": "414",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/33/cc/37/33cc371c67fd4c3b7a5967f77472b863.png",
+    "anime": "Arknight",
+    "name": "Ifrit"
+  },
+  "415": {
+    "no": "415",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c0b6ae22-c429-4743-b7cc-73cb96a818c8/ddxmzto-8a7c8733-1863-4cda-9d9b-c0086fd7b8df.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MwYjZhZTIyLWM0MjktNDc0My1iN2NjLTczY2I5NmE4MThjOFwvZGR4bXp0by04YTdjODczMy0xODYzLTRjZGEtOWQ5Yi1jMDA4NmZkN2I4ZGYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H6n6hHgXVaRA3d2eQlR0FBWvXVZYrWvK0HfwmWCTXe8",
+    "anime": "Arknight",
+    "name": "Magallan"
+  },
+  "416": {
+    "no": "416",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Mizuki.%28Arknights%29.full.3474306.jpg",
+    "anime": "Arknight",
+    "name": "Mizuki"
+  },
+  "417": {
+    "no": "417",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Mostima.full.2976434.png",
+    "anime": "Arknight",
+    "name": "Mostima"
+  },
+  "418": {
+    "no": "418",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/media/Ez9MyVRUYAMJMTq.jpg:large",
+    "anime": "Arknight",
+    "name": "Mountain"
+  },
+  "419": {
+    "no": "419",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://64.media.tumblr.com/f81471813012a1a1fb0331f23b7f04ca/9b4606f29650dbee-56/s540x810/85b53a354f25edc59f4b4a5e13cf9b1cd9d908c5.jpg",
+    "anime": "Arknight",
+    "name": "Mudrock"
+  },
+  "420": {
+    "no": "420",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/106/1012/899/anime-anime-girls-arknights-7ife-nearl-arknights-hd-wallpaper-preview.jpg",
+    "anime": "Arknight",
+    "name": "Nearl the Radiant Knight"
+  },
+  "421": {
+    "no": "421",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Saga.%28Arknights%29.full.3474305.jpg",
+    "anime": "Arknight",
+    "name": "Saga"
+  },
+  "422": {
+    "no": "422",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Saria.%28Arknights%29.full.2894872.jpg",
+    "anime": "Arknight",
+    "name": "Saria"
+  },
+  "423": {
+    "no": "423",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://c4.wallpaperflare.com/wallpaper/509/865/299/anime-girls-portrait-display-arknights-shining-hd-wallpaper-preview.jpg",
+    "anime": "Arknight",
+    "name": "Shining"
+  },
+  "424": {
+    "no": "424",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://w0.peakpx.com/wallpaper/792/19/HD-wallpaper-siege-arknights-arknights-video-games-anime-anime-girls-blonde-video-game-girls-animal-ears-fantasy-girl-looking-at-viewer-fangs-lollipop-graffiti-black-tops-portrait-display-vertical.jpg",
+    "anime": "Arknight",
+    "name": "Siege"
+  },
+  "425": {
+    "no": "425",
+    "claim": true,
+    "with": "Nero",
+    "number": "6281238746871@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/5e/f7/be/5ef7be0210fc9f163cff5bd845cea2cf.png",
+    "anime": "Arknight",
+    "name": "SilverAsh"
+  },
+  "426": {
+    "no": "426",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Suzuran.%28Arknights%29.full.3214252.jpg",
+    "anime": "Arknight",
+    "name": "Suzuran"
+  },
+  "427": {
+    "no": "427",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/mrfz/images/4/42/Thorns_Skin_1.png/revision/latest?cb=20210601155924",
+    "anime": "Arknight",
+    "name": "Thorns"
+  },
+  "428": {
+    "no": "428",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Jessica.%28Arknights%29.full.2826284.jpg",
+    "anime": "Arknight",
+    "name": "Jessica"
+  },
+  "429": {
+    "no": "429",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://img-9gag-fun.9cache.com/photo/amvBb82_460s.jpg",
+    "anime": "Arknight",
+    "name": "Kroos"
+  },
+  "430": {
+    "no": "430",
+    "claim": true,
+    "with": "Bilek",
+    "number": "6285860162977@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/76/88/86/76888620537b0c8d71bc950ad812a0fa.jpg",
+    "anime": "Higurashi no Nako",
+    "name": "Featherine Agustus Aurora"
+  },
+  "431": {
+    "no": "431",
+    "claim": true,
+    "with": "villyeus-sama",
+    "number": "6287792356504@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/23/16/e5/2316e56602f18e241b4667973355d3cf.jpg",
+    "anime": "One Piece",
+    "name": "Boa Hancock"
+  },
+  "432": {
+    "no": "432",
+    "claim": false,
+    "with": null,
+    "number": "6283849805620@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/ea/04/9b/ea049b4a5e27eaac4463ff5014ee6931.jpg",
+    "anime": "One Piece",
+    "name": "Monkey D Luffy"
+  },
+  "433": {
+    "no": "433",
+    "claim": true,
+    "with": "naomī",
+    "number": "6285161366780@s.whatsapp.net",
+    "image": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/08/04/659717902.jpg",
+    "anime": "One Piece",
+    "name": "Nico Robin"
+  },
+  "434": {
+    "no": "434",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/0f/62/05/0f62058ee89389e00e7c6b0af5f7d984.jpg",
+    "anime": "One Piece",
+    "name": "Roronoa Zoro"
+  },
+  "435": {
+    "no": "435",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.greenscene.co.id/wp-content/uploads/2021/05/One-Piece-30-696x497.jpg",
+    "anime": "One Piece",
+    "name": "Nami"
+  },
+  "436": {
+    "no": "436",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/b4/dd/7f/b4dd7f06d79c46c52bdce1b1f18de019.jpg",
+    "anime": "One Piece",
+    "name": "Vinsmoke Sanji"
+  },
+  "437": {
+    "no": "437",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/02/14/4231183127.jpg",
+    "anime": "One Piece",
+    "name": "'Red Hair' Shanks"
+  },
+  "438": {
+    "no": "438",
+    "claim": true,
+    "with": "Kolin",
+    "number": "62881022849834@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/27/c2/eb/27c2eba8140ebe9fb49a70d46b0bf898.png",
+    "anime": "One Piece",
+    "name": "Tony Choper"
+  },
+  "439": {
+    "no": "439",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.dailysia.com/wp-content/uploads/2022/03/Usopp_1.jpg?x92563",
+    "anime": "One Piece",
+    "name": "Usopp"
+  },
+  "440": {
+    "no": "440",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://upload.wikimedia.org/wikipedia/id/e/e2/Brook_One_Piece.jpg",
+    "anime": "One Piece",
+    "name": "Brook"
+  },
+  "441": {
+    "no": "441",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.greenscene.co.id/wp-content/uploads/2021/12/Franky-1200x675.jpg",
+    "anime": "One Piece",
+    "name": "'Iron Man' Franky"
+  },
+  "442": {
+    "no": "442",
+    "claim": true,
+    "with": "Dewvya grazella Leona",
+    "number": "6283849805620@s.whatsapp.net",
+    "image": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/03/07/3124235395.jpg",
+    "anime": "One Piece",
+    "name": "Portgas D Ace"
+  },
+  "443": {
+    "no": "443",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/510/111/804/one-piece-dracule-mihawk-hd-wallpaper-preview.jpg",
+    "anime": "One Piece",
+    "name": "Dracule Mihawk"
+  },
+  "444": {
+    "no": "444",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/99/95/5c/99955cc83fb8ead11bca838f5b34e4f5.jpg",
+    "anime": "One Piece",
+    "name": "Donquixote Doflamingo"
+  },
+  "445": {
+    "no": "445",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://virtualyoutuber.fandom.com/wiki/File:Shibuya_Hajime_Portrait.png",
+    "anime": "Nijisanji",
+    "name": "Shibuya Hajime"
+  },
+  "446": {
+    "no": "446",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/e/e8/Kenmochi_Toya_Portrait.png/revision/latest?cb=20210324075648",
+    "anime": "Nijisanji",
+    "name": "Kenmmochi Toya"
+  },
+  "447": {
+    "no": "447",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/c/c2/Fushimi_Gaku_Portrait.png/revision/latest?cb=20210324072459",
+    "anime": "Nijisanji",
+    "name": "Fushimi Gaku"
+  },
+  "448": {
+    "no": "448",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/7/7c/Gilzaren_III_Portrait.png/revision/latest?cb=20210324080851",
+    "anime": "Nijisanji",
+    "name": "Gilzaren III"
+  },
+  "449": {
+    "no": "449",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/9/95/Kanae_Portrait.png/revision/latest?cb=20210325044407",
+    "anime": "Nijisanji",
+    "name": "Kanae"
+  },
+  "450": {
+    "no": "450",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/f/f0/Hanabatake_Chaika_Portrait.png/revision/latest?cb=20210326020527",
+    "anime": "Nijisanji",
+    "name": "Hanabatake Chaika"
+  },
+  "451": {
+    "no": "451",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/a/a4/Uzuki_Kou_Portrait.png/revision/latest?cb=20210326024347",
+    "anime": "Nijisanji",
+    "name": "UzuKou"
+  },
+  "452": {
+    "no": "452",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/5/58/Kuzuha_Portrait.png/revision/latest?cb=20210325052514",
+    "anime": "Nijisanji",
+    "name": "Kuzuha"
+  },
+  "453": {
+    "no": "453",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/c/c0/Yashiro_Kizuku_Portrait.png/revision/latest?cb=20210326024737",
+    "anime": "Nijisanji",
+    "name": "Yashiro Kizuku"
+  },
+  "454": {
+    "no": "454",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/d/dc/Harusaki_Air_Portrait.png/revision/latest?cb=20210326050557",
+    "anime": "Nijisanji",
+    "name": "Harusaki Air"
+  },
+  "455": {
+    "no": "455",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/f/f4/Naruse_Naru_-_Portrait_%282%29.png/revision/latest?cb=20210708055252",
+    "anime": "Nijisanji",
+    "name": "Naruse Naru"
+  },
+  "456": {
+    "no": "456",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/9/9d/Suzuki_Masaru_without_jacket_Portrait.png/revision/latest?cb=20210326023632",
+    "anime": "Nijisanji",
+    "name": "Suzuki Masaru"
+  },
+  "457": {
+    "no": "457",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/2/28/Kanda_Shoichi_Portrait.png/revision/latest?cb=20210326032656",
+    "anime": "Nijisanji",
+    "name": "Kanda Soichi"
+  },
+  "458": {
+    "no": "458",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/8/8e/Maimoto_Keisuke_Portrait.png/revision/latest?cb=20210326042255",
+    "anime": "Nijisanji",
+    "name": "Maimoto Kesuke"
+  },
+  "459": {
+    "no": "459",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/d/d7/Joe_Rikiichi_Portrait.png/revision/latest?cb=20210326043449",
+    "anime": "Nijisanji",
+    "name": "Joe Rikiichi"
+  },
+  "460": {
+    "no": "460",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/4/4c/Belmond_Banderas_Portrait.png/revision/latest?cb=20210326044836",
+    "anime": "Nijisanji",
+    "name": "Belmond Banderas"
+  },
+  "461": {
+    "no": "461",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/2/22/Yumeoi_Kakeru_Portrait.png/revision/latest?cb=20210326045427",
+    "anime": "Nijisanji",
+    "name": "Yumeoi Kakeru"
+  },
+  "462": {
+    "no": "462",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/5/5d/Saegusa_Akina_2022_Portrait.png/revision/latest?cb=20220510123814",
+    "anime": "Nijisanji",
+    "name": "Saegusa Akina"
+  },
+  "463": {
+    "no": "463",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/f/f9/Ex_Albio_Portrait.png/revision/latest?cb=20210327045347",
+    "anime": "Nijisanji",
+    "name": "Ex Albio"
+  },
+  "464": {
+    "no": "464",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/5/59/Kagami_Hayato_Portrait.png/revision/latest?cb=20210329043650",
+    "anime": "Nijisanji",
+    "name": "Kagami Hayato"
+  },
+  "465": {
+    "no": "465",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/4/47/Taka_Radjiman_Portrait.png/revision/latest?cb=20210325074537",
+    "anime": "Nijisanji",
+    "name": "Taka Radjiman"
+  },
+  "466": {
+    "no": "466",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/f/f3/Mayuzumi_Kai_Portrait.png/revision/latest?cb=20210329045124",
+    "anime": "Nijisanji",
+    "name": "Mayuzumi Kai"
+  },
+  "467": {
+    "no": "467",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/7/7f/Gwelu_Os_Gar_Portrait.png/revision/latest?cb=20210331013226",
+    "anime": "Nijisanji",
+    "name": "Gwelu OS Gar"
+  },
+  "468": {
+    "no": "468",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/0/02/Fuwa_Minato_Host_Portrait.png/revision/latest?cb=20210331011943",
+    "anime": "Nijisanji",
+    "name": "Fuwa Minato"
+  },
+  "469": {
+    "no": "469",
+    "claim": true,
+    "with": "𝐊ִo֙͢sׄαִk︪֩αׄ",
+    "number": "6285817740811@s.whatsapp.net",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/1/12/Riksa_Dhirendra_Portrait.png/revision/latest?cb=20210326112937",
+    "anime": "Nijisanji",
+    "name": "Riksa Dhirendra"
+  },
+  "470": {
+    "no": "470",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/6/68/Min_Suha_Portrait.png/revision/latest?cb=20210324045512",
+    "anime": "Nijisanji",
+    "name": "Min Suha"
+  },
+  "471": {
+    "no": "471",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/5/51/Rai_Galilei_Portrait.png/revision/latest?cb=20210326111732",
+    "anime": "Nijisanji",
+    "name": "Rai Galilei"
+  },
+  "472": {
+    "no": "472",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/a/ab/Ibrahim_Portrait.png/revision/latest?cb=20210331022508",
+    "anime": "Nijisanji",
+    "name": "Ibrahim"
+  },
+  "473": {
+    "no": "473",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/1/1e/Genzuki_tojiro_portrait.png/revision/latest?cb=20211231102030",
+    "anime": "Nijisanji",
+    "name": "Genzuki Tojiro"
+  },
+  "474": {
+    "no": "474",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/2/2e/Nagao_Kei_Portrait.png/revision/latest?cb=20210331022902",
+    "anime": "Nijisanji",
+    "name": "Nagao Kei"
+  },
+  "475": {
+    "no": "475",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/b/bb/Kaida_Haru_Portrait.png/revision/latest?cb=20210331023353",
+    "anime": "Nijisanji",
+    "name": "Kaida Haru"
+  },
+  "476": {
+    "no": "476",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/5/53/Bonnivier_Pranaja_Portrait.png/revision/latest?cb=20210329100805",
+    "anime": "Nijisanji",
+    "name": "Bonnivier Pranaja"
+  },
+  "477": {
+    "no": "477",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/a/a8/Reza_Avanluna_Portrait.png/revision/latest?cb=20210330092717",
+    "anime": "Nijisanji",
+    "name": "Reza Avanluna"
+  },
+  "478": {
+    "no": "478",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/virtualyoutuber/images/4/47/Leos_Vincent_Portrait.png/revision/latest?cb=20210722163055",
+    "anime": "Nijisanji",
+    "name": "Leos Vincent"
+  },
+  "479": {
+    "no": "479",
+    "claim": true,
+    "with": "ily",
+    "number": "6285879503936@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/c9/62/1b/c9621b3d4b6fcc8d2d4bafa8bd0f0790.jpg",
+    "anime": "Akame Ga Kill",
+    "name": "General Esdeath"
+  },
+  "480": {
+    "no": "480",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/06/fe/09/06fe09f0ea7b3e7bc5e66e6e6484a514.jpg",
+    "anime": "Akame Ga Kill",
+    "name": "Tatsumi"
+  },
+  "481": {
+    "no": "481",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/d0/8f/82/d08f82821494e0f4ed87060db4d8279c.jpg",
+    "anime": "Akame Ga Kill",
+    "name": "General Najenda"
+  },
+  "482": {
+    "no": "482",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/d3/ea/fd/d3eafd3063bb573041bc57221fca3dee.jpg",
+    "anime": "Akame Ga Kill",
+    "name": "Kurome"
+  },
+  "483": {
+    "no": "483",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pic-bstarstatic.akamaized.net/ugc/70a7de9c75a65b16ec86f5f239889d583ee74e5d.jpg@720w_406h_1e_1c_1f.webp",
+    "anime": "Akame Ga Kill",
+    "name": "Akame"
+  },
+  "484": {
+    "no": "484",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/d2/82/61/d28261e35f0049230ac718900d37de2a.jpg",
+    "anime": "Akame Ga Kill",
+    "name": "Leone"
+  },
+  "485": {
+    "no": "485",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://data.whicdn.com/images/164163355/original.jpg",
+    "anime": "Akame Ga Kill",
+    "name": "Mine"
+  },
+  "486": {
+    "no": "486",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/31/26/55/312655a4bd813e214c341b6c44e0437e.jpg",
+    "anime": "Akame Ga Kill",
+    "name": "Lubbock"
+  },
+  "487": {
+    "no": "487",
+    "claim": false,
+    "with": null,
+    "number": "6287792356504@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/a5/be/03/a5be03c627574a4cfe672a2ab642512c.jpg",
+    "anime": "Date A Live",
+    "name": "Kurumi Tokisaki"
+  },
+  "488": {
+    "no": "488",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/omniversal-battlefield/images/6/62/Image-1-0.jpg/revision/latest/scale-to-width-down/537?cb=20190223001913",
+    "anime": "Date A Live",
+    "name": "Itsuka Shido"
+  },
+  "489": {
+    "no": "489",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/f7/3c/a5/f73ca5bcfd12e3b08540089521538bfb.jpg",
+    "anime": "Date A Live",
+    "name": "Tohka Yatogami"
+  },
+  "490": {
+    "no": "490",
+    "claim": true,
+    "with": "syaa",
+    "number": "6285773094821@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/cc/b0/76/ccb076b44eabb1e512230bb702b69cee.jpg",
+    "anime": "Date A Live",
+    "name": "Itsuka Kotori"
+  },
+  "491": {
+    "no": "491",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/dd/9f/5b/dd9f5b24d05d7dd5521ec5fd9f82c101.jpg",
+    "anime": "Date A Live",
+    "name": "Reine Murasame"
+  },
+  "492": {
+    "no": "492",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/dc/cc/93/dccc930dcb8c4dece45cd74ba9cb5901.jpg",
+    "anime": "Date A Live",
+    "name": "Natsumi"
+  },
+  "493": {
+    "no": "493",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2e0eb2e3-bf73-4447-9f37-e35a0240d6e4/d6by4za-6ae3f772-7a41-485f-897f-34517c0e3ed0.png/v1/fill/w_600,h_882,strp/yoshino_date_a_live_by_beastlightning_d6by4za-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODgyIiwicGF0aCI6IlwvZlwvMmUwZWIyZTMtYmY3My00NDQ3LTlmMzctZTM1YTAyNDBkNmU0XC9kNmJ5NHphLTZhZTNmNzcyLTdhNDEtNDg1Zi04OTdmLTM0NTE3YzBlM2VkMC5wbmciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hy_X5q9yvTJUCIAbOiVr5iMc0oDaZ8nVtl5cY2h-esw",
+    "anime": "Date A Live",
+    "name": "Yoshino"
+  },
+  "494": {
+    "no": "494",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pm1.narvii.com/7666/4698cd4defe762817140d51a75c204501ee3b343r1-1024-640v2_hq.jpg",
+    "anime": "Date A Live",
+    "name": "Miku Izayoi"
+  },
+  "495": {
+    "no": "495",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/2e/64/55/2e6455187c9ba5de64a7d7008aeab79f.jpg",
+    "anime": "Date A Live",
+    "name": "Ellen Mira Mathers"
+  },
+  "496": {
+    "no": "496",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/11/6a/7a/116a7a82c8fa239f16e16592163ef987.jpg",
+    "anime": "Date A Live",
+    "name": "Mana Takamiya"
+  },
+  "497": {
+    "no": "497",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/90f52669-ff7a-4301-90ac-d17e6c835bfc/d7n9ue0-f931c469-a88c-4c52-a267-9389eae5a1d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkwZjUyNjY5LWZmN2EtNDMwMS05MGFjLWQxN2U2YzgzNWJmY1wvZDduOXVlMC1mOTMxYzQ2OS1hODhjLTRjNTItYTI2Ny05Mzg5ZWFlNWExZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IRe-BPUAZo7IdtW-1btTyqSzd2oxJBI_kJsXisSWqyw",
+    "anime": "Date A Live",
+    "name": "Kaguya Yamai & Yuzuru Yamai"
+  },
+  "498": {
+    "no": "498",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/94/da/bc/94dabcb1bab6af7aa876ef71ef1a2e3b.jpg",
+    "anime": "Date A Live",
+    "name": "Origami Tobiichi"
+  },
+  "499": {
+    "no": "499",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/52/ef/36/52ef36ba8b38aec144b0ffd7b1f253a1.jpg",
+    "anime": "Date A Live",
+    "name": "isaac ray pelham westcott"
+  },
+  "500": {
+    "no": "500",
+    "claim": true,
+    "with": "Light Yagami",
+    "number": "6281703482644@s.whatsapp.net",
+    "image": "https://static.zerochan.net/Portgas.D..Rouge.full.744234.jpg",
+    "anime": "One Piece",
+    "name": "Portgas D Rouge"
+  },
+  "501": {
+    "no": "501",
+    "claim": true,
+    "with": "ya org lah",
+    "number": "6288294448513@s.whatsapp.net",
+    "image": "https://play-lh.googleusercontent.com/f_Tvd1TwN4cypywYY2m-muvrzskLeCwOPBdW38lZzIN_eU86ByShaqRNUGBu2TyXVPA",
+    "anime": "Vocaloid",
+    "name": "Hatsune Miku"
+  },
+  "502": {
+    "no": "502",
+    "claim": true,
+    "with": "Ɇvɇ - Rokuta`ᵚᵖˢ",
+    "number": "628885835891@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/3f/f9/96/3ff9969cc3f1a57e1a588c19e13ba0c3.jpg",
+    "anime": "Vocaloid",
+    "name": "Megurine Luka"
+  },
+  "503": {
+    "no": "503",
+    "claim": true,
+    "with": "🎤 Megurine Luka",
+    "number": "6283801441705@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/fe/6a/ba/fe6aba978eff7aa788e7ca86cd57bf44.jpg",
+    "anime": "Vocaloid",
+    "name": "Kaito"
+  },
+  "504": {
+    "no": "504",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/projectsekai/images/9/95/Dashing_Red_Melody_transparent.png/revision/latest/scale-to-width-down/600?cb=20201113114132",
+    "anime": "Vocaloid",
+    "name": "Meiko"
+  },
+  "505": {
+    "no": "505",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.kindpng.com/picc/m/103-1033037_song-vocaloid-and-gumi-image-gumi-megpoid-png.png",
+    "anime": "Vocaloid",
+    "name": "GUMI"
+  },
+  "506": {
+    "no": "506",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.kindpng.com/picc/m/179-1795469_manga-flowers-png-flower-vocaloid-transparent-png.png",
+    "anime": "Vocaloid",
+    "name": "Flower"
+  },
+  "507": {
+    "no": "507",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/815/378/509/anime-vocaloid-seeu-vocaloid-wallpaper-preview.jpg",
+    "anime": "Vocaloid",
+    "name": "SeeU"
+  },
+  "508": {
+    "no": "508",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Oliver.%28VOCALOID%29.full.941500.jpg",
+    "anime": "Vocaloid",
+    "name": "OLIVER"
+  },
+  "509": {
+    "no": "509",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/profile_images/784819124916682754/KVG_rNnZ_400x400.jpg",
+    "anime": "Vocaloid",
+    "name": "RUBY"
+  },
+  "510": {
+    "no": "510",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/cc/7e/a6/cc7ea69022af42b122105e150e61fff8--vocaloid-amazing-art.jpg",
+    "anime": "Vocaloid",
+    "name": "Ryuto"
+  },
+  "511": {
+    "no": "511",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://pm1.narvii.com/6537/15435875dd432922a4f95b574ee06ba2454390f1_00.jpg",
+    "anime": "Vocaloid",
+    "name": "Sachiko"
+  },
+  "512": {
+    "no": "512",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/fd/5b/14/fd5b143e808299cb6fead09e5d0ad51e.jpg",
+    "anime": "Vocaloid",
+    "name": "IA"
+  },
+  "513": {
+    "no": "513",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2022/02/28/1919854243.jpg",
+    "anime": "Vtuber",
+    "name": "Kizuna AI"
+  },
+  "514": {
+    "no": "514",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/966/322/427/anime-rwby-yang-xiao-long-wallpaper-preview.jpg",
+    "anime": "RWBY",
+    "name": "Yang Xiao Long"
+  },
+  "515": {
+    "no": "515",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/9a/81/cf/9a81cf95f4e0660347fc004d47ecd5aa.jpg",
+    "anime": "RWBY",
+    "name": "Ruby Rose"
+  },
+  "516": {
+    "no": "516",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://external-preview.redd.it/sy0uQ_LioBPfaau4umXlpI2gF1SAle8VGBvncCqB1TA.jpg?width=640&crop=smart&auto=webp&s=7492d3840039d6f1d16ad0ed90e782550ae1d0a8",
+    "anime": "RWBY",
+    "name": "Weiss Schnee"
+  },
+  "517": {
+    "no": "517",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Blake.Belladonna.full.2054798.jpg",
+    "anime": "RWBY",
+    "name": "Blake Belladonna"
+  },
+  "518": {
+    "no": "518",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/953/125/207/anime-anime-girls-redhead-long-hair-wallpaper-preview.jpg",
+    "anime": "RWBY",
+    "name": "Pyrrha Nikos"
+  },
+  "519": {
+    "no": "519",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://p4.wallpaperbetter.com/wallpaper/377/200/857/anime-rwby-qrow-branwen-wallpaper-preview.jpg",
+    "anime": "RWBY",
+    "name": "Qrow Branwen"
+  },
+  "520": {
+    "no": "520",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/d8/2d/53/d82d53574d9413f5ad8ce4c5db8e2cb6.png",
+    "anime": "Another",
+    "name": "Misaki Mei"
+  },
+  "521": {
+    "no": "521",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pbs.twimg.com/profile_images/452672691225374722/kcoQVWXv_400x400.jpeg",
+    "anime": "Another",
+    "name": "Izumi Akazawa"
+  },
+  "522": {
+    "no": "522",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/5f/30/24/5f30240ab39cada4f03643baf87d0f81.jpg",
+    "anime": "Another",
+    "name": "Yukari Sakuragi"
+  },
+  "523": {
+    "no": "523",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://img.wattpad.com/bfc0e5e6e2ab8a5af00d857f15060caf6be5baff/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6a4d4a4434307253715147376e673d3d2d3732353132353735362e313539393537356363353262306266613134333236383537393033372e6a7067",
+    "anime": "Another",
+    "name": "Yoichi Sakakibara"
+  },
+  "524": {
+    "no": "524",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/10/52/c8/1052c8b1b630a948500c8e4d70a7487b.png",
+    "anime": "Another",
+    "name": "Naoya Teshigawara"
+  },
+  "525": {
+    "no": "525",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/be/5c/71/be5c71862d1bc02b31145a138f7cd919.jpg",
+    "anime": "Another",
+    "name": "Tomohiko Kazami"
+  },
+  "526": {
+    "no": "526",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/242e9e4b-61f4-4819-856c-259f916232af/d6dw654-afc99e1f-7a29-4772-a3f1-11cc68b3daab.jpg/v1/fill/w_1024,h_576,q_75,strp/yuuya_mochizuki_by_wika7815_d6dw654-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMjQyZTllNGItNjFmNC00ODE5LTg1NmMtMjU5ZjkxNjIzMmFmXC9kNmR3NjU0LWFmYzk5ZTFmLTdhMjktNDc3Mi1hM2YxLTExY2M2OGIzZGFhYi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.0EeV4oqmfONNdZUHVHghWnBYd58nXoUs632I04dTKUM",
+    "anime": "Another",
+    "name": "Yuuya Mochizuki"
+  },
+  "527": {
+    "no": "527",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/3b/b4/ba/3bb4bac822e49f25dd99db8a7dd05fd3.jpg",
+    "anime": "Another",
+    "name": "Sanae Mizuno"
+  },
+  "001": {
+    "no": "001",
+    "claim": false,
+    "with": null,
+    "number": "6282327871319@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2022/06/FI_20W5XEAUl-Vx-700x394.jpeg",
+    "anime": "arifureta",
+    "name": "Tio Klarus"
+  },
+  "002": {
+    "no": "002",
+    "claim": false,
+    "with": "",
+    "number": "6285959069150@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2022/05/Sono-Bisque-Doll-wa-Koi-wo-Suru-09-Large-30-e1653468205945-700x451.jpg",
+    "anime": "Sono Bisque Doll wa Koi wo suru",
+    "name": "Inui Shinju"
+  },
+  "003": {
+    "no": "003",
+    "claim": false,
+    "with": "Miku²¹",
+    "number": "6282327871319@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2022/05/neru-blue-archive-e1652256935245-700x431.jpg",
+    "anime": "Blue Archive",
+    "name": "Mikamo Neru"
+  },
+  "004": {
+    "no": "004",
+    "claim": false,
+    "with": "",
+    "number": "6285959069150@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2022/05/Karin-header-e1652251351108.jpg",
+    "anime": "Blue Archive",
+    "name": "Kakudate Karin"
+  },
+  "005": {
+    "no": "005",
+    "claim": false,
+    "with": "",
+    "number": "6285959069150@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2022/05/sunohara-shun-header-res-e1652261409640-700x396.jpg",
+    "anime": "Blue Archive",
+    "name": "Sunohara Shun"
+  },
+  "006": {
+    "no": "006",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://otakotaku.com/asset/img/character/2022/02/sajuna-inui-621ce119e2f8cp.jpg",
+    "anime": "Sono Bisque Doll wa Koi wo suru",
+    "name": "Inui Sajuna"
+  },
+  "007": {
+    "no": "007",
+    "claim": false,
+    "with": null,
+    "number": "6285959069150@s.whatsapp.net",
+    "image": "https://static.wikia.nocookie.net/genjitsushugisha/images/6/63/Liscia_Elfrieden_%28Anime%29.png/revision/latest?cb=20210417200322",
+    "anime": "Genjitsushugi Yuusha no Oukoku Saikenki",
+    "name": "Liscia Elfrieden"
+  },
+  "008": {
+    "no": "008",
+    "claim": false,
+    "with": null,
+    "number": "6285755162771@s.whatsapp.net",
+    "image": "https://s1.zerochan.net/Ranni.the.Witch.600.3599910.jpg",
+    "anime": "Elden Ring",
+    "name": "Ranni The Witch"
+  },
+  "009": {
+    "no": "009",
+    "claim": true,
+    "with": "𝐀jaxtian",
+    "number": "6285837962619@s.whatsapp.net",
+    "image": "https://i.pinimg.com/736x/b5/bd/43/b5bd433a48401666c43ec1590412fdb6.jpg",
+    "anime": "Sono Bisque Doll wa Koi wo suru",
+    "name": "Kitagawa Marin"
+  },
+  "010": {
+    "no": "010",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Takao.%28Aoki.Hagane.no.Arpeggio%29.full.2169201.jpg",
+    "anime": "Aoki Hagane no Arpeggio",
+    "name": "Takao"
+  },
+  "011": {
+    "no": "011",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/06/joi-haqua-10-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Haqua du Lot Herminium"
+  },
+  "012": {
+    "no": "012",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/06/joi-kanon-3-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Kanon Nakagawa & Apollo"
+  },
+  "013": {
+    "no": "013",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/06/joi-chihiro-7-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Chihiro Kosaka"
+  },
+  "014": {
+    "no": "014",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/06/joi-ayumi-4-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Ayumi Takahara & Mercury"
+  },
+  "015": {
+    "no": "015",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/06/joi-yui-5-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Yui Goidou & Mars"
+  },
+  "016": {
+    "no": "016",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/06/joi-tsukuyo-6-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Tsukiyo Kujo & Vulcanus"
+  },
+  "017": {
+    "no": "017",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/06/joi-tenri-1-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Tenri Ayukawa & Diana"
+  },
+  "018": {
+    "no": "018",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/05/Screenshot_2021-05-26-Character-Teaser-Eula-Midnight-Encounter-at-the-Tavern-Genshin-Impact-YouTube-700x394.png",
+    "anime": "Genshin Impact",
+    "name": "Eula Lawrence"
+  },
+  "019": {
+    "no": "019",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/05/joi-kusunoki-3-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Kusunoki Kasuga"
+  },
+  "020": {
+    "no": "020",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/05/joi-jun-9-700x394.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Jun Nagase"
+  },
+  "021": {
+    "no": "021",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/05/New-Game-_-will-you-be-nice-to-me.-Soujiro_-0-13-screenshot-700x394.png",
+    "anime": "New Game!",
+    "name": "Takimoto Hifumi"
+  },
+  "022": {
+    "no": "022",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/04/joi-asako-4-700x394.jpg",
+    "anime": "The Fruit of Grisaia",
+    "name": "Asako Kusakabe"
+  },
+  "023": {
+    "no": "023",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/04/joi-waifuwed-pecorine-1-700x394.png",
+    "anime": "Princess Connect Re: Dive",
+    "name": "Pecorine"
+  },
+  "024": {
+    "no": "024",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/04/joi-waifuwed-tokai-teio-1-700x385.jpg",
+    "anime": "Uma Musume - Pretty Derby",
+    "name": "Tōkai Teiō"
+  },
+  "025": {
+    "no": "025",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/04/waifuwed-nadeshiko-cover-700x394.jpg",
+    "anime": "yurucamp",
+    "name": "Nadeshiko Kagamihara"
+  },
+  "026": {
+    "no": "026",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/03/joi-sakura-9-700x394.jpg",
+    "anime": "yurucamp",
+    "name": "Sakura Kagamihara"
+  },
+  "027": {
+    "no": "027",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/03/joi-ayame-3-700x382.jpg",
+    "anime": "Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai",
+    "name": "Ayame Kajou"
+  },
+  "028": {
+    "no": "028",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/03/waifuwed-jean-gunnhildr-fi-e1615961279322.png",
+    "anime": "Genshin Impact",
+    "name": "Jean Gunnhildr"
+  },
+  "029": {
+    "no": "029",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/03/joi-skadi-6-700x389.jpg",
+    "anime": "arknights",
+    "name": "Skadi"
+  },
+  "030": {
+    "no": "030",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/03/joi-amane-6-700x394.jpg",
+    "anime": "The Fruit of Grisaia",
+    "name": "Amane Suou"
+  },
+  "031": {
+    "no": "031",
+    "claim": false,
+    "with": null,
+    "number": "6281703482644@s.whatsapp.net",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/02/Historia_joi6-e1614153102850-700x420.jpg",
+    "anime": "Shingeki no Kyojin",
+    "name": "Historia Reiss"
+  },
+  "032": {
+    "no": "032",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/02/joi-touko-8-700x394.jpg",
+    "anime": "yagate kimi ni naru",
+    "name": "Touko Nanami"
+  },
+  "033": {
+    "no": "033",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/02/joi-ais-7-700x394.png",
+    "anime": "Dungeon ni Deai o Motomeru no wa Machigatteiru no Darō ka",
+    "name": "Ais Wallenstein"
+  },
+  "034": {
+    "no": "034",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/02/joi-ryuu-8-700x394.jpeg",
+    "anime": "Dungeon ni Deai o Motomeru no wa Machigatteiru no Darō ka",
+    "name": "Ryuu Lion"
+  },
+  "035": {
+    "no": "035",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/01/joi-utage-3-700x394.jpg",
+    "anime": "arknights",
+    "name": "Utage"
+  },
+  "036": {
+    "no": "036",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://jurnalotaku.com/wp-content/uploads/2021/01/joi-seraphim-8-700x394.jpg",
+    "anime": "Kore wa Zombie desu ka?",
+    "name": "Seraphim"
+  },
+  "037": {
+    "no": "037",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://otakotaku.com/asset/img/character/2016/04/shiba-miyuki.jpg",
+    "anime": "Mahouka Koukou no Rettousei",
+    "name": "Shiba Miyuki"
+  },
+  "038": {
+    "no": "038",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/26/f2/23/26f223695a133061291a8286b8615b60.jpg",
+    "anime": "Mahouka Koukou no Rettousei",
+    "name": "Angelina Kudou Shields"
+  },
+  "039": {
+    "no": "039",
+    "claim": false,
+    "with": null,
+    "number": "6285755162771@s.whatsapp.net",
+    "image": "https://images7.alphacoders.com/959/959381.jpg",
+    "anime": "Seishun Buta Yarou",
+    "name": "Sakurajima Mai"
+  },
+  "040": {
+    "no": "040",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://otakotaku.com/asset/img/character/2016/04/watanabe-mari.jpg",
+    "anime": "Mahouka Koukou no Rettousei",
+    "name": "Watanabe Mari"
+  },
+  "041": {
+    "no": "041",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "hhttps://wallpaperaccess.com/full/4713757.jpg",
+    "anime": "Mahouka Koukou no Rettousei",
+    "name": "Saegusa Mayumi"
+  },
+  "042": {
+    "no": "042",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://otakotaku.com/asset/img/character/2016/05/shibata-mizuki.jpg",
+    "anime": "Mahouka Koukou no Rettousei",
+    "name": "Shibata Mizuki"
+  },
+  "043": {
+    "no": "043",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://www.aroged.com/wp-content/uploads/2022/02/Genshin-Impact-Mona-Megistus-activates-her-magic-in-Veronika-cosplay.jpg",
+    "anime": "Genshin Impact",
+    "name": "Mona Megistus"
+  },
+  "044": {
+    "no": "044",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/c2/e8/21/c2e8218ccfc9846d92910b67bc3fc8b0.jpg",
+    "anime": "Mahouka Koukou no Rettousei",
+    "name": "Chiba Erika"
+  },
+  "045": {
+    "no": "045",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://otakotaku.com/asset/img/character/2021/06/mitsui-honoka-60cc9969b868bp.jpg",
+    "anime": "Mahouka Koukou no Rettousei",
+    "name": "Mitsui Honoka"
+  },
+  "046": {
+    "no": "046",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/37/fe/1b/37fe1b435081e2a392bf5c4a32d6b816--i-love-anime-light-novel.jpg",
+    "anime": "Mahouka Koukou no Rettousei",
+    "name": "Kitayama Shizuku"
+  },
+  "047": {
+    "no": "047",
+    "claim": true,
+    "with": "`𝓜iembro ⋆ 𝐯𝔦͟tu̸ִɑ꯭l𝟐d S",
+    "number": "6289679068450@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/ca/09/88/ca0988063c47f5e082dd0d21e63ccdc8.jpg",
+    "anime": "Kanojo Okarishimasu",
+    "name": "Mizuhara Chizuru"
+  },
+  "048": {
+    "no": "048",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://akibamarket.com/wp-content/uploads/2022/05/106080-mami-nanami-protagoniza-el-nuevo-avance-de-kanojo-okarishimasu.jpg",
+    "anime": "Kanojo Okarishimasu",
+    "name": "Nanami Mami"
+  },
+  "049": {
+    "no": "049",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://lh3.googleusercontent.com/-JS7aGsRwVXw/X37yA1GglaI/AAAAAAAAKOY/BoRhfQu2yu4A2s8RsjAl3B3jpYMV97JFwCLcBGAsYHQ/s16000/image.png",
+    "anime": "Kanojo Okarishimasu",
+    "name": "Sarashina Ruka"
+  },
+  "050": {
+    "no": "050",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://apps.owibu.com/berita/banner/1584882452kanokari-pv-sumi-sakurasawa.jpg",
+    "anime": "Kanojo Okarishimasu",
+    "name": "Sumi Sakurasawa"
+  },
+  "051": {
+    "no": "051",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "http://s3.narvii.com/image/basznjtzjvbbvt4g3nea6fvx2iqutciz_00.jpg",
+    "anime": "The Fruit of Grisaia",
+    "name": "Sachi Komine"
+  },
+  "052": {
+    "no": "052",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/88/94/8e/88948ef81ee80acf05f6bb26eb5a76fc.jpg",
+    "anime": "Rokka no Yuusha",
+    "name": "Fremy Speeddraw"
+  },
+  "053": {
+    "no": "053",
+    "claim": false,
+    "with": null,
+    "number": "6282327871319@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/3c/be/88/3cbe88093800c708bb296fcdcd6e7dcf.png",
+    "anime": "Ore wo Suki nano wa Omae dake ka yo",
+    "name": "Sanshokuin “Pansy” Sumireko"
+  },
+  "054": {
+    "no": "054",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Chiyoda.Momo.full.2735899.jpg",
+    "anime": "Machikado Mazoku",
+    "name": "Chiyoda Momo"
+  },
+  "055": {
+    "no": "055",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Ooyodo.%28Kantai.Collection%29.full.1820836.jpg",
+    "anime": "Kantai Collection",
+    "name": "Ooyodo"
+  },
+  "056": {
+    "no": "056",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/c1/81/f4/c181f49a3539ad77e84a165b71ae2e40.jpg",
+    "anime": "destruction flag otome",
+    "name": "Katarina Claes"
+  },
+  "057": {
+    "no": "057",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Hikigaya.Komachi.full.2405061.jpg",
+    "anime": "Oregairu",
+    "name": "Hikigaya Komachi"
+  },
+  "058": {
+    "no": "058",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Sasaki.Saren.full.2716602.jpg",
+    "anime": "Princess Connect Re: Dive",
+    "name": "Sasaki Saren"
+  },
+  "059": {
+    "no": "059",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/1f/a8/19/1fa819029a78b2de155f5ad82b7fd912.jpg",
+    "anime": "strike the blood",
+    "name": "Aiba Asagi"
+  },
+  "060": {
+    "no": "060",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://images7.alphacoders.com/605/605792.jpg",
+    "anime": "akame ga kill",
+    "name": "Sheele"
+  },
+  "061": {
+    "no": "061",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/strike-the-blood/images/d/d6/La_Folia_Rihavein_A.png/revision/latest?cb=20150608090755",
+    "anime": "strike the blood",
+    "name": "La Folia Rihavein"
+  },
+  "062": {
+    "no": "062",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://otakotaku.com/asset/img/character/2016/09/kirasaka-sayaka-57e545340e4a4p.jpg",
+    "anime": "strike the blood",
+    "name": "Sayaka Kirasaka"
+  },
+  "063": {
+    "no": "063",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://c4.wallpaperflare.com/wallpaper/233/707/618/anime-girls-anime-chloe-von-einzbern-fate-kaleid-liner-prisma-illya-hd-wallpaper-preview.jpg",
+    "anime": "Fate",
+    "name": "Chloe von Einzbern"
+  },
+  "064": {
+    "no": "064",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Yamato.Maya.full.2120038.jpg",
+    "anime": "bang dream!",
+    "name": "Yamato Maya"
+  },
+  "065": {
+    "no": "065",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/shingekinokyojin/images/c/ca/Sasha_Braus_%28Anime%29_character_image_%28850%29.png/revision/latest?cb=20210117223513",
+    "anime": "Shingeki no Kyojin",
+    "name": "Sasha Blouse"
+  },
+  "066": {
+    "no": "066",
+    "claim": false,
+    "with": "",
+    "number": "",
+    "image": "https://pm1.narvii.com/6294/339e9c589373675834e82052bf7cac05e33d82d0_hq.jpg",
+    "anime": "strike the blood",
+    "name": "Natsuki Minamiya"
+  },
+  "067": {
+    "no": "067",
+    "claim": true,
+    "with": "TIARA`CHIYO",
+    "number": "628812015719@s.whatsapp.net",
+    "image": "https://qph.cf2.quoracdn.net/main-qimg-4d4644ddb175e0755bc534c963560e97-lq",
+    "anime": "Kaguya-sama wa Kokurasetai",
+    "name": "Shinomiya Kaguya"
+  },
+  "068": {
+    "no": "068",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "http://images6.fanpop.com/image/photos/35800000/Shino-Amakusa-seitokai-yakuindomo-35857885-1280-720.jpg",
+    "anime": "seitokai yakuindomo",
+    "name": "Shino Amakusa"
+  },
+  "069": {
+    "no": "069",
+    "claim": false,
+    "with": null,
+    "number": "6285709888616@s.whatsapp.net",
+    "image": "https://static.zerochan.net/BanG.Dream%21.Girls.Band.Party%21.full.2642385.png",
+    "anime": "bang dream!",
+    "name": "Hikawa Sayo & Hikawa Hina"
+  },
+  "070": {
+    "no": "070",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "http://images4.fanpop.com/image/photos/16300000/aria-seitokai-yakuindomo-16359901-1280-720.jpg",
+    "anime": "seitokai yakuindomo",
+    "name": "Aria Shichijou"
+  },
+  "071": {
+    "no": "071",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i1.sndcdn.com/artworks-000569460533-r46sgp-t500x500.jpg",
+    "anime": "high school dxd",
+    "name": "Xenovia Quarta"
+  },
+  "072": {
+    "no": "072",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/kaminomi/images/1/1c/Shiori_reads.jpg/revision/latest?cb=20101208104410",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Shiomiya Shiori"
+  },
+  "073": {
+    "no": "073",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/59/56/c0/5956c0a145b185c2a5a34047d6475fb7.jpg",
+    "anime": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu",
+    "name": "Maple"
+  },
+  "074": {
+    "no": "074",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/d3/20/71/d32071680a995a0207787e2e2248757c.jpg",
+    "anime": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu",
+    "name": "Sally"
+  },
+  "075": {
+    "no": "075",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://randomc.net/image/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu%20-%2009%20-%20Large%2026.jpg",
+    "anime": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu",
+    "name": "Misery"
+  },
+  "076": {
+    "no": "076",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://randomc.net/image/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu%20-%2005%20-%20Large%2001.jpg",
+    "anime": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu",
+    "name": "Izu"
+  },
+  "077": {
+    "no": "077",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://pm1.narvii.com/7489/fa3f9dafde3e8a6ff93140295b92e4851a5cfb92r1-1280-720v2_hq.jpg",
+    "anime": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu",
+    "name": "Frederica"
+  },
+  "078": {
+    "no": "078",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://randomc.net/image/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu%20-%2005%20-%20Large%2001.jpg",
+    "anime": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu",
+    "name": "Kasumi"
+  },
+  "079": {
+    "no": "079",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Mii.%28Itai.no.wa.Iya.nano.de.Bougyoryoku%29.full.3163748.png",
+    "anime": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu",
+    "name": "Mii"
+  },
+  "080": {
+    "no": "080",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Blue.Poison.full.2594145.jpg",
+    "anime": "arknights",
+    "name": "Blue Poison"
+  },
+  "081": {
+    "no": "081",
+    "claim": false,
+    "with": null,
+    "number": "6285959069150@s.whatsapp.net",
+    "image": "https://i.pinimg.com/originals/0c/8f/b3/0c8fb31f763f2a2ff1b1e8c4ed32c409.jpg",
+    "anime": "Girls Frontline",
+    "name": "HK416"
+  },
+  "082": {
+    "no": "082",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Inuyama.Aoi.full.2278783.jpg",
+    "anime": "yurucamp",
+    "name": "Inuyama Aoi"
+  },
+  "083": {
+    "no": "083",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.zerochan.net/Charlotte.Dunois.full.454716.jpg",
+    "anime": "infinite stratos",
+    "name": "Charlotte Dunois"
+  },
+  "084": {
+    "no": "084",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://simkl.in/episodes/11/11277161f143af0237_w.jpg",
+    "anime": "Maiko-san Chi no Makanai-san",
+    "name": "Kiyo"
+  },
+  "085": {
+    "no": "085",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/seitokai/images/5/5a/12049939893_a4f4b41e61_o.jpg/revision/latest?cb=20140220063441",
+    "anime": "seitokai yakuindomo",
+    "name": "Suzu Hagimura"
+  },
+  "086": {
+    "no": "086",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "http://coleccionistademomentos.com/images/characters/sora-asuka-16678.jpg",
+    "anime": "Kami Nomi zo Shiru Sekai",
+    "name": "Asuka Sora"
+  },
+  "087": {
+    "no": "087",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/seitokai/images/0/0f/Hata_close_up.jpg/revision/latest?cb=20140321014018",
+    "anime": "seitokai yakuindomo",
+    "name": "Ranko Hata"
+  },
+  "088": {
+    "no": "088",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://sm.ign.com/t/ign_ap/cover/v/violet-eve/violet-evergarden_gvdh.1200.jpg",
+    "anime": "Violet Evergarden",
+    "name": "Violet Evergarden"
+  },
+  "089": {
+    "no": "089",
+    "claim": false,
+    "with": null,
+    "number": "6287773446859@s.whatsapp.net",
+    "image": "https://wallpaperaccess.com/full/4227561.png",
+    "anime": "Kimi no Suizou o Tabetai",
+    "name": "Yamauchi Sakura"
+  },
+  "090": {
+    "no": "090",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://cdn.myanimelist.net/images/characters/9/363075.jpg",
+    "anime": "Bokutachi wa Benkyou ga Dekinai",
+    "name": "Furuhashi Fumino"
+  },
+  "091": {
+    "no": "091",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/736x/eb/6e/c8/eb6ec8d843d40be662025baa659c27bf.jpg",
+    "anime": "Bokutachi wa Benkyou ga Dekinai",
+    "name": "Kirisu Mafuyu"
+  },
+  "092": {
+    "no": "092",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://cdn.myanimelist.net/images/characters/6/363076.jpg",
+    "anime": "Bokutachi wa Benkyou ga Dekinai",
+    "name": "Rizu Ogata"
+  },
+  "093": {
+    "no": "093",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://cdn.myanimelist.net/images/characters/3/363074.jpg",
+    "anime": "Bokutachi wa Benkyou ga Dekinai",
+    "name": "Uruka Takemoto"
+  },
+  "094": {
+    "no": "094",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/15/cb/a3/15cba3c3bb79f3a7b6b87923e10af7a8.jpg",
+    "anime": "Bokutachi wa Benkyou ga Dekinai",
+    "name": "Asumi Kominami"
+  },
+  "095": {
+    "no": "095",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://cdn.myanimelist.net/images/characters/8/69731.jpg",
+    "anime": "Phantom of Inferno",
+    "name": "Ein"
+  },
+  "096": {
+    "no": "096",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/ab/55/ae/ab55ae593e36bc16261426f1ef8f3d4b.png",
+    "anime": "Machikado Mazoku",
+    "name": "Yuuko “Shamiko” Yoshida"
+  },
+  "097": {
+    "no": "097",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://i.pinimg.com/originals/83/c8/c4/83c8c41e83e37e7adb85fbfbf090de9e.png",
+    "anime": "Joshi Kousei no Mudazukai",
+    "name": "Kikuchi “Wota” Akane"
+  },
+  "098": {
+    "no": "098",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/yuripedia/images/f/f1/1404253420425.png/revision/latest?cb=20140730002142",
+    "anime": "Gochuumon wa Usagi Desu ka?",
+    "name": "Aoyama ‘Blue Mountain’ Midori"
+  },
+  "099": {
+    "no": "099",
+    "claim": "false",
+    "with": "",
+    "number": "",
+    "image": "https://static.wikia.nocookie.net/gochiusa/images/8/88/Is_the_Order_a_Rabbit_-_01_03.27.png/revision/latest?cb=20200108140501",
+    "anime": "Gochuumon wa Usagi Desu ka?",
+    "name": "Kirima Syaro"
+  }
