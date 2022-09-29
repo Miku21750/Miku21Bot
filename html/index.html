@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="main">
+        <label for="number">Number: </label>
+        <input type="text" name="number" id="number"><br>
+        <label for="message">Message :</label>
+        <input type="text" name="message" id="message">
+        <label for="custom">Custom :</label>
+        <input type="text" name="custom" id="custom">
+        <div class="end_url"></div>
+        <button type="button" onclick="generateLink()">Generate</button>
+    </form>
+    <script>
+        function generateLink(){
+            let number = document.main.number.value
+            let message = document.main.message.value
+            let custom = document.main.custom.value
+            let url = 'https://wa.me/'
+            let end_url = `${url}${number}?text=${message}blablabla\nnlanla${custom}`
+            document.getElementById('end_url').innerText = `<a href='${end_url}'>Link</a>`
+        }
+    </script>
+</body>
+</html>
