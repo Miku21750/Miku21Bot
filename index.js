@@ -4,6 +4,13 @@
    * Follow https://github.com/DikaArdnt
 */
 
+/**
+   * Recode by Miku21
+   * Contact Me on wa.me/6283834685279
+   * Follow https://github.com/Miku21750
+   * Script Free ^^
+*/
+
 require('./config')
 const { default: hisokaConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
@@ -132,7 +139,10 @@ async function startHisoka() {
         console.log(anu)
         try {
             let metadata = await hisoka.groupMetadata(anu.id)
+            let welcome = global.db.data.chats[metadata.id].welcome
             let participants = anu.participants
+            let txt = null
+            console.log(metadata, welcome, participants)
             for (let num of participants) {
                 // Get Profile Picture User
                 try {
@@ -149,7 +159,12 @@ async function startHisoka() {
                 }
 
                 if (anu.action == 'add') {
-                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}` })
+                    txt = `Welcome To ${metadata.subject} @${num.split("@")[0]}`
+                    if(welcome) {
+                        txt = welcome.replace(/\$user/g, `@${num.split("@")[0]}`).replace(/\$labelgc/g,`${metadata.subject}`)
+                        console.log(txt)
+                    }
+                    hisoka.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `${txt}` })
                 } else if (anu.action == 'remove') {
                     hisoka.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}` })
                 }

@@ -4,6 +4,13 @@
    * Follow https://github.com/DikaArdnt
 */
 
+/**
+   * Recode by Miku21
+   * Contact Me on wa.me/6283834685279
+   * Follow https://github.com/Miku21750
+   * Script Free ^^
+*/
+
 require('./config')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType, generateOrGetPreKeys } = require('@adiwajshing/baileys')
 const fs = require('fs')
@@ -60,21 +67,23 @@ const Bpetcrate = 10000
 const Spetcrate = 5000
 
 // read database
-let tebaklagu = db.data.game.tebaklagu = []
-let _family100 = db.data.game.family100 = []
-let kuismath = db.data.game.math = []
-let tebakgambar = db.data.game.tebakgambar = []
-let tebakkata = db.data.game.tebakkata = []
-let caklontong = db.data.game.caklontong = []
-let caklontong_desk = db.data.game.caklontong_desk = []
-let tebakkalimat = db.data.game.tebakkalimat = []
-let tebaklirik = db.data.game.tebaklirik = []
-let tebaktebakan = db.data.game.tebaktebakan = []
-let tebakkimia = db.data.game.tebakkimia = []
-let tebakbendera = db.data.game.tebakbendera = []
-let susunkata = db.data.game.susunkata =[]
-let tebakcharanime = db.data.game.tebakcharanime = []
-let vote = db.data.others.vote = []
+//if (typeof user !== 'object') global.db.data.users[m.sender] = {}
+let tebaklagu = (typeof db.data.game.tebaklagu !== 'object' && db.data.game.tebaklagu instanceof Array) ? db.data.game.tebaklagu : db.data.game.tebaklagu = []
+let _family100 = (typeof db.data.game.family100 !== 'object' && db.data.game.family100 instanceof Array) ? db.data.game.family100 : db.data.game.family100 = []
+let kuismath = (typeof db.data.game.math !== 'object' && db.data.game.math instanceof Array) ? db.data.game.math : db.data.game.math = []
+let tebakgambar = (typeof db.data.game.tebakgambar !== 'object' && db.data.game.tebakgambar instanceof Array) ? db.data.game.tebakgambar : db.data.game.tebakgambar = []
+let tebakkata = (typeof db.data.game.tebakkata !== 'object' && db.data.game.tebakkata instanceof Array) ? db.data.game.tebakkata : db.data.game.tebakkata = []
+let caklontong = (typeof db.data.game.caklontong !== 'object' && db.data.game.caklontong instanceof Array) ? db.data.game.caklontong : db.data.game.caklontong = []
+let caklontong_desk = (typeof db.data.game.caklontong_desk !== 'object' && db.data.game.caklontong_desk instanceof Array) ? db.data.game.caklontong_desk : db.data.game.caklontong_desk = []
+let tebakkalimat = (typeof db.data.game.tebakkalimat !== 'object' && db.data.game.tebakkalimat instanceof Array) ? db.data.game.tebakkalimat : db.data.game.tebakkalimat = []
+let tebaklirik = (typeof db.data.game.tebaklirik !== 'object' && db.data.game.tebaklirik instanceof Array) ? db.data.game.tebaklirik : db.data.game.tebaklirik = []
+let tebaktebakan = (typeof db.data.game.tebaktebakan !== 'object' && db.data.game.tebaktebakan instanceof Array) ? db.data.game.tebaktebakan : db.data.game.tebaktebakan = []
+let tebakkimia = (typeof db.data.game.tebakkimia !== 'object' && db.data.game.tebakkimia instanceof Array) ? db.data.game.tebakkimia : db.data.game.tebakkimia = []
+let tebakbendera = (typeof db.data.game.tebakbendera !== 'object' && db.data.game.tebakbendera instanceof Array) ? db.data.game.tebakbendera : db.data.game.tebakbendera = []
+let susunkata = (typeof db.data.game.susunkata !== 'object' && db.data.game.susunkata instanceof Array) ? db.data.game.susunkata : db.data.game.susunkata = []
+let tebakcharanime = (typeof db.data.game.tebakcharanime !== 'object' && db.data.game.tebakcharanime instanceof Array) ? db.data.game.tebakcharanime : db.data.game.tebakcharanime = []
+let menfess = (typeof db.data.game.menfess !== 'object' && db.data.game.menfess instanceof Array) ? db.data.game.menfess : db.data.game.menfess = []
+let vote = (typeof db.data.game.vote !== 'object' && db.data.game.vote instanceof Array) ? db.data.game.vote : db.data.game.vote = []
 let fight = db.data.game.fight = []
 
 module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
@@ -83,6 +92,8 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         var budy = (typeof m.text == 'string' ? m.text : '')
         var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
         const isCmd = body.startsWith(prefix)
+        //const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
+        //if(!/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(body)) return
         const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
         const args = body.trim().split(/ +/).slice(1)
         const pushname = m.pushName || "No Name"
@@ -471,6 +482,16 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 user.money += money
                 await m.reply(`🎮 Kuis Matematika  🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? kirim ${prefix}math mode`)
                 delete kuismath[m.chat]
+            } else return
+        }
+        if (menfess.hasOwnProperty(m.chat) && isCmd) {
+            kuis = true
+            let txt = `Ada balasan dari menfess kamu dari @${menfess[m.chat].target.split('@')[0]}\n\n *${budy}* \n\nnote: _balas lagi secara manual_`
+            //let menst = [orang, jodoh]
+            let menst = [menfess[m.chat].target,menfess[m.chat].asal]
+            if (budy.toLowerCase()) {
+                hisoka.sendText(`${menfess[m.chat].asal}`,txt,m,{mentions: menst})
+                delete menfess[m.chat]
             } else return
         }
 
@@ -3246,8 +3267,8 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 hisoka.sendMessage(m.chat, { image: global.thumb , caption: `*Hai Kak ${user.name}*\n\n Bot Rental Prices\n⭔ 3k Per Group via E-Walet 1 Month\n⭔ 5k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 10k per User 1 bulan\n\nPayment can be via saweria/trakteer/shopee/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283834685279 (Owner)\n\nDonate For Me : \n\n⭔ Saweria : https://saweria.co/Miku21Margareth\n⭔ Trakteer : https://trakteer.id/miku21-margareth` }, { quoted: m })
             }
             break
-            case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\nDonate For Me : \n\n⭔ https://wa.me/6283834685279 (Owner)\n\n⭔ Saweria : https://saweria.co/Miku21Margareth\n⭔ Trakteer : https://trakteer.id/miku21-margareth')
+            case 'sc': case 'script' :{
+                m.reply('Script Base : https://github.com/DikaArdnt/Hisoka-Morou\nScript Miku21Bot : https://github.com/Miku21750\nDonate For Me : \n\n⭔ https://wa.me/6283834685279 (Owner)\n\n⭔ Saweria : https://saweria.co/Miku21Margareth\n⭔ Trakteer : https://trakteer.id/miku21-margareth')
             }
             break
             case 'chat': {
@@ -3286,8 +3307,15 @@ Dengan dipecat, akan mengurangi sebagian dari job level
             }
             break
             case 'teststatus':{
-                let status = await store.getStatus(m.sender)
-                m.reply(status)
+                let anu = await hisoka.fetchStatus(m.sender)
+                let txt = null
+                console.log(anu)
+                if(!anu) {txt = ''}
+                else{
+                let date = new Date(`${anu.setAt}`)
+                txt = `${anu.status}, ${date}`
+                console.log(txt)
+                }
             }
             break
             case 'malch':{
@@ -4464,6 +4492,19 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
                     m.reply("Waktu Habis\nJawaban: " + result.jawaban)
                     delete kuismath[m.chat]
                 }
+                /* if (kuismath.hasOwnProperty(m.chat) && isCmd) {
+            kuis = true
+            jawaban = kuismath[m.chat]
+            if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
+                let exp = Math.floor(Math.random() * (10 - 1) + 1)
+                let money = Math.floor(Math.random() * (100 - 1) + 1)
+                let user = db.data.users[m.sender]
+                user.exp += exp
+                user.money += money
+                await m.reply(`🎮 Kuis Matematika  🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? kirim ${prefix}math mode`)
+                delete kuismath[m.chat]
+            } else return
+        } */
             }
             break
             case 'jodohku': {
@@ -4613,7 +4654,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
             case 'hobby' : case 'hobi' : case 'hobbi' : case 'hoby' : {
                 if(!text) throw `Example : ${prefix + command} Nandog`
                 hobby = text
-				hob =["ngeue sapi","ngeue kambing","Memasak","Membantu Atok","Mabar","Nobar","Sosmed an","Membantu Orang lain","Nonton Anime","Nonton Drakor","Naik Motor","Nyanyi","Menari","Bertumbuk","Menggambar","Foto fotoan Ga jelas","Maen Game","Berbicara Sendiri"]
+				hob =["ngeue sapi","ngeue kambing","Memasak","Membantu Atok","jilatin gambar anime","cium layar hp","nonton hentai","Mabar","Nobar","Sosmed an","Membantu Orang lain","Nonton Anime","Nonton Drakor","Naik Motor","Nyanyi","Menari","Bertumbuk","Menggambar","Foto fotoan Ga jelas","Maen Game","Berbicara Sendiri"]
 				const by = hob[Math.floor(Math.random() * hob.length)]
                 hisoka.sendText(m.chat, `Pertanyaan : ${hobby}\n\nJawaban : *${by}*`,m)
             }
@@ -4676,11 +4717,14 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
                 let pesann = text
                 if (!pesann) return m.reply("*Silahkan masukan :*\npenerima\npesan kamu\n\nContoh :\nmenfess 62898989898\nbabi lu")
                 m.reply("Pessan telah dikirim")
-                let penerima = args?.join(" ")?.trim()?.split("\n")?.[0]?.trim()
-                let mess = args?.join(" ")?.trim()?.split("\n")?.[1]?.trim()
+                //replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+                let rep = args?.join(" ")?.trim()?.split("\n")?.[0]?.trim()
+                let penerima = args?.join(" ")?.trim()?.split("\n")?.[0]?.trim().replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+                //let mess = args?.join(" ")?.trim()?.split("\n")?.[1]?.trim()
+                let mess = text.replace(rep,"")
                 console.log(penerima, mess)
                 pesan = `「 reply Bot 」\n\n${mess}`
-                hisoka.sendText(`${penerima}@s.whatsapp.net`,pesan,m)
+                hisoka.sendText(penerima,pesan,m)
             }
             break
             case 'replybotgc':{
@@ -4688,8 +4732,10 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
                 let pesann = text
                 if (!pesann) return m.reply("*Silahkan masukan :*\npenerima\npesan kamu\n\nContoh :\nmenfess 62898989898\nbabi lu")
                 m.reply("Pessan telah dikirim")
+                let rep = args?.join(" ")?.trim()?.split("\n")?.[0]?.trim()
                 let penerima = args?.join(" ")?.trim()?.split("\n")?.[0]?.trim()
-                let mess = args?.join(" ")?.trim()?.split("\n")?.[1]?.trim()
+                //let mess = args?.join(" ")?.trim()?.split("\n")?.[1]?.trim()
+                let mess = text.replace(rep,"")
                 console.log(penerima, mess)
                 pesan = `「 reply Bot 」\n\n${mess}`
                 hisoka.sendText(penerima,pesan,m)
@@ -4707,16 +4753,69 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
                 hisoka.sendText(penerima,pesan)
             }
             break
+            // hisoka.sendText(penerima,pesan).then(() => {
+                //     menfess[m.chat] = m.sender
+                // })
+                // menfess[m.chat] = m.sender
+                // let menf = menfess[m.chat]
             case 'menfess':{
                 let pesann = text
                 if (!pesann) return m.reply("*Silahkan masukan :*\npenerima\npesan kamu\n\nContoh :\nmenfess 62898989898\nbabi lu")
                 m.reply("Pessan telah dikirim")
-                let penerima = args?.join(" ")?.trim()?.split("\n")?.[0]?.trim()
-                let mess = args?.join(" ")?.trim()?.split("\n")?.[1]?.trim()
-                console.log(penerima, mess)
-                pesan = `Ada menfess :\n\n${mess}`
-                hisoka.sendText(`${penerima}@s.whatsapp.net`,pesan)
+                let penerima = args?.join(" ")?.trim()?.split("\n")?.[0]?.trim().replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+                let rep = args?.join(" ")?.trim()?.split("\n")?.[0]?.trim() //untuk replace, abaikan
+                let mess = text.replace(rep,"")
+                let buttons = [
+                    {buttonId: 'balasmenfess', buttonText: { displayText: ' Balas Menfess'}, type: 1}
+                ]
+                pesan = `Ada menfess :\n\n ===================\n${mess}\n=================== \n\n_note: Jika ingin membalas, langsung ketikan saja 1 bubble. jika tidak, abaikan saja_`
+                
+                let ch = m.chat
+                console.log(ch)
+                menfess[penerima] = {
+                    target : penerima,
+                    asal : m.chat
+                }
+                hisoka.sendText(penerima,pesan).then(() => {   
+                    menfess[penerima] = {
+                        target : penerima,
+                        asal : m.chat
+                    }
+                })
+                //let menf = menfess[penerima]
+                //console.log(menf, menfess.hasOwnProperty(penerima), menfess.hasOwnProperty(m.chat))
+                // await sleep(60000)
+                // if (menfess.hasOwnProperty(penerima)) {
+                //     console.log(menfess[m.chat])
+                //     hisoka.sendText(penerima,"Kamu mengabaikan menfess")
+                //     hisoka.sendText(m.chat, "Target mengabaikan pesan kamu")
+                //     delete kuismath[m.chat]
+                // }
+                /* 
+            let buttons = [
+                        { buttonId: 'jadian', buttonText: { displayText: 'Jadian' }, type: 1 }
+                    ]
+                    await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, {mentions: menst}) */
+                /* if (kuismath.hasOwnProperty(m.chat)) throw "Masih Ada Sesi Yang Belum Diselesaikan!"
+                let { genMath, modes } = require('./src/math')
+                if (!text) throw `Mode: ${Object.keys(modes).join(' | ')}\nContoh penggunaan: ${prefix}math medium`
+                let result = await genMath(text.toLowerCase())
+                hisoka.sendText(m.chat, `*Berapa hasil dari: ${result.soal.toLowerCase()}*?\n\nWaktu: ${(result.waktu / 1000).toFixed(2)} detik`, m).then(() => {
+                    kuismath[m.chat] = result.jawaban
+
+                })
+                await sleep(result.waktu)
+                if (kuismath.hasOwnProperty(m.chat)) {
+                    console.log("Jawaban: " + result.jawaban)
+                    m.reply("Waktu Habis\nJawaban: " + result.jawaban)
+                    delete kuismath[m.chat]
+                } */
                 //hisoka.send5ButImg(`${penerima}@s.whatsapp.net`,pesan, hisoka.user.name, global.thumb, btn)
+            }
+            break
+            case 'balasmenfess':{
+                if(menfess.hasOwnProperty(m.chat)) throw 'biarin yang menfess dulu'
+
             }
             break
             case 'fitnah': case 'fakereply':{
@@ -4732,12 +4831,12 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
             // hisoka.fakeReply(m.chat, real.join(sp).trimStart(), who, fake.trimEnd()/*, { contextInfo: {
             // mentionedJid: [hisoka.parseMention(real.join(sp))]
             // }}*/)
-            let text1 = args?.join(" ")?.trim()?.split("\n")?.[1]?.trim()
-            let text2 = args?.join(" ")?.trim()?.split("\n")?.[2]?.trim()
+            let text1 = args?.join(" ").split("|")[1]
+            let text2 = args?.join(" ").split("|")[2]
             let who = m.mentionedJid[0]
-            if(!who) throw 'Tag yang ingin difitnah'
-            if(!text1) throw `Masukan pesan. Example ${prefix+command} @siapa \nhalo\nhalo`
-            if(!text2) throw `Masukan pesan. Example ${prefix+command} @siapa \nhalo\nhalo`
+            if(!who) throw `Tag yang ingin difitnah. Example ${prefix+command} @siapa | halo |halo`
+            if(!text1) throw `Masukan pesan. Example ${prefix+command} @siapa | halo |halo`
+            if(!text2) throw `Masukan pesan. Example ${prefix+command} @siapa | halo | halo`
             // hisoka.sendText(m.chat, text1, {quoted: {text: text2, sender: who}})
             
             // hisoka.sendMessage(m.chat, { text: text1 }, { quoted: {
@@ -4755,16 +4854,16 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
             //   }
             const quotedMessage = {
                 key: {
-                    id: 'inexistentId',
+                    //id: 'inexistentId',
                     fromMe: false,
-                    remoteJid: who,
+                    //remoteJid: who,
                     participant: who
                 },
                 message: {conversation : text1},
-                sender: who,
-                participant: who,
-                fromMe: false,
-                isGroup: true,
+                // sender: who,
+                // participant: who,
+                // fromMe: false,
+                // isGroup: true,
 
             }
             console.log(quotedMessage,who,m.chat)
@@ -4938,11 +5037,15 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
         if(!isCreator) throw mess.owner
         let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
         let alasan = ''
-        if(args[1]) alasan = args[1]
+        if(args[1]) alasan = args?.join(" ")?.trim()?.split("\n")?.[1]?.trim()
         let user = global.db.data.users[users]
         user.banned = true
         user.bannedReason = alasan
+        
         m.reply(`${users} telah di ban`)
+        let pa7rick = await hisoka.sendContact(users, global.owner)
+        //hisoka.sendMessage(callerId, { text: `Sistem otomatis block!\nJangan menelpon bot!\nSilahkan Hubungi Owner Untuk Dibuka !`}, { quoted : pa7rick })
+        hisoka.sendMessage(users, { text: `Kamu telah dibanned dengan alasan ${alasan}, silahkan minta owner untuk dibuka`}, { quoted : pa7rick })
         /*let user = global.db.data.users[m.sender]
         user.afkTime = + new Date
         user.afkReason = text
@@ -4999,7 +5102,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
         let org = []
         for(let i in global.db.data.bugs){
             let bug = global.db.data.bugs[i]
-            capt += `\nFrom : @${bug.user.split('@')[0]}\n Message : ${bug.message}\n Chat : ${bug.chat}`
+            capt += `\nFrom : @${bug.user.split('@')[0]}\n   Message : ${bug.message}\n   Chat : ${bug.chat}`
             org.push(bug.user)
         }
         hisoka.sendText(m.chat, capt,m,{mentions: org})
@@ -5405,8 +5508,25 @@ break
             case 'delete': case 'del': {
                 if (!m.quoted) throw false
                 let { chat, fromMe, id, isBaileys } = m.quoted
-                if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
-                hisoka.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
+                // if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
+                console.log(isBaileys   ,fromMe,isBotAdmins)
+                if (!isBaileys){
+                    if (!isBotAdmins) throw mess.botAdmin
+                    if (!isAdmins) throw mess.admin
+                    let key = {}
+                    try {
+                        key.remoteJid = m.quoted ? m.quoted.fakeObj.key.remoteJid : m.key.remoteJid
+                        key.fromMe = m.quoted ? m.quoted.fakeObj.key.fromMe : m.key.fromMe
+                        key.id = m.quoted ? m.quoted.fakeObj.key.id : m.key.id
+                        key.participant = m.quoted ? m.quoted.fakeObj.participant : m.key.participant
+                    } catch{
+                        m.reply('cannot delete')
+                    }
+                    hisoka.sendMessage(m.chat, {delete: key})
+                }else{
+                    hisoka.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })   
+                }
+                
             }
             break
             case 'fwrdb':{
@@ -5469,29 +5589,34 @@ break
                     let getGroups = await hisoka.groupFetchAllParticipating()
                     let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
 					let anu = groups.map(v => v.id)
-					if (isMedia  || isQuotedImage) {
-						let media = await quoted.download()
+                    let txt = `「 Broadcast Bot 」\n\n${text}`
+					if (/image/.test(mime)) {
+						let mdia = await quoted.download()
 						for (let i of anu) {
-                            let status = [
-                                {buttonId: `${prefix}statusbot`, buttonText: {displayText: 'Status'}, type: 1},
-                                {buttonId: `${prefix}owner`, buttonText: {displayText: 'Owner'}, type: 1},
-                                {buttonId: `${prefix}donasi`, buttonText: {displayText: 'Donasi'}, type: 1}
-                              ]
-                            let buttonbcmedia = {
-                                image: media,
-                                text: `[ Izin Broadcast ]\n\n${body.slice(4)}`,
-                                footer: hisoka.user.name,
-                                buttons: status,
-                                headerType: 1
-                            }
-							hisoka.sendMessage(i, buttonbcmedia)
+                            // let status = [
+                            //     {buttonId: `${prefix}statusbot`, buttonText: {displayText: 'Status'}, type: 1},
+                            //     {buttonId: `${prefix}owner`, buttonText: {displayText: 'Owner'}, type: 1},
+                            //     {buttonId: `${prefix}donasi`, buttonText: {displayText: 'Donasi'}, type: 1}
+                            //   ]
+                            // let buttonbcmedia = {
+                            //     image: media,
+                            //     text: `[ Izin Broadcast ]\n\n${body.slice(4)}`,
+                            //     footer: hisoka.user.name,
+                            //     buttons: status,
+                            //     headerType: 1
+                            // }
+                            //hisoka.sendMessage(m.chat, { image: {url: `https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`}, caption: `Photo Editor ${command}` }, { quoted: m })
+							hisoka.sendMessage(i, { image : mdia, caption: txt})
 						}
 						m.reply('Suksess broadcast')
-					} else {
-						for (let i of anu) {
-							sendMess(_.jid, `[ *Miku21BOT BROADCAST* ]\n\n${body.slice(4)}`)
-						}
-						m.reply('Suksess broadcast')
+					} else if(/video/.test(mime)){
+                        let mdia = await quoted.download()
+                        for (let i of anu){
+                            hisoka.sendMessage(i, { video: mdia, mimetype: 'video/mp4', fileName: `bcmedia.mp4`, caption: txt }, { quoted: m })
+                        }
+                    }
+                    else{
+						m.reply('reply media')
 					}
 					break
             case 'bc': case 'broadcast': case 'bcall': {
@@ -5692,7 +5817,7 @@ break
                
 	        case 'simih': case 'simisimi': case 'miku21' : case 'miku': {
             if (!text) throw `Example : ${prefix + command} text`
-            hm = await fetchJson(`https://api.simsimi.net/v2/?text=${text}&lc=id&cf=false`)
+            hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
             m.reply(hm.success)
             }
             break
@@ -5789,7 +5914,7 @@ break
             let fatGans = await floNime(dwnld)
             console.log(fatGans)
             //https://zenzapis.xyz/convert/sticker-nobg?url=&apikey=keymikuzenz21
-            hisoka.sendMessage(m.chat, { image: {url: `https://zenzapis.xyz/convert/sticker-nobg?url=${fatGans.data.url}&apikey=keymikuzenz21`}, caption: `Photo Editor ${command}` }, { quoted: m })
+            let encmedia = await hisoka.sendMessage(m.chat, { image: {url: `https://api.lolhuman.xyz/api/removebg?apikey=keymikulolhuman21&img=${fatGans.data.url}`}, caption: `Photo Editor ${command}` }, { quoted: m })
             await fs.unlinkSync(encmedia)
         }else {
             throw `Kirim Gambar`
@@ -5991,6 +6116,81 @@ break
                 })
             }
             break
+            case 'character':{
+                let helptxt = `/*LIST CHARACTER*/
+${global.sp} akira
+${global.sp} akiyama
+${global.sp} ana
+${global.sp} asuna
+${global.sp} ayuzawa
+${global.sp} brouto
+${global.sp} chitanda
+${global.sp} chitoge
+${global.sp} deidara
+${global.sp} doraemon
+${global.sp} elaina
+${global.sp} emilia
+${global.sp} erza
+${global.sp} gremory
+${global.sp} hestia
+${global.sp} hinata
+${global.sp} inori
+${global.sp} isuzu
+${global.sp} itachi
+${global.sp} itori
+${global.sp} kaga
+${global.sp} kagura
+${global.sp} kakashi
+${global.sp} kaori
+${global.sp} kaneki
+${global.sp} kosaki
+${global.sp} kotori
+${global.sp} kuriyama
+${global.sp} kuroha
+${global.sp} kurumi
+${global.sp} madara
+${global.sp} megumin
+${global.sp} mikasa
+${global.sp} miku
+${global.sp} minato
+${global.sp} naruto
+${global.sp} natsukawa
+${global.sp} nekonime
+${global.sp} nishimiya
+${global.sp} onepiece
+${global.sp} pokemon
+${global.sp} rem
+${global.sp} rize
+${global.sp} sagiri
+${global.sp} sakura
+${global.sp} sasuke
+${global.sp} shina
+${global.sp} shinka
+${global.sp} shizuka
+${global.sp} tomori
+${global.sp} toukachan
+${global.sp} tsunade
+${global.sp} yatogami
+${global.sp} yuki
+`
+                if(!args[0]) return m.reply(helptxt)
+                m.reply(mess.wait)
+                let img = `https://zenzapis.xyz/randomanime/v2/${args[0]}?apikey=keymikuzenz21`
+                try{
+                    hisoka.sendImage(m.chat, img, `NIH`, m)
+                }catch(e){
+                    m.reply(e)
+                }
+            }
+            break
+            // case 'patrick': case 'dadu': case 'amongus': case 'gawrgura': case 'anjing':case 'bucinstick':{
+            //     m.reply(mess.wait)
+            //     let img = `https://api.lolhuman.xyz/sticker/${command}apikey=keymikulolhuman21`
+                
+            //         hisoka.sendImageAsSticker(m.chat, `https://api.lolhuman.xyz/sticker/${command}apikey=keymikulolhuman21`, m,{ packname: global.packname, author: global.author })
+                
+            // }
+            // break
             case 'bully' : case 'cuddle' : case 'cry' : case 'hug' : case 'awoo' : case 'kiss' : case 'lick' : case 'pat' : case 'smug' : case 'bonk' : case 'yeet' : case 'blush' : case 'smile' : case 'wave' : case 'highfive' : case 'handhold' : case 'nom' : case 'bite' : case 'glomp' : case 'slap' : case 'kill' : case 'kick' : case 'happy' : case 'wink' : case 'poke' : case 'dance' : case 'cringe' : {
                 //let user = m.mentionedJid[0]
                 //if (!m.mentionedJid[0]) return user = null
@@ -6010,6 +6210,24 @@ break
                     console.log(command,data.images[0].url,data.images)
                     hisoka.sendImage(m.chat, data.images[0].url, `NIH`, m)
                 })
+            }
+            break
+            case 'hutao':{
+                let dir = "./src/hutao"
+                let files = fs.readdirSync('./src/hutao')
+                let chosenFile = files[Math.floor(Math.random() * files.length)]
+                hisoka.sendImage(m.chat, './src/hutao/'+chosenFile, `nih`,m)
+                console.log(chosenFile)
+                m.reply('test')
+            }
+            break
+            case 'husbu' : case 'cecan' : case 'cogan' : case 'estetic' : case 'elf' : case 'loli' : case 'shota' : case 'kanna' : case 'art' :{
+                m.reply(mess.wait)
+                try{
+                    hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random/${command}?apikey=keymikulolhuman21`, `NIH`, m)
+                }catch(e){
+                    m.reply(e)
+                }
             }
             break
             case 'cosplay': case 'meme': case 'memeindo':case 'darkjoke':{
@@ -6063,6 +6281,24 @@ ${global.sp} tentacles
 ${global.sp} thighs
 ${global.sp} yuri
 ${global.sp} lolipai
+${global.sp} loli
+${global.sp} chiisaihentai
+${global.sp} yaoi
+${global.sp} hololewd
+${global.sp} sideoppai
+${global.sp} animearmpits
+${global.sp} lewdanimegirls
+${global.sp} biganimetiddies
+${global.sp} feet
+${global.sp} ngif
+${global.sp} gasm
+${global.sp} anal 
+${global.sp} feetg
+${global.sp} erok
+${global.sp} holoero
+${global.sp} erokemo
+${global.sp} foxgirl (kadang bukan nsfw, maap)
+${global.sp} futanari
 
 NOTE : Premium only. Minat? chat !owner atau !buypremium
                 `
@@ -6086,6 +6322,34 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                         m.reply(mess.wait)
                         //
                     hisoka.sendImageAsSticker(m.chat, `https://zenzapis.xyz/api/morensfw/${text}?apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
+                    }else if(text === 'loli'||text === 'chiisaihentai'||text === 'yaoi'||text === 'hololewd'||text === 'sideoppai'||text === 'animearmpits'||text === 'lewdanimegirls'||text === 'biganimetiddies'){
+                        m.reply(mess.wait)
+                        try{
+                            hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random/nsfw/${text}?apikey=keymikulolhuman21`,`NIH`,m)
+                        }catch(e){
+                            m.reply(e)
+                        }
+                                                                                                    /**${global.sp} feet
+                                                                            ${global.sp} ngif //gif
+                                                                            ${global.sp} gasm //stiker
+                                                                            ${global.sp} anal //gif
+                                                                            ${global.sp} feetg
+                                                                            ${global.sp} erok
+                                                                            ${global.sp} holoero
+                                                                            ${global.sp} erokemo
+                                                                            ${global.sp} foxgirl (kadang bukan nsfw, maap)
+                                                                            ${global.sp} futanari */
+                    }else if(text === 'feet'||text === 'feetg'||text === 'erok'||text === 'holoero'||text === 'erokemo'||text === 'foxgirl'||text === 'futanari'){
+                        m.reply(mess.wait)
+                        try{
+                            hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random2/${text}?apikey=keymikulolhuman21`,`NIH`,m)
+                        }catch(e){
+                            m.reply(e)
+                        }
+                    }else if(text === 'ngif'||text === 'gasm'||text==='anal'){
+                        m.reply(mess.wait)
+                        //
+                    hisoka.sendImageAsSticker(m.chat, `https://api.lolhuman.xyz/api/random2/${text}?apikey=keymikulolhuman21`, m, { packname: global.packname, author: global.author })
                     }else if(text === 'lolipai'){
                         
                         // let rawdata = fs.readFileSync('student.json');
@@ -6326,11 +6590,12 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let { floNime } = require('./lib/uploader')
                     let fatGans = await floNime(dwnld)
                     console.log(fatGans)
-                    hisoka.sendMessage(m.chat, { image: {url: `https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`}, caption: `Photo Editor ${command}` }, { quoted: m })
+                    let encmedia = await hisoka.sendMessage(m.chat, { image: {url: `https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`}, caption: `Photo Editor ${command}` }, { quoted: m })
                     await fs.unlinkSync(encmedia)
                 }else {
                     throw `Reply Gambar`
                 }
+
                 /* 
                 
 	        let dwnld = await quoted.download()
@@ -6339,6 +6604,110 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
 	        //let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans.data.url}
             let smeme = `https://zenzapis.xyz/creator/smeme?text=${atas}&text2=${bawah}&url=${fatGans.data.url}&apikey=keymikuzenz21` */
 
+            }
+            break
+            case '1977': case 'aden': case 'brannan': case 'brooklyn': case 'clarendon': case 'gingham': case 'hudson': case 'inkwell': case 'earlybird': case 'kelvin': case 'lark': case 'lofi': case 'maven': case 'mayfair': case 'nashville': case 'perpetua': case 'reyes': case 'rise': case 'slumber': case 'stinson': case 'toaster': case 'valencia': case 'walden': case 'willow': case 'xpro2':{
+                //https://api.lolhuman.xyz/api/filter/clarendon?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpgm.reply(mess.wait)
+                if (/image/.test(mime)) {
+                    let dwnld = await quoted.download()
+                    let { floNime } = require('./lib/uploader')
+                    let fatGans = await floNime(dwnld)
+                    console.log(fatGans)
+                    //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
+                    //https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    let encmedia = await hisoka.sendMessage(m.chat, { image: {url: `https://api.lolhuman.xyz/api/filter/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}`}, caption: `Photo Editor ${command}` }, { quoted: m })
+                    await fs.unlinkSync(encmedia)
+                }else {
+                    throw `Reply Gambar`
+                }
+            }
+            break
+            case 'imagecolor':{
+                if(!args[0]) throw `Cari hexnya terlebih dahulu. contoh ${prefix+command} FF0000\n\nnote: Hex bisa dicari di google `
+                if(!quoted) throw 'Reply Image'
+                m.reply(mess.wait)
+                if (/image/.test(mime)) {
+                    let dwnld = await quoted.download()
+                    let { floNime } = require('./lib/uploader')
+                    let fatGans = await floNime(dwnld)
+                    console.log(fatGans)
+                    //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
+                    //https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    let encmedia = await hisoka.sendMessage(m.chat, { image: {url: `https://api.lolhuman.xyz/api/imagecolor?apikey=keymikulolhuman21&img=${fatGans.data.url}&hex=${args[0]}`}, caption: `Photo Editor ${command}` }, { quoted: m })
+                    await fs.unlinkSync(encmedia)
+                }else {
+                    throw `Reply Gambar`
+                }
+            }
+            break
+            case 'pencil': case'fisheye':{
+                if(!quoted) throw 'Reply Image'
+                m.reply(mess.wait)
+                if (/image/.test(mime)) {
+                    let dwnld = await quoted.download()
+                    let { floNime } = require('./lib/uploader')
+                    let fatGans = await floNime(dwnld)
+                    console.log(fatGans)
+                    //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
+                    //https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    let encmedia = await hisoka.sendMessage(m.chat, { image: {url: `https://api.lolhuman.xyz/api/editor/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}`}, caption: `Photo Editor ${command}` }, { quoted: m })
+                    await fs.unlinkSync(encmedia)
+                }else {
+                    throw `Reply Gambar`
+                }
+            }
+            break
+            case 'deepfry':{
+                if(!quoted) throw 'Reply Image'
+                m.reply(mess.wait)
+                if (/image/.test(mime)) {
+                    let dwnld = await quoted.download()
+                    let { floNime } = require('./lib/uploader')
+                    let fatGans = await floNime(dwnld)
+                    console.log(fatGans)
+                    //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
+                    //https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    let encmedia = await hisoka.sendMessage(m.chat, { image: {url: `https://api.lolhuman.xyz/api/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}`}, caption: `Photo Editor ${command}` }, { quoted: m })
+                    await fs.unlinkSync(encmedia)
+                }else {
+                    throw `Reply Gambar`
+                }
+            }
+            break
+            // case 'trigerred': {
+            //     if(!quoted) throw 'Reply Image'
+            //     m.reply(mess.wait)
+            //     if (/image/.test(mime)) {
+            //         let dwnld = await quoted.download()
+            //         let { floNime } = require('./lib/uploader')
+            //         let fatGans = await floNime(dwnld)
+            //         console.log(fatGans)
+            //         //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
+            //         //https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+            //         //hisoka.sendImageAsSticker(m.chat, `https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
+            //         hisoka.sendImageAsSticker(m.chat, `https://api.lolhuman.xyz/api/editor/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}`,m, { packname: global.packname, author: global.author })
+            //         await fs.unlinkSync(encmedia)
+            //     }else {
+            //         throw `Reply Gambar`
+            //     }
+            // }
+            // break
+            case 'trigger':{
+                if(!quoted) throw 'Reply Image'
+                m.reply(mess.wait)
+                if (/image/.test(mime)) {
+                    let dwnld = await quoted.download()
+                    let { floNime } = require('./lib/uploader')
+                    let fatGans = await floNime(dwnld)
+                    console.log(fatGans)
+                    //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
+                    //https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    //hisoka.sendImageAsSticker(m.chat, `https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
+                    let encmedia = await hisoka.sendImageAsSticker(m.chat, `https://api.lolhuman.xyz/api/creator1/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}`,m, { packname: global.packname, author: global.author })
+                    await fs.unlinkSync(encmedia)
+                }else {
+                    throw `Reply Gambar`
+                }
             }
             break
             case 'pet': {
@@ -6352,7 +6721,6 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let { floNime } = require('./lib/uploader')
                     let fatGans = await floNime(dwnld)
                     hisoka.sendImageAsSticker(m.chat, `https://zenzapis.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
-                    
                 }else {
                     throw `Reply Gambar`
                 }        
@@ -6701,15 +7069,17 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 // m.reply('bug, tiktokdl dimatikan sementara')
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await tiktokdlv3(text)
+                let anu = await fetchJson(`https://zenzapis.xyz/downloader/musically?apikey=keymikuzenz21&url=${text}`)
                 if(!anu) throw 'Cannot download link'
-                if(!anu.video.no_watermark||!anu.video.no_watermark2) throw 'Cannot download link'
-                let desc = ''
-                if(anu.description) {desc = anu.description}
-                let txt = `Tiktokdl\n\n🔗 *Url:* ${text} \n🧏 *Nickname:* ${anu.author.nickname} \n🖹 *Description:${desc}* `
+                if(anu.status == false) throw 'Cannot download link'
+                if(!anu.result.nowm) throw 'Cannot download link, Silahkan coba tiktokwm, atau coba lagi'
+                let txt = `Tiktokdl\n\n🔗 *Url:* ${text}`
                 //await hisoka.sendMessage(m.chat, { video: { url: webpToMp4.result, caption: 'Convert Webp To Video' } }, { quoted: m })
-                hisoka.sendMessage(m.chat, { video: { url: anu.video.no_watermark||anu.video.no_watermark2}, caption : txt}, { quoted: m})
+                hisoka.sendMessage(m.chat, { video: { url: anu.result.nowm}, caption : txt}, { quoted: m})
                 
+                // let desc = ''
+                // if(anu.description) {desc = anu.description}
+                // let txt = `Tiktokdl\n\n🔗 *Url:* ${text} \n🧏 *Nickname:* ${anu.author.nickname} \n🖹 *Description:${desc}* `
                 // const { author: { nickname }, video, description } = await tiktokdl(args[0]).catch(async _ => await tiktokdlv2(args[0]))
                 // const url = video.no_watermark || video.no_watermark_hd || video.with_watermark || video.no_watermark_raw
                 // if (!url) throw 'Can\'t download video!'
@@ -6734,7 +7104,19 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             }
             break
             case 'tiktokwm': case 'tiktokwatermark': {
-                m.reply('bug, tiktokdl dimatikan sementara')
+                // m.reply('bug, tiktokdl dimatikan sementara')
+                if (!text) throw 'Masukkan Query Link!'
+                m.reply(mess.wait)
+                let anu = await fetchJson(`https://zenzapis.xyz/downloader/musically?apikey=keymikuzenz21&url=${text}`)
+                if(!anu) throw 'Cannot download link'
+                if(anu.status == false) throw 'Cannot download link'
+                if(!anu.result.video) throw 'Cannot download link, Silahkan coba tiktoknowm, atau coba lagi'
+                // let desc = ''
+                // if(anu.description) {desc = anu.description}
+                // let txt = `Tiktokdl\n\n🔗 *Url:* ${text} \n🧏 *Nickname:* ${anu.author.nickname} \n🖹 *Description:${desc}* `
+                let txt = `Tiktokdl\n\n🔗 *Url:* ${text}`
+                // //await hisoka.sendMessage(m.chat, { video: { url: webpToMp4.result, caption: 'Convert Webp To Video' } }, { quoted: m })
+                hisoka.sendMessage(m.chat, { video: { url: anu.result.video}, caption : txt}, { quoted: m})
                 // if (!text) throw 'Masukkan Query Link!'
                 // m.reply(mess.wait)
                 // let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
@@ -7214,9 +7596,9 @@ ${Object.entries(global.db.data.sticker).map(([key, value], index) => `${index +
             case 'setwelcome': {
                 if(!isBotAdmins) throw `bot belum menjadi admin`
                 if(!isAdmins) throw `Hanya Admin yang bisa menggunakan command ini`
-                if(!text) throw `Ketikkan pesan yang ingin di set\n Ket : Ambil nama subject = $subject `
+                if(!text) throw `Ketikkan pesan yang ingin di set\n Ket : Ambil nama gc dengan $labelgc dan nama user dengan $user `
                 global.db.data.chats[m.chat].welcome = text
-                
+                m.reply('berhasil di set')
             }
             break
 
@@ -7616,8 +7998,21 @@ let capt = `⭔ Title: ${judul}
             break
             case 'profile' : {
                 let user = global.db.data.users[m.sender]
-                console.log(m.mentionedJid[0])
+                console.log(m.mentionedJid[0])                    
+                let st = null
+                let date = null
                 if(m.mentionedJid[0]) user = global.db.data.users[m.mentionedJid[0]]
+                try{
+                    let status = await hisoka.fetchStatus(m.sender)
+                if (m.mentionedJid[0]) status = await hisoka.fetchStatus(m.mentionedJid[0])
+                if(!status) {st = '';date= '';}
+                else{
+                    date = new Date(`${status.setAt}`)
+                    st = status.status
+                }
+                }catch{
+                    st = '';date= '';
+                }
                 let waifu = ''
                 let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
                 let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
@@ -7638,6 +8033,12 @@ let capt = `⭔ Title: ${judul}
                 profile = `┌──⭓ *Profile
 │
 │⭔ Nama         : ${user.name}
+│⭔ Status       : 
+${st}
+│  Updated at    : 
+${date}
+│
+│*BOT FEATURE*
 │⭔ Level        : ${user.level}
 │⭔ Exp          : ${user.exp}
 │⭔ Money        : ${user.money} MIKO
@@ -7717,6 +8118,7 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}setppgc [image]
 │⭔ ${prefix}setname [text]
 │⭔ ${prefix}setdesc [text]
+│⭔ ${prefix}setwelcome [text]
 │⭔ ${prefix}group [option]
 │⭔ ${prefix}editinfo [option]
 │⭔ ${prefix}nsfwgroup [option]
@@ -7804,13 +8206,24 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}memeindo
 │⭔ ${prefix}darkjoke
 │⭔ ${prefix}waifu
+│⭔ ${prefix}husbu
 │⭔ ${prefix}cosplay (agak nsfw satu ni)
+│⭔ ${prefix}cecan
+│⭔ ${prefix}cogan
+│⭔ ${prefix}estetic
+│⭔ ${prefix}elf
+│⭔ ${prefix}loli
+│⭔ ${prefix}shota
+│⭔ ${prefix}kanna
+│⭔ ${prefix}art
 │⭔ ${prefix}neko
 │⭔ ${prefix}uniform
 │⭔ ${prefix}maid
 │⭔ ${prefix}marin-kitagawa
 │⭔ ${prefix}mori-calliope
 │⭔ ${prefix}raiden-shogun
+│⭔ ${prefix}hutao
+│⭔ ${prefix}character (query)
 │⭔ ${prefix}oppai
 │⭔ ${prefix}selfies
 │⭔ ${prefix}shinobu
@@ -7842,7 +8255,7 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}poke
 │⭔ ${prefix}dance
 │⭔ ${prefix}cringe
-│⭔ ${prefix}nsfw (waifu|neko|trap|blowjob|ass|hentai|milf|oral|paizuri|ecchi|ero)
+│⭔ ${prefix}nsfw (query)
 │
 └───────⭓
 
@@ -7931,6 +8344,38 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}comrade
 │⭔ ${prefix}jail
 │⭔ ${prefix}pet
+│⭔ ${prefix}pencil
+│⭔ ${prefix}triggered
+│⭔ ${prefix}trigger
+│⭔ ${prefix}fisheye
+│⭔ ${prefix}deepfry
+│⭔ ${prefix}imagecolor (hexcolor) 
+│⭔ ${prefix}removebg
+│⭔ ${prefix}1977
+│⭔ ${prefix}aden
+│⭔ ${prefix}brannan
+│⭔ ${prefix}brooklyn
+│⭔ ${prefix}clarendon
+│⭔ ${prefix}gingham
+│⭔ ${prefix}hudson
+│⭔ ${prefix}inkwell
+│⭔ ${prefix}earlybird
+│⭔ ${prefix}kelvin
+│⭔ ${prefix}lark
+│⭔ ${prefix}lofi
+│⭔ ${prefix}maven
+│⭔ ${prefix}mayfair
+│⭔ ${prefix}nashville
+│⭔ ${prefix}perpetua
+│⭔ ${prefix}reyes
+│⭔ ${prefix}rise
+│⭔ ${prefix}slumber
+│⭔ ${prefix}stinson
+│⭔ ${prefix}toaster
+│⭔ ${prefix}valencia
+│⭔ ${prefix}walden
+│⭔ ${prefix}willow
+│⭔ ${prefix}xpro2
 │
 └───────⭓
 
@@ -7978,6 +8423,7 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}shop (buy|sell) item
 │⭔ ${prefix}open (crate) (jumlah)
 │⭔ ${prefix}use (item) (jumlah)
+│⭔ ${prefix}feed (nama hewan)
 │
 └───────⭓
 
@@ -8201,6 +8647,7 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}setppgc [image]
 │⭔ ${prefix}setname [text]
 │⭔ ${prefix}setdesc [text]
+│⭔ ${prefix}setwelcome [text]
 │⭔ ${prefix}group [option]
 │⭔ ${prefix}editinfo [option]
 │⭔ ${prefix}nsfwgroup [option]
@@ -8396,13 +8843,24 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}memeindo
 │⭔ ${prefix}darkjoke
 │⭔ ${prefix}waifu
+│⭔ ${prefix}husbu
 │⭔ ${prefix}cosplay (agak nsfw satu ni)
+│⭔ ${prefix}cecan
+│⭔ ${prefix}cogan
+│⭔ ${prefix}estetic
+│⭔ ${prefix}elf
+│⭔ ${prefix}loli
+│⭔ ${prefix}shota
+│⭔ ${prefix}kanna
+│⭔ ${prefix}art
 │⭔ ${prefix}neko
 │⭔ ${prefix}uniform
 │⭔ ${prefix}maid
 │⭔ ${prefix}marin-kitagawa
 │⭔ ${prefix}mori-calliope
 │⭔ ${prefix}raiden-shogun
+│⭔ ${prefix}hutao
+│⭔ ${prefix}character (query)
 │⭔ ${prefix}oppai
 │⭔ ${prefix}selfies
 │⭔ ${prefix}shinobu
@@ -8434,7 +8892,7 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}poke
 │⭔ ${prefix}dance
 │⭔ ${prefix}cringe
-│⭔ ${prefix}nsfw (waifu|neko|trap|blowjob|ass|hentai|milf|oral|paizuri|ecchi|ero)
+│⭔ ${prefix}nsfw (query)
 │
 └───────⭓`
 hisoka.sendImage(m.chat, global.thumb, anu, m)
@@ -8632,6 +9090,38 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}comrade
 │⭔ ${prefix}jail
 │⭔ ${prefix}pet
+│⭔ ${prefix}pencil
+│⭔ ${prefix}triggered
+│⭔ ${prefix}trigger
+│⭔ ${prefix}fisheye
+│⭔ ${prefix}deepfry 
+│⭔ ${prefix}imagecolor (hexcolor) 
+│⭔ ${prefix}removebg
+│⭔ ${prefix}1977
+│⭔ ${prefix}aden
+│⭔ ${prefix}brannan
+│⭔ ${prefix}brooklyn
+│⭔ ${prefix}clarendon
+│⭔ ${prefix}gingham
+│⭔ ${prefix}hudson
+│⭔ ${prefix}inkwell
+│⭔ ${prefix}earlybird
+│⭔ ${prefix}kelvin
+│⭔ ${prefix}lark
+│⭔ ${prefix}lofi
+│⭔ ${prefix}maven
+│⭔ ${prefix}mayfair
+│⭔ ${prefix}nashville
+│⭔ ${prefix}perpetua
+│⭔ ${prefix}reyes
+│⭔ ${prefix}rise
+│⭔ ${prefix}slumber
+│⭔ ${prefix}stinson
+│⭔ ${prefix}toaster
+│⭔ ${prefix}valencia
+│⭔ ${prefix}walden
+│⭔ ${prefix}willow
+│⭔ ${prefix}xpro2
 │
 └───────⭓`
 hisoka.sendImage(m.chat, global.thumb, anu, m)
@@ -8732,6 +9222,7 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}shop (buy|sell) item
 │⭔ ${prefix}open (crate) (jumlah)
 │⭔ ${prefix}use (item) (jumlah)
+│⭔ ${prefix}feed (nama hewan)
 │
 └───────⭓`
 hisoka.sendImage(m.chat, global.thumb, anu, m)
