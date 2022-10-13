@@ -2983,7 +2983,308 @@ Dengan dipecat, akan mengurangi sebagian dari job level
             }
             break
             //
-
+            /**let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
+                let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
+                let sorteddiamond = Object.entries(global.db.data.users).sort((a, b) => b[1].diamond - a[1].diamond)
+                let sortedpotion = Object.entries(global.db.data.users).sort((a, b) => b[1].potion - a[1].potion)
+                let sortedsampah = Object.entries(global.db.data.users).sort((a, b) => b[1].sampah - a[1].sampah)
+                let sortedcommon = Object.entries(global.db.data.users).sort((a, b) => b[1].common - a[1].common)
+                let sorteduncommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncommon - a[1].uncommon)
+                let sortedmythic = Object.entries(global.db.data.users).sort((a, b) => b[1].mythic - a[1].mythic)
+                let sortedlegendary = Object.entries(global.db.data.users).sort((a, b) => b[1].legendary - a[1].legendary)
+                let usersmoney = sortedmoney.map(v => v[0])
+                let usersdiamond = sorteddiamond.map(v => v[0])
+                let userspotion = sortedpotion.map(v => v[0])
+                let userssampah = sortedsampah.map(v => v[0])
+                let userslevel = sortedlevel.map(v => v[0])
+                let userscommon = sortedcommon.map(v => v[0])
+                let usersuncommon = sorteduncommon.map(v => v[0])
+                let usersmythic = sortedmythic.map(v => v[0])
+                let userslegendary = sortedlegendary.map(v => v[0]) 
+                
+                
+                
+            *achievement*
+            1.Top level *${userslevel.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${userslevel.length}*
+            2.Top MIKO *${usersmoney.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${usersmoney.length}*
+            3.Top Diamond *${usersdiamond.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${usersdiamond.length}*
+            4.Top Potion *${userspotion.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${userspotion.length}*
+            5.Top Common *${userscommon.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${userscommon.length}*
+            6.Top Uncommon *${usersuncommon.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${usersuncommon.length}*
+            7.Top Mythic *${usersmythic.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${usersmythic.length}*
+            8.Top Legendary *${userslegendary.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${userslegendary.length}*
+            9.Top Sampah *${userssampah.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${userssampah.length}*
+            Banned: *No**/
+            case 'top':{
+                if(!text) return
+                let user = global.db.data.users
+                switch(args[0]){
+                    case 'level': {
+                        let level = []
+                        for(let i in user){
+                            level.push(user[i].level)
+                        }
+                        //sort data
+                        level.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 5; i++){
+                            top5.push(level[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 5; i++){
+                            for(let j in user){
+                                if(user[j].level === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].level} Level\n`
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    org.push(j)
+                                    
+                                }
+                            }
+                        }
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    case 'miko': case'money' :{
+                        let money = []
+                        for(let i in user){
+                            money.push(user[i].money)
+                        }
+                        //sort data
+                        money.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 20; i++){
+                            top5.push(money[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 20; i++){
+                            for(let j in user){
+                                if(user[j].money === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].money} MIKO\n`
+                                    org.push(j)
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    
+                                }
+                            }
+                        }
+                        
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    case 'diamond':{
+                        let diamond = []
+                        for(let i in user){
+                            diamond.push(user[i].diamond)
+                        }
+                        //sort data
+                        diamond.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 20; i++){
+                            top5.push(diamond[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 20; i++){
+                            for(let j in user){
+                                if(user[j].diamond === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].diamond} Diamond\n`
+                                    org.push(j)
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    
+                                }
+                            }
+                        }
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    case 'potion':{
+                        let potion = []
+                        for(let i in user){
+                            potion.push(user[i].potion)
+                        }
+                        //sort data
+                        potion.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 20; i++){
+                            top5.push(potion[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 20; i++){
+                            for(let j in user){
+                                if(user[j].potion === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].potion} potion\n`
+                                    org.push(j)
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    
+                                }
+                            }
+                        }
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    case 'common':{
+                        let common = []
+                        for(let i in user){
+                            common.push(user[i].common)
+                        }
+                        //sort data
+                        common.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 20; i++){
+                            top5.push(common[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 20; i++){
+                            for(let j in user){
+                                if(user[j].common === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].common} common\n`
+                                    org.push(j)
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    
+                                }
+                            }
+                        }
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    case 'uncommon':{
+                        let uncommon = []
+                        for(let i in user){
+                            uncommon.push(user[i].uncommon)
+                        }
+                        //sort data
+                        uncommon.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 20; i++){
+                            top5.push(uncommon[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 20; i++){
+                            for(let j in user){
+                                if(user[j].uncommon === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].uncommon} uncommon\n`
+                                    org.push(j)
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    
+                                }
+                            }
+                        }
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    case 'mythic':{
+                        let mythic = []
+                        for(let i in user){
+                            mythic.push(user[i].mythic)
+                        }
+                        //sort data
+                        mythic.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 20; i++){
+                            top5.push(mythic[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 20; i++){
+                            for(let j in user){
+                                if(user[j].mythic === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].mythic} mythic\n`
+                                    org.push(j)
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    
+                                }
+                            }
+                        }
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    case 'legendary':{
+                        let legendary = []
+                        for(let i in user){
+                            legendary.push(user[i].legendary)
+                        }
+                        //sort data
+                        legendary.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 20; i++){
+                            top5.push(legendary[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 20; i++){
+                            for(let j in user){
+                                if(user[j].legendary === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].legendary} legendary\n`
+                                    org.push(j)
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    
+                                }
+                            }
+                        }
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    case 'sampah':{
+                        let sampah = []
+                        for(let i in user){
+                            sampah.push(user[i].sampah)
+                        }
+                        //sort data
+                        sampah.sort(function(a, b){return b-a})
+                        //take top 5 data
+                        let top5 = []
+                        for(let i = 0; i < 20; i++){
+                            top5.push(sampah[i])
+                        }
+                        //send top 5 data
+                        let text = ''
+                        let org = []
+                        for(let i = 0; i < 20; i++){
+                            for(let j in user){
+                                if(user[j].sampah === top5[i]){
+                                    //use tag number instead of name
+                                    text += `${i+1}. @${j.split('@')[0]} = ${user[j].sampah} sampah\n`
+                                    org.push(j)
+                                    //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                                    
+                                }
+                            }
+                        }
+                        hisoka.sendText(m.chat, text, m, {mentions: org})
+                    }
+                    break
+                    default: return m.reply('masukan jenis')
+                }
+            }
+            break
             //leaderbord money
             case 'topmoney' : case 'topmiko' :{
             let user = global.db.data.users
@@ -3009,7 +3310,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                         text += `${i+1}. @${j.split('@')[0]} = ${user[j].money} MIKO\n`
                         org.push(j)
                         //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
-                        console.log(user[j], user[j].money)
+                        
                     }
                 }
             }
@@ -3042,7 +3343,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                         text += `${i+1}. @${j.split('@')[0]} = ${user[j].level} Level\n`
                         //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
                         org.push(j)
-                        console.log(user[j], user[j].level)
+                        
                     }
                 }
             }
@@ -5887,6 +6188,17 @@ break
                 let webpToMp4 = await webp2mp4File(media)
                 await hisoka.sendMessage(m.chat, { video: { url: webpToMp4.result, caption: 'Convert Webp To Video' }, gifPlayback: true }, { quoted: m })
                 await fs.unlinkSync(media)
+            }
+            break
+            case 'kenal':{
+                if(args[0] === "dimas"){
+                    hisoka.sendImage(m.chat, 'https://i.ibb.co/DKS9QVk/IMG-20221004-WA0181.jpg','DIMASUKIN KNTL',m)
+                }else if(args[0] === "luis"){
+                    hisoka.sendImage(m.chat, 'https://i.ibb.co/DKS9QVk/IMG-20221004-WA0181.jpg','LUISEP KNTL',m)
+                }else if(args[0] === "dika"){
+                    hisoka.sendImage(m.chat, 'https://i.ibb.co/DKS9QVk/IMG-20221004-WA0181.jpg','DIKASIH KNTL',m)
+                }
+                //hisoka.sendImage(m.chat, 'https://i.ibb.co/DKS9QVk/IMG-20221004-WA0181.jpg','DIMASUKIN KNTL',m)
             }
             break
 	        case 'tourl': {
