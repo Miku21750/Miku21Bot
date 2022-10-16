@@ -873,16 +873,29 @@ Kamu akan mencapai Job level ${level + 1} setelah ${nextLevel} EXP
             //add data global.premium
             case 'addpremium' :{
                 if (!isCreator) return m.reply('Kamu bukan Creator')
-                let id = args[0]
-                let time = args[1]
-                if (!id || !time) return m.reply('Kamu perlu mengirimkan ID dan waktu')
-                if (isNaN(time)) return m.reply('Waktu harus berupa angka')
-                if (time < 0) return m.reply('Waktu tidak boleh negatif')
-                if (time > 86400) return m.reply('Waktu tidak boleh lebih dari 1 hari')
-                if (global.premium[id]) return m.reply('ID sudah ada di premium')
-                global.premium[id] = time
-                m.reply('Berhasil menambahkan ID ke premium')
 
+                //const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) 
+                // let id = args[0]
+                // let time = args[1]
+                // if (!id || !time) return m.reply('Kamu perlu mengirimkan ID dan waktu')
+                // if (isNaN(time)) return m.reply('Waktu harus berupa angka')
+                // if (time < 0) return m.reply('Waktu tidak boleh negatif')
+                // if (time > 86400) return m.reply('Waktu tidak boleh lebih dari 1 hari')
+                // if (global.premium[id]) return m.reply('ID sudah ada di premium')
+                // global.premium[id] = time
+                // m.reply('Berhasil menambahkan ID ke premium')
+                let user = m.mentionedJid ? m.mentionedJid[0] : (args[0].replace(/[@ .+-]/g, '').replace(' ', '') + '@s.whatsapp.net')
+                if(user == isPremium) throw 'user sudah premium'
+                global.premium.push(user.split('@')[0])
+                m.reply('berhasil ditambahkan')
+            }
+            break
+            case 'delpremium':{
+                if (!isCreator) return m.reply('Kamu bukan Creator')
+                let user = m.mentionedJid ? m.mentionedJid[0] : (args[0].replace(/[@ .+-]/g, '').replace(' ', '') + '@s.whatsapp.net')
+                if(user != isPremium) throw 'user belum premium, ingin coba tambah? addpremium'
+                global.premium.push(user.split('@')[0])
+                m.reply('berhasil ditambahkan')
             }
             break
             case 'changename':{
@@ -3370,7 +3383,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
             user2.money = money2
             hisoka.sendText(m.chat, `${user.name} telah mengirim ${kasih} MIKO ke ${user.name}`,m)
             hisoka.sendText(m.sender, `${user.name} telah menerima ${kasih} MIKO dari ${user.name}`,m)
-            }
+            
             break*/
         case 'transfer' : case 'tf':{
             if (args.length < 3) {
@@ -5410,11 +5423,27 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
     }
     break
 
-    
-
-
-    
-
+    //add balance
+    case 'addmiko' : case 'addmoney':{
+        if(!isCreator) throw mess.owner
+        let count = args[1] && args[1].length > 0 ? Math.min(9999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
+        if(!count) throw 'masukan jumlah'
+        let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+        let user = global.db.data.users[users]
+        user.money += count
+        m.reply('Berhasil ditambahkan')
+    }
+    break
+    case 'tarikmiko' : case 'delmiko':{
+        if(!isCreator) throw mess.owner
+        let count = args[1] && args[1].length > 0 ? Math.min(9999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
+        if(!count) throw 'masukan jumlah'
+        let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+        let user = global.db.data.users[users]
+        user.money -= count
+        m.reply('Berhasil ditambahkan')
+    } 
+    break
 	    case 'setname': case 'setsubject': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -8310,10 +8339,15 @@ let capt = `⭔ Title: ${judul}
             break
             case 'profile' : {
                 let user = global.db.data.users[m.sender]
+                let num = m.sender
                 console.log(m.mentionedJid[0])                    
                 let st = null
                 let date = null
-                if(m.mentionedJid[0]) user = global.db.data.users[m.mentionedJid[0]]
+
+                if(m.mentionedJid[0]){ 
+                    user = global.db.data.users[m.mentionedJid[0]]
+                    num = m.mentionedJid[0]
+                }
                 try{
                     let status = await hisoka.fetchStatus(m.sender)
                 if (m.mentionedJid[0]) status = await hisoka.fetchStatus(m.mentionedJid[0])
@@ -8368,8 +8402,8 @@ profile += `
 │⭔ Limit        : ${user.limit}
 │⭔ Premium      : ${user.premium}
 │
-│⭔ Top level *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
-│⭔ Top MIKO *${usersmoney.indexOf(m.sender) + 1}* dari *${usersmoney.length}*
+│⭔ Top level *${userslevel.indexOf(user) + 1}* dari *${userslevel.length}*
+│⭔ Top MIKO *${usersmoney.indexOf(user) + 1}* dari *${usersmoney.length}*
 │
 └───────⭓
                 `
