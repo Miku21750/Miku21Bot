@@ -6786,7 +6786,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 m.reply(`${hisoka.user.name} telah mengaktifkan fitur nsfw di group ini !`)
                 } else if (args[0] === "off") {
                 if (!db.data.chats[m.chat].nsfw) return m.reply(`Sudah Tidak Aktif Sebelumnya`)
-                db.data.chats[m.chat].mute = false
+                db.data.chats[m.chat].nsfw = false
                 m.reply(`${hisoka.user.name} telah menonaktifkan fitur nsfw di group ini !`)
                 } else {
                  let buttons = [
