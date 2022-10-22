@@ -12,7 +12,7 @@
 */
 
 require('./config')
-const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType, generateOrGetPreKeys } = require('@adiwajshing/baileys')
+const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType, generateOrGetPreKeys, MessageType, MessageOption, Mimetype } = require('@adiwajshing/baileys')
 const fs = require('fs')
 const apiZenz = ``
 const randomFile = require('select-random-file')
@@ -66,28 +66,30 @@ const Ssampah = 2
 const Bpetcrate = 10000
 const Spetcrate = 5000
 
-// read database
-//if (typeof user !== 'object') global.db.data.users[m.sender] = {}
-let tebaklagu = (typeof db.data.game.tebaklagu !== 'object' && db.data.game.tebaklagu instanceof Array) ? db.data.game.tebaklagu : db.data.game.tebaklagu = []
-let _family100 = (typeof db.data.game.family100 !== 'object' && db.data.game.family100 instanceof Array) ? db.data.game.family100 : db.data.game.family100 = []
-let kuismath = (typeof db.data.game.math !== 'object' && db.data.game.math instanceof Array) ? db.data.game.math : db.data.game.math = []
-let tebakgambar = (typeof db.data.game.tebakgambar !== 'object' && db.data.game.tebakgambar instanceof Array) ? db.data.game.tebakgambar : db.data.game.tebakgambar = []
-let tebakkata = (typeof db.data.game.tebakkata !== 'object' && db.data.game.tebakkata instanceof Array) ? db.data.game.tebakkata : db.data.game.tebakkata = []
-let caklontong = (typeof db.data.game.caklontong !== 'object' && db.data.game.caklontong instanceof Array) ? db.data.game.caklontong : db.data.game.caklontong = []
-let caklontong_desk = (typeof db.data.game.caklontong_desk !== 'object' && db.data.game.caklontong_desk instanceof Array) ? db.data.game.caklontong_desk : db.data.game.caklontong_desk = []
-let tebakkalimat = (typeof db.data.game.tebakkalimat !== 'object' && db.data.game.tebakkalimat instanceof Array) ? db.data.game.tebakkalimat : db.data.game.tebakkalimat = []
-let tebaklirik = (typeof db.data.game.tebaklirik !== 'object' && db.data.game.tebaklirik instanceof Array) ? db.data.game.tebaklirik : db.data.game.tebaklirik = []
-let tebaktebakan = (typeof db.data.game.tebaktebakan !== 'object' && db.data.game.tebaktebakan instanceof Array) ? db.data.game.tebaktebakan : db.data.game.tebaktebakan = []
-let tebakkimia = (typeof db.data.game.tebakkimia !== 'object' && db.data.game.tebakkimia instanceof Array) ? db.data.game.tebakkimia : db.data.game.tebakkimia = []
-let tebakbendera = (typeof db.data.game.tebakbendera !== 'object' && db.data.game.tebakbendera instanceof Array) ? db.data.game.tebakbendera : db.data.game.tebakbendera = []
-let susunkata = (typeof db.data.game.susunkata !== 'object' && db.data.game.susunkata instanceof Array) ? db.data.game.susunkata : db.data.game.susunkata = []
-let tebakcharanime = (typeof db.data.game.tebakcharanime !== 'object' && db.data.game.tebakcharanime instanceof Array) ? db.data.game.tebakcharanime : db.data.game.tebakcharanime = []
-let menfess = (typeof db.data.game.menfess !== 'object' && db.data.game.menfess instanceof Array) ? db.data.game.menfess : db.data.game.menfess = []
-let vote = (typeof db.data.game.vote !== 'object' && db.data.game.vote instanceof Array) ? db.data.game.vote : db.data.game.vote = []
-let fight = db.data.game.fight = []
+// // read database
+// //if (typeof user !== 'object') global.db.data.users[m.sender] = {}
+// let tebaklagu = (typeof db.data.game.tebaklagu !== 'object' && db.data.game.tebaklagu instanceof Array) ? db.data.game.tebaklagu : db.data.game.tebaklagu = []
+// let _family100 = (typeof db.data.game.family100 !== 'object' && db.data.game.family100 instanceof Array) ? db.data.game.family100 : db.data.game.family100 = []
+// let kuismath = (typeof db.data.game.math !== 'object' && db.data.game.math instanceof Array) ? db.data.game.math : db.data.game.math = []
+// let tebakgambar = (typeof db.data.game.tebakgambar !== 'object' && db.data.game.tebakgambar instanceof Array) ? db.data.game.tebakgambar : db.data.game.tebakgambar = []
+// let tebakkata = (typeof db.data.game.tebakkata !== 'object' && db.data.game.tebakkata instanceof Array) ? db.data.game.tebakkata : db.data.game.tebakkata = []
+// let caklontong = (typeof db.data.game.caklontong !== 'object' && db.data.game.caklontong instanceof Array) ? db.data.game.caklontong : db.data.game.caklontong = []
+// let caklontong_desk = (typeof db.data.game.caklontong_desk !== 'object' && db.data.game.caklontong_desk instanceof Array) ? db.data.game.caklontong_desk : db.data.game.caklontong_desk = []
+// let tebakkalimat = (typeof db.data.game.tebakkalimat !== 'object' && db.data.game.tebakkalimat instanceof Array) ? db.data.game.tebakkalimat : db.data.game.tebakkalimat = []
+// let tebaklirik = (typeof db.data.game.tebaklirik !== 'object' && db.data.game.tebaklirik instanceof Array) ? db.data.game.tebaklirik : db.data.game.tebaklirik = []
+// let tebaktebakan = (typeof db.data.game.tebaktebakan !== 'object' && db.data.game.tebaktebakan instanceof Array) ? db.data.game.tebaktebakan : db.data.game.tebaktebakan = []
+// let tebakkimia = (typeof db.data.game.tebakkimia !== 'object' && db.data.game.tebakkimia instanceof Array) ? db.data.game.tebakkimia : db.data.game.tebakkimia = []
+// let tebakbendera = (typeof db.data.game.tebakbendera !== 'object' && db.data.game.tebakbendera instanceof Array) ? db.data.game.tebakbendera : db.data.game.tebakbendera = []
+// let susunkata = (typeof db.data.game.susunkata !== 'object' && db.data.game.susunkata instanceof Array) ? db.data.game.susunkata : db.data.game.susunkata = []
+// let tebakcharanime = (typeof db.data.game.tebakcharanime !== 'object' && db.data.game.tebakcharanime instanceof Array) ? db.data.game.tebakcharanime : db.data.game.tebakcharanime = []
+// let menfess = (typeof db.data.game.menfess !== 'object' && db.data.game.menfess instanceof Array) ? db.data.game.menfess : db.data.game.menfess = []
+// let vote = (typeof db.data.game.vote !== 'object' && db.data.game.vote instanceof Array) ? db.data.game.vote : db.data.game.vote = []
+// let fight = db.data.game.fight = []
 
 module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
+
     try {
+
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ''
         var budy = (typeof m.text == 'string' ? m.text : '')
         var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
@@ -310,7 +312,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 if(!('antibadword' in chats)) chats.antibadword = false
                 if(!('badword' in chats)) chats.badword = null
                 if(!('nsfw' in chats)) chats.nsfw = false
-                if(!('setwelcome' in chats)) chats.welcome = null
+                if(!('setwelcome' in chats)) chats.welcome = ''
                 if(!('setbye' in chats)) chats.bye = null
 
             } else global.db.data.chats[m.chat] = {
@@ -319,7 +321,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 antibadword: false,
                 badword: null,
                 nsfw: false,
-                welcome: null,
+                welcome: '',
                 bye: null,
             }
 		
@@ -340,11 +342,69 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 		templateGif: false,
 		templateMsg: false,
 	    }
-	    
+        //game
+        let game = global.db.data.game
+            if (typeof game !== 'object') global.db.data.game = {}
+            if (game) {
+                //if(!('fish' in game)) game.fish = []
+                if(!('tebaklagu' in game)) game.tebaklagu = []
+                if(!('family100' in game)) game.family100 = []
+                if(!('math' in game)) game.math = []
+                if(!('tebakgambar' in game)) game.tebakgambar = []
+                if(!('tebakkata' in game)) game.tebakkata = []
+                if(!('caklontong' in game)) game.caklontong = []
+                if(!('caklontong_desk' in game)) game.caklontong_desk = []
+                if(!('tebakkalimat' in game)) game.tebakkalimat = []
+                if(!('tebaklirik' in game)) game.tebaklirik = []
+                if(!('tebaktebakan' in game)) game.tebaktebakan = []
+                if(!('tebakkimia' in game)) game.tebakkimia = []             
+                if(!('tebakbendera' in game)) game.tebakbendera = []
+                if(!('susunkata' in game)) game.susunkata = []
+                if(!('tebakcharanime' in game)) game.tebakcharanime = []
+                if(!('menfess' in game)) game.menfess = []
+                if(!('vote' in game)) game.vote = []
+                
+            } else global.db.data.game = {
+                tebaklagu : [],
+                family100 : [],
+                math : [],
+                tebakgambar : [],
+                tebakkata : [],
+                caklontong : [],
+                caklontong_desk : [],
+                tebakkalimat : [],
+                tebaklirik : [],
+                tebaktebakan : [],
+                tebakkimia : [],
+                tebakbendera : [],
+                susunkata : [],
+                tebakcharanime : [],
+                menfess : [],
+                vote : [],
+
+            }
+        
         } catch (err) {
             console.error(err)
         }
-	    
+	    let tebaklagu = db.data.game.tebaklagu 
+        let _family100 = db.data.game.family100
+        let kuismath = db.data.game.math
+        let tebakgambar = db.data.game.tebakgambar
+        let tebakkata = db.data.game.tebakkata
+        let caklontong = db.data.game.caklontong
+        let caklontong_desk = db.data.game.caklontong_desk
+        let tebakkalimat = db.data.game.tebakkalimat
+        let tebaklirik = db.data.game.tebaklirik
+        let tebaktebakan = db.data.game.tebaktebakan
+        let tebakkimia = db.data.game.tebakkimia
+        let tebakbendera = db.data.game.tebakbendera
+        let susunkata = db.data.game.susunkata
+        let tebakcharanime = db.data.game.tebakcharanime
+        let menfess = db.data.game.menfess
+        let vote = db.data.game.vote 
+        // let fight = db.data.game.fight 
+
         // Public & Self
         if (!hisoka.public) {
             if (!m.key.fromMe) return
@@ -435,7 +495,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         hisoka.ev.emit('messages.upsert', msg)
         }
 	    
-	if (('family100'+m.chat in _family100) && isCmd) {
+	if (('family100'+m.chat in _family100) /*&& isCmd*/) {
             kuis = true
             let room = _family100['family100'+m.chat]
             let teks = budy.toLowerCase().replace(/[^\w\s\-]+/, '')
@@ -457,7 +517,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             if (isWin || isSurender) delete _family100['family100'+m.chat]
         }
 
-        if (tebaklagu.hasOwnProperty(m.chat) && isCmd) {
+        if (tebaklagu.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = tebaklagu[m.chat]
             if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -471,7 +531,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             } else return
         }
 
-        if (kuismath.hasOwnProperty(m.chat) && isCmd) {
+        if (kuismath.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = kuismath[m.chat]
             if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -484,7 +544,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 delete kuismath[m.chat]
             } else return
         }
-        if (menfess.hasOwnProperty(m.chat) && isCmd) {
+        console.log(menfess.hasOwnProperty(m.chat) ,isCmd)
+        if (menfess.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             let txt = `Ada balasan dari menfess kamu dari @${menfess[m.chat].target.split('@')[0]}\n\n *${budy}* \n\nnote: _balas lagi secara manual_`
             //let menst = [orang, jodoh]
@@ -495,7 +556,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             } else return
         }
 
-        if (tebakgambar.hasOwnProperty(m.chat) && isCmd) {
+        if (tebakgambar.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = tebakgambar[m.chat]
             if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -510,7 +571,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             } else return
         }
 
-        if(tebakbendera.hasOwnProperty(m.chat) && isCmd){
+        if(tebakbendera.hasOwnProperty(m.chat) /*&& isCmd*/){
             kuis = true
             jawaban = tebakbendera[m.chat]
             if(budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban){   
@@ -523,7 +584,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 delete tebakbendera[m.chat]
             }
         }
-        if (tebakkimia.hasOwnProperty(m.chat) && isCmd){
+        if (tebakkimia.hasOwnProperty(m.chat) /*&& isCmd*/){
             kuis = true
             jawaban = tebakkimia[m.chat]
             if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -537,7 +598,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 delete tebakgambar[m.chat]
             } else return
         }
-        if (tebakkata.hasOwnProperty(m.chat) && isCmd) {
+        if (tebakkata.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = tebakkata[m.chat]
             if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -551,7 +612,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             } else return
         }
 
-        if (caklontong.hasOwnProperty(m.chat) && isCmd) {
+        if (caklontong.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = caklontong[m.chat]
 	    deskripsi = caklontong_desk[m.chat]
@@ -567,7 +628,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             } else return
         }
 
-        if (tebakkalimat.hasOwnProperty(m.chat) && isCmd) {
+        if (tebakkalimat.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = tebakkalimat[m.chat]
             if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -581,7 +642,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             } else return
         }
 
-        if (tebaklirik.hasOwnProperty(m.chat) && isCmd) {
+        if (tebaklirik.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = tebaklirik[m.chat]
             if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -595,7 +656,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             } else return
         }
 	    
-	if (tebaktebakan.hasOwnProperty(m.chat) && isCmd) {
+	if (tebaktebakan.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = tebaktebakan[m.chat]
             if (budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -609,7 +670,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 delete tebaktebakan[m.chat]
             } else return
         }
-        if(susunkata.hasOwnProperty(m.chat) && isCmd) {
+        if(susunkata.hasOwnProperty(m.chat) /*&& isCmd*/) {
             kuis = true
             jawaban = susunkata[m.chat]
             if(budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban) {
@@ -622,7 +683,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 delete susunkata[m.chat]
             }else return 
         }
-        if(tebakcharanime.hasOwnProperty(m.chat) && isCmd){
+        if(tebakcharanime.hasOwnProperty(m.chat) /*&& isCmd*/){
             kuis = true
             jawaban = tebakcharanime[m.chat]
             if(budy.toLowerCase().replace(/[^\w\s\-]+/, '') == jawaban){
@@ -6147,10 +6208,29 @@ break
                
 	        case 'simih': case 'simisimi': case 'miku21' : case 'miku': {
             if (!text) throw `Example : ${prefix + command} text`
+            //base
             hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
+            if(hm.succes){
             m.reply(hm.success)
+            }else{
+                hm = await fetchJson(`https://simsimi.info/api/?lc=id&text=${text}`)
+                m.reply(hm.message)
+            }
+            //alter
+            //hm = await fetchJson(`https://simsimi.info/api/?lc=id&text=${text}`)
+            //m.reply(hm.message)
             }
             break
+            case 'mikualter':{
+                if (!text) throw `Example : ${prefix + command} text`
+                //base
+                // hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIcomponent(text)}&lc=id&cf=false`)
+                // m.reply(hm.success)
+                //alter
+                hm = await fetchJson(`https://simsimi.info/api/?lc=id&text=${encodeURIComponent(text)}`)
+                m.reply(hm.message)
+                }
+                break
             case 'toimage': case 'toimg': {
                 if (!quoted) throw 'Reply Image'
                 if (!/webp/.test(mime)) throw `Balas sticker dengan caption *${prefix + command}*`
@@ -7937,7 +8017,9 @@ ${Object.entries(global.db.data.sticker).map(([key, value], index) => `${index +
             case 'setwelcome': {
                 if(!isBotAdmins) throw `bot belum menjadi admin`
                 if(!isAdmins) throw `Hanya Admin yang bisa menggunakan command ini`
-                if(!text) throw `Ketikkan pesan yang ingin di set\n Ket : Ambil nama gc dengan $labelgc dan nama user dengan $user `
+                if(!text) throw `Ketikkan pesan yang ingin di set\n Ket : Ambil nama gc dengan $labelgc dan nama user dengan $user\n\nExample : ${prefix+command} Halo $user, `
+                //if (db.data.chats[m.chat].antilink) return m.reply(`Sudah Aktif Sebelumnya`)
+                console.log(text)
                 global.db.data.chats[m.chat].welcome = text
                 m.reply('berhasil di set')
             }
