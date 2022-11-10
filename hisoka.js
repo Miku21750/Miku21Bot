@@ -3371,13 +3371,13 @@ Dengan dipecat, akan mengurangi sebagian dari job level
             money.sort(function(a, b){return b-a})
             //take top 5 data
             let top5 = []
-            for(let i = 0; i < 20; i++){
+            for(let i = 0; i < 50; i++){
                 top5.push(money[i])
             }
             //send top 5 data
             let text = ''
             let org = []
-            for(let i = 0; i < 20; i++){
+            for(let i = 0; i < 50; i++){
                 for(let j in user){
                     if(user[j].money === top5[i]){
                         //use tag number instead of name
@@ -3392,6 +3392,89 @@ Dengan dipecat, akan mengurangi sebagian dari job level
             hisoka.sendText(m.chat, text, m, {mentions: org})
             }
             break
+            case 'toplokal':{
+                /*
+                take all data of money
+            let money = []
+            for(let i in user){
+                money.push(user[i].money)
+            }
+            //sort data
+            money.sort(function(a, b){return b-a})
+            //take top 5 data
+            let top5 = []
+            for(let i = 0; i < 5; i++){
+                top5.push(money[i])
+            }
+            //send top 5 data
+            let text = ''
+            for(let i = 0; i < 5; i++){
+                for(let j in user){
+                    if(user[j].money === top5[i]){
+                        //use tag number instead of name
+                        text += `${i+1}. @${j.split('@')[0]} = ${user[j].money} MIKO\n`
+                        //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
+                        console.log(user[j], user[j].money)
+                    }
+                }
+            }
+            hisoka.sendTextWithMentions(m.chat, text, m) */
+                if(!m.isGroup) throw `Hanya bisa digunakan di grup`
+                //let mem = participants
+                let jmlmem = participants.length
+                let mem = []
+                for(let i = 0; i < jmlmem; i++){
+                    mem.push(participants[i].id)
+                }
+                let user = global.db.data.users
+                let money = []
+                let level = []
+                for (let i of mem){
+                    //if (typeof user !== 'object') global.db.data.users[m.sender] = {}
+                    if(typeof global.db.data.users[i].money !== 'object') return money.push(0)
+                    money.push(global.db.data.users[i].money)
+                    level.push(global.db.data.users[i].level)
+                }
+                // console.log(user)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                // let money = []
+                // let level = []
+                // for(let i = 0; i < user.length; i++){
+                //     console.log(i)
+                //     money.push(user[i].money)
+                //     level.push(user[i].level)
+                // }
+                money.sort(function(a, b){return b-a})
+                level.sort(function(a, b){return b-a})
+                let top5money = []
+                let top5level = []
+                
+                for(let i = 0; i< 5; i++){
+                    top5money.push(money[i])
+                    top5level.push(money[i])
+                }
+                let txt = 'TOP LOKAL\n'
+                txt += `TOP MIKO LOKAL\n`
+                let org = []
+                for(let i = 0; i < 5; i++){
+                    
+                    for(let j in user){
+                        console.log(i,j)
+                        if(user[j].money === top5money[i]){
+                            txt += `${i+1}. @${j.split('@')[0]} = ${user[j].money} MIKO\n`
+                            console.log(user[j], user[j].money)
+                            org.push(j)
+                        }/* 
+                        `
+                        if(user[j].level === top5level[i]){
+                            txt += `${i+1}. @${j.split('@')[0]} = ${user[j].level} LEVEL\n`
+                        } */
+                    }
+                }
+                hisoka.sendText(m.chat, txt, m, {mentions: org})
+                // hisoka.sendTextWithMentions(m.chat, txt, m)
+            }
+            break
+
             //top level
             case 'toplevel' : {
             let user = global.db.data.users
@@ -3639,7 +3722,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
             
             let user = global.db.data.users[m.sender]
-                hisoka.sendMessage(m.chat, { image: global.thumb , caption: `*Hai Kak ${user.name}*\n\n Bot Rental Prices\n⭔ 3k Per Group via E-Walet 1 Month\n⭔ 5k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 10k per User 1 bulan\n\nPayment can be via saweria/trakteer/shopee/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283834685279 (Owner)\n\nDonate For Me : \n\n⭔ Saweria : https://saweria.co/Miku21Margareth\n⭔ Trakteer : https://trakteer.id/miku21-margareth` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: global.thumb , caption: `*Hai Kak ${user.name}*\n\n Bot Rental Prices\n⭔ 10k Per Group via E-Walet 1 Month\n⭔ 15k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 5k per User 1 bulan\n\nPayment can be via saweria/trakteer/shopee/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283834685279 (Owner)\n\nDonate For Me : \n\n⭔ Saweria : https://saweria.co/Miku21Margareth\n⭔ Trakteer : https://trakteer.id/miku21-margareth` }, { quoted: m })
             }
             break
             case 'sc': case 'script' :{
@@ -3909,8 +3992,8 @@ lalu untuk pdkt, disitu ada keterangannya. untuk nikah dengan waifu, syarat haru
                 //https://i.ibb.co/R3yfs3w/tutorclaimwaifu.png
                 let txt = `
 CARA PAKAI CLAIM WAIFU 
-claim dengan nomor karakter yang ada di myanimelist pada bagian link. kalau malas cari, bisa gunakan fitur !malsearch, tapi ya mohon moaaf saja, fitur nya kruang akurat biasanya
-lalu untuk pdkt, disitu ada keterangannya. untuk nikah dengan waifu, syarat harus membeli rumah dahulu. lalu untuk fitur lainnya masih WIP, jadi mohon bersabar
+claim waifu dengan nomor character, misal : "claimwaifu 40016". Untuk no characternya bisa dicari dengan menggunakan fitur !searchwaifu  misal: "searchwaifu tanaka asuka" atau dengan buka website my anime list seperti gambar diatas
+\n\nlalu untuk pdkt, disitu ada keterangannya. untuk nikah dengan waifu, syarat harus membeli rumah dahulu. lalu untuk fitur lainnya masih WIP, jadi mohon bersabar
 `
                 hisoka.sendImage(m.chat, 'https://i.ibb.co/R3yfs3w/tutorclaimwaifu.png' , txt, m)
             }
@@ -4912,76 +4995,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
                     await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, {mentions: menst})
             }
             break
-            case 'toplokal':{
-                /*
-                take all data of money
-            let money = []
-            for(let i in user){
-                money.push(user[i].money)
-            }
-            //sort data
-            money.sort(function(a, b){return b-a})
-            //take top 5 data
-            let top5 = []
-            for(let i = 0; i < 5; i++){
-                top5.push(money[i])
-            }
-            //send top 5 data
-            let text = ''
-            for(let i = 0; i < 5; i++){
-                for(let j in user){
-                    if(user[j].money === top5[i]){
-                        //use tag number instead of name
-                        text += `${i+1}. @${j.split('@')[0]} = ${user[j].money} MIKO\n`
-                        //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
-                        console.log(user[j], user[j].money)
-                    }
-                }
-            }
-            hisoka.sendTextWithMentions(m.chat, text, m) */
-                if(!m.isGroup) throw `Hanya bisa digunakan di grup`
-                let mem = participants.map(u => u.id)
-                let user = []
-                for (let i of mem){
-                    user.push(global.db.data.users[i])
-                }
-                console.log(user)
-                let money = []
-                let level = []
-                for(let i of user){
-                    console.log(i)
-                    money.push(user[i].money)
-                    level.push(user[i].level)
-                }
-                money.sort(function(a, b){return b-a})
-                level.sort(function(a, b){return b-a})
-                let top5money = []
-                let top5level = []
-                
-                for(let i = 0; i< 5; i++){
-                    top5money.push(money[i])
-                    top5level.push(money[i])
-                }
-                let txt = 'TOP LOKAL\n'
-                txt += `TOP MIKO LOKAL\n`
-                for(let i = 0; i < 5; i++){
-                    
-                    for(let j in user){
-                        console.log(i,j)
-                        if(user[j].money === top5money[i]){
-                            txt += `${i+1}. @${j.split('@')[0]} = ${user[j].money} MIKO\n`
-                            console.log(user[j], user[j].money)
-                        }/* 
-                        `
-                        if(user[j].level === top5level[i]){
-                            txt += `${i+1}. @${j.split('@')[0]} = ${user[j].level} LEVEL\n`
-                        } */
-                    }
-                }
-                
-                hisoka.sendTextWithMentions(m.chat, txt, m)
-            }
-            break
+            
             case 'apakah' : {
                 if(!text) throw `Example : ${prefix + command} Saya Bilek`
                 apakah = text
@@ -6171,7 +6185,9 @@ break
 	    break
 	       case 'attp': case 'ttp': {
            if (!text) throw `Example : ${prefix + command} text`
-           await hisoka.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${encodeURIComponent(text)}`, 'hisoka', 'morou', m, {asSticker: true})
+           //await hisoka.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${encodeURIComponent(text)}`, 'hisoka', 'morou', m, {asSticker: true})
+           //hisoka.sendImageAsSticker(m.chat, smeme, m, { packname: global.packname, author: global.auhor })
+           await hisoka.sendImageAsSticker(m.chat, `https://zenzapis.xyz/creator/${command}?text=${encodeURIComponent(text)}`, m, { packname: global.packname, author: global.auhor })
 
          }
          break
@@ -8692,9 +8708,8 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}claimwaifu
 │⭔ ${prefix}unclaim
 │⭔ ${prefix}waifusaya
-│⭔ ${prefix}listwaifu
 │⭔ ${prefix}searchwaifu
-│⭔ ${prefix}searchwaifuanime
+│⭔ ${prefix}searchwaifuanime (bug)
 │⭔ ${prefix}randomwaifu
 │⭔ ${prefix}pdkt
 │⭔ ${prefix}tutorclaim
