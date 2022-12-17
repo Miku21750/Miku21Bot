@@ -6524,11 +6524,20 @@ break
                 let { yta } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27`
                 let quality = args[1] ? args[1] : '128kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 100000) return m.reply('Link :  '+util.format(media))
-                hisoka.sendImage(m.chat, media.thumb, `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resolusi : ${args[1] || '128kbps'}`, m)
-                hisoka.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
-                hisoka.sendMessage(m.chat, {document: {url: media.dl_link}, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3`}, { quoted : m })
+                axios.get(`https://zenzapis.xyz/downloader/ytplay?apikey=keymikuzenz21&query=${text}`)
+                .then(({data})=>{
+                    if(data.status === "OK"){
+
+                        let media = data.result 
+                        //if (media.filesize >= 100000) return m.reply('Link :  '+util.format(media))
+                        hisoka.sendImage(m.chat, media.thumb, `⭔ Title : ${media.title}\n⭔ File Size : ${media.sizeAudio}\n⭔ Url : ${isUrl(text)}\n`, m)
+                        hisoka.sendMessage(m.chat, { audio: { url: media.getAudio  }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+                        hisoka.sendMessage(m.chat, {document: {url: media.getAudio }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3`}, { quoted : m })
+                    }else{
+                        m.reply('Error, please report to the owner');
+                    }
+                })
+                
             }
             break
             case 'ytmp4': case 'ytvideo': {
@@ -7649,6 +7658,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 // m.reply('bug, tiktokdl dimatikan sementara')
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
+                //https://zenzapis.xyz/downloader/tiktok?apikey=keymikuzenz21&url=https://www.tiktok.com/@bestpart_lai/video/7133205394347937029?_r=1&_t=8UwAHZLVFpp&is_from_webapp=v1&item_id=7133205394347937029
                 let anu = await fetchJson(`https://zenzapis.xyz/downloader/tiktok?apikey=keymikuzenz21&url=${text}`)
                 if(!anu) throw 'Cannot download link'
                 if(anu.status == false) throw 'Cannot download link'
