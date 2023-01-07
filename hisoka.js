@@ -6289,12 +6289,19 @@ break
 	        case 'simih': case 'simisimi': case 'miku21' : case 'miku': {
             if (!text) throw `Example : ${prefix + command} text`
             //base
-            hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
-            if(hm.succes){
-            m.reply(hm.success)
+            hm = await fetchJson(`https://zenzapis.xyz/entertainment/simisimi?text=${encodeURIComponent(text)}&apikey=keymikuzenz21`)
+            if(hm.status === "OK"){
+            m.reply(hm.result.message)
             }else{
-                hm = await fetchJson(`https://simsimi.info/api/?lc=id&text=${text}`)
-                m.reply(hm.message)
+                let response = await axios.post(
+                    'https://api.simsimi.info/v1/simtalk',
+                    new URLSearchParams({
+                        'text': encodeURIComponent(text),
+                        'lc': 'id'
+                    })
+                );
+                m.reply('error, coba lain waktu')
+                // m.reply(response)
             }
             //alter
             //hm = await fetchJson(`https://simsimi.info/api/?lc=id&text=${text}`)
@@ -6404,6 +6411,33 @@ break
                 await fs.unlinkSync(media)
             }
             break
+
+            //ml
+            case 'heroml':{
+                let link = ''
+                if(text) link = '?heroName='+args[0]
+                let anu = await fetchJson('https://api.dazelpro.com/mobile-legends/hero'+link);
+                if(anu.success == false) throw `Error, tolong report dengan !report ${command} menu`
+                let txt = 'LIST HERO ML'
+                for(let i = 0; i<anu.hero.length; i++){
+                    let hero = anu.hero[i]
+                    txt += `\n⭔ Hero Id : ${hero.hero_id}\n⭔Name : ${hero.hero_name}\n⭔Role : ${hero.hero_role}\n⭔Speciality : ${hero.hero_specially}\n___________________________________________`
+                }
+                await hisoka.sendText(m.chat, txt, m)
+            }
+            break
+            case 'detailheroml':{
+                if(!args[0]) throw 'Masukan ID hero ml yang tertera di command !heroml'
+                let anu = await fetchJson('https://api.dazelpro.com/mobile-legends/hero/'+args[0]);
+                if(anu.success == false) throw `Masukan ID hero ml yang tertera di command !heroml`
+                let txt = `Detail Hero ${anu.hero[0].hero_name}`
+                let hero = anu.hero[0]
+                txt += `\n⭔ Hero Id : ${hero.hero_id}\n⭔Name : ${hero.hero_name}\n⭔Role : ${hero.hero_role}\n⭔Speciality : ${hero.hero_specially}\n⭔Durability : ${hero.hero_overview.hero_durability}\n⭔Offence : ${hero.hero_overview.hero_offence}\n⭔Ability : ${hero.hero_overview.hero_ability}\n⭔Difficulty : ${hero.hero_overview.hero_difficulty}\n___________________________________________`
+                await hisoka.sendText(m.chat, txt, m)
+            }
+            break
+
+            //ml end here
             case 'imagenobg': case 'removebg': case 'remove-bg': {
 	    if (!quoted) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
 	    if (!/image/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
