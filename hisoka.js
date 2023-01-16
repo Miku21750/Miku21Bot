@@ -6289,9 +6289,9 @@ break
 	        case 'simih': case 'simisimi': case 'miku21' : case 'miku': {
             if (!text) throw `Example : ${prefix + command} text`
             //base
-            hm = await fetchJson(`https://zenzapis.xyz/entertainment/simisimi?text=${encodeURIComponent(text)}&apikey=keymikuzenz21`)
-            if(hm.status === "OK"){
-            m.reply(hm.result.message)
+            hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
+            if(hm.success){
+            m.reply(hm.success)
             }else{
                 let response = await axios.post(
                     'https://api.simsimi.info/v1/simtalk',
@@ -6817,6 +6817,22 @@ ${global.sp} yuki
                 })
             }
             break
+            case 'hentaivid':{
+                
+                let metadata_id = groupMetadata.id
+                let group = db.data.chats[m.chat]
+                if(m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //if not premium return
+                if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
+                axios.get('https://zenzapis.xyz/downloader/hentaivid?apikey=keymikuzenz21').then(({data})=>{
+                    if(data.status != 'OK') throw 'Error, tolong report dengan menggunakan fitur !report'
+                    let res = data.result
+                    let txt = `Title : ${res.title}\n Category : ${res.category}\n\n${res.link}`
+                    hisoka.sendMessage(m.chat, { video: { url: res.video_1 || res.video_2, caption: txt } }, { quoted: m })
+                })
+            }   
+            break
+            
             case 'nhentai':{
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
@@ -7117,7 +7133,16 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             break
             case 'brainly':{
                 if(!text) throw `Example ${prefix + command} apa itu nkri`
-                brain.search(text,"id").then(console.log).catch(console.error)
+                brain.search(text,"id").then(function(data){
+                    let rand = data[Math.floor(Math.random() * data.length)]
+                    let txt = ''
+                    //pertanyaan
+                    txt += `Judul : ${rand.question.content}\nJenis Pertanyaan : ${rand.question.education},\nKelas : ${rand.question.grade}`
+                    //jawaban
+                    txt += '---------------------------------'
+                    // txt += ``
+                    console.log(rand.answers)
+                }).catch(console.error)
             }
             break
             case 'wikimedia': {
