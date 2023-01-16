@@ -6817,8 +6817,6 @@ ${global.sp} yuki
                 })
             }
             break
-<<<<<<< Updated upstream
-=======
             case 'hentaivid':{
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
@@ -6834,7 +6832,6 @@ ${global.sp} yuki
             }   
             break
             
->>>>>>> Stashed changes
             case 'nhentai':{
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
