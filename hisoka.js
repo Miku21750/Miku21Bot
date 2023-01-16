@@ -6289,9 +6289,9 @@ break
 	        case 'simih': case 'simisimi': case 'miku21' : case 'miku': {
             if (!text) throw `Example : ${prefix + command} text`
             //base
-            hm = await fetchJson(`https://zenzapis.xyz/entertainment/simisimi?text=${encodeURIComponent(text)}&apikey=keymikuzenz21`)
-            if(hm.status === "OK"){
-            m.reply(hm.result.message)
+            hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
+            if(hm.success){
+            m.reply(hm.success)
             }else{
                 let response = await axios.post(
                     'https://api.simsimi.info/v1/simtalk',
@@ -7132,7 +7132,16 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             break
             case 'brainly':{
                 if(!text) throw `Example ${prefix + command} apa itu nkri`
-                brain.search(text,"id").then(console.log).catch(console.error)
+                brain.search(text,"id").then(function(data){
+                    let rand = data[Math.floor(Math.random() * data.length)]
+                    let txt = ''
+                    //pertanyaan
+                    txt += `Judul : ${rand.question.content}\nJenis Pertanyaan : ${rand.question.education},\nKelas : ${rand.question.grade}`
+                    //jawaban
+                    txt += '---------------------------------'
+                    // txt += ``
+                    console.log(rand.answers)
+                }).catch(console.error)
             }
             break
             case 'wikimedia': {
