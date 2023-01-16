@@ -6767,7 +6767,7 @@ ${global.sp} yuki
             break
             case 'uniform' : case 'maid' : case 'marin-kitagawa' : case 'mori-calliope' : case 'raiden-shogun' : case 'oppai' : case 'selfies' : {
                 m.reply(mess.wait)
-                axios.get(`https://api.waifu.im/random/?selected_tags=${command}`)
+                axios.get(`https://api.waifu.im/search/?included_tags=${command}`)
                 
                 .then(({data})=>{
                     console.log(command,data.images[0].url,data.images)
@@ -6817,6 +6817,24 @@ ${global.sp} yuki
                 })
             }
             break
+<<<<<<< Updated upstream
+=======
+            case 'hentaivid':{
+                let metadata_id = groupMetadata.id
+                let group = db.data.chats[m.chat]
+                if(m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //if not premium return
+                if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
+                axios.get('https://zenzapis.xyz/downloader/hentaivid?apikey=keymikuzenz21').then(({data})=>{
+                    if(data.status != 'OK') throw 'Error, tolong report dengan menggunakan fitur !report'
+                    let res = data.result
+                    let txt = `Title : ${res.title}\n Category : ${res.category}\n\n${res.link}`
+                    hisoka.sendMessage(m.chat, { video: { url: res.video_1 || res.video_2, caption: txt } }, { quoted: m })
+                })
+            }   
+            break
+            
+>>>>>>> Stashed changes
             case 'nhentai':{
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
@@ -6919,7 +6937,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                         hisoka.sendImage(m.chat, data.url, `NIH`,m)
                     })}else if(text === 'ass'||text === 'hentai'||text === 'milf'||text === 'oral'||text === 'paizuri'||text === 'ecchi'||text === 'ero'){
                         m.reply(mess.wait)
-                        axios.get(`https://api.waifu.im/random/?selected_tags=${text}`)
+                        axios.get(`https://api.waifu.im/search/?included_tags=${text}`)
                         .then(({data})=>{
                             hisoka.sendImage(m.chat, data.images[0].url,`NIH`,m)
                         })
