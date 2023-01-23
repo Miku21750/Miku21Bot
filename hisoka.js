@@ -3542,7 +3542,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 return hisoka.sendText(m.chat, `Gunakan format ${prefix}transfer <type> <jumlah> <@tag>\ncontoh penggunaan: *${prefix}transfer money 100 @tag*`.trim(), m)
             } else try {
                 let type = (args[0] || '').toLowerCase()
-                let count = args[1] && args[1].length > 0 ? Math.min(9999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
+                let count = args[1] && args[1].length > 0 ? Math.min(9999999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
                 let who = m.mentionedJid ? m.mentionedJid[0] : (args[2].replace(/[@ .+-]/g, '').replace(' ', '') + '@s.whatsapp.net')
                 if(!m.mentionedJid || !args[2]) throw 'Tag salah satu, atau ketik Nomernya!!'
                 let users = global.db.data.users
@@ -5567,7 +5567,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
     //add balance
     case 'addmiko' : case 'addmoney':{
         if(!isCreator) throw mess.owner
-        let count = args[1] && args[1].length > 0 ? Math.min(9999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
+        let count = args[1] && args[1].length > 0 ? Math.min(9999999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
         if(!count) throw 'masukan jumlah'
         let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
         let user = global.db.data.users[users]
@@ -5577,12 +5577,12 @@ Jika hanya ingin mengganti jenis, ketik ${prefix+command} jenis (Nomor jenis yan
     break
     case 'tarikmiko' : case 'delmiko':{
         if(!isCreator) throw mess.owner
-        let count = args[1] && args[1].length > 0 ? Math.min(9999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
+        let count = args[1] && args[1].length > 0 ? Math.min(9999999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
         if(!count) throw 'masukan jumlah'
-        let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+        let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : args[0].replace(/[^0-9]/g, '')+'@s.whatsapp.net'
         let user = global.db.data.users[users]
         user.money -= count
-        m.reply('Berhasil ditambahkan')
+        m.reply('Berhasil ditarik')
     } 
     break
 	    case 'setname': case 'setsubject': {
@@ -6812,10 +6812,15 @@ ${global.sp} yuki
                 }
             }
             break
-            case 'cosplay': case 'meme': case 'memeindo':case 'darkjoke':{
-                m.reply(mess.wait)
+            case 'cosplay': case 'meme': case 'memeindo':{
                 return m.reply('maaf lagi error')
-                hisoka.sendMessage(m.chat, {image : {url : `https://zenzapis.xyz/randomimage/${command}?apikey=keymikuzenz21`}, caption:`NIH`},{quoted:m})
+                m.reply(mess.wait)
+                
+            }
+            break
+            case 'darkjoke':{
+                m.reply(mess.wait)
+                hisoka.sendMessage(m.chat, {image : {url : `https://api.lolhuman.xyz/api/meme/darkjoke?apikey=keymikulolhuman21`}, caption:`NIH`},{quoted:m})
                 
             }
             break
@@ -7972,15 +7977,17 @@ Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan c
 	    }
 	    break
 		case 'iqra': {
-		oh = `Example : ${prefix + command} 3\n\nIQRA Yang tersedia : 1,2,3,4,5,6`
+            return m.reply('maaf lagi error')
+            oh = `Example : ${prefix + command} 3\n\nIQRA Yang tersedia : 1,2,3,4,5,6`
 		if (!text) throw oh
 		yy = await getBuffer(`https://islamic-api-indonesia.herokuapp.com/api/data/pdf/iqra${text}`)
 		hisoka.sendMessage(m.chat, {document: yy, mimetype: 'application/pdf', fileName: `iqra${text}.pdf`}, {quoted:m}).catch ((err) => m.reply(oh))
 		}
 		break
 		case 'juzamma': {
+        return m.reply('maaf lagi error')
 		if (args[0] === 'pdf') {
-		m.reply(mess.wait)
+            m.reply(mess.wait)
 		hisoka.sendMessage(m.chat, {document: {url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.pdf'}, mimetype: 'application/pdf', fileName: 'juz-amma-arab-latin-indonesia.pdf'}, {quoted:m})
 		} else if (args[0] === 'docx') {
 		m.reply(mess.wait)
@@ -7999,8 +8006,9 @@ Format yang tersedia : pdf, docx, pptx, xlsx`)
 		}
 		break
 		case 'hadis': case 'hadist': {
-		if (!args[0]) throw `Contoh:
-${prefix + command} bukhari 1
+            return m.reply('maaf lagi error')
+            if (!args[0]) throw `Contoh:
+            ${prefix + command} bukhari 1
 ${prefix + command} abu-daud 1
 
 Pilihan tersedia:
@@ -8037,17 +8045,24 @@ ${id}`)
 		case 'alquran': {
 		if (!args[0]) throw `Contoh penggunaan:\n${prefix + command} 1 2\n\nmaka hasilnya adalah surah Al-Fatihah ayat 2 beserta audionya, dan ayatnya 1 aja`
 		if (!args[1]) throw `Contoh penggunaan:\n${prefix + command} 1 2\n\nmaka hasilnya adalah surah Al-Fatihah ayat 2 beserta audionya, dan ayatnya 1 aja`
-		let res = await fetchJson(`https://islamic-api-indonesia.herokuapp.com/api/data/quran?surah=${args[0]}&ayat=${args[1]}`)
-		let txt = `*Arab* : ${res.result.data.text.arab}
-*English* : ${res.result.data.translation.en}
-*Indonesia* : ${res.result.data.translation.id}
+// 		let res = await fetchJson(`https://islamic-api-indonesia.herokuapp.com/api/data/quran?surah=${args[0]}&ayat=${args[1]}`)
+// 		let txt = `*Arab* : ${res.result.data.text.arab}
+// *English* : ${res.result.data.translation.en}
+// *Indonesia* : ${res.result.data.translation.id}
 
-( Q.S ${res.result.data.surah.name.transliteration.id} : ${res.result.data.number.inSurah} )`
-		m.reply(txt)
-		hisoka.sendMessage(m.chat, {audio: { url: res.result.data.audio.primary }, mimetype: 'audio/mpeg'}, { quoted : m })
+// ( Q.S ${res.result.data.surah.name.transliteration.id} : ${res.result.data.number.inSurah} )`
+// 		m.reply(txt)
+        let res = await fetchJson(`https://api.lolhuman.xyz/api/quran/${args[0]}/${args[1]}?apikey=keymikulolhuman21`)
+        let txt = `*Arab* : ${res.result.ayat[0].arab}
+*Latin* : ${res.result.ayat[0].latin}
+*Indonesia* : ${res.result.ayat[0].indonesia}
+
+( Q.S ${res.result.surah} : ${res.result.nomor} )`
+		hisoka.sendMessage(m.chat, {audio: { url: res.result.ayat[0].audio }, mimetype: 'audio/mpeg'}, { quoted : m })
 		}
 		break
 		case 'tafsirsurah': {
+            return m.reply('maaf lagi error')
 		if (!args[0]) throw `Contoh penggunaan:\n${prefix + command} 1 2\n\nmaka hasilnya adalah tafsir surah Al-Fatihah ayat 2`
 		if (!args[1]) throw `Contoh penggunaan:\n${prefix + command} 1 2\n\nmaka hasilnya adalah tafsir surah Al-Fatihah ayat 2`
 		let res = await fetchJson(`https://islamic-api-indonesia.herokuapp.com/api/data/quran?surah=${args[0]}&ayat=${args[1]}`)
