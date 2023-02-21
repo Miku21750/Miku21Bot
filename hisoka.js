@@ -6672,7 +6672,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 //if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 let { yta } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27`
-                let anu = await fecthJson(`https://api.zahwazein.xyz/downloader/youtube?apikey=keymikuzenz21&url=${text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/youtube?apikey=keymikuzenz21&url=${text}`)
                 if (anu.status = false) return m.reply(anu.result.message)
                 let media = anu.result
                 // hisoka.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
@@ -6684,7 +6684,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 //if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 let { ytv } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27`
-                let anu = await fecthJson(`https://api.zahwazein.xyz/downloader/youtube?apikey=keymikuzenz21&url=${text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/youtube?apikey=keymikuzenz21&url=${text}`)
                 if (anu.status = false) return m.reply(anu.result.message)
                 let media = anu.result
                 hisoka.sendMessage(m.chat, { video: { url: media.getVideo }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.sizeVideo}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP4\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
