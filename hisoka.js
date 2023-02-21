@@ -6672,23 +6672,24 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 //if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 let { yta } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27`
-                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/youtube?apikey=keymikuzenz21&url=${text}`)
-                if (anu.status = false) return m.reply(anu.result.message)
+                let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytaudio?apikey=keymikulolhuman21&url=${text}`)
+                if (anu.status == 500) return m.reply("Masukan Link yang benar / Error, hubungi Owner")
                 let media = anu.result
                 // hisoka.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
-                hisoka.sendMessage(m.chat, { audio: { url: media.getAudio }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.sizeAudio}\n⭔ Url : ${isUrl(text)}` }, { quoted: m })
-                hisoka.sendMessage(m.chat, { document: { url: media.getAudio }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp4` }, { quoted: m })
+                hisoka.sendImage(m.chat, media.thumbnail, `⭔ Title : ${media.title}\n⭔ File Size : ${media.link}\n⭔ Url : ${isUrl(text)}`)
+                hisoka.sendMessage(m.chat, { audio: { url: media.link.link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp4`}, { quoted: m })
+                hisoka.sendMessage(m.chat, { document: { url: media.link.link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp4` }, { quoted: m })
             }
                 break
             case 'ytmp4': case 'ytvideo': {
                 //if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 let { ytv } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27`
-                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/youtube?apikey=keymikuzenz21&url=${text}`)
-                if (anu.status = false) return m.reply(anu.result.message)
+                let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo?apikey=keymikulolhuman21&url=${text}`)
+                if (anu.status == 500) return m.reply("Masukan Link yang benar / Error, hubungi Owner")
                 let media = anu.result
-                hisoka.sendMessage(m.chat, { video: { url: media.getVideo }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.sizeVideo}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP4\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
-                hisoka.sendMessage(m.chat, { document: { url: media.getVideo }, mimetype: 'video/mp4', fileName: `${media.title}.mp4` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { video: { url: media.link.link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.link.size}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP4\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { document: { url: media.link.link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4` }, { quoted: m })
             }
                 break
             case 'getmusic': {
