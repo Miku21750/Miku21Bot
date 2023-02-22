@@ -1488,7 +1488,7 @@
     "6281271192155@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 22346197,
       "banned": false,
@@ -3659,7 +3659,7 @@
     "6285880172827@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 27520,
       "banned": false,
@@ -4290,7 +4290,7 @@
     "62895703045607@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 0,
       "banned": false,
@@ -4839,7 +4839,7 @@
     "6281252216664@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": 100,
+      "limit": "Infinity",
       "premium": false,
       "money": 0,
       "banned": false,
@@ -9865,7 +9865,7 @@
     "6285786616377@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": 100,
+      "limit": "Infinity",
       "premium": false,
       "money": 62246,
       "banned": false,
@@ -9990,7 +9990,7 @@
     "6285742434445@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 0,
       "banned": false,
@@ -10295,7 +10295,7 @@
     "6285748016882@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 60000,
       "banned": false,
@@ -10694,7 +10694,7 @@
     "6287831245260@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": 100,
+      "limit": "Infinity",
       "premium": false,
       "money": 29497,
       "banned": false,
@@ -12748,7 +12748,7 @@
     "6281270186042@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 0,
       "banned": false,
@@ -20608,7 +20608,7 @@
     "6285607264636@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 1,
       "banned": false,
@@ -31817,7 +31817,7 @@
     "6283141123717@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 1000000,
       "banned": false,
@@ -60132,7 +60132,7 @@
     "6281572942324@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": 100,
+      "limit": "Infinity",
       "premium": false,
       "money": 0,
       "banned": false,
@@ -66732,7 +66732,7 @@
     "6281545748070@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": 100,
+      "limit": "Infinity",
       "premium": false,
       "money": 0,
       "banned": false,
@@ -93395,7 +93395,7 @@
     "6285852715009@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 50000,
       "banned": false,
@@ -117827,7 +117827,7 @@
     "6282210899433@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": 100,
+      "limit": "Infinity",
       "premium": false,
       "money": 0,
       "banned": false,
@@ -119261,7 +119261,7 @@
     "6283114026180@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 0,
       "banned": false,
@@ -127324,7 +127324,7 @@
     "6285781571873@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 0,
       "banned": false,
@@ -129760,7 +129760,7 @@
     "62895329842585@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 0,
       "banned": false,
@@ -132639,10 +132639,10 @@
       "afkReason": "",
       "limit": 100,
       "premium": false,
-      "money": 73741953470,
+      "money": 93411230671,
       "banned": false,
       "bannedReason": "",
-      "exp": 116887397,
+      "exp": 123380276,
       "jobexp": 0,
       "joblevel": 0,
       "jobcode": 0,
@@ -132668,7 +132668,7 @@
       "nikah": false,
       "anak": false,
       "nama_anak": "",
-      "hp": 500072,
+      "hp": 500020,
       "sp": 50,
       "fish": [
         {
@@ -132697,18 +132697,18 @@
           "count": 1
         }
       ],
-      "diamond": 1000511,
+      "diamond": 1001004,
       "iron": 0,
       "crymiko": 0,
       "wifmiko": 0,
       "geocoin": 0,
-      "common": 1070341,
-      "uncommon": 1008138,
-      "mythic": 1006293,
-      "legendary": 1965540,
-      "pet": 6352,
-      "potion": 1001393,
-      "sampah": 2000000,
+      "common": 1073758,
+      "uncommon": 1010513,
+      "mythic": 1006520,
+      "legendary": 2001671,
+      "pet": 6898,
+      "potion": 1002561,
+      "sampah": 2000133,
       "armor": 5,
       "kucing": 3,
       "kucinglastclaim": 1676949497977,
@@ -132734,7 +132734,7 @@
       "pickaxedurability": 0,
       "fishingrod": 0,
       "fishingroddurability": 0,
-      "lastadventure": 1674678728183,
+      "lastadventure": 1676957503155,
       "lastfishing": 0,
       "lastdungeon": 0,
       "lastduel": 0,
@@ -133003,7 +133003,7 @@
       "money": 30089900000,
       "banned": false,
       "bannedReason": "",
-      "exp": 72695229,
+      "exp": 72695231,
       "jobexp": 0,
       "joblevel": 0,
       "jobcode": 0,
@@ -133672,7 +133672,7 @@
     "6285892175141@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 10005294118,
       "banned": false,
@@ -135946,7 +135946,7 @@
     "6288293381355@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 0,
       "banned": false,
@@ -136100,7 +136100,7 @@
       "antibadword": false,
       "badword": null,
       "nsfw": false,
-      "welcome": null,
+      "welcome": "",
       "bye": null
     },
     "120363020144622664@g.us": {
