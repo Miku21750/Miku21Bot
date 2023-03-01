@@ -6677,8 +6677,8 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let media = anu.result
                 // hisoka.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
                 hisoka.sendImage(m.chat, media.thumbnail, `⭔ Title : ${media.title}\n⭔ File Size : ${media.link}\n⭔ Url : ${isUrl(text)}`)
-                hisoka.sendMessage(m.chat, { audio: { url: media.link.link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp4`}, { quoted: m })
-                hisoka.sendMessage(m.chat, { document: { url: media.link.link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp4` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { audio: { url: media.link.link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3`}, { quoted: m })
+                hisoka.sendMessage(m.chat, { document: { url: media.link.link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
                 break
             case 'ytmp4': case 'ytvideo': {
@@ -8016,7 +8016,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 m.reply(mess.wait)
                 let anu = await fetchJson(`https://api.lolhuman.xyz/api/facebook?apikey=keymikulolhuman21&url=${text}`)
                 if (anu.status === "false") return 'Link tidak dapat didownload, coba lagi'
-                hisoka.sendMessage(m.chat, { video: { url: anu.result }, caption: text }, { quoted: m })
+                hisoka.sendMessage(m.chat, { video: { url: anu.result[0] }, caption: text }, { quoted: m })
             }
                 break
             case 'pindl': case 'pinterestdl': {
