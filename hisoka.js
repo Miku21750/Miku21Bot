@@ -7267,7 +7267,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 kodebahasa = args[0]
                 let anu = await fetchJson(`https://api.zahwazein.xyz/information/translate/${kodebahasa}?apikey=keymikuzenz21&text=${m.quoted.text}`)
                 if(anu.status = false) return m.reply('error, tolong hubungi owner')
-                hisoka.sendText(m.chat, anu.result ,m);
+                hisoka.sendMessage(m.chat, anu.result ,{quoted: m});
             }
             break
             case 'wikimedia': {
