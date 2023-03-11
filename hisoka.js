@@ -33,6 +33,7 @@ const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
 const express = require('express')
 const ap = express();
+const FastSpeedTest = require("fast-speedtest-api")
 const ejs = require('ejs')
 const { Brainly } = require('brainly-scraper-v2')
 const { tiktokdl, tiktokdlv2, tiktokdlv3, savefrom } = require('@bochilteam/scraper')
@@ -8611,23 +8612,37 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 m.reply(respon)
             }
                 break
-            case 'speedtest': {
-                m.reply('Testing Speed...')
-                let cp = require('child_process')
-                let { promisify } = require('util')
-                let exec = promisify(cp.exec).bind(cp)
-                let o
-                try {
-                    o = await exec('python speed.py')
-                } catch (e) {
-                    o = e
-                } finally {
-                    let { stdout, stderr } = o
-                    if (stdout.trim()) m.reply(stdout)
-                    if (stderr.trim()) m.reply(stderr)
-                }
-            }
-                break
+            // case 'speedtest': {
+            //     m.reply('Testing Speed...')
+            //     let cp = require('child_process')
+            //     let { promisify } = require('util')
+            //     let exec = promisify(cp.exec).bind(cp)
+            //     let o
+            //     try {
+            //         o = await exec('python speed.py')
+            //     } catch (e) {
+            //         o = e
+            //     } finally {
+            //         let { stdout, stderr } = o
+            //         if (stdout.trim()) m.reply(stdout)
+            //         if (stderr.trim()) m.reply(stderr)
+            //     }
+            // }
+            //     break
+            case 'speedtest':{
+                m.reply('testing speed...')
+                let speedtest = new FastSpeedTest({
+                    token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm",
+                    timeout: 10000,
+                    unit: FastSpeedTest.UNITS.Mbps
+                })
+                speedtest.getSpeed().then(s=>{
+                    m.reply(`Speed: ${s} Mbps`)
+                }).catch(e =>{
+                    m.reply(e.message);
+                })
+            }   
+            break
             case 'owner': case 'creator': {
                 hisoka.sendContact(m.chat, global.owner, m)
             }
