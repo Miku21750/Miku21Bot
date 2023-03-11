@@ -7265,9 +7265,9 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 if(!m.quoted) throw `Reply text yang ingin ditranslate`
                 if(!args[0]) throw ('masukan kode bahasa (id,en,fr,dll)')
                 kodebahasa = args[0]
-                let anu = await fetchJson(`https://api.zahwazein.xyz/information/translate/${kodebahasa}?apikey=keymikuzenz21&text=${m.quoted.text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/information/translate/${kodebahasa}?apikey=keymikuzenz21&query=${m.quoted.text}`)
                 if(anu.status = false) return m.reply('error, tolong hubungi owner')
-                hisoka.sendMessage(m.chat, anu.result ,{quoted: m});
+                hisoka.sendText(m.chat, anu.result ,m);
             }
             break
             case 'wikimedia': {
