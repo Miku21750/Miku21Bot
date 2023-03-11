@@ -7239,7 +7239,13 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     //jawaban
                     txt += '---------------------------------'
                     // txt += ``
-                    console.log(rand.answers)
+                    for(var i=0;i<rand.answers.length;i++){
+                        txt += `${rand.answers[i].content}`
+                        txt += '---------------------------------'
+                    }
+                    hisoka.sendText(m.chat, txt, m);
+                    // console.log(rand.answers)
+                    
                 }).catch(console.error)
             }
                 break
