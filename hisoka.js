@@ -27,7 +27,7 @@ const os = require('os')
 const moment = require('moment-timezone')
 const { JSDOM } = require('jsdom')
 const xmlParser = require('xml-js')
-const xmlParser2 = require('xml2js');
+// const xmlParser2 = require('xml2json');
 const http = require('http')
 const speed = require('performance-now')
 const { performance } = require('perf_hooks')
@@ -4437,7 +4437,10 @@ Love Exp kamu belum cukup. Love Exp kamu sekarang ${user.waifuexp}. Butuh 1000 L
 
                                         else {
                                             return m.reply('bentar mas, mohon maaf, masih dibenerin, nanti kalau udah jadi saia kabarin')
-                                            
+                                            let ratemandul = Math.floor(Math.random() * (100 - 1) + 1)
+                                            if(ratemandul < 7) {
+                                                my
+                                            }
                                         }
                                     }
                                         break
@@ -7267,8 +7270,15 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 if(!args[0]) throw ('masukan kode bahasa (id,en,fr,dll)')
                 kodebahasa = args[0]
                 let anu = await fetchJson(`https://api.zahwazein.xyz/information/translate/${kodebahasa}?apikey=keymikuzenz21&query=${m.quoted.text}`)
-                if(anu.status = false) return m.reply('error, tolong hubungi owner')
+                if(anu.status == false) return m.reply('error, tolong hubungi owner')
                 hisoka.sendText(m.chat, anu.result ,m);
+            }
+            break
+            case 'kbbi' :{
+                if(!text) throw `Kirim text nya, contoh : ${prefix + command} text`
+                let anu = await fetchJson(`https://api.zahwazein.xyz/information/kbbi?apikey=keymikuzenz21&query=${text}`)
+                if(anu.status == false) return m.reply('error, tolong hubungi owner')
+                hisoka.sendText(m.chat,`Title : ${anu.result.title}\n\n${anu.result.arti}`)
             }
             break
             case 'wikimedia': {
