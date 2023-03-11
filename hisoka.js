@@ -7257,6 +7257,19 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 hisoka.sendText(m.chat, anu.result, m);
             }
             break
+            case 'translate':{
+                /* if (!m.quoted && !text) throw `Kirim/reply text dengan caption ${prefix + command}`
+                ter = command[1].toLowerCase()
+                tex = m.quoted ? m.quoted.text ? m.quoted.text : q ? q : m.text : q ? q : m.text
+                m.reply(tex.replace(/[aiueo]/g, ter).replace(/[AIUEO]/g, ter.toUpperCase())) */
+                if(!m.quoted) throw `Reply text yang ingin ditranslate`
+                if(!args[0]) throw ('masukan kode bahasa (id,en,fr,dll)')
+                kodebahasa = args[0]
+                let anu = await fetchJson(`https://api.lolhuman.xyz/api/translate/auto/${kodebahasa}?apikey=keymikulolhuman21&text=${m.quoted.text}`)
+                if(anu.status != 200) return m.reply('error, tolong hubungi owner')
+                hisoka.sendText(m.chat, anu.translated + '\n Pronounciation :'+ anu.pronounciation,m);
+            }
+            break
             case 'wikimedia': {
                 if (!text) throw 'Masukkan Query Title'
                 let { wikimedia } = require('./lib/scraper')
