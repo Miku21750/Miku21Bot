@@ -8676,13 +8676,14 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 break
             case 'playstore': {
                 if (!text) throw `Example : ${prefix + command} clash of clans`
-                let res = await fetchJson(api('zenz', '/webzone/playstore', { query: text }, 'apikey'))
-                let teks = `⭔ Playstore Search From : ${text}\n\n`
+                let res = await fetchJson(`https://api.lolhuman.xyz/api/playstore?apikey=keymikulolhuman21&query=${text}`)
+                if(anu.status != 200) return m.reply('error, mohon lapor owner')
+                let teks = `⭔ Playstore Search From : ${text}\n`
                 for (let i of res.result) {
-                    teks += `⭔ Name : ${i.name}\n`
-                    teks += `⭔ Link : ${i.link}\n`
+                    teks += `\n⭔ Name : ${i.title}\n`
                     teks += `⭔ Developer : ${i.developer}\n`
-                    teks += `⭔ Link Developer : ${i.link_dev}\n\n──────────────────────\n`
+                    teks += `⭔ Summary : ${i.summary}\n`
+                    teks += `──────────────────────\n`
                 }
                 m.reply(teks)
             }
