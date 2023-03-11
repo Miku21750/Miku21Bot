@@ -26,6 +26,7 @@ const path = require('path')
 const os = require('os')
 const moment = require('moment-timezone')
 const { JSDOM } = require('jsdom')
+const xmlParser = require('xml-js')
 const http = require('http')
 const speed = require('performance-now')
 const { performance } = require('perf_hooks')
@@ -8216,7 +8217,8 @@ ${id}`)
             case 'alkitab': {
                 if (!text) throw `Example : ${prefix + command} Yohannes 3 16 tb \nKet : (Version, Book, Chapter Verse)\nTranslation : tb | bis | net`
                 if (!args[3]) args[3] = 'tb'
-                let res = await fetchJson(`https://api-alkitab.herokuapp.com/v2/passage/${args[0]}/${args[1]}/${args[2]}?ver=${args[3]}`)
+                
+                // let res = await fetchJson(`https://api-alkitab.herokuapp.com/v2/passage/${args[0]}/${args[1]}/${args[2]}?ver=${args[3]}`)
                 console.log(res)
                 let teks = `「 *Alkitab*  」
             ${res.title} 

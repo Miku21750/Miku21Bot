@@ -69,6 +69,7 @@
     "scrape-primbon": "^1.1.0",
     "select-random-file": "^1.2.1",
     "util": "^0.12.4",
+    "xml-js": "^1.6.11",
     "xmlhttprequest": "^1.8.0",
     "yargs": "^17.2.1",
     "yt-search": "^2.10.2"
