@@ -8662,7 +8662,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 break
             case 'gsmarena': {
                 if (!text) throw `Example : ${prefix + command} samsung`
-                let res = await fetchJson(api('zenz', '/webzone/gsmarena', { query: text }, 'apikey'))
+                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/gsmarena?query=${text}&apikey=keymikuzenz21`)
                 let { judul, rilis, thumb, ukuran, type, storage, display, inchi, pixel, videoPixel, ram, chipset, batrai, merek_batre, detail } = res.result
                 let capt = `⭔ Title: ${judul}
 ⭔ Realease: ${rilis}
