@@ -7249,6 +7249,14 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 }).catch(console.error)
             }
                 break
+            case 'chatGPT':{
+                if (!text) throw `Example ${prefix + command} contoh kode html`
+                let txt = ''
+                let anu = await fetchJson(`https://api.lolhuman.xyz/api/openai?apikey=keymikulolhuman21&text=${text}&user=${m.sender}`)
+                if(anu.status != 200) return m.reply('error, tolong hubungi owner')
+                hisoka.sendText(m.chat, result, m);
+            }
+            break
             case 'wikimedia': {
                 if (!text) throw 'Masukkan Query Title'
                 let { wikimedia } = require('./lib/scraper')
