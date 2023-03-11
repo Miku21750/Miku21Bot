@@ -33,21 +33,23 @@ global.owner = ['6283834685279','62877311375123','6285959069150','6285755162771'
 //6288292024190 bot owner hisoka
 global.premium = ['6289602254720','6285771892336','6285724327261','6281229008933','62895622807893','6281267539123','6288806440825','6285709888616','6285817740811','6285707358287','62877311375121','6283834685279','6285959069150','6281703482644','6289514185002','6285755162771','6285735908827','628885835891','6289647637754']
 //6285707358287 = tio = beta_tester = infinity premium
-//6285724327261  = ??? (panti) = 30h (30 Oktober 2022)
-//62895622807893 = patih = 30h (11 oktober 2022)
-//6285771892336 = elang dian (panti) = 30h (28 Oktober 2022)
-//6281229008933 = ??(kel panti) = 30h (28 Oktober 2022)
 //62877311375121 = ruthy = beta tester = infinity premium
 //6282327871319 = owner = infinity premium
 //6285959069150 = rey = infinity premium
 //6285755162771 = mey = beta tester = infinity premium
 //6281703482644 = light = 30h premium (21)
-//6289514185002 = ???? = 30 h (started 7 juni 2022)
 //6285817740811 = selen = kel.Light
 //628885835891 = Rokuta = kel.Light
 //6289647637754 = keira = permanen
 //6285709888616 = Keju = lek.light
 //62896022547201 = depin = 30h (started 12 Aug 2022)
+
+
+//6285724327261  = ??? (panti) = 30h (30 Oktober 2022)
+//62895622807893 = patih = 30h (11 oktober 2022)
+//6285771892336 = elang dian (panti) = 30h (28 Oktober 2022)
+//6281229008933 = ??(kel panti) = 30h (28 Oktober 2022)
+//6289514185002 = ???? = 30 h (started 7 juni 2022)
 //6289602254720 = depin = 30h (started 12 Aug 2022)
 global.packname = 'Miku21Bot'
 global.author = 'WhatsApp Bot'
