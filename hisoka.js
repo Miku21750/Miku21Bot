@@ -7249,7 +7249,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 }).catch(console.error)
             }
                 break
-            case 'chatGPT':{
+            case 'chatgpt':{
                 if (!text) throw `Example ${prefix + command} contoh kode html`
                 let txt = ''
                 let anu = await fetchJson(`https://api.lolhuman.xyz/api/openai?apikey=keymikulolhuman21&text=${text}&user=${m.sender}`)
