@@ -7237,11 +7237,11 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     //pertanyaan
                     txt += `Judul : ${rand.question.content}\nJenis Pertanyaan : ${rand.question.education},\nKelas : ${rand.question.grade}`
                     //jawaban
-                    txt += '---------------------------------'
+                    txt += '\n---------------------------------\n'
                     // txt += ``
                     for(var i=0;i<rand.answers.length;i++){
                         txt += `${rand.answers[i].content}`
-                        txt += '---------------------------------'
+                        txt += '\n---------------------------------\n'
                     }
                     hisoka.sendText(m.chat, txt, m);
                     // console.log(rand.answers)
