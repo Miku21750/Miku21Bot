@@ -6845,7 +6845,7 @@ ${global.sp} yatogami
 ${global.sp} yuki
 `
                 if (!args[0]) return m.reply(helptxt)
-                return m.reply('mohon maaf fitur sedang error')
+                // return m.reply('mohon maaf fitur sedang error')
                 m.reply(mess.wait)
                 let img = `https://api.zahwazein.xyz/randomanime/v2/${args[0]}?apikey=keymikuzenz21`
                 try {
@@ -6934,7 +6934,6 @@ ${global.sp} yuki
             }
                 break
             case 'hentaivid': {
-
                 // return m.reply('maaf lagi error')
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
@@ -7305,7 +7304,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             }
                 break
             case 'motivasi': case 'dilanquote': case 'bucinquote': case 'katasenja': case 'pantun': case 'jawaquote': case 'faktaunik': case 'muslimquote': {
-                let anu = await fetchJson(api('zenz', '/randomtext/' + command, {}, 'apikey'))
+                let anu = await fetchJson(`https://api.zahwazein.xyz/randomtext/${command}?apikey=keymikuzenz21`)
                 let buttons = [
                     { buttonId: command, buttonText: { displayText: 'Next' }, type: 1 }
                 ]
@@ -8169,12 +8168,14 @@ ${id}`)
 
                 // ( Q.S ${res.result.data.surah.name.transliteration.id} : ${res.result.data.number.inSurah} )`
                 // 		m.reply(txt)
+                // m.reply
                 let res = await fetchJson(`https://api.lolhuman.xyz/api/quran/${args[0]}/${args[1]}?apikey=keymikulolhuman21`)
                 let txt = `*Arab* : ${res.result.ayat[0].arab}
 *Latin* : ${res.result.ayat[0].latin}
 *Indonesia* : ${res.result.ayat[0].indonesia}
 
 ( Q.S ${res.result.surah} : ${res.result.nomor} )`
+                hisoka.sendMessage(m.chat, txt, {quoted: m})
                 hisoka.sendMessage(m.chat, { audio: { url: res.result.ayat[0].audio }, mimetype: 'audio/mpeg' }, { quoted: m })
             }
                 break
@@ -8748,7 +8749,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 break
             case 'wattpad': {
                 if (!text) throw `Example : ${prefix + command} love`
-                let res = await fetchJson(api('zenz', '/webzone/wattpad', { query: text }, 'apikey'))
+                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/wattpad?apikery=keymikuzenz21&query=${text}`)
                 let { judul, dibaca, divote, bab, waktu, url, thumb, description } = res.result[0]
                 let capt = `Wattpad From ${text}\n\n`
                 capt += `⭔ Judul: ${judul}\n`
@@ -8763,7 +8764,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 break
             case 'webtoons': {
                 if (!text) throw `Example : ${prefix + command} love`
-                let res = await fetchJson(api('zenz', '/webzone/webtoons', { query: text }, 'apikey'))
+                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/webtoons?apikery=keymikuzenz21&query=${text}`)
                 let capt = `Webtoons Search From : ${text}\n\n`
                 for (let i of res.result) {
                     capt += `⭔ Judul: ${i.judul}\n`
