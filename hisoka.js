@@ -7254,7 +7254,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 let txt = ''
                 let anu = await fetchJson(`https://api.lolhuman.xyz/api/openai?apikey=keymikulolhuman21&text=${text}&user=${m.sender}`)
                 if(anu.status != 200) return m.reply('error, tolong hubungi owner')
-                hisoka.sendText(m.chat, result, m);
+                hisoka.sendText(m.chat, anu.result, m);
             }
             break
             case 'wikimedia': {
