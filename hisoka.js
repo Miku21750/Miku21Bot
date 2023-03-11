@@ -8175,7 +8175,8 @@ ${id}`)
 *Indonesia* : ${res.result.ayat[0].indonesia}
 
 ( Q.S ${res.result.surah} : ${res.result.nomor} )`
-                hisoka.sendMessage(m.chat, txt, {quoted: m})
+                m.reply(txt)
+                // hisoka.sendMessage(m.chat, txt, {quoted: m})
                 hisoka.sendMessage(m.chat, { audio: { url: res.result.ayat[0].audio }, mimetype: 'audio/mpeg' }, { quoted: m })
             }
                 break
