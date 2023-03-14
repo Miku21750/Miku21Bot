@@ -6829,7 +6829,7 @@ ${global.sp} megumin
 ${global.sp} mikasa
 ${global.sp} miku
 ${global.sp} minato
-${gll8obal.sp} naruto
+${global.sp} naruto
 ${global.sp} natsukawa
 ${global.sp} nekonime
 ${global.sp} nishimiya
