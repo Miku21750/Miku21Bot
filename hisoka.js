@@ -6799,7 +6799,7 @@ ${global.sp} akiyama
 ${global.sp} ana
 ${global.sp} asuna
 ${global.sp} ayuzawa
-${globl2al.sp} brouto
+${global.sp} brouto
 ${global.sp} chitanda
 ${global.sp} chitoge
 ${global.sp} deidara
