@@ -6410,20 +6410,22 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
             case 'simih': case 'simisimi': case 'miku21': case 'miku': {
                 if (!text) throw `Example : ${prefix + command} text`
                 //base
-                hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
-                if (hm.success) {
-                    m.reply(hm.success)
-                } else {
-                    let response = await axios.post(
-                        'https://api.simsimi.info/v1/simtalk',
-                        new URLSearchParams({
-                            'text': encodeURIComponent(text),
-                            'lc': 'id'
-                        })
-                    );
-                    m.reply('error, coba lain waktu')
-                    // m.reply(response)
-                }
+                let response = await axios.post(
+                    'https://api.simsimi.vn/v1/simtalk',
+                    new URLSearchParams({
+                        'text': encodeURIComponent(text),
+                        'lc': 'id'
+                    })
+                );
+                console.log(response);
+
+                // hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
+                // if (hm.success) {
+                //     m.reply(hm.success)
+                // } else {
+                //     // m.reply(response)
+                // }
+
                 //alter
                 //hm = await fetchJson(`https://simsimi.info/api/?lc=id&text=${text}`)
                 //m.reply(hm.message)
