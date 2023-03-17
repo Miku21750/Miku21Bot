@@ -6417,7 +6417,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                         'lc': 'id'
                     })
                 );
-                console.log(response);
+                m.reply(response.data.message);
 
                 // hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
                 // if (hm.success) {
