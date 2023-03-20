@@ -8944,6 +8944,15 @@ ${date}
 │⭔ Money        : ${user.money} MIKO
 │⭔ Job          : ${user.job}
 │⭔ Job Level    : ${user.joblevel}`
+                if(user.coupleUser !== ''){
+                    profile +=`
+│⭔ Pacar      : @${user.coupleUser.split`@`[0]}
+                    `
+                }else{
+                    profile +=`
+│⭔ Pacar      : jomblo
+                    `
+                }
                 if (user.waifu !== null) {
                     profile += `
 │⭔ Married      : ${user.nikah}
