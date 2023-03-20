@@ -794,7 +794,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                     delete this.jedoran[jedor.id]
                     return !0
                 }
-                hisoka.sendText(`@${jedor.p2.split`@`[0]} telah menerima anda, ciee pj nya nyusul ya ;)`)
+                hisoka.sendText(m.chat,`@${jedor.p2.split`@`[0]} telah menerima anda, ciee pj nya nyusul ya ;)`,m, {mentions: org})
                 global.db.data.users[jedor.p].coupleUser = jedor.p2
                 global.db.data.users[jedor.p2].coupleUser = jedor.p
 
@@ -8881,7 +8881,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let user2 = global.db.data.users[who]
                 this.jedoran = this.jedoran ? this.jedoran : {}
                 let id = 'jedor_'+who+'_'+ new Date() * 1
-                let caption = `_*JEDOR*_\n\nKamu ditembak ${m.sender.split`@`[0]}, jawab (iya/tidak) untuk merespon`
+                let caption = `_*JEDOR*_\n\n${m.sender.split`@`[0]} menembak ${m.mentionedJid[0].split`@`[0]}, jawab (iya/tidak) untuk merespon`
                 this.jedoran[id] = {
                     chat: await hisoka.sendText(m.chat, caption, m , {mentions: parseMention(caption)}),
                     id: id,
