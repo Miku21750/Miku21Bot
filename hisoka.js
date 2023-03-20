@@ -8899,9 +8899,9 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let user = global.db.data.users[m.sender]
                 let who = m.mentionedJid[0]
                 if (!who) throw `Tag yang ingin dijedor. Example ${prefix + command} @siapa`
-                if(user.coupleUser !== '') return hisoka.sendText(m.chat, `Kamu sudah memiliki @${user.coupleUser}`,m,{mentions: [user.coupleUser]})
+                if(user.coupleUser !== '') return hisoka.sendText(m.chat, `Kamu sudah memiliki @${user.coupleUser.split`@`[0]}`,m,{mentions: [user.coupleUser]})
                 let user2 = global.db.data.users[who]
-                if(user2.coupleUser !== '') return hisoka.sendText(m.chat, `@${user.coupleUser} sudah memiliki @${user2.coupleUser}`,m,{mentions: [user.coupleUser,user2.coupleUser]})
+                if(user2.coupleUser !== '') return hisoka.sendText(m.chat, `@${user.coupleUser.split`@`[0]} sudah memiliki @${user2.coupleUser.split`@`[0]}`,m,{mentions: [user.coupleUser,user2.coupleUser]})
                 this.jedoran = this.jedoran ? this.jedoran : {}
                 let id = 'jedor_'+who+'_'+ new Date() * 1
                 let caption = `_*JEDOR*_\n\n@${m.sender.split`@`[0]} menembak @${m.mentionedJid[0].split`@`[0]}, jawab (iya/tidak) untuk merespon`
