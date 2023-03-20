@@ -788,7 +788,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
         let jedor = Object.values(this.jedoran).find(jedor => jedor.id && jedor.status && [jedor.p, jedor.p2].includes(m.sender))
         if(jedor){
             let org = [jedor.p2, jedor.p]
-            if (m.sender == roof.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
+            if (m.sender == jedor.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && jedor.status == 'wait') {
                 if (/^(tidak|tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
                     hisoka.sendText(m.chat, `@${jedor.p2.split`@`[0]} menolak jedoran anda, yah sayang sekali masih jomblo :), tetep semangat yah ;)`, m, { mentions: generateOrGetPreKeys })
                     delete this.jedoran[jedor.id]
