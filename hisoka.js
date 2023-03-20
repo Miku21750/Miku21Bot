@@ -793,7 +793,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             let org = [jedor.p2, jedor.p]
             if (m.sender == jedor.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && jedor.status == 'wait') {
                 if (/^(tidak|tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
-                    hisoka.sendText(m.chat, `@${jedor.p2.split`@`[0]} menolak jedoran anda, yah sayang sekali masih jomblo :), tetep semangat yah ;)`, m, { mentions: [org] })
+                    hisoka.sendText(m.chat, `@${jedor.p2.split`@`[0]} menolak jedoran anda, yah sayang sekali masih jomblo :), tetep semangat yah ;)`, m, { mentions: org })
                     delete this.jedoran[jedor.id]
                     return !0
                 }
@@ -811,7 +811,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             let org = [brk.p2, brk.p]
             if (m.sender == brk.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && !m.isGroup && brk.status == 'wait') {
                 if (/^(tidak|tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
-                    hisoka.sendText(brk.p, `@${brk.p2.split`@`[0]} menolak putus anda, Semoga tetep langgeng yah ;)`, m, { mentions: generateOrGetPreKeys })
+                    hisoka.sendText(brk.p, `@${brk.p2.split`@`[0]} menolak putus anda, Semoga tetep langgeng yah ;)`, m, { mentions: org })
                     delete this.putus[brk.id]
                     return !0
                 }
