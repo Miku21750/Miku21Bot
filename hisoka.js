@@ -8902,6 +8902,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 if(user.coupleUser !== '') return hisoka.sendText(m.chat, `Kamu sudah memiliki @${user.coupleUser.split`@`[0]}`,m,{mentions: [user.coupleUser]})
                 let user2 = global.db.data.users[who]
                 if(user2.coupleUser !== '') return hisoka.sendText(m.chat, `@${user.coupleUser.split`@`[0]} sudah memiliki @${user2.coupleUser.split`@`[0]}`,m,{mentions: [user.coupleUser,user2.coupleUser]})
+                if(who == m.sender) throw 'tidak bisa jedor diri sendiri (jangan selfcest ;D )'
                 this.jedoran = this.jedoran ? this.jedoran : {}
                 let id = 'jedor_'+who+'_'+ new Date() * 1
                 let caption = `_*JEDOR*_\n\n@${m.sender.split`@`[0]} menembak @${m.mentionedJid[0].split`@`[0]}, jawab (iya/tidak) untuk merespon`
