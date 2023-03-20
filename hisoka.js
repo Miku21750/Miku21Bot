@@ -8916,6 +8916,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
             case 'putus': {
                 let user = global.db.data.users[m.sender]
+                if(user.coupleUser == '') return
                 let user2 = global.db.data.users[user.coupleUser]
                 this.putus = this.putus ? this.putus : {}
                 let id = 'putus_'+who+'_'+ new Date() * 1
