@@ -8925,8 +8925,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     waifu = res
                 }
                 let couple = false
+                let org = []
                 if(user.coupleUser !== ''){
                     couple = true
+                    org = [user.coupleUser]
                 }
                 try {
                     ppuser = await hisoka.profilePictureUrl(m.sender, 'image')
@@ -8975,7 +8977,7 @@ ${date}
 └───────⭓
                 `
                 if(couple){
-                    hisoka.sendImage(m.chat, ppuser, profile, m,{mentions: user.coupleUser})
+                    hisoka.sendImage(m.chat, ppuser, profile, m,{mentions: org})
                 }else{
                     hisoka.sendImage(m.chat, ppuser, profile, m)
                 }
