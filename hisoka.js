@@ -375,6 +375,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 if (!('werewolf' in game)) game.werewolf = []
                 if (!('blackjack' in game)) game.blackjack = []
                 if (!('jedoran' in game)) game.jedoran = []
+                if (!('putus' in game)) game.putus = []
 
 
             } else global.db.data.game = {
@@ -398,6 +399,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 werewolf: [],
                 blackjack: [],
                 jedoran: [],
+                putus: [],
             }
 
         } catch (err) {
@@ -424,6 +426,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         let werewolf = db.data.game.werewolf
         let blackjack = db.data.game.blackjack
         let jedoran = db.data.game.jedoran
+        let putus = db.data.game.putus
 
         // Public & Self
         if (!hisoka.public) {
@@ -799,6 +802,24 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                 global.db.data.users[jedor.p2].coupleUser = jedor.p
 
                 delete this.jedoran[jedor.id]
+            }
+
+        }
+        this.putus = this.putus ? this.putus : {}
+        let brk = Object.values(this.putus).find(brk => brk.id && brk.status && [brk.p, brk.p2].includes(m.sender))
+        if(brk){
+            let org = [brk.p2, brk.p]
+            if (m.sender == brk.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && brk.status == 'wait') {
+                if (/^(tidak|tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
+                    hisoka.sendText(brk.p, `@${brk.p2.split`@`[0]} menolak putus anda, Semoga tetep langgeng yah ;)`, m, { mentions: generateOrGetPreKeys })
+                    delete this.putus[brk.id]
+                    return !0
+                }
+                hisoka.sendText(brk.p,`@${brk.p2.split`@`[0]} telah sepakat, waduh semangat ya ;)`,m, {mentions: org})
+                global.db.data.users[brk.p].coupleUser = ''
+                global.db.data.users[brk.p2].coupleUser = ''
+
+                delete this.putus[brk.id]
             }
 
         }
@@ -8878,11 +8899,28 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let user = global.db.data.users[m.sender]
                 let who = m.mentionedJid[0]
                 if (!who) throw `Tag yang ingin dijedor. Example ${prefix + command} @siapa`
+                if(user.coupleUser !== '') return hisoka.sendText(m.chat, `Kamu sudah memiliki @${user.coupleUser}`,m,{mentions: [user.coupleUser]})
                 let user2 = global.db.data.users[who]
+                if(user2.coupleUser !== '') return hisoka.sendText(m.chat, `@${user.coupleUser} sudah memiliki @${user2.coupleUser}`,m,{mentions: [user.coupleUser,user2.coupleUser]})
                 this.jedoran = this.jedoran ? this.jedoran : {}
                 let id = 'jedor_'+who+'_'+ new Date() * 1
                 let caption = `_*JEDOR*_\n\n@${m.sender.split`@`[0]} menembak @${m.mentionedJid[0].split`@`[0]}, jawab (iya/tidak) untuk merespon`
                 this.jedoran[id] = {
+                    chat: await hisoka.sendText(m.chat, caption, m , {mentions: parseMention(caption)}),
+                    id: id,
+                    p: m.sender,
+                    p2: m.mentionedJid[0],
+                    status: 'wait',
+                }
+            }
+            break
+            case 'putus': {
+                let user = global.db.data.users[m.sender]
+                let user2 = global.db.data.users[user.coupleUser]
+                this.putus = this.putus ? this.putus : {}
+                let id = 'putus_'+who+'_'+ new Date() * 1
+                let caption = `_*PUTUS*_\n\n@${m.sender.split`@`[0]} ingin berputus @${m.mentionedJid[0].split`@`[0]}, jawab (iya/tidak) untuk merespon`
+                this.putus[id] = {
                     chat: await hisoka.sendText(m.chat, caption, m , {mentions: parseMention(caption)}),
                     id: id,
                     p: m.sender,
