@@ -8881,7 +8881,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let user2 = global.db.data.users[who]
                 this.jedoran = this.jedoran ? this.jedoran : {}
                 let id = 'jedor_'+who+'_'+ new Date() * 1
-                let caption = `_*JEDOR*_\n\n${m.sender.split`@`[0]} menembak ${m.mentionedJid[0].split`@`[0]}, jawab (iya/tidak) untuk merespon`
+                let caption = `_*JEDOR*_\n\n@${m.sender.split`@`[0]} menembak @${m.mentionedJid[0].split`@`[0]}, jawab (iya/tidak) untuk merespon`
                 this.jedoran[id] = {
                     chat: await hisoka.sendText(m.chat, caption, m , {mentions: parseMention(caption)}),
                     id: id,
@@ -8923,6 +8923,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu}`)
                     let res = anu.data
                     waifu = res
+                }
+                let couple = false
+                if(user.coupleUser !== ''){
+                    couple = true
                 }
                 try {
                     ppuser = await hisoka.profilePictureUrl(m.sender, 'image')
@@ -8970,7 +8974,11 @@ ${date}
 │
 └───────⭓
                 `
-                hisoka.sendImage(m.chat, ppuser, profile, m)
+                if(couple){
+                    hisoka.sendImage(m.chat, ppuser, profile, m,{mentions: user.coupleUser})
+                }else{
+                    hisoka.sendImage(m.chat, ppuser, profile, m)
+                }
 
             }
                 break
