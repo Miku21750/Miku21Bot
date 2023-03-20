@@ -8995,7 +8995,7 @@ ${date}
                     `
                 }else{
                     profile +=`
-│⭔ Pacar      : jomblo
+│⭔ Pacar      : Anime
                     `
                 }
                 if (user.waifu !== null) {
