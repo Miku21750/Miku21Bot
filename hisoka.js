@@ -809,7 +809,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
         let brk = Object.values(this.putus).find(brk => brk.id && brk.status && [brk.p, brk.p2].includes(m.sender))
         if(brk){
             let org = [brk.p2, brk.p]
-            if (m.sender == brk.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && brk.status == 'wait') {
+            if (m.sender == brk.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && !m.isGroup && brk.status == 'wait') {
                 if (/^(tidak|tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
                     hisoka.sendText(brk.p, `@${brk.p2.split`@`[0]} menolak putus anda, Semoga tetep langgeng yah ;)`, m, { mentions: generateOrGetPreKeys })
                     delete this.putus[brk.id]
