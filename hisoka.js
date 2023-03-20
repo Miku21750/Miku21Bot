@@ -8922,7 +8922,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let id = 'putus_'+m.sender+'_'+ new Date() * 1
                 let caption = `_*PUTUS*_\n\n@${m.sender.split`@`[0]} ingin berputus dengan @${user.coupleUser.split`@`[0]}, jawab (iya/tidak) untuk merespon`
                 this.putus[id] = {
-                    chat: await hisoka.sendText(m.mentionedJid[0], caption, m , {mentions: parseMention(caption)}),
+                    chat: await hisoka.sendText(user.coupleUser, caption, m , {mentions: parseMention(caption)}),
                     id: id,
                     p: m.sender,
                     p2: m.mentionedJid[0],
