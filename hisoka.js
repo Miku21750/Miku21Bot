@@ -154,6 +154,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 if (!('name' in user)) user.name = m.pushName
                 //getnumber
                 if (!('number' in user)) user.number = m.sender
+                if(!('coupleUser' in user)) user.coupleUser = '';
                 //set waifu 
                 if (!'waifu' in user) user.waifu = null
                 if (!isNumber(user.waifuexp)) user.waifuexp = 0
@@ -245,6 +246,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 nextLevelExp: 10,
                 name: m.pushName,
                 number: m.sender,
+                coupleUser: '',
                 waifu: null,
                 waifuexp: 0,
                 rumah: false,
@@ -372,6 +374,8 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 if (!('akinatorServer' in game)) game.akinatorServer = []
                 if (!('werewolf' in game)) game.werewolf = []
                 if (!('blackjack' in game)) game.blackjack = []
+                if (!('jedoran' in game)) game.jedoran = []
+
 
             } else global.db.data.game = {
                 tebaklagu: [],
@@ -393,6 +397,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 akinatorServer: [],
                 werewolf: [],
                 blackjack: [],
+                jedoran: [],
             }
 
         } catch (err) {
@@ -418,6 +423,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         let akinatorServer = db.data.game.akinatorServer
         let werewolf = db.data.game.werewolf
         let blackjack = db.data.game.blackjack
+        let jedoran = db.data.game.jedoran
 
         // Public & Self
         if (!hisoka.public) {
@@ -776,6 +782,25 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             if (isTie || isWin) {
                 delete this.game[room.id]
             }
+        }
+        //jedoran
+        this.jedoran = this.jedoran ? this.jedoran : {}
+        let jedor = Object.values(this.jedoran).find(jedor => jedor.id && jedor.status && [jedor.p, jedor.p2].includes(m.sender))
+        if(jedor){
+            let org = [jedor.p2, jedor.p]
+            if (m.sender == roof.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
+                if (/^(tidak|tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
+                    hisoka.sendText(m.chat, `@${jedor.p2.split`@`[0]} menolak jedoran anda, yah sayang sekali masih jomblo :), tetep semangat yah ;)`, m, { mentions: generateOrGetPreKeys })
+                    delete this.jedoran[jedor.id]
+                    return !0
+                }
+                hisoka.sendText(`@${jedor.p2.split`@`[0]} telah menerima anda, ciee pj nya nyusul ya ;)`)
+                global.db.data.users[jedor.p].coupleUser = jedor.p2
+                global.db.data.users[jedor.p2].coupleUser = jedor.p
+
+                delete this.jedoran[jedor.id]
+            }
+
         }
 
         //Suit PvP
@@ -8849,6 +8874,23 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 }
             }
                 break
+            case 'jedor':{
+                let user = global.db.data.users[m.sender]
+                let who = m.mentionedJid[0]
+                if (!who) throw `Tag yang ingin dijedor. Example ${prefix + command} @siapa`
+                let user2 = global.db.data.users[who]
+                this.jedoran = this.jedoran ? this.jedoran : {}
+                let id = 'jedor_'+who+'_'+ new Date() * 1
+                let caption = `_*JEDOR*_\n\nKamu ditembak ${m.sender.split`@`[0]}, jawab (iya/tidak) untuk merespon`
+                this.jedoran[id] = {
+                    chat: await hisoka.sendText(m.chat, caption, m , {mentions: parseMention(caption)}),
+                    id: id,
+                    p: m.sender,
+                    p2: m.mentionedJid[0],
+                    status: 'wait',
+                }
+            }
+            break
             case 'profile': {
                 let user = global.db.data.users[m.sender]
                 let num = m.sender
