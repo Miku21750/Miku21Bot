@@ -8925,7 +8925,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     chat: await hisoka.sendText(user.coupleUser, caption, m , {mentions: parseMention(caption)}),
                     id: id,
                     p: m.sender,
-                    p2: m.mentionedJid[0],
+                    p2: user.coupleUser,
                     status: 'wait',
                 }
             }
