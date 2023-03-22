@@ -2946,84 +2946,253 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 //check if not number return
                 if (isNaN(kasih)) return m.reply(`Masukan angka`)
                 if (money < kasih) return m.reply(`${user.name} tidak memiliki jumlah MIKO yang cukup`)
-                const prompt = ps()
-                let txt = ''
-                txt += '┌────────────────────────────────────────┐'
-                txt += '│        Black Jack Terminal Game        │'
-                txt += '└────────────────────────────────────────┘\n│'
-                const human = new blackJackPlayer(user.name)
-                const dealer = new blackJackDealer('Dealer')
-                txt += `│\n│  Welcome to Black Jack ${human.name}!`
-                user.money -= kasih
-                dealer.shuffleDeck()
-                //Deals two cards to each the player and dealer to start of the match
-                for (let i = 0; i < 2; i++) {
-                    human.addCard(dealer.deal())
-                    dealer.addCard(dealer.deal())
+                // const prompt = ps()
+                let txt = 'Welcome to BlackJack\n\n'
+                // txt += '┌────────────────────────────────────────┐'
+                // txt += '│        Black Jack Terminal Game        │'
+                // txt += '└────────────────────────────────────────┘\n│'
+                let userValue = 0;
+                let dealerValue = 0;
+                let cardUser1 = Math.floor(Math.random() *(13 - 1)+1)
+                let cardUser2 = Math.floor(Math.random() *(13 - 1)+1)
+                let cardDealer1 = Math.floor(Math.random() *(13 - 1)+1)
+                let cardDealer2 = Math.floor(Math.random() *(13 - 1)+1)
+                switch(cardDealer1){
+                    case 1 : txt+='Card Dealer 1 = ACE\n'; break;
+                    case 2 : txt+='Card Dealer 1 = 2\n'; break;
+                    case 3 : txt+='Card Dealer 1 = 3\n'; break;
+                    case 4 : txt+='Card Dealer 1 = 4\n'; break;
+                    case 5 : txt+='Card Dealer 1 = 5\n'; break;
+                    case 6 : txt+='Card Dealer 1 = 6\n'; break;
+                    case 7 : txt+='Card Dealer 1 = 7\n'; break;
+                    case 8 : txt+='Card Dealer 1 = 8\n'; break;
+                    case 9 : txt+='Card Dealer 1 = 9\n'; break;
+                    case 10 : txt+='Card Dealer 1 = 10\n'; break;
+                    case 11 : txt+='Card Dealer 1 = JACK\n'; break;
+                    case 12 : txt+='Card Dealer 1 = QUEEN\n'; break;
+                    case 13 : txt+='Card Dealer 1 = KING\n'; break;
+                    default : txt+= 'error';
                 }
-                txt += dealer.showOverview(false)
-                txt += dealer.showHandCover()
-                txt += human.showOverview()
-                txt += human.showHand()
+                dealerValue += cardDealer1
+                txt += `Card Dealer 2 = ?????\n Dealer Value = ${dealerValue} + ???\n\n`
+                switch(cardUser1){
+                    case 1 : txt+='Card User 1 = ACE\n'; break;
+                    case 2 : txt+='Card User 1 = 2\n'; break;
+                    case 3 : txt+='Card User 1 = 3\n'; break;
+                    case 4 : txt+='Card User 1 = 4\n'; break;
+                    case 5 : txt+='Card User 1 = 5\n'; break;
+                    case 6 : txt+='Card User 1 = 6\n'; break;
+                    case 7 : txt+='Card User 1 = 7\n'; break;
+                    case 8 : txt+='Card User 1 = 8\n'; break;
+                    case 9 : txt+='Card User 1 = 9\n'; break;
+                    case 10 : txt+='Card User 1 = 10\n'; break;
+                    case 11 : txt+='Card User 1 = JACK\n'; break;
+                    case 12 : txt+='Card User 1 = QUEEN\n'; break;
+                    case 13 : txt+='Card User 1 = KING\n'; break;
+                    default : txt+= 'error';
+                }
+                switch(cardUser2){
+                    case 1 : txt+='Card User 2 = ACE\n'; break;
+                    case 2 : txt+='Card User 2 = 2\n'; break;
+                    case 3 : txt+='Card User 2 = 3\n'; break;
+                    case 4 : txt+='Card User 2 = 4\n'; break;
+                    case 5 : txt+='Card User 2 = 5\n'; break;
+                    case 6 : txt+='Card User 2 = 6\n'; break;
+                    case 7 : txt+='Card User 2 = 7\n'; break;
+                    case 8 : txt+='Card User 2 = 8\n'; break;
+                    case 9 : txt+='Card User 2 = 9\n'; break;
+                    case 10 : txt+='Card User 2 = 10\n'; break;
+                    case 11 : txt+='Card User 2 = JACK\n'; break;
+                    case 12 : txt+='Card User 2 = QUEEN\n'; break;
+                    case 13 : txt+='Card User 2 = KING\n'; break;
+                    default : txt+= 'error';
+                }
+                userValue += cardUser1 + cardUser2
+                txt += `User Value = ${userValue}\n`
+                // const human = new blackJackPlayer(user.name)
+                // const dealer = new blackJackDealer('Dealer')
+                // txt += `│\n│  Welcome to Black Jack ${human.name}!`
+                user.money -= kasih
+                // dealer.shuffleDeck()
+                //Deals two cards to each the player and dealer to start of the match
+                // for (let i = 0; i < 2; i++) {
+                //     human.addCard(dealer.deal())
+                //     dealer.addCard(dealer.deal())
+                // }
+                // txt += dealer.showOverview(false)
+                // txt += dealer.showHandCover()
+                // txt += human.showOverview()
+                // txt += human.showHand()
 
                 hisoka.sendText(m.chat, txt, m)
-                let blackJack
-                //If initial dealing equals 21, so ace and a facecard, they win 1.5 times their bet
-                //setting the variable equal to true allows the computer to differentiate getting Black Jack and having a normal hand of 21 later on
-                if (human.handValue === 21) {
-                    console.log('│')
-                    hisoka.sendText(m.chat, `│  Black Jack! You have have won $${Math.floor(kasih * 1.5)}\n│`, m)
-                    // human.addFunds(bet * 2.5)
-                    user.money += (bet * kasih)
-                    blackJack = true
+                // let blackJack
+                // //If initial dealing equals 21, so ace and a facecard, they win 1.5 times their bet
+                // //setting the variable equal to true allows the computer to differentiate getting Black Jack and having a normal hand of 21 later on
+                if(userValue === 21){
+                    hisoka.sendText(m.chat, `│  Black Jack! You have have won ${Math.floor(kasih * 1.5)} MIKO\n│`, m)
+                    money += (kasih * 2.5)
+                    //adding exp
+                    let exp = user.exp
+                    let getexp = Math.floor(Math.random() * (10 - 1) + 1)
+                    exp += getexp
+                    user.exp = exp
+                    user.money = money
+                    delete blackjack[m.chat]
+                    
+                    return;
                 }
-                // console.log(blackjack)
-                blackjack[m.chat] = {
-                    handValue: human.handValue,
+                // if (human.handValue === 21) {
+                //     console.log('│')
+                //     hisoka.sendText(m.chat, `│  Black Jack! You have have won $${Math.floor(kasih * 1.5)}\n│`, m)
+                //     // human.addFunds(bet * 2.5)
+                //     user.money += (bet * kasih)
+                //     blackJack = true
+                // }
+                // // console.log(blackjack)
+                blackjack[m.chat] ={
+                    dealerVal: dealerValue,
                     bet: kasih,
+                    userVal: userValue,
+                    text: txt,
+                    turn: 3,
                 }
-                console.log(human.hand, human.handValue,)
+                // blackjack[m.chat] = {
+                //     handValue: human.handValue,
+                //   \n'  bet: kasih,
+                // }
+                // console.log(human.hand, human.handValue,)
                 let buttons = [
-                    { buttonId: 'bjHit', buttonText: { displayText: 'Hit' }, type: 1 },
-                    { buttonId: 'bjStand', buttonText: { displayText: 'Stand' }, type: 1 },
+                    { buttonId: 'bjhit', buttonText: { displayText: 'Hit' }, type: 1 },
+                    { buttonId: 'bjstand', buttonText: { displayText: 'Stand' }, type: 1 },
                 ]
                 await hisoka.sendButtonText(m.chat, buttons, 'Hit or Stand??', hisoka.user.name, m)
             }
                 break
-            case 'bjHit': {
+            case 'bjhit': {
                 if(!blackjack.hasOwnProperty(m.chat)) return
-                human.addCard(dealer.deal())
-                if (human.handValue > 21) {
-                    if (human.hand.map(card => card.rank).includes('A', index)) {
-                        human.handValue -= 10
-                        index = human.hand.map(card => card.rank).indexOf('A') + 1
-                    }
+                let user = global.db.data.users[m.sender]
+                let money = user.money
+                let blackjackData = blackjack[m.chat]
+                // human.addCard(dealer.deal())
+                // if (human.handValue > 21) {
+                    //     if (human.hand.map(card => card.rank).includes('A', index)) {
+                        //         human.handValue -= 10
+                        //         index = human.hand.map(card => card.rank).indexOf('A') + 1
+                        //     }
+                        // }
+                let cardUser = Math.floor(Math.random() *(13 - 1)+1)
+                let txt = blackjackData.text
+                let userValue = blackjackData.userVal
+                let kasih = blackjackData.bet
+                switch(cardUser){
+                    case 1 : txt+=`Card User ${blackjackData.turn} = ACE\n`; break;
+                    case 2 : txt+=`Card User ${blackjackData.turn} = 2\n`; break;
+                    case 3 : txt+=`Card User ${blackjackData.turn} = 3\n`; break;
+                    case 4 : txt+=`Card User ${blackjackData.turn} = 4\n`; break;
+                    case 5 : txt+=`Card User ${blackjackData.turn} = 5\n`; break;
+                    case 6 : txt+=`Card User ${blackjackData.turn} = 6\n`; break;
+                    case 7 : txt+=`Card User ${blackjackData.turn} = 7\n`; break;
+                    case 8 : txt+=`Card User ${blackjackData.turn} = 8\n`; break;
+                    case 9 : txt+=`Card User ${blackjackData.turn} = 9\n`; break;
+                    case 10 : txt+=`Card User ${blackjackData.turn} = 10\n`; break;
+                    case 11 : txt+=`Card User ${blackjackData.turn} = JACK\n`; break;
+                    case 12 : txt+=`Card User ${blackjackData.turn} = QUEEN\n`; break;
+                    case 13 : txt+=`Card User ${blackjackData.turn} = KING\n`; break;
+                    default : txt+='error';
                 }
-                let txt = ''
-                txt += human.showOverview()
-                txt += human.showHand()
-                txt += dealer.showOverview(false)
-                txt += dealer.showHandCover()
+                userValue += cardUser
+                txt += `User Value = ${userValue}\n`
+                // txt += human.showOverview()
+                // txt += human.showHand()
+                // txt += dealer.showOverview(false)
+                // txt += dealer.showHandCover()
                 hisoka.sendText(m.chat, txt, m)
-                let blackjack
+                // let blackjack
                 //If initial dealing equals 21, so ace and a facecard, they win 1.5 times their bet
                 //setting the variable equal to true allows the computer to differentiate getting Black Jack and having a normal hand of 21 later on
-                if (human.handValue === 21) {
-                    console.log('│')
-                    hisoka.sendText(m.chat, `│  Black Jack! You have have won $${Math.floor(kasih * 1.5)}\n│`, m)
-                    // human.addFunds(bet * 2.5)
-                    user.money += (bet * kasih)
-                    blackJack = true
+                // if (human.handValue === 21) {
+                //     console.log('│')
+                //     hisoka.sendText(m.chat, `│  Black Jack! You have have won $${Math.floor(kasih * 1.5)}\n│`, m)
+                //     // human.addFunds(bet * 2.5)
+                //     user.money += (bet * kasih)
+                //     blackJack = true
+                // }
+                if(userValue === 21){
+                    hisoka.sendText(m.chat, `│  Black Jack! You have have won ${Math.floor(kasih * 1.5)} MIKO\n│`, m)
+                    money += (kasih * 2.5)
+                    //adding exp
+                    let exp = user.exp
+                    let getexp = Math.floor(Math.random() * (10 - 1) + 1)
+                    exp += getexp
+                    user.exp = exp
+                    user.money = money
+                    delete blackjack[m.chat]
+                }else if(userValue > 21){
+                    hisoka.sendText(m.chat, `│  I'm Sorry, You're lose\n│`, m)
+                    delete blackjack[m.chat]
+                }else{
+                    blackjackData.userVal = userValue
+                    blackjackData.text = txt
+                    blackjackData.turn = 4
+                    // blackjack[m.chat] = {
+                    //     handValue: human.handValue,
+                    //     bet: kasih,
+                    // }
+                    let buttons = [
+                        { buttonId: 'bjhit', buttonText: { displayText: 'Hit' }, type: 1 },
+                        { buttonId: 'bjStand', buttonText: { displayText: 'Stand' }, type: 1 },
+                    ]
+                    await hisoka.sendButtonText(m.chat, buttons, 'Hit or Stand??', hisoka.user.name, m)
                 }
-                blackjack[m.chat] = {
-                    handValue: human.handValue,
-                    bet: kasih,
+            }
+            break
+            case 'bjstand':{
+                if(!blackjack.hasOwnProperty(m.chat)) return
+                let user = global.db.data.users[m.sender]
+                let money = user.money
+                let blackjackData = blackjack[m.chat]
+                let txt = blackjackData.text
+                let userValue = blackjackData.userVal
+                let dealerValue = blackjackData.dealerVal
+                let kasih = blackjackData.bet
+                let turnDealer = 2
+                txt+= '\n\nCard Dealer\n'
+                while(dealerValue < 21 || dealerValue < userValue){
+                    let cardDealer = Math.floor(Math.random() *(13 - 1)+1)
+                    switch(cardDealer){
+                        case 1 : txt+=`Card ${turnDealer} = ACE\n`; break;
+                        case 2 : txt+=`Card ${turnDealer} = 2\n`; break;
+                        case 3 : txt+=`Card ${turnDealer} = 3\n`; break;
+                        case 4 : txt+=`Card ${turnDealer} = 4\n`; break;
+                        case 5 : txt+=`Card ${turnDealer} = 5\n`; break;
+                        case 6 : txt+=`Card ${turnDealer} = 6\n`; break;
+                        case 7 : txt+=`Card ${turnDealer} = 7\n`; break;
+                        case 8 : txt+=`Card ${turnDealer} = 8\n`; break;
+                        case 9 : txt+=`Card ${turnDealer} = 9\n`; break;
+                        case 10 : txt+=`Card ${turnDealer} = 10\n`; break;
+                        case 11 : txt+=`Card ${turnDealer} = JACK\n`; break;
+                        case 12 : txt+=`Card ${turnDealer} = QUEEN\n`; break;
+                        case 13 : txt+=`Card ${turnDealer} = KING\n`; break;
+                        default : txt+='error';
+                    }
+                    dealerValue += cardDealer
+                    turnDealer++;
                 }
-                let buttons = [
-                    { buttonId: 'bjHit', buttonText: { displayText: 'Hit' }, type: 1 },
-                    { buttonId: 'bjStand', buttonText: { displayText: 'Stand' }, type: 1 },
-                ]
-                await hisoka.sendButtonText(m.chat, buttons, 'Hit or Stand??', hisoka.user.name, m)
+                txt += `Dealer Value = ${dealerValue}\n`
+                hisoka.sendText(m.chat, txt, m)
+                if(dealerValue < userValue || dealerValue > 21){
+                    hisoka.sendText(m.chat, `│  WIN! You have have won ${Math.floor(kasih * 1.5)} MIKO\n│`, m)
+                    money += (kasih * 2.5)
+                    //adding exp
+                    let exp = user.exp
+                    let getexp = Math.floor(Math.random() * (10 - 1) + 1)
+                    exp += getexp
+                    user.exp = exp
+                    user.money = money
+                }else{
+                    hisoka.sendText(m.chat, `│  I'm Sorry, You're lose\n│`, m)
+                }
+                delete blackjack[m.chat]
             }
             break
 
