@@ -6929,7 +6929,7 @@ ${global.sp} yuki
                 break
             case 'uniform': case 'maid': case 'marin-kitagawa': case 'mori-calliope': case 'raiden-shogun': case 'oppai': case 'selfies': {
                 m.reply(mess.wait)
-                axios.get(`https://api.waifu.im/random/?selected_tags=${command}`)
+                axios.get(`https://api.waifu.im/search/?included_tags=${command}`)
 
                     .then(({ data }) => {
                         console.log(command, data.images[0].url, data.images)
