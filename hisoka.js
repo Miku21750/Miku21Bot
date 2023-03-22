@@ -4381,7 +4381,7 @@ Love EXP kamu naik ${lovexp}. Love EXP kamu sekarang ${user.waifuexp}
 ${waifu.name} : ${gamau}
 Love Exp kamu belum cukup. Love Exp kamu sekarang ${user.waifuexp}. Butuh 300 LoveExp agar dia mau
 `
-                                            hisoka.sendText(m.chat, textlewd, m)
+                                            hisoka.sendText(m.sender, textlewd, m)
                                         } else {
                                             let word = waifu.name
                                             // let anu = await fetchJson(`https://api.zahwazein.xyz/searching/pixiv?query=${word}&apikey=keymikuzenz21`)
