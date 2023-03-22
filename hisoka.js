@@ -3024,7 +3024,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 // txt += human.showOverview()
                 // txt += human.showHand()
 
-                hisoka.sendText(m.chat, txt, m)
+                // hisoka.sendText(m.chat, txt, m)
                 // let blackJack
                 // //If initial dealing equals 21, so ace and a facecard, they win 1.5 times their bet
                 // //setting the variable equal to true allows the computer to differentiate getting Black Jack and having a normal hand of 21 later on
@@ -3065,7 +3065,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     { buttonId: 'bjhit', buttonText: { displayText: 'Hit' }, type: 1 },
                     { buttonId: 'bjstand', buttonText: { displayText: 'Stand' }, type: 1 },
                 ]
-                await hisoka.sendButtonText(m.chat, buttons, 'Hit or Stand??', hisoka.user.name, m)
+                await hisoka.sendButtonText(m.chat, buttons, txt+'\n\nHit or Stand??', hisoka.user.name, m)
             }
                 break
             case 'bjhit': {
@@ -3106,7 +3106,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 // txt += human.showHand()
                 // txt += dealer.showOverview(false)
                 // txt += dealer.showHandCover()
-                hisoka.sendText(m.chat, txt, m)
+                // hisoka.sendText(m.chat, txt, m)
                 // let blackjack
                 //If initial dealing equals 21, so ace and a facecard, they win 1.5 times their bet
                 //setting the variable equal to true allows the computer to differentiate getting Black Jack and having a normal hand of 21 later on
@@ -3142,7 +3142,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                         { buttonId: 'bjhit', buttonText: { displayText: 'Hit' }, type: 1 },
                         { buttonId: 'bjStand', buttonText: { displayText: 'Stand' }, type: 1 },
                     ]
-                    await hisoka.sendButtonText(m.chat, buttons, 'Hit or Stand??', hisoka.user.name, m)
+                    await hisoka.sendButtonText(m.chat, buttons, txt+'\n\nHit or Stand??', hisoka.user.name, m)
                 }
             }
             break
@@ -3179,9 +3179,9 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     turnDealer++;
                 }
                 txt += `Dealer Value = ${dealerValue}\n`
-                hisoka.sendText(m.chat, txt, m)
+                // hisoka.sendText(m.chat, txt, m)
                 if(dealerValue < userValue || dealerValue > 21){
-                    hisoka.sendText(m.chat, `│  WIN! You have have won ${Math.floor(kasih * 1.5)} MIKO\n│`, m)
+                    hisoka.sendText(m.chat, txt+`\n\n│  WIN! You have have won ${Math.floor(kasih * 1.5)} MIKO\n│`, m)
                     money += (kasih * 2.5)
                     //adding exp
                     let exp = user.exp
