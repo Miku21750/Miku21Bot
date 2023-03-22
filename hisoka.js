@@ -6780,7 +6780,9 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let word = text
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
-                if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //for the sake of ramadhan, nsfw will be only in private chat
+                if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 // let anu = await fetchJson(`https://api.zahwazein.xyz/searching/pixiv?query=${word}&apikey=keymikuzenz21`)
                 // let mess = 'PIXIV SEARCHER\n'
                 // for(var i in anu.result){
@@ -6955,7 +6957,15 @@ ${global.sp} yuki
                 }
             }
                 break
-            case 'cosplay': case 'meme': case 'memeindo': {
+
+            case 'cosplay':{
+                // return m.reply('maaf lagi error')
+                if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
+                m.reply(mess.wait)
+                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/randomimage/${command}?apikey=keymikuzenz21` }, caption: `NIH` }, { quoted: m })
+            }
+                break
+            case 'meme': case 'memeindo': {
                 // return m.reply('maaf lagi error')
                 m.reply(mess.wait)
                 hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/randomimage/${command}?apikey=keymikuzenz21` }, caption: `NIH` }, { quoted: m })
@@ -6970,7 +6980,9 @@ ${global.sp} yuki
             case 'nekopoirandom': {
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
-                if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //for the sake of ramadhan, nsfw will be only in private chat
+                if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 //if not premium return
                 if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 return m.reply('maaf lagi error')
@@ -6990,7 +7002,9 @@ ${global.sp} yuki
                 // return m.reply('maaf lagi error')
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
-                if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //for the sake of ramadhan, nsfw will be only in private chat
+                if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 //if not premium return
                 if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 let data = await fetchJson('https://api.zahwazein.xyz/downloader/hentaivid/longer?apikey=keymikuzenz21')
@@ -7004,7 +7018,9 @@ ${global.sp} yuki
             case 'nhentai': {
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
-                if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //for the sake of ramadhan, nsfw will be only in private chat
+                if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 //if not premium return
                 if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 if (!args[0]) throw 'Masukan text'
@@ -7043,7 +7059,9 @@ ${global.sp} yuki
                 //if metadata.id not same as global.nsfwGroup return
                 console.log(metadata_id, global.nsfwGroup, metadata_id == global.nsfwGroup, m.isGroup || metadata_id != global.nsfwGroup)
 
-                if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //for the sake of ramadhan, nsfw will be only in private chat
+                if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 //if not premium return
                 if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 let helptxt = `/*LIST NSFW*/
@@ -7168,7 +7186,9 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 // return m.reply('maaf lagi error')
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
-                if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //for the sake of ramadhan, nsfw will be only in private chat
+                if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 let anu = await fetchJson(`https://api.zahwazein.xyz/randomtext/cersex?apikey=keymikuzenz21`)
                 let res = anu.result
                 let txt = res.Cerita
@@ -7178,7 +7198,9 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             case 'doujindesu': {
                 let metadata_id = groupMetadata.id
                 let group = db.data.chats[m.chat]
-                if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //for the sake of ramadhan, nsfw will be only in private chat
+                if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 if (!text) throw `Example: ${prefix + command} (latest|search)`
                 if (args[0] === 'latest') {
