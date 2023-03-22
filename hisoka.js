@@ -6108,6 +6108,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 break
             case 'linkgroup': case 'linkgc': {
                 if (!m.isGroup) throw mess.group
+                if (!isAdmins) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
                 let response = await hisoka.groupInviteCode(m.chat)
                 hisoka.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nLink Group : ${groupMetadata.subject}`, m, { detectLink: true })
