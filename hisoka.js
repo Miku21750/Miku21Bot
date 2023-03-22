@@ -3157,7 +3157,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 let kasih = blackjackData.bet
                 let turnDealer = 2
                 txt+= '\n\nCard Dealer\n'
-                while(dealerValue < 21 || dealerValue < userValue){
+                while(dealerValue < 21 && dealerValue < userValue){
                     let cardDealer = Math.floor(Math.random() *(13 - 1)+1)
                     switch(cardDealer){
                         case 1 : txt+=`Card ${turnDealer} = ACE\n`; break;
