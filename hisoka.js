@@ -3118,7 +3118,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 //     blackJack = true
                 // }
                 if(userValue === 21){
-                    hisoka.sendText(m.chat, `│  Black Jack! You have have won ${Math.floor(kasih * 1.5)} MIKO\n│`, m)
+                    hisoka.sendText(m.chat, txt+`│  Black Jack! You have have won ${Math.floor(kasih * 1.5)} MIKO\n│`, m)
                     money += (kasih * 2.5)
                     //adding exp
                     let exp = user.exp
@@ -3128,7 +3128,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     user.money = money
                     delete blackjack[m.chat]
                 }else if(userValue > 21){
-                    hisoka.sendText(m.chat, `│  I'm Sorry, You're lose\n│`, m)
+                    hisoka.sendText(m.chat, txt+`│  I'm Sorry, You're lose\n│`, m)
                     delete blackjack[m.chat]
                 }else{
                     blackjackData.userVal = userValue
@@ -3190,7 +3190,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     user.exp = exp
                     user.money = money
                 }else{
-                    hisoka.sendText(m.chat, `│  I'm Sorry, You're lose\n│`, m)
+                    hisoka.sendText(m.chat, txt+`│  I'm Sorry, You're lose\n│`, m)
                 }
                 delete blackjack[m.chat]
             }
