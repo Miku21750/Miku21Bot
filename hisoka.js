@@ -5886,6 +5886,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                 if(!text) throw `Example: ${prefix + command} Miku21Margareth`
                 let user = db.data.users[m.sender]
                 user.name = text
+                m.reply('done')
             }
             break
 
