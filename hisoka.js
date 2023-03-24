@@ -5882,6 +5882,13 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
             }
                 break
 
+            case 'setname':{
+                if(!text) throw `Example: ${prefix + command} Miku21Margareth`
+                let user = db.data.users[m.sender]
+                user.name = text
+            }
+            break
+
             //add balance
             case 'addmiko': case 'addmoney': {
                 if (!isCreator) throw mess.owner
@@ -5903,7 +5910,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                 m.reply('Berhasil ditarik')
             }
                 break
-            case 'setname': case 'setsubject': {
+            case 'setsubject': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
