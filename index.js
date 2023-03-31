@@ -82,6 +82,27 @@ async function startHisoka() {
         // printQRInTerminal: true,
         // browser: ['Hisoka Multi Device','Safari','1.0.0'],
         // auth: state
+        patchMessageBeforeSending: (message) => {
+            const requiresPatch = !!(
+                message.buttonsMessage ||
+                message.listMessage
+            );
+    
+            if (requiresPatch) {
+                message = {
+                    viewOnceMessage: {
+                        message: {
+                            messageContextInfo: {
+                                deviceListMetadataVersion: 2,
+                                deviceListMetadata: {},
+                            },
+                            ...message,
+                        },
+                    },
+                };
+            }
+            return message;
+        },
         logger: pino({ level: 'silent' }),
 		printQRInTerminal: true,
 		version: [2, 2204, 13],
