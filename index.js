@@ -76,12 +76,14 @@ if (global.db) setInterval(async () => {
 
 async function startHisoka() {
     const { state, saveState } = await useMultiFileAuthState(`./${sessionName}.json`)
-    const hisoka = await hisokaConnect({
+
+    const hisoka = hisokaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
         browser: ['Hisoka Multi Device','Safari','1.0.0'],
         auth: state
     })
+
 
     store.bind(hisoka.ev)
     
@@ -256,7 +258,10 @@ async function startHisoka() {
         console.log('Connected...', update)
     })
 
-    hisoka.ev.on('creds.update', saveState)
+    // hisoka.ev.on('creds.update', saveState)
+    if(hisoka.ev.on['creds.update']) {
+				await saveCreds()
+	}
 
     // Add Other
 
