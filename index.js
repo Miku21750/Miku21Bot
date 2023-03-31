@@ -13,7 +13,7 @@
 
 require('./config')
 const { default: hisokaConnect, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
-const { state, saveState } = useMultiFileAuthState(`./${sessionName}.json`)
+const { state, saveState } = await useMultiFileAuthState(`./${sessionName}.json`)
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
 const fs = require('fs')
@@ -76,7 +76,7 @@ if (global.db) setInterval(async () => {
   }, 30 * 1000)
 
 async function startHisoka() {
-    const hisoka = hisokaConnect({
+    const hisoka = await hisokaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
         browser: ['Hisoka Multi Device','Safari','1.0.0'],
