@@ -902,31 +902,44 @@ klik https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] }
         //fight
         this.fight = this.fight ? this.fight : {}
         let arena = Object.values(this.fight).find(arena => arena.id && arena.status && arena.p.includes(m.sender))
-        if (arena) {
-            let win = ''
-            let lose = ''
-            //&& m.isGroup && roof.status == 'wait'
-            if (m.sender == arena.p && m.isGroup && arena.status == 'wait') {
-                arena.status = 'play'
-                arena.asal = m.chat
-                hisoka.sendText(m.chat, `Menemukan lawan, ${m.pushName} melawan ${arena.monster_random_name}\nSilahkan pilih [fight],[skill],[item],atau [run]`)
-                ///^(tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)
-                if (/^(run)/i.test(m.text)) {
-                    hisoka.sendText(m.chat, `${m.pushName} meninggalkan lawan, tidak mendapatkan apa apa`, m)
+        if(arena){
+            let org = [arena.p2, arena.p]
+            if (m.sender == arena.p2 && /^(acc(ept)?|terima|gas|oke?|iya|tidak|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && arena.status == 'wait'){
+                if (/^(tidak|tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
+                    hisoka.sendText(m.chat, `@${arena.p2.split`@`[0]} menolak tantangan`, m, { mentions: org })
                     delete this.fight[arena.id]
                     return !0
                 }
-                if (/^(fight)/i.test(m.text)) {
-                    hisoka.sendText(m.chat, `${m.pushName} memilih untuk bertarung`, m)
-                    arena.status = 'fight'
-                    arena.waktu_milih = setTimeout(() => {
-                        if (!arena.pilih) hisoka.sendText(m.chat)
-                    })
-                }
-            }
-            //hisoka.sendText(m.chat, `${m.pushName} sedang mencari lawan, mohon tunggu.....`,m)
-
+                arena.status = 'play'
+                let txt = `_*FIGHT*_\n\n@${arena.p.split`@`[0]} melawan ${arena.p2.split`@`[0]}\nSilahkan pilih [fight],[skill],[item],atau [run]`
+                
+            } 
         }
+        // if (arena) {
+        //     let win = ''
+        //     let lose = ''
+        //     //&& m.isGroup && roof.status == 'wait'
+        //     if (m.sender == arena.p && m.isGroup && arena.status == 'wait') {
+        //         arena.status = 'play'
+        //         arena.asal = m.chat
+        //         hisoka.sendText(m.chat, `Menemukan lawan, ${m.pushName} melawan ${arena.monster_random_name}\nSilahkan pilih [fight],[skill],[item],atau [run]`)
+        //         ///^(tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)
+        //         if (/^(run)/i.test(m.text)) {
+        //             hisoka.sendText(m.chat, `${m.pushName} meninggalkan lawan, tidak mendapatkan apa apa`, m)
+        //             delete this.fight[arena.id]
+        //             return !0
+        //         }
+        //         if (/^(fight)/i.test(m.text)) {
+        //             hisoka.sendText(m.chat, `${m.pushName} memilih untuk bertarung`, m)
+        //             arena.status = 'fight'
+        //             arena.waktu_milih = setTimeout(() => {
+        //                 if (!arena.pilih) hisoka.sendText(m.chat)
+        //             })
+        //         }
+        //     }
+        //     //hisoka.sendText(m.chat, `${m.pushName} sedang mencari lawan, mohon tunggu.....`,m)
+
+        // }
 
 
         let mentionUser = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
@@ -1144,40 +1157,49 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 //set hp and sp based on level
                 let hp = user.level * 10
                 let sp = user.level * 5
-                //if (Object.values(this.arena).find(arena => arena.id.startsWith('fight') && arena.p.includes(m.sender))) return m.reply(`Selesaikan fight mu yang sebelumnya`)
+                if (Object.values(this.fight).find(arena => arena.id.startsWith('fight') && arena.p.includes(m.sender))) return m.reply(`Selesaikan fight mu yang sebelumnya`)
+                if (m.mentionedJid[0] === m.sender) return m.reply(`Tidak bisa bermain dengan diri sendiri !`)
+                if (!m.mentionedJid[0]) return m.reply(`_Siapa yang ingin kamu tantang?_\nTag orangnya..\n\nContoh : ${prefix + command} @${owner[1]}`, m.chat, { mentions: [owner[1] + '@s.whatsapp.net'] })
+                if (Object.values(this.fight).find(arena => arena.id.startsWith('fight') && [arena.p, arena.p2].includes(m.mentionedJid[0]))) throw `Orang yang kamu tantang sedang berantem bersama orang lain :(`
                 let id = 'fight_' + new Date() * 1
-                let caption = `_*Fight*_
-@${m.sender.split('@')[0]} sedang mencari lawan, mohon tunggu....`
-                //set monster
-                let monster = db.data.monster
-                let monster_id = Object.keys(monster)
-                let monster_random = monster_id[Math.floor(Math.random() * monster_id.length)]
-                let monster_random_name = monster[monster_random].name
-                let monster_random_stat = monster[monster_random].Stat
-                let monster_random_desc = monster[monster_random].Desc
-                //randomize hp monster based on level user
-                let monster_random_hp = Math.floor(Math.random() * (user.level * 10))
-                let timeout = 800000000
-                //randomize atk monster based on level user
-                let monster_random_atk = Math.floor(Math.random() * (user.level * 5))
-                this.fight[id] = {
-                    chat: await hisoka.sendText(m.chat, caption, m, { mentions: parseMention(caption) }),
+                let caption = `_*PvP*_
+
+@${m.sender.split`@`[0]} menantang @${m.mentionedJid[0].split`@`[0]} untuk fight
+
+Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
+
+                let timeout = 600000
+                this.fight[id]={
+                    chat: await hisoka.sendText(m.chat, caption, m , {mentions: parseMention(caption)}),
                     id: id,
                     p: m.sender,
-                    hp: hp,
-                    sp: sp,
+                    p2: m.mentionedJid[0],
                     status: 'wait',
-                    monster: monster_random_name,
-                    monster_stat: monster_random_stat,
-                    monster_desc: monster_random_desc,
-                    monster_hp: monster_random_hp,
-                    monster_atk: monster_random_atk,
-                    waktu: setTimeout(() => {
-                        if (this.arena[id]) hisoka.sendText(m.chat, `_Waktu fight habis_`, m)
-                        delete this.arena[id]
-                    }, 800000000), timeout
+                    waktu: setTimeout(()=>{
+                        if(this.fight[id]) hisoka.sendText(m.chat, 'waktu habis',m)
+                        delete this.fight[id]
+                    }, 60000)
                 }
-                console.log(this.fight[id])
+//                 //randomize atk monster based on level user
+//                 let monster_random_atk = Math.floor(Math.random() * (user.level * 5))
+//                 this.fight[id] = {
+//                     chat: await hisoka.sendText(m.chat, caption, m, { mentions: parseMention(caption) }),
+//                     id: id,
+//                     p: m.sender,
+//                     hp: hp,
+//                     sp: sp,
+//                     status: 'wait',
+//                     monster: monster_random_name,
+//                     monster_stat: monster_random_stat,
+//                     monster_desc: monster_random_desc,
+//                     monster_hp: monster_random_hp,
+//                     monster_atk: monster_random_atk,
+//                     waktu: setTimeout(() => {
+//                         if (this.arena[id]) hisoka.sendText(m.chat, `_Waktu fight habis_`, m)
+//                         delete this.arena[id]
+//                     }, 800000000), timeout
+//                 }
+//                 console.log(this.fight[id])
             }
                 break
 
@@ -2938,6 +2960,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
 
             //blackjack
             case 'blackjack': {
+
                 let user = global.db.data.users[m.sender]
                 let money = user.money
                 if (!args[0]) return m.reply('masukan jumlah taruhan');
@@ -9104,6 +9127,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 if(user2.coupleUser !== '') return hisoka.sendText(m.chat, `@${user.coupleUser.split`@`[0]} sudah memiliki @${user2.coupleUser.split`@`[0]}`,m,{mentions: [user.coupleUser,user2.coupleUser]})
                 if(who == m.sender) throw 'tidak bisa jedor diri sendiri (jangan selfcest ;D )'
                 this.jedoran = this.jedoran ? this.jedoran : {}
+                if(Object.values(this.jedoran).find(jedor => jedor.id.startsWith('jedor') && [jedor.p, jedor.p2].includes(m.sender))) return m.reply('Jedoran kamu sebelumnya belum dijawab :)')
                 let id = 'jedor_'+who+'_'+ new Date() * 1
                 let caption = `_*JEDOR*_\n\n@${m.sender.split`@`[0]} menembak @${m.mentionedJid[0].split`@`[0]}, jawab (iya/tidak) untuk merespon`
                 this.jedoran[id] = {
@@ -9112,6 +9136,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     p: m.sender,
                     p2: m.mentionedJid[0],
                     status: 'wait',
+                    waktu: setTimeout(()=>{
+                        if(this.jedoran[id]) hisoka.sendText(m.chat, 'waktu habis, coba lagi lain waktu ya :)',m)
+                        delete this.jedoran[id]
+                    }, 60000)
                 }
             }
             break
