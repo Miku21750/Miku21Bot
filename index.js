@@ -76,34 +76,7 @@ if (global.db) setInterval(async () => {
   }, 30 * 1000)
 
 async function startHisoka() {
-    const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName}.json`)
-
     const hisoka = hisokaConnect({
-        // logger: pino({ level: 'silent' }),
-        // printQRInTerminal: true,
-        // browser: ['Hisoka Multi Device','Safari','1.0.0'],
-        // auth: state
-        patchMessageBeforeSending: (message) => {
-            const requiresPatch = !!(
-                message.buttonsMessage ||
-                message.listMessage
-            );
-    
-            if (requiresPatch) {
-                message = {
-                    viewOnceMessage: {
-                        message: {
-                            messageContextInfo: {
-                                deviceListMetadataVersion: 2,
-                                deviceListMetadata: {},
-                            },
-                            ...message,
-                        },
-                    },
-                };
-            }
-            return message;
-        },
         logger: pino({ level: 'silent' }),
 		printQRInTerminal: true,
 		version: [2, 2204, 13],
