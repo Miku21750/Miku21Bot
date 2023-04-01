@@ -8249,9 +8249,10 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 if (!text) throw 'No Query Url!'
                 m.reply(mess.wait)
                 if (/(?:\/p\/|\/reel\/|\/tv\/)([^\s&]+)/.test(isUrl(text)[0])) {
-                    let anu = await fetchJson(`https://api.lolhuman.xyz/api/instagram2?apikey=keymikulolhuman21&url=${text}`)
+                    let anu = await fetchJson(`https://api.lolhuman.xyz/api/instagram?apikey=keymikulolhuman21&url=${text}`)
                     if (anu.status != 200) return 'Link tidak dapat didownload, coba lagi'
-                    for (let media of anu.result.media) hisoka.sendFileUrl(m.chat, media, `Download Url Instagram From ${isUrl(text)[0]}`, m)
+                    // for (let media of anu.result.media) hisoka.sendFileUrl(m.chat, media, `Download Url Instagram From ${isUrl(text)[0]}`, m)
+                    for (let media of anu.result) hisoka.sendFileUrl(m.chat, media, `Download Url Instagram From ${isUrl(text)[0]}`, m)
                 }
                 // else if (/\/stories\/([^\s&]+)/.test(isUrl(text)[0])) {
                 //     let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/instagram/story/v2?apikey=keymikuzenz21&url=${text}`)
