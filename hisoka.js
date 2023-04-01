@@ -7306,7 +7306,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                         })
                 } else if (text === 'ass' || text === 'hentai' || text === 'milf' || text === 'oral' || text === 'paizuri' || text === 'ecchi' || text === 'ero') {
                     m.reply(mess.wait)
-                    axios.get(`https://api.waifu.im/random/?selected_tags=${text}`)
+                    axios.get(`https://api.waifu.im/search/?included_tags=${text}`)
                         .then(({ data }) => {
                             hisoka.sendImage(m.chat, data.images[0].url, `NIH`, m)
                         })
@@ -7322,7 +7322,9 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 } else if (text === 'ahegao' || text === 'loli' || text === 'chiisaihentai' || text === 'yaoi' || text === 'hololewd' || text === 'sideoppai' || text === 'animearmpits' || text === 'lewdanimegirls' || text === 'biganimetiddies') {
                     m.reply(mess.wait)
                     try {
-                        hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random/nsfw/${text}?apikey=keymikulolhuman21`, `NIH`, m)
+                        // hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random/nsfw/${text}?apikey=keymikulolhuman21`, `NIH`, m)
+                        let anu = await fetchJson(`https://api.lolhuman.xyz/api/random/${command}?apikey=keymikulolhuman21`)
+                        hisoka.sendText(m.chat,anu.message,m);
                     } catch (e) {
                         m.reply(e)
                     }
