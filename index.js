@@ -78,14 +78,8 @@ if (global.db) setInterval(async () => {
 async function startHisoka() {
     const hisoka = hisokaConnect({
         logger: pino({ level: 'silent' }),
-		printQRInTerminal: true,
-		version: [2, 2204, 13],
-		// implement to handle retries
-		// getMessage: async key => {
-		// 	return {
-		// 		conversation: 'hello'
-		// 	}
-		// },
+        printQRInTerminal: true,
+        browser: ['Hisoka Multi Device','Safari','1.0.0'],
         auth: state
     })
 
@@ -263,10 +257,10 @@ async function startHisoka() {
         console.log('Connected...', update)
     })
 
-    hisoka.ev.on('creds.update', saveCreds)
-    // if(hisoka.ev.on['creds.update']) {
-	// 			await saveState()
-	// }
+    // hisoka.ev.on('creds.update', saveState)
+    if(hisoka.ev.on['creds.update']) {
+				await saveCreds()
+	}
 
     // Add Other
 
