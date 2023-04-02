@@ -7328,7 +7328,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     } catch (e) {
                         m.reply(e)
                     }
-                } else if  text === 'femdom' || text === 'feet' || text === 'feetg' || text === 'erok' || text === 'holoero' || text === 'erokemo' || text === 'foxgirl' || text === 'futanari') {
+                } else if  (text === 'femdom' || text === 'feet' || text === 'feetg' || text === 'erok' || text === 'holoero' || text === 'erokemo' || text === 'foxgirl' || text === 'futanari') {
                     m.reply(mess.wait)
                     try {
                         hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random2/${text}?apikey=keymikulolhuman21`, `NIH`, m)
