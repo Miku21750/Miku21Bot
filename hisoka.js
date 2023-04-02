@@ -833,7 +833,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             let org = [roof.p2, roof.p]
             if (m.sender == roof.p2 && /^(acc(ept)?|terima|gas|oke?|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
                 if (/^(tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
-                    hisoka.sendText(m.chat, `@${roof.p2.split`@`[0]} menolak suit, suit dibatalkan`, m, { mentions: generateOrGetPreKeys })
+                    hisoka.sendText(m.chat, `@${roof.p2.split`@`[0]} menolak suit, suit dibatalkan`, m, { mentions: org  })
                     delete this.suit[roof.id]
                     return !0
                 }
