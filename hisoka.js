@@ -7310,7 +7310,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                         .then(({ data }) => {
                             hisoka.sendImage(m.chat, data.images[0].url, `NIH`, m)
                         })
-                } else if (text === 'bdsm' || text === 'cuckold' || text === 'gangbang' || text === 'foot' || text === 'glasses' || text === 'jahy' || text === 'maid' || text === 'manga' || text === 'masturbation' || text === 'mobilewall' || text === 'netorare' || text === 'orgy' || text === 'panties' || text === 'pussy' || text === 'tentacles' || text === 'tighs' || text === 'yuri') {
+                } else if (text === 'bdsm' || text === 'cuckold' || text === 'gangbang' || text === 'foot' || text === 'glasses' || text === 'jahy' || text === 'maid' || text === 'manga' || text === 'masturbation' || text === 'mobilewall' || text === 'netorare' || text === 'orgy' || text === 'panties' || text === 'pussy' || text === 'tentacles' || text === 'tighs' || text === 'yuri' || text === 'cum') {
                     // return m.reply('maaf lagi error')
                     m.reply(mess.wait)
                     //hisoka.sendMessage(m.chat, { image: { url: random.male }, caption: `Couple Male` }, { quoted: m })
@@ -7328,7 +7328,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     } catch (e) {
                         m.reply(e)
                     }
-                } else if (text === 'cum' || text === 'femdom' || text === 'feet' || text === 'feetg' || text === 'erok' || text === 'holoero' || text === 'erokemo' || text === 'foxgirl' || text === 'futanari') {
+                } else if  text === 'femdom' || text === 'feet' || text === 'feetg' || text === 'erok' || text === 'holoero' || text === 'erokemo' || text === 'foxgirl' || text === 'futanari') {
                     m.reply(mess.wait)
                     try {
                         hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random2/${text}?apikey=keymikulolhuman21`, `NIH`, m)
