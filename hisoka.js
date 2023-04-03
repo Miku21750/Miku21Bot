@@ -1767,8 +1767,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 let money = user.money
                 let exp = user.exp
                 let sampah = user.sampah
-                let { min, xp, max } = levelling.xpRange(level, global.multiplier)
-                let math = max - xp
+                // let { min, xp, max } = levelling.xpRange(level, global.multiplier)
+                // let math = max - xp
+                let max = user.nextLevelExp
+                let math = max - exp
                 let name = user.name
                 let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
                 let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
@@ -9253,8 +9255,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     st = ''; date = '';
                 }
                 let waifu = ''
-                let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
-                let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
+                // let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
+                // let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
                 let usersmoney = sortedmoney.map(v => v[0])
                 let userslevel = sortedlevel.map(v => v[0])
                 if (user.waifu !== '') {
@@ -9310,8 +9312,8 @@ ${date}
 │⭔ Limit        : ${user.limit}
 │⭔ Premium      : ${user.premium}
 │
-│⭔ Top level *${userslevel.indexOf(user) + 1}* dari *${userslevel.length}*
-│⭔ Top MIKO *${usersmoney.indexOf(user) + 1}* dari *${usersmoney.length}*
+│⭔ Top level *${userslevel.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${userslevel.length}*
+│⭔ Top MIKO *${usersmoney.indexOf(m.mentionedJid[0] || m.sender) + 1}* dari *${usersmoney.length}*
 │
 └───────⭓
                 `
