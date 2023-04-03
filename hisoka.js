@@ -7413,7 +7413,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     m.reply(mess.wait)
                     //
                     hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/api/morensfw/${text}?apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
-                } else if ( || text === 'loli' || text === 'chiisaihentai' || text === 'yaoi' || text === 'hololewd' || text === 'sideoppai' || text === 'animearmpits' || text === 'lewdanimegirls' || text === 'biganimetiddies') {
+                } else if (text === 'loli' || text === 'chiisaihentai' || text === 'yaoi' || text === 'hololewd' || text === 'sideoppai' || text === 'animearmpits' || text === 'lewdanimegirls' || text === 'biganimetiddies') {
                     m.reply(mess.wait)
                     try {
                         // hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random/nsfw/${text}?apikey=keymikulolhuman21`, `NIH`, m)
