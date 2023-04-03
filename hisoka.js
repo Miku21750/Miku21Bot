@@ -419,7 +419,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         let tebakbendera = db.data.game.tebakbendera
         let susunkata = db.data.game.susunkata
         let tebakcharanime = db.data.game.tebakcharanime
-        let menfess = db.data.game.menfess
+        // let menfess = db.data.game.menfess
         let vote = db.data.game.vote
         // let fight = db.data.game.fight 
         let akinatorServer = db.data.game.akinatorServer
