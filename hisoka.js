@@ -3024,33 +3024,33 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 // User
                 let txt_cardUser = ''
                 switch(cardUser1){
-                    case 1 : txt_cardUser+='Card User 1 = ACE\n\n'; break;
-                    case 2 : txt_cardUser+='Card User 1 = 2\n\n'; break;
-                    case 3 : txt_cardUser+='Card User 1 = 3\n\n'; break;
-                    case 4 : txt_cardUser+='Card User 1 = 4\n\n'; break;
-                    case 5 : txt_cardUser+='Card User 1 = 5\n\n'; break;
-                    case 6 : txt_cardUser+='Card User 1 = 6\n\n'; break;
-                    case 7 : txt_cardUser+='Card User 1 = 7\n\n'; break;
-                    case 8 : txt_cardUser+='Card User 1 = 8\n\n'; break;
-                    case 9 : txt_cardUser+='Card User 1 = 9\n\n'; break;
-                    case 10 : txt_cardUser+='Card User 1 = 10\n\n'; break;
-                    case 11 : txt_cardUser+='Card User 1 = JACK\n\n'; break;
-                    case 12 : txt_cardUser+='Card User 1 = QUEEN\n\n'; break;
-                    case 13 : txt_cardUser+='Card User 1 = KING\n\n'; break;
+                    case 1 : txt_cardUser+='Card User 1 = ACE\n'; break;
+                    case 2 : txt_cardUser+='Card User 1 = 2\n'; break;
+                    case 3 : txt_cardUser+='Card User 1 = 3\n'; break;
+                    case 4 : txt_cardUser+='Card User 1 = 4\n'; break;
+                    case 5 : txt_cardUser+='Card User 1 = 5\n'; break;
+                    case 6 : txt_cardUser+='Card User 1 = 6\n'; break;
+                    case 7 : txt_cardUser+='Card User 1 = 7\n'; break;
+                    case 8 : txt_cardUser+='Card User 1 = 8\n'; break;
+                    case 9 : txt_cardUser+='Card User 1 = 9\n'; break;
+                    case 10 : txt_cardUser+='Card User 1 = 10\n'; break;
+                    case 11 : txt_cardUser+='Card User 1 = JACK\n'; break;
+                    case 12 : txt_cardUser+='Card User 1 = QUEEN\n'; break;
+                    case 13 : txt_cardUser+='Card User 1 = KING\n'; break;
                     default : txt_cardUser+= 'error';
                 }
                 switch(cardUser2){
-                    case 1 : txt_cardUser+='Card User 2 = ACE\n\n'; break;
-                    case 2 : txt_cardUser+='Card User 2 = 2\n\n'; break;
-                    case 3 : txt_cardUser+='Card User 2 = 3\n\n'; break;
-                    case 4 : txt_cardUser+='Card User 2 = 4\n\n'; break;
-                    case 5 : txt_cardUser+='Card User 2 = 5\n\n'; break;
-                    case 6 : txt_cardUser+='Card User 2 = 6\n\n'; break;
-                    case 7 : txt_cardUser+='Card User 2 = 7\n\n'; break;
-                    case 8 : txt_cardUser+='Card User 2 = 8\n\n'; break;
-                    case 9 : txt_cardUser+='Card User 2 = 9\n\n'; break;
-                    case 10 : txt_cardUser+='Card User 2 = 10\n\n'; break;
-                    case 11 : txt_cardUser+='Card User 2 = JACK\n\n'; break;
+                    case 1 : txt_cardUser+='Card User 2 = ACE\n'; break;
+                    case 2 : txt_cardUser+='Card User 2 = 2\n'; break;
+                    case 3 : txt_cardUser+='Card User 2 = 3\n'; break;
+                    case 4 : txt_cardUser+='Card User 2 = 4\n'; break;
+                    case 5 : txt_cardUser+='Card User 2 = 5\n'; break;
+                    case 6 : txt_cardUser+='Card User 2 = 6\n'; break;
+                    case 7 : txt_cardUser+='Card User 2 = 7\n'; break;
+                    case 8 : txt_cardUser+='Card User 2 = 8\n'; break;
+                    case 9 : txt_cardUser+='Card User 2 = 9\n'; break;
+                    case 10 : txt_cardUser+='Card User 2 = 10\n'; break;
+                    case 11 : txt_cardUser+='Card User 2 = JACK\n'; break;
                     case 12 : txt_cardUser+='Card User 2 = QUEEN\n\n'; break;
                     case 13 : txt_cardUser+='Card User 2 = KING\n\n'; break;
                     default : txt_cardUser+= 'error';
