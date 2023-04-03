@@ -7404,7 +7404,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                         .then(({ data }) => {
                             hisoka.sendImage(m.chat, data.images[0].url, `NIH`, m)
                         })
-                } else if (text === 'bdsm' || text === 'cuckold' || text === 'gangbang' || text === 'foot' || text === 'glasses' || text === 'jahy' || text === 'maid' || text === 'manga' || text === 'masturbation' || text === 'mobilewall' || text === 'netorare' || text === 'orgy' || text === 'panties' || text === 'pussy' || text === 'tentacles' || text === 'tighs' || text === 'yuri' || text === 'cum') {
+                } else if (text === 'ahegao'||text === 'bdsm' || text === 'cuckold' ||text === 'femdom'|| text === 'gangbang' || text === 'foot' || text === 'glasses' || text === 'jahy' || text === 'maid' || text === 'manga' || text === 'masturbation' || text === 'mobilewall' || text === 'netorare' || text === 'orgy' || text === 'panties' || text === 'pussy' || text === 'tentacles' || text === 'tighs' || text === 'yuri' || text === 'cum') {
                     // return m.reply('maaf lagi error')
                     m.reply(mess.wait)
                     //hisoka.sendMessage(m.chat, { image: { url: random.male }, caption: `Couple Male` }, { quoted: m })
@@ -7413,7 +7413,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     m.reply(mess.wait)
                     //
                     hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/api/morensfw/${text}?apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
-                } else if (text === 'ahegao' || text === 'loli' || text === 'chiisaihentai' || text === 'yaoi' || text === 'hololewd' || text === 'sideoppai' || text === 'animearmpits' || text === 'lewdanimegirls' || text === 'biganimetiddies') {
+                } else if ( || text === 'loli' || text === 'chiisaihentai' || text === 'yaoi' || text === 'hololewd' || text === 'sideoppai' || text === 'animearmpits' || text === 'lewdanimegirls' || text === 'biganimetiddies') {
                     m.reply(mess.wait)
                     try {
                         // hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random/nsfw/${text}?apikey=keymikulolhuman21`, `NIH`, m)
