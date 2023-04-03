@@ -74,23 +74,23 @@ const Spetcrate = 5000
 
 // // read database
 // //if (typeof user !== 'object') global.db.data.users[m.sender] = {}
-// let tebaklagu = (typeof db.data.game.tebaklagu !== 'object' && db.data.game.tebaklagu instanceof Array) ? db.data.game.tebaklagu : db.data.game.tebaklagu = []
-// let _family100 = (typeof db.data.game.family100 !== 'object' && db.data.game.family100 instanceof Array) ? db.data.game.family100 : db.data.game.family100 = []
-// let kuismath = (typeof db.data.game.math !== 'object' && db.data.game.math instanceof Array) ? db.data.game.math : db.data.game.math = []
-// let tebakgambar = (typeof db.data.game.tebakgambar !== 'object' && db.data.game.tebakgambar instanceof Array) ? db.data.game.tebakgambar : db.data.game.tebakgambar = []
-// let tebakkata = (typeof db.data.game.tebakkata !== 'object' && db.data.game.tebakkata instanceof Array) ? db.data.game.tebakkata : db.data.game.tebakkata = []
-// let caklontong = (typeof db.data.game.caklontong !== 'object' && db.data.game.caklontong instanceof Array) ? db.data.game.caklontong : db.data.game.caklontong = []
-// let caklontong_desk = (typeof db.data.game.caklontong_desk !== 'object' && db.data.game.caklontong_desk instanceof Array) ? db.data.game.caklontong_desk : db.data.game.caklontong_desk = []
-// let tebakkalimat = (typeof db.data.game.tebakkalimat !== 'object' && db.data.game.tebakkalimat instanceof Array) ? db.data.game.tebakkalimat : db.data.game.tebakkalimat = []
-// let tebaklirik = (typeof db.data.game.tebaklirik !== 'object' && db.data.game.tebaklirik instanceof Array) ? db.data.game.tebaklirik : db.data.game.tebaklirik = []
-// let tebaktebakan = (typeof db.data.game.tebaktebakan !== 'object' && db.data.game.tebaktebakan instanceof Array) ? db.data.game.tebaktebakan : db.data.game.tebaktebakan = []
-// let tebakkimia = (typeof db.data.game.tebakkimia !== 'object' && db.data.game.tebakkimia instanceof Array) ? db.data.game.tebakkimia : db.data.game.tebakkimia = []
-// let tebakbendera = (typeof db.data.game.tebakbendera !== 'object' && db.data.game.tebakbendera instanceof Array) ? db.data.game.tebakbendera : db.data.game.tebakbendera = []
-// let susunkata = (typeof db.data.game.susunkata !== 'object' && db.data.game.susunkata instanceof Array) ? db.data.game.susunkata : db.data.game.susunkata = []
-// let tebakcharanime = (typeof db.data.game.tebakcharanime !== 'object' && db.data.game.tebakcharanime instanceof Array) ? db.data.game.tebakcharanime : db.data.game.tebakcharanime = []
-// let menfess = (typeof db.data.game.menfess !== 'object' && db.data.game.menfess instanceof Array) ? db.data.game.menfess : db.data.game.menfess = []
-// let vote = (typeof db.data.game.vote !== 'object' && db.data.game.vote instanceof Array) ? db.data.game.vote : db.data.game.vote = []
-// let fight = db.data.game.fight = []
+let tebaklagu = (typeof db.data.game.tebaklagu !== 'object' && db.data.game.tebaklagu instanceof Array) ? db.data.game.tebaklagu : db.data.game.tebaklagu = []
+let _family100 = (typeof db.data.game.family100 !== 'object' && db.data.game.family100 instanceof Array) ? db.data.game.family100 : db.data.game.family100 = []
+let kuismath = (typeof db.data.game.math !== 'object' && db.data.game.math instanceof Array) ? db.data.game.math : db.data.game.math = []
+let tebakgambar = (typeof db.data.game.tebakgambar !== 'object' && db.data.game.tebakgambar instanceof Array) ? db.data.game.tebakgambar : db.data.game.tebakgambar = []
+let tebakkata = (typeof db.data.game.tebakkata !== 'object' && db.data.game.tebakkata instanceof Array) ? db.data.game.tebakkata : db.data.game.tebakkata = []
+let caklontong = (typeof db.data.game.caklontong !== 'object' && db.data.game.caklontong instanceof Array) ? db.data.game.caklontong : db.data.game.caklontong = []
+let caklontong_desk = (typeof db.data.game.caklontong_desk !== 'object' && db.data.game.caklontong_desk instanceof Array) ? db.data.game.caklontong_desk : db.data.game.caklontong_desk = []
+let tebakkalimat = (typeof db.data.game.tebakkalimat !== 'object' && db.data.game.tebakkalimat instanceof Array) ? db.data.game.tebakkalimat : db.data.game.tebakkalimat = []
+let tebaklirik = (typeof db.data.game.tebaklirik !== 'object' && db.data.game.tebaklirik instanceof Array) ? db.data.game.tebaklirik : db.data.game.tebaklirik = []
+let tebaktebakan = (typeof db.data.game.tebaktebakan !== 'object' && db.data.game.tebaktebakan instanceof Array) ? db.data.game.tebaktebakan : db.data.game.tebaktebakan = []
+let tebakkimia = (typeof db.data.game.tebakkimia !== 'object' && db.data.game.tebakkimia instanceof Array) ? db.data.game.tebakkimia : db.data.game.tebakkimia = []
+let tebakbendera = (typeof db.data.game.tebakbendera !== 'object' && db.data.game.tebakbendera instanceof Array) ? db.data.game.tebakbendera : db.data.game.tebakbendera = []
+let susunkata = (typeof db.data.game.susunkata !== 'object' && db.data.game.susunkata instanceof Array) ? db.data.game.susunkata : db.data.game.susunkata = []
+let tebakcharanime = (typeof db.data.game.tebakcharanime !== 'object' && db.data.game.tebakcharanime instanceof Array) ? db.data.game.tebakcharanime : db.data.game.tebakcharanime = []
+let menfess = (typeof db.data.game.menfess !== 'object' && db.data.game.menfess instanceof Array) ? db.data.game.menfess : db.data.game.menfess = []
+let vote = (typeof db.data.game.vote !== 'object' && db.data.game.vote instanceof Array) ? db.data.game.vote : db.data.game.vote = []
+let fight = db.data.game.fight = []
 
 module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 
@@ -405,22 +405,22 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         } catch (err) {
             console.error(err)
         }
-        let tebaklagu = db.data.game.tebaklagu
-        let _family100 = db.data.game.family100
-        let kuismath = db.data.game.math
-        let tebakgambar = db.data.game.tebakgambar
-        let tebakkata = db.data.game.tebakkata
-        let caklontong = db.data.game.caklontong
-        let caklontong_desk = db.data.game.caklontong_desk
-        let tebakkalimat = db.data.game.tebakkalimat
-        let tebaklirik = db.data.game.tebaklirik
-        let tebaktebakan = db.data.game.tebaktebakan
-        let tebakkimia = db.data.game.tebakkimia
-        let tebakbendera = db.data.game.tebakbendera
-        let susunkata = db.data.game.susunkata
-        let tebakcharanime = db.data.game.tebakcharanime
+        // let tebaklagu = db.data.game.tebaklagu
+        // let _family100 = db.data.game.family100
+        // let kuismath = db.data.game.math
+        // let tebakgambar = db.data.game.tebakgambar
+        // let tebakkata = db.data.game.tebakkata
+        // let caklontong = db.data.game.caklontong
+        // let caklontong_desk = db.data.game.caklontong_desk
+        // let tebakkalimat = db.data.game.tebakkalimat
+        // let tebaklirik = db.data.game.tebaklirik
+        // let tebaktebakan = db.data.game.tebaktebakan
+        // let tebakkimia = db.data.game.tebakkimia
+        // let tebakbendera = db.data.game.tebakbendera
+        // let susunkata = db.data.game.susunkata
+        // let tebakcharanime = db.data.game.tebakcharanime
         // let menfess = db.data.game.menfess
-        let vote = db.data.game.vote
+        // let vote = db.data.game.vote
         // let fight = db.data.game.fight 
         let akinatorServer = db.data.game.akinatorServer
         let werewolf = db.data.game.werewolf
