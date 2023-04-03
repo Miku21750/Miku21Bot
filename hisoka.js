@@ -3000,7 +3000,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 let cardUser2 = Math.floor(Math.random() *(13 - 1)+1)
                 let cardDealer1 = Math.floor(Math.random() *(13 - 1)+1)
                 let cardDealer2 = Math.floor(Math.random() *(13 - 1)+1)
-                let txt_cardDealer
+                let txt_cardDealer = ''
                 switch(cardDealer1){
                     case 1 : txt_cardDealer+='Card Dealer 1 = ACE\n'; break;
                     case 2 : txt_cardDealer+='Card Dealer 1 = 2\n'; break;
@@ -3022,7 +3022,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 let txt_dealerValue = `Dealer Value = ${dealerValue} + ???\n`
 
                 // User
-                let txt_cardUser
+                let txt_cardUser = ''
                 switch(cardUser1){
                     case 1 : txt_cardUser+='Card User 1 = ACE\n\n'; break;
                     case 2 : txt_cardUser+='Card User 1 = 2\n\n'; break;
@@ -3224,19 +3224,19 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 while(dealerValue < 21 && dealerValue < userValue){
                     let cardDealer = Math.floor(Math.random() *(13 - 1)+1)
                     switch(cardDealer){
-                        case 1 : txt_cardDealer+=`Card ${turnDealer} = ACE\n`; break;
-                        case 2 : txt_cardDealer+=`Card ${turnDealer} = 2\n`; break;
-                        case 3 : txt_cardDealer+=`Card ${turnDealer} = 3\n`; break;
-                        case 4 : txt_cardDealer+=`Card ${turnDealer} = 4\n`; break;
-                        case 5 : txt_cardDealer+=`Card ${turnDealer} = 5\n`; break;
-                        case 6 : txt_cardDealer+=`Card ${turnDealer} = 6\n`; break;
-                        case 7 : txt_cardDealer+=`Card ${turnDealer} = 7\n`; break;
-                        case 8 : txt_cardDealer+=`Card ${turnDealer} = 8\n`; break;
-                        case 9 : txt_cardDealer+=`Card ${turnDealer} = 9\n`; break;
-                        case 10 : txt_cardDealer+=`Card ${turnDealer} = 10\n`; break;
-                        case 11 : txt_cardDealer+=`Card ${turnDealer} = JACK\n`; break;
-                        case 12 : txt_cardDealer+=`Card ${turnDealer} = QUEEN\n`; break;
-                        case 13 : txt_cardDealer+=`Card ${turnDealer} = KING\n`; break;
+                        case 1 : txt_cardDealer+=`Card Dealer ${turnDealer} = ACE\n`; break;
+                        case 2 : txt_cardDealer+=`Card Dealer ${turnDealer} = 2\n`; break;
+                        case 3 : txt_cardDealer+=`Card Dealer ${turnDealer} = 3\n`; break;
+                        case 4 : txt_cardDealer+=`Card Dealer ${turnDealer} = 4\n`; break;
+                        case 5 : txt_cardDealer+=`Card Dealer ${turnDealer} = 5\n`; break;
+                        case 6 : txt_cardDealer+=`Card Dealer ${turnDealer} = 6\n`; break;
+                        case 7 : txt_cardDealer+=`Card Dealer ${turnDealer} = 7\n`; break;
+                        case 8 : txt_cardDealer+=`Card Dealer ${turnDealer} = 8\n`; break;
+                        case 9 : txt_cardDealer+=`Card Dealer ${turnDealer} = 9\n`; break;
+                        case 10 : txt_cardDealer+=`Card Dealer ${turnDealer} = 10\n`; break;
+                        case 11 : txt_cardDealer+=`Card Dealer ${turnDealer} = JACK\n`; break;
+                        case 12 : txt_cardDealer+=`Card Dealer ${turnDealer} = QUEEN\n`; break;
+                        case 13 : txt_cardDealer+=`Card Dealer ${turnDealer} = KING\n`; break;
                         default : txt_cardDealer+='error';
                     }
                     dealerValue += cardDealer
