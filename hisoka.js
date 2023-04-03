@@ -3019,7 +3019,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 }
                 dealerValue += cardDealer1
                 txt_cardDealer += 'Card Dealer 2 = ?????\n'
-                let txt_dealerValue = `Dealer Value = ${dealerValue} + ???\n`
+                let txt_dealerValue = `\nDealer Value = ${dealerValue} + ???\n`
 
                 // User
                 let txt_cardUser = ''
