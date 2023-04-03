@@ -3018,7 +3018,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     default : txt_cardDealer+= 'error';
                 }
                 dealerValue += cardDealer1
-                txt_cardDealer += 'Card Dealer 2 = ?????\n\n'
+                txt_cardDealer += 'Card Dealer 2 = ?????\n'
                 let txt_dealerValue = `Dealer Value = ${dealerValue} + ???\n`
 
                 // User
@@ -3051,12 +3051,12 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     case 9 : txt_cardUser+='Card User 2 = 9\n'; break;
                     case 10 : txt_cardUser+='Card User 2 = 10\n'; break;
                     case 11 : txt_cardUser+='Card User 2 = JACK\n'; break;
-                    case 12 : txt_cardUser+='Card User 2 = QUEEN\n\n'; break;
-                    case 13 : txt_cardUser+='Card User 2 = KING\n\n'; break;
+                    case 12 : txt_cardUser+='Card User 2 = QUEEN\n'; break;
+                    case 13 : txt_cardUser+='Card User 2 = KING\n'; break;
                     default : txt_cardUser+= 'error';
                 }
                 userValue += cardUser1 + cardUser2
-                let txt_userValue = `User Value = ${userValue}\n`
+                let txt_userValue = `\nUser Value = ${userValue}\n`
                 // const human = new blackJackPlayer(user.name)
                 // const dealer = new blackJackDealer('Dealer')
                 // txt += `│\n│  Welcome to Black Jack ${human.name}!`
@@ -3140,7 +3140,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 let txt = blackjackData.text
                 let txt_cardUser = txt.cardUser
                 let txt_cardDealer = txt.cardDealer
-                let txt_dealerValue = `Dealer Value = ${blackjackData.dealerVal} + ???\n`
+                let txt_dealerValue = `\nDealer Value = ${blackjackData.dealerVal} + ???\n`
                 let userValue = blackjackData.userVal
                 let kasih = blackjackData.bet
                 switch(cardUser){
@@ -3160,7 +3160,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     default : txt_cardUser+='error';
                 }
                 userValue += cardUser
-                let txt_userValue = `User Value = ${userValue}\n`
+                let txt_userValue = `\nUser Value = ${userValue}\n`
                 // txt += human.showOverview()
                 // txt += human.showHand()
                 // txt += dealer.showOverview(false)
@@ -3242,8 +3242,8 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     dealerValue += cardDealer
                     turnDealer++;
                 }
-                let txt_userValue = `User Value = ${userValue}\n`
-                let txt_dealerValue = `Dealer Value = ${dealerValue}\n`
+                let txt_userValue = `\nUser Value = ${userValue}\n`
+                let txt_dealerValue = `\nDealer Value = ${dealerValue}\n`
                 // hisoka.sendText(m.chat, txt, m)
                 let completetxt = txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider
                 if(dealerValue < userValue || dealerValue > 21){
