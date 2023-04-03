@@ -2989,7 +2989,8 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 if (isNaN(kasih)) return m.reply(`Masukan angka`)
                 if (money < kasih) return m.reply(`${user.name} tidak memiliki jumlah MIKO yang cukup`)
                 // const prompt = ps()
-                let txt = 'Welcome to BlackJack\n\n'
+                let txtheader = 'Welcome to BlackJack\n\n'
+                let divider = '---------------------------\n'
                 // txt += '┌────────────────────────────────────────┐'
                 // txt += '│        Black Jack Terminal Game        │'
                 // txt += '└────────────────────────────────────────┘\n│'
@@ -2999,58 +3000,63 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 let cardUser2 = Math.floor(Math.random() *(13 - 1)+1)
                 let cardDealer1 = Math.floor(Math.random() *(13 - 1)+1)
                 let cardDealer2 = Math.floor(Math.random() *(13 - 1)+1)
+                let txt_cardDealer
                 switch(cardDealer1){
-                    case 1 : txt+='Card Dealer 1 = ACE\n'; break;
-                    case 2 : txt+='Card Dealer 1 = 2\n'; break;
-                    case 3 : txt+='Card Dealer 1 = 3\n'; break;
-                    case 4 : txt+='Card Dealer 1 = 4\n'; break;
-                    case 5 : txt+='Card Dealer 1 = 5\n'; break;
-                    case 6 : txt+='Card Dealer 1 = 6\n'; break;
-                    case 7 : txt+='Card Dealer 1 = 7\n'; break;
-                    case 8 : txt+='Card Dealer 1 = 8\n'; break;
-                    case 9 : txt+='Card Dealer 1 = 9\n'; break;
-                    case 10 : txt+='Card Dealer 1 = 10\n'; break;
-                    case 11 : txt+='Card Dealer 1 = JACK\n'; break;
-                    case 12 : txt+='Card Dealer 1 = QUEEN\n'; break;
-                    case 13 : txt+='Card Dealer 1 = KING\n'; break;
-                    default : txt+= 'error';
+                    case 1 : txt_cardDealer+='Card Dealer 1 = ACE\n'; break;
+                    case 2 : txt_cardDealer+='Card Dealer 1 = 2\n'; break;
+                    case 3 : txt_cardDealer+='Card Dealer 1 = 3\n'; break;
+                    case 4 : txt_cardDealer+='Card Dealer 1 = 4\n'; break;
+                    case 5 : txt_cardDealer+='Card Dealer 1 = 5\n'; break;
+                    case 6 : txt_cardDealer+='Card Dealer 1 = 6\n'; break;
+                    case 7 : txt_cardDealer+='Card Dealer 1 = 7\n'; break;
+                    case 8 : txt_cardDealer+='Card Dealer 1 = 8\n'; break;
+                    case 9 : txt_cardDealer+='Card Dealer 1 = 9\n'; break;
+                    case 10 : txt_cardDealer+='Card Dealer 1 = 10\n'; break;
+                    case 11 : txt_cardDealer+='Card Dealer 1 = JACK\n'; break;
+                    case 12 : txt_cardDealer+='Card Dealer 1 = QUEEN\n'; break;
+                    case 13 : txt_cardDealer+='Card Dealer 1 = KING\n'; break;
+                    default : txt_cardDealer+= 'error';
                 }
                 dealerValue += cardDealer1
-                txt += `Card Dealer 2 = ?????\n Dealer Value = ${dealerValue} + ???\n\n`
+                txt_cardDealer += 'Card Dealer 2 = ?????\n\n'
+                let txt_dealerValue = `Dealer Value = ${dealerValue} + ???\n`
+
+                // User
+                let txt_cardUser
                 switch(cardUser1){
-                    case 1 : txt+='Card User 1 = ACE\n'; break;
-                    case 2 : txt+='Card User 1 = 2\n'; break;
-                    case 3 : txt+='Card User 1 = 3\n'; break;
-                    case 4 : txt+='Card User 1 = 4\n'; break;
-                    case 5 : txt+='Card User 1 = 5\n'; break;
-                    case 6 : txt+='Card User 1 = 6\n'; break;
-                    case 7 : txt+='Card User 1 = 7\n'; break;
-                    case 8 : txt+='Card User 1 = 8\n'; break;
-                    case 9 : txt+='Card User 1 = 9\n'; break;
-                    case 10 : txt+='Card User 1 = 10\n'; break;
-                    case 11 : txt+='Card User 1 = JACK\n'; break;
-                    case 12 : txt+='Card User 1 = QUEEN\n'; break;
-                    case 13 : txt+='Card User 1 = KING\n'; break;
-                    default : txt+= 'error';
+                    case 1 : txt_cardUser+='Card User 1 = ACE\n\n'; break;
+                    case 2 : txt_cardUser+='Card User 1 = 2\n\n'; break;
+                    case 3 : txt_cardUser+='Card User 1 = 3\n\n'; break;
+                    case 4 : txt_cardUser+='Card User 1 = 4\n\n'; break;
+                    case 5 : txt_cardUser+='Card User 1 = 5\n\n'; break;
+                    case 6 : txt_cardUser+='Card User 1 = 6\n\n'; break;
+                    case 7 : txt_cardUser+='Card User 1 = 7\n\n'; break;
+                    case 8 : txt_cardUser+='Card User 1 = 8\n\n'; break;
+                    case 9 : txt_cardUser+='Card User 1 = 9\n\n'; break;
+                    case 10 : txt_cardUser+='Card User 1 = 10\n\n'; break;
+                    case 11 : txt_cardUser+='Card User 1 = JACK\n\n'; break;
+                    case 12 : txt_cardUser+='Card User 1 = QUEEN\n\n'; break;
+                    case 13 : txt_cardUser+='Card User 1 = KING\n\n'; break;
+                    default : txt_cardUser+= 'error';
                 }
                 switch(cardUser2){
-                    case 1 : txt+='Card User 2 = ACE\n'; break;
-                    case 2 : txt+='Card User 2 = 2\n'; break;
-                    case 3 : txt+='Card User 2 = 3\n'; break;
-                    case 4 : txt+='Card User 2 = 4\n'; break;
-                    case 5 : txt+='Card User 2 = 5\n'; break;
-                    case 6 : txt+='Card User 2 = 6\n'; break;
-                    case 7 : txt+='Card User 2 = 7\n'; break;
-                    case 8 : txt+='Card User 2 = 8\n'; break;
-                    case 9 : txt+='Card User 2 = 9\n'; break;
-                    case 10 : txt+='Card User 2 = 10\n'; break;
-                    case 11 : txt+='Card User 2 = JACK\n'; break;
-                    case 12 : txt+='Card User 2 = QUEEN\n'; break;
-                    case 13 : txt+='Card User 2 = KING\n'; break;
-                    default : txt+= 'error';
+                    case 1 : txt_cardUser+='Card User 2 = ACE\n\n'; break;
+                    case 2 : txt_cardUser+='Card User 2 = 2\n\n'; break;
+                    case 3 : txt_cardUser+='Card User 2 = 3\n\n'; break;
+                    case 4 : txt_cardUser+='Card User 2 = 4\n\n'; break;
+                    case 5 : txt_cardUser+='Card User 2 = 5\n\n'; break;
+                    case 6 : txt_cardUser+='Card User 2 = 6\n\n'; break;
+                    case 7 : txt_cardUser+='Card User 2 = 7\n\n'; break;
+                    case 8 : txt_cardUser+='Card User 2 = 8\n\n'; break;
+                    case 9 : txt_cardUser+='Card User 2 = 9\n\n'; break;
+                    case 10 : txt_cardUser+='Card User 2 = 10\n\n'; break;
+                    case 11 : txt_cardUser+='Card User 2 = JACK\n\n'; break;
+                    case 12 : txt_cardUser+='Card User 2 = QUEEN\n\n'; break;
+                    case 13 : txt_cardUser+='Card User 2 = KING\n\n'; break;
+                    default : txt_cardUser+= 'error';
                 }
                 userValue += cardUser1 + cardUser2
-                txt += `User Value = ${userValue}\n`
+                let txt_userValue = `User Value = ${userValue}\n`
                 // const human = new blackJackPlayer(user.name)
                 // const dealer = new blackJackDealer('Dealer')
                 // txt += `│\n│  Welcome to Black Jack ${human.name}!`
@@ -3095,7 +3101,10 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     dealerVal: dealerValue,
                     bet: kasih,
                     userVal: userValue,
-                    text: txt,
+                    text: {
+                        cardDealer: txt_cardDealer,
+                        cardUser: txt_cardUser
+                    },
                     turn: 3,
                 }
                 // blackjack[m.chat] = {
@@ -3109,7 +3118,8 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 //     { buttonId: 'bjstand', buttonText: { displayText: 'Stand' }, type: 1 },
                 // ]
                 // await hisoka.sendButtonText(m.chat, buttons, txt+'\n\nHit or Stand??', hisoka.user.name, m)
-                await hisoka.sendText(m.chat, txt+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand',m)
+                // await hisoka.sendText(m.chat, txt+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand',m)
+                await hisoka.sendText(m.chat,txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand')
             }
                 break
             case 'bjhit': {
@@ -3117,6 +3127,8 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 let user = global.db.data.users[m.sender]
                 let money = user.money
                 let blackjackData = blackjack[m.chat]
+                let txtheader = 'Welcome to BlackJack\n\n'
+                let divider = '---------------------------\n'
                 // human.addCard(dealer.deal())
                 // if (human.handValue > 21) {
                     //     if (human.hand.map(card => card.rank).includes('A', index)) {
@@ -3126,26 +3138,29 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                         // }
                 let cardUser = Math.floor(Math.random() *(13 - 1)+1)
                 let txt = blackjackData.text
+                let txt_cardUser = txt.cardUser
+                let txt_cardDealer = txt.cardDealer
+                let txt_dealerValue = `Dealer Value = ${blackjackData.dealerVal} + ???\n`
                 let userValue = blackjackData.userVal
                 let kasih = blackjackData.bet
                 switch(cardUser){
-                    case 1 : txt+=`Card User ${blackjackData.turn} = ACE\n`; break;
-                    case 2 : txt+=`Card User ${blackjackData.turn} = 2\n`; break;
-                    case 3 : txt+=`Card User ${blackjackData.turn} = 3\n`; break;
-                    case 4 : txt+=`Card User ${blackjackData.turn} = 4\n`; break;
-                    case 5 : txt+=`Card User ${blackjackData.turn} = 5\n`; break;
-                    case 6 : txt+=`Card User ${blackjackData.turn} = 6\n`; break;
-                    case 7 : txt+=`Card User ${blackjackData.turn} = 7\n`; break;
-                    case 8 : txt+=`Card User ${blackjackData.turn} = 8\n`; break;
-                    case 9 : txt+=`Card User ${blackjackData.turn} = 9\n`; break;
-                    case 10 : txt+=`Card User ${blackjackData.turn} = 10\n`; break;
-                    case 11 : txt+=`Card User ${blackjackData.turn} = JACK\n`; break;
-                    case 12 : txt+=`Card User ${blackjackData.turn} = QUEEN\n`; break;
-                    case 13 : txt+=`Card User ${blackjackData.turn} = KING\n`; break;
-                    default : txt+='error';
+                    case 1 : txt_cardUser +=`Card User ${blackjackData.turn} = ACE\n`; break;
+                    case 2 : txt_cardUser+=`Card User ${blackjackData.turn} = 2\n`; break;
+                    case 3 : txt_cardUser+=`Card User ${blackjackData.turn} = 3\n`; break;
+                    case 4 : txt_cardUser+=`Card User ${blackjackData.turn} = 4\n`; break;
+                    case 5 : txt_cardUser+=`Card User ${blackjackData.turn} = 5\n`; break;
+                    case 6 : txt_cardUser+=`Card User ${blackjackData.turn} = 6\n`; break;
+                    case 7 : txt_cardUser+=`Card User ${blackjackData.turn} = 7\n`; break;
+                    case 8 : txt_cardUser+=`Card User ${blackjackData.turn} = 8\n`; break;
+                    case 9 : txt_cardUser+=`Card User ${blackjackData.turn} = 9\n`; break;
+                    case 10 : txt_cardUser+=`Card User ${blackjackData.turn} = 10\n`; break;
+                    case 11 : txt_cardUser+=`Card User ${blackjackData.turn} = JACK\n`; break;
+                    case 12 : txt_cardUser+=`Card User ${blackjackData.turn} = QUEEN\n`; break;
+                    case 13 : txt_cardUser+=`Card User ${blackjackData.turn} = KING\n`; break;
+                    default : txt_cardUser+='error';
                 }
                 userValue += cardUser
-                txt += `User Value = ${userValue}\n`
+                let txt_userValue = `User Value = ${userValue}\n`
                 // txt += human.showOverview()
                 // txt += human.showHand()
                 // txt += dealer.showOverview(false)
@@ -3161,8 +3176,9 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 //     user.money += (bet * kasih)
                 //     blackJack = true
                 // }
+                let completetxt = txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider
                 if(userValue === 21){
-                    hisoka.sendText(m.chat, txt+`│  Black Jack! You have have won ${Math.floor(kasih * 2.5)} MIKO\n│`, m)
+                    hisoka.sendText(m.chat, completetxt+`│  Black Jack! You have have won ${Math.floor(kasih * 2.5)} MIKO\n│`, m)
                     money += (kasih * 2.5)
                     //adding exp
                     let exp = user.exp
@@ -3172,11 +3188,11 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     user.money = money
                     delete blackjack[m.chat]
                 }else if(userValue > 21){
-                    hisoka.sendText(m.chat, txt+`│  I'm Sorry, You're lose\n│`, m)
+                    hisoka.sendText(m.chat, completetxt+`│  I'm Sorry, You're lose\n│`, m)
                     delete blackjack[m.chat]
                 }else{
                     blackjackData.userVal = userValue
-                    blackjackData.text = txt
+                    blackjackData.text.cardUser = txt_cardUser
                     blackjackData.turn = 4
                     // blackjack[m.chat] = {
                     //     handValue: human.handValue,
@@ -3187,7 +3203,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     //     { buttonId: 'bjStand', buttonText: { displayText: 'Stand' }, type: 1 },
                     // ]
                     // await hisoka.sendButtonText(m.chat, buttons, txt+'\n\nHit or Stand??', hisoka.user.name, m)
-                    await hisoka.sendText(m.chat, txt+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand',m)
+                    await hisoka.sendText(m.chat, completetxt+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand',m)
                 }
             }
             break
@@ -3195,38 +3211,43 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 if(!blackjack.hasOwnProperty(m.chat)) return
                 let user = global.db.data.users[m.sender]
                 let money = user.money
+                let txtheader = 'Welcome to BlackJack\n\n'
+                let divider = '---------------------------\n'
                 let blackjackData = blackjack[m.chat]
                 let txt = blackjackData.text
                 let userValue = blackjackData.userVal
                 let dealerValue = blackjackData.dealerVal
+                let txt_cardUser = txt.cardUser
+                let txt_cardDealer = txt.cardDealer
                 let kasih = blackjackData.bet
                 let turnDealer = 2
-                txt+= '\n\nCard Dealer\n'
                 while(dealerValue < 21 && dealerValue < userValue){
                     let cardDealer = Math.floor(Math.random() *(13 - 1)+1)
                     switch(cardDealer){
-                        case 1 : txt+=`Card ${turnDealer} = ACE\n`; break;
-                        case 2 : txt+=`Card ${turnDealer} = 2\n`; break;
-                        case 3 : txt+=`Card ${turnDealer} = 3\n`; break;
-                        case 4 : txt+=`Card ${turnDealer} = 4\n`; break;
-                        case 5 : txt+=`Card ${turnDealer} = 5\n`; break;
-                        case 6 : txt+=`Card ${turnDealer} = 6\n`; break;
-                        case 7 : txt+=`Card ${turnDealer} = 7\n`; break;
-                        case 8 : txt+=`Card ${turnDealer} = 8\n`; break;
-                        case 9 : txt+=`Card ${turnDealer} = 9\n`; break;
-                        case 10 : txt+=`Card ${turnDealer} = 10\n`; break;
-                        case 11 : txt+=`Card ${turnDealer} = JACK\n`; break;
-                        case 12 : txt+=`Card ${turnDealer} = QUEEN\n`; break;
-                        case 13 : txt+=`Card ${turnDealer} = KING\n`; break;
-                        default : txt+='error';
+                        case 1 : txt_cardDealer+=`Card ${turnDealer} = ACE\n`; break;
+                        case 2 : txt_cardDealer+=`Card ${turnDealer} = 2\n`; break;
+                        case 3 : txt_cardDealer+=`Card ${turnDealer} = 3\n`; break;
+                        case 4 : txt_cardDealer+=`Card ${turnDealer} = 4\n`; break;
+                        case 5 : txt_cardDealer+=`Card ${turnDealer} = 5\n`; break;
+                        case 6 : txt_cardDealer+=`Card ${turnDealer} = 6\n`; break;
+                        case 7 : txt_cardDealer+=`Card ${turnDealer} = 7\n`; break;
+                        case 8 : txt_cardDealer+=`Card ${turnDealer} = 8\n`; break;
+                        case 9 : txt_cardDealer+=`Card ${turnDealer} = 9\n`; break;
+                        case 10 : txt_cardDealer+=`Card ${turnDealer} = 10\n`; break;
+                        case 11 : txt_cardDealer+=`Card ${turnDealer} = JACK\n`; break;
+                        case 12 : txt_cardDealer+=`Card ${turnDealer} = QUEEN\n`; break;
+                        case 13 : txt_cardDealer+=`Card ${turnDealer} = KING\n`; break;
+                        default : txt_cardDealer+='error';
                     }
                     dealerValue += cardDealer
                     turnDealer++;
                 }
-                txt += `Dealer Value = ${dealerValue}\n`
+                let txt_userValue = `User Value = ${userValue}\n`
+                let txt_dealerValue = `Dealer Value = ${dealerValue}\n`
                 // hisoka.sendText(m.chat, txt, m)
+                let completetxt = txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider
                 if(dealerValue < userValue || dealerValue > 21){
-                    hisoka.sendText(m.chat, txt+`\n\n│  WIN! You have have won ${Math.floor(kasih * 2.5)} MIKO\n│`, m)
+                    hisoka.sendText(m.chat, completetxt+`\n\n│  WIN! You have have won ${Math.floor(kasih * 2.5)} MIKO\n│`, m)
                     money += (kasih * 2.5)
                     //adding exp
                     let exp = user.exp
@@ -3235,7 +3256,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     user.exp = exp
                     user.money = money
                 }else{
-                    hisoka.sendText(m.chat, txt+`│  I'm Sorry, You're lose\n│`, m)
+                    hisoka.sendText(m.chat, completetxt+`│  I'm Sorry, You're lose\n│`, m)
                 }
                 delete blackjack[m.chat]
             }
