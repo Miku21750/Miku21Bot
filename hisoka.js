@@ -3071,8 +3071,8 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 // //If initial dealing equals 21, so ace and a facecard, they win 1.5 times their bet
                 // //setting the variable equal to true allows the computer to differentiate getting Black Jack and having a normal hand of 21 later on
                 if(userValue === 21){
-                    hisoka.sendText(m.chat, `│  Black Jack! You have have won ${Math.floor(kasih * 1.5)} MIKO\n│`, m)
-                    money += (kasih * 2.5)
+                    hisoka.sendText(m.chat, `│  Black Jack! You have have won ${Math.floor(kasih * 3)} MIKO\n│`, m)
+                    money += (kasih * 3)
                     //adding exp
                     let exp = user.exp
                     let getexp = Math.floor(Math.random() * (10 - 1) + 1)
@@ -3085,7 +3085,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 }
                 // if (human.handValue === 21) {
                 //     console.log('│')
-                //     hisoka.sendText(m.chat, `│  Black Jack! You have have won $${Math.floor(kasih * 1.5)}\n│`, m)
+                //     hisoka.sendText(m.chat, `│  Black Jack! You have have won $${Math.floor(kasih * 2.5)}\n│`, m)
                 //     // human.addFunds(bet * 2.5)
                 //     user.money += (bet * kasih)
                 //     blackJack = true
@@ -3156,14 +3156,14 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 //setting the variable equal to true allows the computer to differentiate getting Black Jack and having a normal hand of 21 later on
                 // if (human.handValue === 21) {
                 //     console.log('│')
-                //     hisoka.sendText(m.chat, `│  Black Jack! You have have won $${Math.floor(kasih * 1.5)}\n│`, m)
+                //     hisoka.sendText(m.chat, `│  Black Jack! You have have won $${Math.floor(kasih * 2.5)}\n│`, m)
                 //     // human.addFunds(bet * 2.5)
                 //     user.money += (bet * kasih)
                 //     blackJack = true
                 // }
                 if(userValue === 21){
-                    hisoka.sendText(m.chat, txt+`│  Black Jack! You have have won ${Math.floor(kasih * 0.5)} MIKO\n│`, m)
-                    money += (kasih * 1.5)
+                    hisoka.sendText(m.chat, txt+`│  Black Jack! You have have won ${Math.floor(kasih * 2.5)} MIKO\n│`, m)
+                    money += (kasih * 2.5)
                     //adding exp
                     let exp = user.exp
                     let getexp = Math.floor(Math.random() * (10 - 1) + 1)
@@ -3226,8 +3226,8 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 txt += `Dealer Value = ${dealerValue}\n`
                 // hisoka.sendText(m.chat, txt, m)
                 if(dealerValue < userValue || dealerValue > 21){
-                    hisoka.sendText(m.chat, txt+`\n\n│  WIN! You have have won ${Math.floor(kasih * 0.5)} MIKO\n│`, m)
-                    money += (kasih * 1.5)
+                    hisoka.sendText(m.chat, txt+`\n\n│  WIN! You have have won ${Math.floor(kasih * 2.5)} MIKO\n│`, m)
+                    money += (kasih * 2.5)
                     //adding exp
                     let exp = user.exp
                     let getexp = Math.floor(Math.random() * (10 - 1) + 1)
