@@ -7370,24 +7370,24 @@ ${global.sp} tentacles
 ${global.sp} thighs
 ${global.sp} yuri
 ${global.sp} lolipai
-${global.sp} loli
-${global.sp} chiisaihentai
-${global.sp} yaoi
-${global.sp} hololewd
-${global.sp} sideoppai
-${global.sp} animearmpits
-${global.sp} lewdanimegirls
-${global.sp} biganimetiddies
-${global.sp} feet
-${global.sp} ngif
-${global.sp} gasm
-${global.sp} anal 
-${global.sp} feetg
-${global.sp} erok
-${global.sp} holoero
-${global.sp} erokemo
-${global.sp} foxgirl (kadang bukan nsfw, maap)
-${global.sp} futanari
+${global.sp} loli (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} chiisaihentai (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} yaoi (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} hololewd (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} sideoppai (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} animearmpits (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} lewdanimegirls (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} biganimetiddies (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} feet (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} ngif (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} gasm (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* ) 
+${global.sp} anal (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} feetg (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} erok (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} holoero (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} erokemo (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} foxgirl (kadang bukan nsfw, maap) (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+${global.sp} futanari (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
 
 NOTE : Premium only. Minat? chat !owner atau !buypremium
                 `
@@ -7430,7 +7430,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                         m.reply(e)
                     }
                 } else if (text === 'ngif' || text === 'gasm' || text === 'anal') {
-                    m.reply(mess.wait)
+                    m.reply(mess.wait) 
                     //
                     hisoka.sendImageAsSticker(m.chat, `https://api.lolhuman.xyz/api/random2/${text}?apikey=keymikulolhuman21`, m, { packname: global.packname, author: global.author })
                 } else if (text === 'lolipai') {
