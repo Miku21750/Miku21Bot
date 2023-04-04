@@ -9255,8 +9255,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     st = ''; date = '';
                 }
                 let waifu = ''
-                // let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
-                // let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
+                let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
+                let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
                 let usersmoney = sortedmoney.map(v => v[0])
                 let userslevel = sortedlevel.map(v => v[0])
                 if (user.waifu !== '') {
