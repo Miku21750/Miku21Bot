@@ -21,8 +21,7 @@
   "author": "Dika Ardnt.",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.4.0",
-    "@adiwajshing/keyed-db": "^0.2.4",
+    "@adiwajshing/baileys": "github:Auties00/Baileys",
     "@bochilteam/scraper": "^3.0.0",
     "awesome-phonenumber": "^2.73.0",
     "axios": "^0.24.0",
