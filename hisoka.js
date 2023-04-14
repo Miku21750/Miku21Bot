@@ -6727,21 +6727,21 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
             case 'simih': case 'simisimi': case 'miku21': case 'miku': {
                 if (!text) throw `Example : ${prefix + command} text`
                 //base
-                let response = await axios.post(
-                    'https://api.simsimi.vn/v1/simtalk',
-                    new URLSearchParams({
-                        'text': encodeURIComponent(text),
-                        'lc': 'id'
-                    })
-                );
-                m.reply(response.data.message);
+                // let response = await axios.post(
+                //     'https://api.simsimi.vn/v1/simtalk',
+                //     new URLSearchParams({
+                //         'text': encodeURIComponent(text),
+                //         'lc': 'id'
+                //     })
+                // );
+                // m.reply(response.data.message);
 
-                // hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
-                // if (hm.success) {
-                //     m.reply(hm.success)
-                // } else {
-                //     // m.reply(response)
-                // }
+                hm = await fetchJson(`https://api.simsimi.net/v2/?text=${encodeURIComponent(text)}&lc=id&cf=false`)
+                if (hm.success) {
+                    m.reply(hm.success)
+                } else {
+                    m.reply(hm)
+                }
 
                 //alter
                 //hm = await fetchJson(`https://simsimi.info/api/?lc=id&text=${text}`)
@@ -7049,6 +7049,24 @@ untuk download silahkan ${prefix}ytmp3 ${anu.url} untuk lagu, atau ${prefix}ytmp
                 hisoka.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${urls[text - 1]}\n⭔ Ext : MP3\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
             }
                 break
+            case 'rule34':{
+                if (!text) throw `Apa yang ingin dicari`
+                let word = text
+                let metadata_id = groupMetadata.id
+                let group = db.data.chats[m.chat]
+                // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
+                //for the sake of ramadhan, nsfw will be only in private chat
+                if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
+
+                m.reply(mess.wait)
+                let { rule34, rule34download } = require('./lib/scraper')
+                let anu = await rule34(text)
+                if(anu.length == 0) return m.reply('tidak dapat ditemukan, coba lagi')
+                res = anu[Math.floor(Math.random() * anu.length)]
+                let result = await rule34download(res)
+                hisoka.sendMessage(m.chat, { image: { url: result[0] }, caption: '⭔ Media Url : '+result }, { quoted: m })
+            }
+            break
             case 'pixiv': {
                 if (!text) throw `Apa yang ingin dicari`
                 let word = text
@@ -7108,6 +7126,9 @@ untuk download silahkan ${prefix}ytmp3 ${anu.url} untuk lagu, atau ${prefix}ytmp
                 hisoka.sendImage(m.chat, anu.result, `NIH`, m)
             }
                 break
+            case 'rule34':{
+
+            }
             case 'shinobu': case 'megumin': case 'waifu': case 'neko': {
                 m.reply(mess.wait)
                 axios.get(`https://api.waifu.pics/sfw/${command}`)
@@ -8356,7 +8377,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             case 'twitdl': case 'twitter': {
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(`https://api.lolhuman.xyz/api/twitter2?apikey=keymikulolhuman21&url=${text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/twitter?apikey=keymikuzenz21&url=${text}`)
                 //hisoka.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
                 let buttons = [
                     { buttonId: `twittermp3 ${text}`, buttonText: { displayText: '► Audio' }, type: 1 }
@@ -8376,7 +8397,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     buttons: buttons,
                     headerType: 5
                 }
-                hisoka.sendMessage(m.chat, { video: { url: anu.result.hd } })
+                hisoka.sendMessage(m.chat, { video: { url: anu.result.url } })
             }
                 break
             case 'twittermp3': case 'twitteraudio': {
@@ -8452,6 +8473,12 @@ Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan c
                 hisoka.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title + '.mp3', mimetype: 'audio/mpeg' }, { quoted: m })
             }
                 break
+            case 'mediafire':{
+                if (!text) throw `masukan link`
+                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/mediafire?apikey=keymikuzenz21&url=${text}`)
+                
+            }
+            break
             case 'iqra': {
                 return m.reply('maaf lagi error')
                 oh = `Example : ${prefix + command} 3\n\nIQRA Yang tersedia : 1,2,3,4,5,6`
