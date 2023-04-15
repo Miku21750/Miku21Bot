@@ -548,8 +548,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(`🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉`, m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(`🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉`, m)
                 delete tebaklagu[m.chat]
             } else return
         }
@@ -592,8 +592,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete tebakgambar[m.chat]
             } else return
         }
@@ -607,8 +607,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak bendera', buttonText: { displayText: 'Tebak Bendera' }, type: 1 }], `🎮 Tebak Bendera 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat,`🎮 Tebak Bendera 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak bendera', buttonText: { displayText: 'Tebak Bendera' }, type: 1 }], `🎮 Tebak Bendera 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat,`🎮 Tebak Bendera 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete tebakbendera[m.chat]
             }
         }
@@ -622,8 +622,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kimia', buttonText: { displayText: 'Tebak Kimia' }, type: 1 }], `🎮 Tebak Kimia 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Tebak Kimia 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kimia', buttonText: { displayText: 'Tebak Kimia' }, type: 1 }], `🎮 Tebak Kimia 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Tebak Kimia 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete tebakgambar[m.chat]
             } else return
         }
@@ -636,8 +636,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete tebakkata[m.chat]
             } else return
         }
@@ -652,8 +652,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Tebak Lontong 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Tebak Lontong 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete caklontong[m.chat]
                 delete caklontong_desk[m.chat]
             } else return
@@ -668,8 +668,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete tebakkalimat[m.chat]
             } else return
         }
@@ -683,8 +683,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete tebaklirik[m.chat]
             } else return
         }
@@ -698,8 +698,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'Tebak Tebakan' }, type: 1 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Tebak tebakan 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'Tebak Tebakan' }, type: 1 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Tebak tebakan 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete tebaktebakan[m.chat]
             } else return
         }
@@ -712,8 +712,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'susunkata', buttonText: { displayText: 'Susun Kata' }, type: 1 }], `🎮 Susun Kata 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Susun Kata 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'susunkata', buttonText: { displayText: 'Susun Kata' }, type: 1 }], `🎮 Susun Kata 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Susun Kata 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete susunkata[m.chat]
             } else return
         }
@@ -726,8 +726,8 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 let user = db.data.users[m.sender]
                 user.exp += exp
                 user.money += money
-                // await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak charanime', buttonText: { displayText: 'Tebak Char Anime' }, type: 1 }], `🎮 Tebak Char Anime 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
-                await hisoka.sendText(m.chat, `🎮 Tebak Char Anime 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak charanime', buttonText: { displayText: 'Tebak Char Anime' }, type: 1 }], `🎮 Tebak Char Anime 🎮\n\nJawaban Benar 🎉\nKamu mendapat ${money} MIKO dan ${exp} EXP\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                // await hisoka.sendText(m.chat, `🎮 Tebak Char Anime 🎮\n\nJawaban Benar 🎉\nKamu mendapatkan ${money} MIKO dan ${exp} EXP`,m)
                 delete tebakcharanime[m.chat]
             } else return
         }
@@ -3115,13 +3115,12 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 // }
                 // console.log(human.hand, human.handValue,)
                 
-                // let buttons = [
-                //     { buttonId: 'bjhit', buttonText: { displayText: 'Hit' }, type: 1 },
-                //     { buttonId: 'bjstand', buttonText: { displayText: 'Stand' }, type: 1 },
-                // ]
-                // await hisoka.sendButtonText(m.chat, buttons, txt+'\n\nHit or Stand??', hisoka.user.name, m)
-                // await hisoka.sendText(m.chat, txt+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand',m)
-                await hisoka.sendText(m.chat,txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand')
+                let buttons = [
+                    { buttonId: 'bjhit', buttonText: { displayText: 'Hit' }, type: 1 },
+                    { buttonId: 'bjstand', buttonText: { displayText: 'Stand' }, type: 1 },
+                ]
+                await hisoka.sendButtonText(m.chat, buttons, txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider+'\n\nHit or Stand??', hisoka.user.name, m)
+                // await hisoka.sendText(m.chat,txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand')
             }
                 break
             case 'bjhit': {
@@ -3200,12 +3199,12 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     //     handValue: human.handValue,
                     //     bet: kasih,
                     // }
-                    // let buttons = [
-                    //     { buttonId: 'bjhit', buttonText: { displayText: 'Hit' }, type: 1 },
-                    //     { buttonId: 'bjStand', buttonText: { displayText: 'Stand' }, type: 1 },
-                    // ]
-                    // await hisoka.sendButtonText(m.chat, buttons, txt+'\n\nHit or Stand??', hisoka.user.name, m)
-                    await hisoka.sendText(m.chat, completetxt+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand',m)
+                    let buttons = [
+                        { buttonId: 'bjhit', buttonText: { displayText: 'Hit' }, type: 1 },
+                        { buttonId: 'bjStand', buttonText: { displayText: 'Stand' }, type: 1 },
+                    ]
+                    await hisoka.sendButtonText(m.chat, buttons, completetxt+'\n\nHit or Stand??', hisoka.user.name, m)
+                    // await hisoka.sendText(m.chat, completetxt+'\n\n ketik bjhit untuk Hit dan bjstand untuk Stand',m)
                 }
             }
             break
@@ -5214,8 +5213,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                 await sleep(60000)
                 if (susunkata.hasOwnProperty(m.chat)) {
                     console.log("Jawaban: " + result.jawaban)
-                    // hisoka.sendButtonText(m.chat, [{ buttonId: 'susunkata', buttonText: { displayText: 'Susun Kata' }, type: 1 }], `Waktu Habis\nJawaban:  ${susunkata[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                    hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${susunkata[m.chat]}`, m)
+                    hisoka.sendButtonText(m.chat, [{ buttonId: 'susunkata', buttonText: { displayText: 'Susun Kata' }, type: 1 }], `Waktu Habis\nJawaban:  ${susunkata[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                    // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${susunkata[m.chat]}`, m)
                     delete susunkata[m.chat]
                 }
             }
@@ -5274,8 +5273,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (tebaklagu.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + result.jawaban)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklagu[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebaklagu[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklagu[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebaklagu[m.chat]}`,m)
                         delete tebaklagu[m.chat]
                     }
                 } else if (args[0] === 'gambar') {
@@ -5288,8 +5287,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (tebakgambar.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + result.jawaban)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakgambar[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakgambar[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakgambar[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakgambar[m.chat]}`,m)
                         delete tebakgambar[m.chat]
                     }
                 } else if (args[0] === 'bendera') {
@@ -5303,8 +5302,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (tebakkimia.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + res.name)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak bendera', buttonText: { displayText: 'Tebak Bendera' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkimia[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakkimia[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak bendera', buttonText: { displayText: 'Tebak Bendera' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkimia[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakkimia[m.chat]}`,m)
                         delete tebakkimia[m.chat]
                     }
                 } else if (args[0] === 'kata') {
@@ -5317,8 +5316,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (tebakkata.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + result.jawaban)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkata[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakkata[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkata[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakkata[m.chat]}`,m)
                         delete tebakkata[m.chat]
                     }
                 } else if (args[0] === 'kalimat') {
@@ -5331,8 +5330,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (tebakkalimat.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + result.jawaban)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkalimat[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakkalimat[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkalimat[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakkalimat[m.chat]}`,m)
                         delete tebakkalimat[m.chat]
                     }
                 } else if (args[0] === 'lirik') {
@@ -5345,8 +5344,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (tebaklirik.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + result.jawaban)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklirik[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebaklirik[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebaklirik[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebaklirik[m.chat]}`,m)
                         delete tebaklirik[m.chat]
                     }
                 } else if (args[0] === 'lontong') {
@@ -5360,8 +5359,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (caklontong.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + result.jawaban)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `Waktu Habis\nJawaban:  ${caklontong[m.chat]}\nDeskripsi : ${caklontong_desk[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${caklontong[m.chat]}\nDeskripsi : ${caklontong_desk[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `Waktu Habis\nJawaban:  ${caklontong[m.chat]}\nDeskripsi : ${caklontong_desk[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${caklontong[m.chat]}\nDeskripsi : ${caklontong_desk[m.chat]}`,m)
                         delete caklontong[m.chat]
                         delete caklontong_desk[m.chat]
                     }
@@ -5374,8 +5373,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (tebakkimia.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + res.nama)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kimia', buttonText: { displayText: 'Tebak Kimia' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkimia[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakkimia[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kimia', buttonText: { displayText: 'Tebak Kimia' }, type: 1 }], `Waktu Habis\nJawaban:  ${tebakkimia[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakkimia[m.chat]}`,m)
                         delete tebakkimia[m.chat]
                     }
                 } else if (args[0] === 'charanime') {
@@ -5387,8 +5386,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     await sleep(60000)
                     if (tebakcharanime.hasOwnProperty(m.chat)) {
                         console.log("Jawaban: " + res.name)
-                        // hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak charanime', buttonText: { displayText: 'Tebak Char Anime' }, type: 1 }], `Waktu Habis\n Jawaban: ${tebakcharanime[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
-                        hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakcharanime[m.chat]}`,m)
+                        hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak charanime', buttonText: { displayText: 'Tebak Char Anime' }, type: 1 }], `Waktu Habis\n Jawaban: ${tebakcharanime[m.chat]}\n\nIngin bermain? tekan button dibawah`, hisoka.user.name, m)
+                        // hisoka.sendText(m.chat,`Waktu Habis\nJawaban:  ${tebakcharanime[m.chat]}`,m)
                         delete tebakcharanime[m.chat]
                     }
 
@@ -5440,8 +5439,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                 let buttons = [
                     { buttonId: 'jodohku', buttonText: { displayText: 'Jodohku' }, type: 1 }
                 ]
-                // await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, { mentions: ments })
-                await hisoka.sendText(m.chat, jawab, m, {mentions: ments})
+                await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, { mentions: ments })
+                // await hisoka.sendText(m.chat, jawab, m, {mentions: ments})
             }
                 break
             case 'jadian': {
@@ -5456,8 +5455,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                 let buttons = [
                     { buttonId: 'jadian', buttonText: { displayText: 'Jadian' }, type: 1 }
                 ]
-                // await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, { mentions: menst })
-                await hisoka.sendText(m.chat, jawab, m, {mentions: menst})
+                await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, { mentions: menst })
+                // await hisoka.sendText(m.chat, jawab, m, {mentions: menst})
             }
                 break
             case 'apakah': {
@@ -5621,7 +5620,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                 let buttons = [
                     { buttonId: 'balasmenfess', buttonText: { displayText: ' Balas Menfess' }, type: 1 }
                 ]
-                pesan = `Ada menfess :\n\n ===================\n${mess}\n=================== \n\n_note: Jika ingin membalas, langsung ketikan saja 1 bubble. jika tidak, abaikan saja_`
+                pesan = `Ada menfess :\n\n ===================\n${mess}\n=================== \n\n_note: Jika ingin membalas, langsung ketikan saja. jika tidak, abaikan saja_`
 
                 let ch = m.chat
                 console.log(ch)
@@ -6105,8 +6104,8 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     buttons: buttonsVote,
                     headerType: 1
                 }
-                // hisoka.sendMessage(m.chat, buttonMessageVote)
-                hisoka.sendText(m.chat, teks_vote)
+                hisoka.sendMessage(m.chat, buttonMessageVote)
+                // hisoka.sendText(m.chat, teks_vote)
 
             }
                 break
@@ -6151,8 +6150,8 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                     headerType: 1,
                     mentions: menvote
                 }
-                // hisoka.sendMessage(m.chat, buttonMessageUpvote)
-                hisoka.sendText(m.chat, teks_vote, {mentions: menvote})
+                hisoka.sendMessage(m.chat, buttonMessageUpvote)
+                // hisoka.sendText(m.chat, teks_vote, {mentions: menvote})
             }
                 break
             case 'devote': {
@@ -6196,8 +6195,8 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                     headerType: 1,
                     mentions: menvote
                 }
-                // hisoka.sendMessage(m.chat, buttonMessageDevote)
-                hisoka.sendText(m.chat, teks_vote, {mentions: menvote})
+                hisoka.sendMessage(m.chat, buttonMessageDevote)
+                // hisoka.sendText(m.chat, teks_vote, {mentions: menvote})
             }
                 break
 
@@ -6989,9 +6988,9 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 ⭔ Url : ${anu.url}
 
 untuk download silahkan ${prefix}ytmp3 ${anu.url} untuk lagu, atau ${prefix}ytmp4 ${anu.url} untuk video`,
-                    // footer: hisoka.user.name,
-                    // buttons: buttons,
-                    // headerType: 4
+                    footer: hisoka.user.name,
+                    buttons: buttons,
+                    headerType: 4
                 }
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
@@ -7676,9 +7675,9 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 ]
                 let buttonMessage = {
                     text: `~_${result.quotes}_\n\nBy '${result.karakter}', ${result.anime}\n\n- ${result.up_at}`,
-                    // footer: 'Press The Button Below',
-                    // buttons: buttons,
-                    // headerType: 2
+                    footer: 'Press The Button Below',
+                    buttons: buttons,
+                    headerType: 2
                 }
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
@@ -7690,9 +7689,9 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 ]
                 let buttonMessage = {
                     text: anu.result.message,
-                    // footer: 'Press The Button Below',
-                    // buttons: buttons,
-                    // headerType: 2
+                    footer: 'Press The Button Below',
+                    buttons: buttons,
+                    headerType: 2
                 }
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
@@ -8253,7 +8252,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 if (!anu.result.link) throw 'Cannot download link, Silahkan coba tiktokwm, atau coba lagi'
                 let txt = `Tiktokdl\n\n🔗 *Url:* ${text}`
                 //await hisoka.sendMessage(m.chat, { video: { url: webpToMp4.result, caption: 'Convert Webp To Video' } }, { quoted: m })
-                hisoka.sendMessage(m.chat, { video: { url: anu.result.link }, caption: txt }, { quoted: m })
+                await hisoka.sendMessage(m.chat, { video: { url: anu.result.link }, caption: txt }, { quoted: m })
 
                 // let desc = ''
                 // if(anu.description) {desc = anu.description}
@@ -8397,7 +8396,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     buttons: buttons,
                     headerType: 5
                 }
-                hisoka.sendMessage(m.chat, { video: { url: anu.result.url } })
+                await hisoka.sendMessage(m.chat, { video: { url: anu.result.url } })
             }
                 break
             case 'twittermp3': case 'twitteraudio': {
@@ -8424,7 +8423,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 m.reply(mess.wait)
                 let anu = await fetchJson(`https://api.lolhuman.xyz/api/facebook?apikey=keymikulolhuman21&url=${text}`)
                 if (anu.status === "false") return 'Link tidak dapat didownload, coba lagi'
-                hisoka.sendMessage(m.chat, { video: { url: anu.result[0] }, caption: text }, { quoted: m })
+                await hisoka.sendMessage(m.chat, { video: { url: anu.result[0] }, caption: text }, { quoted: m })
             }
                 break
             case 'pindl': case 'pinterestdl': {
@@ -8453,9 +8452,9 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
 ⭔ Url : ${anu.media[0]}
 Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan command ytmp3/ytmp4 dengan url diatas
 `,
-                        // footer: hisoka.user.name,
-                        // buttons,
-                        // headerType: 4
+                        footer: hisoka.user.name,
+                        buttons,
+                        headerType: 4
                     }
                     hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
                 } else if (anu.type == 'image') {
@@ -8864,8 +8863,8 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 let button = [
                     { buttonId: 'anonymous', buttonText: { displayText: 'Next' }, type: 1 }
                 ]
-                // hisoka.sendButtonText(m.chat, button, txt, m)
-                hisoka.sendText(m.chat, txt, m)
+                hisoka.sendButtonText(m.chat, button, txt, m)
+                // hisoka.sendText(m.chat, txt, m)
             }
                 break
             /*case 'keluar': case 'leave': {
