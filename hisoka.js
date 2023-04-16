@@ -9372,113 +9372,122 @@ ${date}
 
             case 'menu': {
                 let user = global.db.data.users[m.sender]
-                let anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
+                let preMenu = '\u{1B6C}\u{1C30}\u{A0}\u{1B02}\u{1B04}\u{27AD}'
+                let anu = `
+╭❀:ཻུ۪۪──────••───────╮
+      main menu
+╰───────••─────❀:ུ۪۪─╯
+Halo, Kak ${user.name}
 
-
-┌──⭓ *Group Menu*
+Silahkan Pilih list dibawah ini
+                `
+                // let btn = [{
+                //                 urlButton: {
+                //                     displayText: 'Source Code',
+                //                     url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                //                 }
+                //             }, {
+                //                 callButton: {
+                //                     displayText: 'Number Phone Owner',
+                //                     phoneNumber: '+62 851-6282-4043'
+                //                 }
+                //             }, {
+                //                 quickReplyButton: {
+                //                     displayText: 'Status Bot',
+                //                     id: 'ping'
+                //                 }
+                //             }, {
+                //                 quickReplyButton: {
+                //                     displayText: 'Contact Owner',
+                //                     id: 'owner'
+                //                 }  
+                //             }, {
+                //                 quickReplyButton: {
+                //                     displayText: 'Script',
+                //                     id: 'sc'
+                //                 }
+                //             }]
+                let setbot = db.data.settings[botNumber]
+                // if (setbot.templateImage) {
+                // hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
+                // } else if (setbot.templateGif) {
+                // hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn)
+                // } else if (setbot.templateVid) {
+                // hisoka.send5ButVid(m.chat, anu, hisoka.user.name, global.visoka, btn)
+                // } else if (setbot.templateMsg) {
+                // hisoka.send5ButMsg(m.chat, anu, hisoka.user.name, btn)
+                // }
+                // hisoka.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
+                //hisoka.sendImage(m.chat, res.images.jpg.image_url, mess, m)
+                //hisoka.sendImage(m.chat, global.thumb, anu, m)
+                switch (args[0]) {
+                    case 'all': {
+                        let anu = `Halo, Kak ${user.name}
+┌──⭓ *Rpg*
 │
-│⭔ ${prefix}linkgroup
-│⭔ ${prefix}ephemeral [option]
-│⭔ ${prefix}setppgc [image]
-│⭔ ${prefix}setname [text]
-│⭔ ${prefix}setdesc [text]
-│⭔ ${prefix}setwelcome [text]
-│⭔ ${prefix}group [option]
-│⭔ ${prefix}editinfo [option]
-│⭔ ${prefix}nsfwgroup [option]
-│⭔ ${prefix}add @user
-│⭔ ${prefix}kick @user
-│⭔ ${prefix}hidetag [text]
-│⭔ ${prefix}tagall [text]
-│⭔ ${prefix}antilink [on/off]
-│⭔ ${prefix}mute [on/off]
-│⭔ ${prefix}promote @user
-│⭔ ${prefix}demote @user
-│⭔ ${prefix}vote [text]
-│⭔ ${prefix}devote
-│⭔ ${prefix}upvote
-│⭔ ${prefix}cekvote
-│⭔ ${prefix}hapusvote
-│⭔ ${prefix}afk
+│⭔ ${prefix}work
+│⭔ ${prefix}adventure
+│⭔ ${prefix}casino
+│⭔ ${prefix}blackjack
+│⭔ ${prefix}inventory
+│⭔ ${prefix}shop
+│⭔ ${prefix}open
+│⭔ ${prefix}mancing
+│⭔ ${prefix}jualikan
+│⭔ ${prefix}akuarium
+│⭔ ${prefix}use
+│⭔ ${prefix}feed
+│⭔ ${prefix}transfer(premium)
+│⭔ ${prefix}gacha
 │       
 └───────⭓
 
-┌──⭓ *Webzone Menu*
+┌──⭓ *Images*
 │
-│⭔ ${prefix}playstore
-│⭔ ${prefix}gsmarena
-│⭔ ${prefix}jadwalbioskop
-│⭔ ${prefix}nowplayingbioskop
-│⭔ ${prefix}aminio
-│⭔ ${prefix}wattpad
-│⭔ ${prefix}webtoons
-│⭔ ${prefix}drakor
-│
-└───────⭓
-
-
-┌──⭓ *Downloader Menu*
-│
-│⭔ ${prefix}tiktoknowm [url]
-│⭔ ${prefix}tiktokwm [url]
-│⭔ ${prefix}tiktokmp3 [url]
-│⭔ ${prefix}instagram [url]
-│⭔ ${prefix}twitter [url]
-│⭔ ${prefix}twittermp3 [url]
-│⭔ ${prefix}facebook [url]
-│⭔ ${prefix}pinterestdl [url]
-│⭔ ${prefix}ytmp3 [url]
-│⭔ ${prefix}ytmp4 [url]
-│⭔ ${prefix}getmusic [query]
-│⭔ ${prefix}getvideo [query]
-│⭔ ${prefix}umma [url]
-│⭔ ${prefix}joox [query]
-│⭔ ${prefix}soundcloud [url]
-│⭔ ${prefix}doujindesu (search|latest) (bug)
-│
-└───────⭓
-
-┌──⭓ *Search Menu*
-│
-│⭔ ${prefix}play [query]
-│⭔ ${prefix}yts [query]
-│⭔ ${prefix}google [query]
-│⭔ ${prefix}gimage [query]
-│⭔ ${prefix}pinterest [query]
-│⭔ ${prefix}wallpaper [query]
-│⭔ ${prefix}wikimedia [query]
-│⭔ ${prefix}ytsearch [query]
-│⭔ ${prefix}ringtone [query]
-│⭔ ${prefix}stalk [option] [query]
-│
-└───────⭓
-
-┌──⭓ *Random Photo Menu*
-│
+│⭔ ${prefix}pinterest
+│⭔ ${prefix}gimage
+│⭔ ${prefix}wallpaper
+│⭔ ${prefix}wikimedia
+│⭔ ${prefix}cecan
+│⭔ ${prefix}cogan
+│⭔ ${prefix}estetic
 │⭔ ${prefix}coffe
-│⭔ ${prefix}quotesanime
+│       
+└───────⭓
+
+┌──⭓ *Games*
+│
+│⭔ ${prefix}delttt
+│⭔ ${prefix}tictactoe
+│⭔ ${prefix}family100
+│⭔ ${prefix}tebak (gambar, bendera, dll)
+│⭔ ${prefix}math
+│⭔ ${prefix}suitpvp
+│       
+└───────⭓
+
+┌──⭓ *Fun*
+│
+│⭔ ${prefix}simih
+│⭔ ${prefix}halah
+│⭔ ${prefix}hilih
+│⭔ ${prefix}huluh
+│⭔ ${prefix}heleh
+│⭔ ${prefix}holoh
+│⭔ ${prefix}jadian
+│⭔ ${prefix}jodohku
+│⭔ ${prefix}apakah
+│⭔ ${prefix}siapakah
+│⭔ ${prefix}bisakah
+│⭔ ${prefix}kapankah
+│⭔ ${prefix}cantikcek
+│⭔ ${prefix}gantengcek
+│⭔ ${prefix}persengay
+│⭔ ${prefix}persenlesbi
+│⭔ ${prefix}watak
+│⭔ ${prefix}hobbi
+│⭔ ${prefix}say
+│⭔ ${prefix}fitnah
 │⭔ ${prefix}motivasi
 │⭔ ${prefix}dilanquote
 │⭔ ${prefix}bucinquote
@@ -9487,16 +9496,58 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}jawaquote
 │⭔ ${prefix}muslimquote
 │⭔ ${prefix}cerpen
-│⭔ ${prefix}couple
-│⭔ ${prefix}meme
-│⭔ ${prefix}memeindo
-│⭔ ${prefix}darkjoke
+│       
+└───────⭓
+
+┌──⭓ *Primbon*
+│
+│⭔ ${prefix}nomorhoki
+│⭔ ${prefix}artimimpi
+│⭔ ${prefix}artinama
+│⭔ ${prefix}ramaljodoh
+│⭔ ${prefix}ramaljodohbali
+│⭔ ${prefix}suamiistri
+│⭔ ${prefix}ramalcinta
+│⭔ ${prefix}cocoknama
+│⭔ ${prefix}pasangan
+│⭔ ${prefix}jadiannikah
+│⭔ ${prefix}sifatusaha
+│⭔ ${prefix}rezeki
+│⭔ ${prefix}pekerjaan
+│⭔ ${prefix}nasib
+│⭔ ${prefix}penyakit
+│⭔ ${prefix}tarot
+│⭔ ${prefix}fengshui
+│⭔ ${prefix}haribaik
+│⭔ ${prefix}harisangar
+│⭔ ${prefix}harisial
+│⭔ ${prefix}nagahari
+│⭔ ${prefix}arahrezeki
+│⭔ ${prefix}peruntungan
+│⭔ ${prefix}weton
+│⭔ ${prefix}karakter
+│⭔ ${prefix}keberuntungan
+│⭔ ${prefix}memancing
+│⭔ ${prefix}masasubur
+│⭔ ${prefix}zodiak
+│⭔ ${prefix}shio
+│
+└───────⭓
+
+┌──⭓ *Anime*
+│
+│⭔ ${prefix}quotesanime
+│⭔ ${prefix}claimwaifu
+│⭔ ${prefix}unclaim
+│⭔ ${prefix}waifusaya
+│⭔ ${prefix}searchwaifu
+│⭔ ${prefix}searchwaifuanime (bug)
+│⭔ ${prefix}randomwaifu
+│⭔ ${prefix}pdkt
+│⭔ ${prefix}tutorclaim
 │⭔ ${prefix}waifu
 │⭔ ${prefix}husbu
 │⭔ ${prefix}cosplay (agak nsfw satu ni)
-│⭔ ${prefix}cecan
-│⭔ ${prefix}cogan
-│⭔ ${prefix}estetic
 │⭔ ${prefix}elf
 │⭔ ${prefix}loli
 │⭔ ${prefix}shota
@@ -9514,6 +9565,195 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}selfies
 │⭔ ${prefix}shinobu
 │⭔ ${prefix}megumin
+│⭔ ${prefix}couple
+│
+└───────⭓
+
+┌──⭓ *Downloaders*
+│
+│⭔ ${prefix}tiktoknowm 
+│⭔ ${prefix}tiktokwm 
+│⭔ ${prefix}tiktokmp3 
+│⭔ ${prefix}instagram 
+│⭔ ${prefix}twitter 
+│⭔ ${prefix}twittermp3 
+│⭔ ${prefix}facebook 
+│⭔ ${prefix}pinterestdl 
+│⭔ ${prefix}ytmp3 
+│⭔ ${prefix}ytmp4 
+│⭔ ${prefix}getmusic 
+│⭔ ${prefix}getvideo 
+│⭔ ${prefix}joox 
+│⭔ ${prefix}soundcloud 
+│⭔ ${prefix}ringtone 
+│⭔ ${prefix}doujindesu (bug)
+│
+└───────⭓
+
+┌──⭓ *VN*
+│
+│⭔ ${prefix}bass
+│⭔ ${prefix}blown
+│⭔ ${prefix}deep
+│⭔ ${prefix}earrape
+│⭔ ${prefix}fast
+│⭔ ${prefix}fat
+│⭔ ${prefix}nightcore
+│⭔ ${prefix}reverse
+│⭔ ${prefix}robot
+│⭔ ${prefix}slow
+│⭔ ${prefix}tupai
+│
+└───────⭓
+
+┌──⭓ *Internet*
+│
+│⭔ ${prefix}google
+│⭔ ${prefix}brainly
+│⭔ ${prefix}wikipedia
+│⭔ ${prefix}stalk
+│⭔ ${prefix}kbbi
+│⭔ ${prefix}ytsearch
+│⭔ ${prefix}playstore
+│⭔ ${prefix}gsmarena
+│⭔ ${prefix}jadwalbioskop
+│⭔ ${prefix}nowplayingbioskop
+│⭔ ${prefix}aminio
+│⭔ ${prefix}wattpad
+│⭔ ${prefix}webtoons
+│⭔ ${prefix}drakor
+│
+└───────⭓
+
+┌──⭓ *NSFW*
+│
+│⭔ ${prefix}cersex
+│⭔ ${prefix}nsfw waifu
+│⭔ ${prefix}nsfw neko
+│⭔ ${prefix}nsfw trap
+│⭔ ${prefix}nsfw blowjob
+│⭔ ${prefix}nsfw ass
+│⭔ ${prefix}nsfw hentai
+│⭔ ${prefix}nsfw milf
+│⭔ ${prefix}nsfw oral
+│⭔ ${prefix}nsfw paizuri
+│⭔ ${prefix}nsfw echhi
+│⭔ ${prefix}nsfw ero
+│⭔ ${prefix}nsfw ahegao
+│⭔ ${prefix}nsfw bdsm
+│⭔ ${prefix}nsfw cuckold
+│⭔ ${prefix}nsfw cum
+│⭔ ${prefix}nsfw femdom
+│⭔ ${prefix}nsfw foot
+│⭔ ${prefix}nsfw gangbang (CLOSED, BUG)
+│⭔ ${prefix}nsfw glasses
+│⭔ ${prefix}nsfw hentaigif
+│⭔ ${prefix}nsfw jahy
+│⭔ ${prefix}nsfw maid
+│⭔ ${prefix}nsfw manga
+│⭔ ${prefix}nsfw masturbation
+│⭔ ${prefix}nsfw mobilewall
+│⭔ ${prefix}nsfw netorare
+│⭔ ${prefix}nsfw orgy
+│⭔ ${prefix}nsfw panties
+│⭔ ${prefix}nsfw pussy
+│⭔ ${prefix}nsfw tentacles
+│⭔ ${prefix}nsfw thighs
+│⭔ ${prefix}nsfw yuri
+│⭔ ${prefix}nsfw lolipai
+│⭔ ${prefix}nsfw loli (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw chiisaihentai (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw yaoi (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw hololewd (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw sideoppai (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw animearmpits (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw lewdanimegirls (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw biganimetiddies (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw feet (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw ngif (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw gasm (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* ) 
+│⭔ ${prefix}nsfw anal (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw feetg (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw erok (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw holoero (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw erokemo (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw foxgirl (kadang bukan nsfw, maap) (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw futanari (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│
+└───────⭓
+
+┌──⭓ *Premium*
+│
+│⭔ ${prefix}listpremium
+│⭔ ${prefix}transfer
+│⭔ ${prefix}nsfw
+│⭔ ${prefix}cosplay
+│
+└───────⭓
+
+┌──⭓ *Islamic*
+│
+│⭔ ${prefix}iqra
+│⭔ ${prefix}hadist
+│⭔ ${prefix}alquran
+│⭔ ${prefix}umma
+│⭔ ${prefix}juzamma
+│⭔ ${prefix}tafsirsurah
+│
+└───────⭓
+
+┌──⭓ *Chatolic*
+│
+│⭔ ${prefix}bible
+│⭔ ${prefix}biblelist
+│⭔ ${prefix}alkitab (indonesia version)
+│⭔ ${prefix}alkitablist (indonesia version)
+│
+└───────⭓
+
+┌──⭓ *Menfess*
+│
+│⭔ ${prefix}menfess
+│
+└───────⭓
+
+┌──⭓ *Music*
+│
+│⭔ ${prefix}play
+│⭔ ${prefix}ytmp3 
+│⭔ ${prefix}joox 
+│⭔ ${prefix}soundcloud 
+│
+└───────⭓
+
+┌──⭓ *Admin*
+│
+│⭔ ${prefix}linkgroup
+│⭔ ${prefix}ephemeral 
+│⭔ ${prefix}setppgc
+│⭔ ${prefix}setsubject
+│⭔ ${prefix}setdesc 
+│⭔ ${prefix}setwelcome 
+│⭔ ${prefix}group 
+│⭔ ${prefix}editinfo 
+│⭔ ${prefix}nsfwgroup 
+│⭔ ${prefix}add @user
+│⭔ ${prefix}kick @user
+│⭔ ${prefix}hidetag 
+│⭔ ${prefix}tagall 
+│⭔ ${prefix}antilink 
+│⭔ ${prefix}mute 
+│⭔ ${prefix}promote @user
+│⭔ ${prefix}demote @user
+│       
+└───────⭓
+
+┌──⭓ *Stickers*
+│
+│⭔ ${prefix}sticker
+│⭔ ${prefix}smeme
+│⭔ ${prefix}ttp
+│⭔ ${prefix}attp
 │⭔ ${prefix}bully
 │⭔ ${prefix}cuddle
 │⭔ ${prefix}cry
@@ -9541,24 +9781,73 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}poke
 │⭔ ${prefix}dance
 │⭔ ${prefix}cringe
-│⭔ ${prefix}nsfw (query)
 │
 └───────⭓
 
-┌──⭓ *Claim Waifu Menu*
+┌──⭓ *Meme*
 │
-│⭔ ${prefix}claimwaifu
-│⭔ ${prefix}unclaim
-│⭔ ${prefix}waifusaya
-│⭔ ${prefix}searchwaifu
-│⭔ ${prefix}searchwaifuanime (bug)
-│⭔ ${prefix}randomwaifu
-│⭔ ${prefix}pdkt
-│⭔ ${prefix}tutorclaim
+│⭔ ${prefix}meme
+│⭔ ${prefix}memeindo
+│⭔ ${prefix}darkjoke
 │
 └───────⭓
 
-┌──⭓ *Text Pro Menu*
+┌──⭓ *Group*
+│
+│⭔ ${prefix}delete
+│⭔ ${prefix}vote 
+│⭔ ${prefix}devote
+│⭔ ${prefix}upvote
+│⭔ ${prefix}cekvote
+│⭔ ${prefix}hapusvote
+│⭔ ${prefix}afk
+│⭔ ${prefix}listonline
+│
+└───────⭓
+
+┌──⭓ *Info*
+│
+│⭔ ${prefix}owner
+│⭔ ${prefix}infochat
+│⭔ ${prefix}quoted
+│⭔ ${prefix}listpc
+│⭔ ${prefix}listgc
+│⭔ ${prefix}speedtest
+│⭔ ${prefix}report
+│⭔ ${prefix}statusbot
+│
+└───────⭓
+
+┌──⭓ *Database*
+│
+│⭔ ${prefix}setcmd
+│⭔ ${prefix}listcmd
+│⭔ ${prefix}delcmd
+│⭔ ${prefix}lockcmd
+│⭔ ${prefix}addmsg
+│⭔ ${prefix}listmsg
+│⭔ ${prefix}getmsg
+│⭔ ${prefix}delmsg
+│
+└───────⭓
+
+┌──⭓ *Owner*
+│
+│⭔ ${prefix}react 
+│⭔ ${prefix}chat 
+│⭔ ${prefix}join
+│⭔ ${prefix}leave
+│⭔ ${prefix}block @user
+│⭔ ${prefix}unblock @user
+│⭔ ${prefix}bcgroup 
+│⭔ ${prefix}bcall 
+│⭔ ${prefix}setppbot
+│⭔ ${prefix}setexif
+│⭔ ${prefix}setmenu 
+│
+└───────⭓
+
+┌──⭓ *Text Pro*
 │
 │⭔ ${prefix}3dchristmas
 │⭔ ${prefix}3ddeepsea
@@ -9594,7 +9883,7 @@ Mau cek lebih spesifik?
 │
 └───────⭓
 
-┌──⭓ *Ephoto Menu*
+┌──⭓ *Ephoto*
 │
 │⭔ ${prefix}ffcover
 │⭔ ${prefix}crossfire
@@ -9608,7 +9897,7 @@ Mau cek lebih spesifik?
 │
 └───────⭓
 
-┌──⭓ *Editor Photo Menu*
+┌──⭓ *Editor Photo*
 │
 │⭔ ${prefix}horny
 │⭔ ${prefix}gay
@@ -9664,8 +9953,100 @@ Mau cek lebih spesifik?
 │
 └───────⭓
 
+┌──⭓ *Convert*
+│
+│⭔ ${prefix}attp
+│⭔ ${prefix}ttp
+│⭔ ${prefix}toimage
+│⭔ ${prefix}removebg
+│⭔ ${prefix}shortlink
+│⭔ ${prefix}emojimix
+│⭔ ${prefix}emojimix2
+│⭔ ${prefix}tovideo
+│⭔ ${prefix}togif
+│⭔ ${prefix}tourl
+│⭔ ${prefix}tovn
+│⭔ ${prefix}tomp3
+│⭔ ${prefix}toaudio
+│⭔ ${prefix}ebinary
+│⭔ ${prefix}dbinary
+│⭔ ${prefix}styletext
+│
+└───────⭓
 
-┌──⭓ *Fun Menu*
+┌──⭓ *Anonymous Menu*
+│
+│⭔ ${prefix}anonymous / mutualan
+│
+└───────⭓
+
+`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'rpg': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Rpg*
+│
+│⭔ ${prefix}work
+│⭔ ${prefix}adventure
+│⭔ ${prefix}casino
+│⭔ ${prefix}blackjack
+│⭔ ${prefix}inventory
+│⭔ ${prefix}shop
+│⭔ ${prefix}open
+│⭔ ${prefix}mancing
+│⭔ ${prefix}jualikan
+│⭔ ${prefix}akuarium
+│⭔ ${prefix}use
+│⭔ ${prefix}feed
+│⭔ ${prefix}transfer(premium)
+│⭔ ${prefix}gacha
+│       
+└───────⭓
+`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'images': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Images*
+│
+│⭔ ${prefix}pinterest
+│⭔ ${prefix}gimage
+│⭔ ${prefix}wallpaper
+│⭔ ${prefix}wikimedia
+│⭔ ${prefix}cecan
+│⭔ ${prefix}cogan
+│⭔ ${prefix}estetic
+│⭔ ${prefix}coffe
+│       
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'game': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Games*
+│
+│⭔ ${prefix}delttt
+│⭔ ${prefix}tictactoe
+│⭔ ${prefix}family100
+│⭔ ${prefix}tebak (gambar, bendera, dll)
+│⭔ ${prefix}math
+│⭔ ${prefix}suitpvp
+│       
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'fun': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Fun*
 │
 │⭔ ${prefix}simih
 │⭔ ${prefix}halah
@@ -9686,33 +10067,24 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}watak
 │⭔ ${prefix}hobbi
 │⭔ ${prefix}say
-│⭔ ${prefix}delttt
-│⭔ ${prefix}tictactoe
-│⭔ ${prefix}family100
-│⭔ ${prefix}tebak [option]
-│⭔ ${prefix}math [mode]
-│⭔ ${prefix}suitpvp [@tag]
-│⭔ ${prefix}transfer
-│
-└───────⭓
+│⭔ ${prefix}fitnah
+│⭔ ${prefix}motivasi
+│⭔ ${prefix}dilanquote
+│⭔ ${prefix}bucinquote
+│⭔ ${prefix}katasenja
+│⭔ ${prefix}pantun
+│⭔ ${prefix}jawaquote
+│⭔ ${prefix}muslimquote
+│⭔ ${prefix}cerpen
+│       
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'primbon': {
+                        anu = `Halo, Kak ${user.name}
 
-┌──⭓ *Game Menu*
-│
-│⭔ ${prefix}work
-│⭔ ${prefix}casino 
-│⭔ ${prefix}gacha bronze|silver|gold
-│⭔ ${prefix}mancing
-│⭔ ${prefix}jualikan (kode)
-│⭔ ${prefix}akuarium
-│⭔ ${prefix}adventure
-│⭔ ${prefix}shop (buy|sell) item
-│⭔ ${prefix}open (crate) (jumlah)
-│⭔ ${prefix}use (item) (jumlah)
-│⭔ ${prefix}feed (nama hewan)
-│
-└───────⭓
-
-┌──⭓ *Primbon Menu*
+┌──⭓ *Primbon*
 │
 │⭔ ${prefix}nomorhoki
 │⭔ ${prefix}artimimpi
@@ -9745,394 +10117,27 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}zodiak
 │⭔ ${prefix}shio
 │
-└───────⭓
-
-┌──⭓ *Convert Menu*
-│
-│⭔ ${prefix}attp
-│⭔ ${prefix}ttp
-│⭔ ${prefix}toimage
-│⭔ ${prefix}removebg
-│⭔ ${prefix}sticker
-│⭔ ${prefix}shortlink
-│⭔ ${prefix}emojimix
-│⭔ ${prefix}emojimix2
-│⭔ ${prefix}tovideo
-│⭔ ${prefix}togif
-│⭔ ${prefix}tourl
-│⭔ ${prefix}tovn
-│⭔ ${prefix}tomp3
-│⭔ ${prefix}toaudio
-│⭔ ${prefix}ebinary
-│⭔ ${prefix}dbinary
-│⭔ ${prefix}styletext
-│⭔ ${prefix}smeme
-│
-└───────⭓
-
-┌──⭓ *Main Menu*
-│
-│⭔ ${prefix}ping
-│⭔ ${prefix}owner
-│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete
-│⭔ ${prefix}infochat
-│⭔ ${prefix}quoted
-│⭔ ${prefix}listpc
-│⭔ ${prefix}listgc
-│⭔ ${prefix}listonline
-│⭔ ${prefix}speedtest
-│⭔ ${prefix}report
-│
-└───────⭓
-
-┌──⭓ *Database Menu*
-│
-│⭔ ${prefix}setcmd
-│⭔ ${prefix}listcmd
-│⭔ ${prefix}delcmd
-│⭔ ${prefix}lockcmd
-│⭔ ${prefix}addmsg
-│⭔ ${prefix}listmsg
-│⭔ ${prefix}getmsg
-│⭔ ${prefix}delmsg
-│
-└───────⭓
-
-┌──⭓ *Anonymous Menu*
-│
-│⭔ ${prefix}anonymous / mutualan
-│⭔ ${prefix}menfess
-│
-└───────⭓
-
-┌──⭓ *Islamic Menu*
-│
-│⭔ ${prefix}iqra
-│⭔ ${prefix}hadist
-│⭔ ${prefix}alquran
-│⭔ ${prefix}juzamma
-│⭔ ${prefix}tafsirsurah
-│
-└───────⭓
-
-┌──⭓ *Chatolic Menu*
-│
-│⭔ ${prefix}bible
-│⭔ ${prefix}biblelist
-│⭔ ${prefix}alkitab (indonesia version)
-│⭔ ${prefix}alkitablist (indonesia version)
-│
-└───────⭓
-
-┌──⭓ *Voice Changer*
-│
-│⭔ ${prefix}bass
-│⭔ ${prefix}blown
-│⭔ ${prefix}deep
-│⭔ ${prefix}earrape
-│⭔ ${prefix}fast
-│⭔ ${prefix}fat
-│⭔ ${prefix}nightcore
-│⭔ ${prefix}reverse
-│⭔ ${prefix}robot
-│⭔ ${prefix}slow
-│⭔ ${prefix}tupai
-│
-└───────⭓
-
-┌──⭓ *Owner Menu*
-│
-│⭔ ${prefix}react [emoji]
-│⭔ ${prefix}chat [option]
-│⭔ ${prefix}join [link]
-│⭔ ${prefix}leave
-│⭔ ${prefix}block @user
-│⭔ ${prefix}unblock @user
-│⭔ ${prefix}bcgroup [text]
-│⭔ ${prefix}bcall [text]
-│⭔ ${prefix}setppbot [image]
-│⭔ ${prefix}setexif
-│⭔ ${prefix}setmenu [option]
-│
-└───────⭓`
-                // let btn = [{
-                //                 urlButton: {
-                //                     displayText: 'Source Code',
-                //                     url: 'https://github.com/DikaArdnt/Hisoka-Morou'
-                //                 }
-                //             }, {
-                //                 callButton: {
-                //                     displayText: 'Number Phone Owner',
-                //                     phoneNumber: '+62 851-6282-4043'
-                //                 }
-                //             }, {
-                //                 quickReplyButton: {
-                //                     displayText: 'Status Bot',
-                //                     id: 'ping'
-                //                 }
-                //             }, {
-                //                 quickReplyButton: {
-                //                     displayText: 'Contact Owner',
-                //                     id: 'owner'
-                //                 }  
-                //             }, {
-                //                 quickReplyButton: {
-                //                     displayText: 'Script',
-                //                     id: 'sc'
-                //                 }
-                //             }]
-                let setbot = db.data.settings[botNumber]
-                // if (setbot.templateImage) {
-                // hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
-                // } else if (setbot.templateGif) {
-                // hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn)
-                // } else if (setbot.templateVid) {
-                // hisoka.send5ButVid(m.chat, anu, hisoka.user.name, global.visoka, btn)
-                // } else if (setbot.templateMsg) {
-                // hisoka.send5ButMsg(m.chat, anu, hisoka.user.name, btn)
-                // }
-                // hisoka.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
-                //hisoka.sendImage(m.chat, res.images.jpg.image_url, mess, m)
-                //hisoka.sendImage(m.chat, global.thumb, anu, m)
-                switch (args[0]) {
-                    case 'all': {
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'group': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Group Menu*
-│
-│⭔ ${prefix}linkgroup
-│⭔ ${prefix}ephemeral [option]
-│⭔ ${prefix}setppgc [image]
-│⭔ ${prefix}setname [text]
-│⭔ ${prefix}setdesc [text]
-│⭔ ${prefix}setwelcome [text]
-│⭔ ${prefix}group [option]
-│⭔ ${prefix}editinfo [option]
-│⭔ ${prefix}nsfwgroup [option]
-│⭔ ${prefix}add @user
-│⭔ ${prefix}kick @user
-│⭔ ${prefix}hidetag [text]
-│⭔ ${prefix}tagall [text]
-│⭔ ${prefix}antilink [on/off]
-│⭔ ${prefix}mute [on/off]
-│⭔ ${prefix}promote @user
-│⭔ ${prefix}demote @user
-│⭔ ${prefix}vote [text]
-│⭔ ${prefix}devote
-│⭔ ${prefix}upvote
-│⭔ ${prefix}cekvote
-│⭔ ${prefix}hapusvote
-│⭔ ${prefix}afk
-│       
-└───────⭓
-`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'webzone': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Webzone Menu*
-│
-│⭔ ${prefix}playstore
-│⭔ ${prefix}gsmarena
-│⭔ ${prefix}jadwalbioskop
-│⭔ ${prefix}nowplayingbioskop
-│⭔ ${prefix}aminio
-│⭔ ${prefix}wattpad
-│⭔ ${prefix}webtoons
-│⭔ ${prefix}drakor
-│
 └───────⭓`
                         hisoka.sendImage(m.chat, global.thumb, anu, m)
                     }
                         break
-                    case 'downloader': {
+                    case 'anime': {
                         anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
 
-┌──⭓ *Downloader Menu*
+┌──⭓ *Anime*
 │
-│⭔ ${prefix}tiktoknowm [url]
-│⭔ ${prefix}tiktokwm [url]
-│⭔ ${prefix}tiktokmp3 [url]
-│⭔ ${prefix}instagram [url]
-│⭔ ${prefix}twitter [url]
-│⭔ ${prefix}twittermp3 [url]
-│⭔ ${prefix}facebook [url]
-│⭔ ${prefix}pinterestdl [url]
-│⭔ ${prefix}ytmp3 [url]
-│⭔ ${prefix}ytmp4 [url]
-│⭔ ${prefix}getmusic [query]
-│⭔ ${prefix}getvideo [query]
-│⭔ ${prefix}umma [url]
-│⭔ ${prefix}joox [query]
-│⭔ ${prefix}soundcloud [url]
-│⭔ ${prefix}doujindesu (search|latest)
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'search': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Search Menu*
-│
-│⭔ ${prefix}play [query]
-│⭔ ${prefix}yts [query]
-│⭔ ${prefix}google [query]
-│⭔ ${prefix}gimage [query]
-│⭔ ${prefix}pinterest [query]
-│⭔ ${prefix}wallpaper [query]
-│⭔ ${prefix}wikimedia [query]
-│⭔ ${prefix}ytsearch [query]
-│⭔ ${prefix}ringtone [query]
-│⭔ ${prefix}stalk [option] [query]
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'random_photo': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Random Photo Menu*
-│
-│⭔ ${prefix}coffe
 │⭔ ${prefix}quotesanime
-│⭔ ${prefix}motivasi
-│⭔ ${prefix}dilanquote
-│⭔ ${prefix}bucinquote
-│⭔ ${prefix}katasenja
-│⭔ ${prefix}pantun
-│⭔ ${prefix}jawaquote
-│⭔ ${prefix}muslimquote
-│⭔ ${prefix}cerpen
-│⭔ ${prefix}couple
-│⭔ ${prefix}meme
-│⭔ ${prefix}memeindo
-│⭔ ${prefix}darkjoke
+│⭔ ${prefix}claimwaifu
+│⭔ ${prefix}unclaim
+│⭔ ${prefix}waifusaya
+│⭔ ${prefix}searchwaifu
+│⭔ ${prefix}searchwaifuanime (bug)
+│⭔ ${prefix}randomwaifu
+│⭔ ${prefix}pdkt
+│⭔ ${prefix}tutorclaim
 │⭔ ${prefix}waifu
 │⭔ ${prefix}husbu
 │⭔ ${prefix}cosplay (agak nsfw satu ni)
-│⭔ ${prefix}cecan
-│⭔ ${prefix}cogan
-│⭔ ${prefix}estetic
 │⭔ ${prefix}elf
 │⭔ ${prefix}loli
 │⭔ ${prefix}shota
@@ -10150,6 +10155,251 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}selfies
 │⭔ ${prefix}shinobu
 │⭔ ${prefix}megumin
+│⭔ ${prefix}couple
+│
+└───────⭓
+`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'downloaders': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Downloaders*
+│
+│⭔ ${prefix}tiktoknowm 
+│⭔ ${prefix}tiktokwm 
+│⭔ ${prefix}tiktokmp3 
+│⭔ ${prefix}instagram 
+│⭔ ${prefix}twitter 
+│⭔ ${prefix}twittermp3 
+│⭔ ${prefix}facebook 
+│⭔ ${prefix}pinterestdl 
+│⭔ ${prefix}ytmp3 
+│⭔ ${prefix}ytmp4 
+│⭔ ${prefix}getmusic 
+│⭔ ${prefix}getvideo 
+│⭔ ${prefix}joox 
+│⭔ ${prefix}soundcloud 
+│⭔ ${prefix}ringtone 
+│⭔ ${prefix}doujindesu (bug)
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'vn': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *VN*
+│
+│⭔ ${prefix}bass
+│⭔ ${prefix}blown
+│⭔ ${prefix}deep
+│⭔ ${prefix}earrape
+│⭔ ${prefix}fast
+│⭔ ${prefix}fat
+│⭔ ${prefix}nightcore
+│⭔ ${prefix}reverse
+│⭔ ${prefix}robot
+│⭔ ${prefix}slow
+│⭔ ${prefix}tupai
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'internet': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Internet*
+│
+│⭔ ${prefix}google
+│⭔ ${prefix}brainly
+│⭔ ${prefix}wikipedia
+│⭔ ${prefix}stalk
+│⭔ ${prefix}kbbi
+│⭔ ${prefix}ytsearch
+│⭔ ${prefix}playstore
+│⭔ ${prefix}gsmarena
+│⭔ ${prefix}jadwalbioskop
+│⭔ ${prefix}nowplayingbioskop
+│⭔ ${prefix}aminio
+│⭔ ${prefix}wattpad
+│⭔ ${prefix}webtoons
+│⭔ ${prefix}drakor
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'nsfw': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *NSFW*
+│
+│⭔ ${prefix}cersex
+│⭔ ${prefix}nsfw waifu
+│⭔ ${prefix}nsfw neko
+│⭔ ${prefix}nsfw trap
+│⭔ ${prefix}nsfw blowjob
+│⭔ ${prefix}nsfw ass
+│⭔ ${prefix}nsfw hentai
+│⭔ ${prefix}nsfw milf
+│⭔ ${prefix}nsfw oral
+│⭔ ${prefix}nsfw paizuri
+│⭔ ${prefix}nsfw echhi
+│⭔ ${prefix}nsfw ero
+│⭔ ${prefix}nsfw ahegao
+│⭔ ${prefix}nsfw bdsm
+│⭔ ${prefix}nsfw cuckold
+│⭔ ${prefix}nsfw cum
+│⭔ ${prefix}nsfw femdom
+│⭔ ${prefix}nsfw foot
+│⭔ ${prefix}nsfw gangbang (CLOSED, BUG)
+│⭔ ${prefix}nsfw glasses
+│⭔ ${prefix}nsfw hentaigif
+│⭔ ${prefix}nsfw jahy
+│⭔ ${prefix}nsfw maid
+│⭔ ${prefix}nsfw manga
+│⭔ ${prefix}nsfw masturbation
+│⭔ ${prefix}nsfw mobilewall
+│⭔ ${prefix}nsfw netorare
+│⭔ ${prefix}nsfw orgy
+│⭔ ${prefix}nsfw panties
+│⭔ ${prefix}nsfw pussy
+│⭔ ${prefix}nsfw tentacles
+│⭔ ${prefix}nsfw thighs
+│⭔ ${prefix}nsfw yuri
+│⭔ ${prefix}nsfw lolipai
+│⭔ ${prefix}nsfw loli (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw chiisaihentai (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw yaoi (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw hololewd (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw sideoppai (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw animearmpits (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw lewdanimegirls (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw biganimetiddies (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw feet (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw ngif (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw gasm (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* ) 
+│⭔ ${prefix}nsfw anal (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw feetg (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw erok (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw holoero (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw erokemo (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw foxgirl (kadang bukan nsfw, maap) (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│⭔ ${prefix}nsfw futanari (CLOSED DUE RAMADHAN *(diblokir penyedia API nya njir)* )
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'premium': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Premium*
+│
+│⭔ ${prefix}listpremium
+│⭔ ${prefix}transfer
+│⭔ ${prefix}nsfw
+│⭔ ${prefix}cosplay
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'islamic': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Islamic*
+│
+│⭔ ${prefix}iqra
+│⭔ ${prefix}hadist
+│⭔ ${prefix}alquran
+│⭔ ${prefix}umma
+│⭔ ${prefix}juzamma
+│⭔ ${prefix}tafsirsurah
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'chatolic': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Chatolic*
+│
+│⭔ ${prefix}bible
+│⭔ ${prefix}biblelist
+│⭔ ${prefix}alkitab (indonesia version)
+│⭔ ${prefix}alkitablist (indonesia version)
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'menfess': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Menfess*
+│
+│⭔ ${prefix}menfess
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'music': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Music*
+│
+│⭔ ${prefix}play
+│⭔ ${prefix}ytmp3 
+│⭔ ${prefix}joox 
+│⭔ ${prefix}soundcloud 
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'admin': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Admin*
+│
+│⭔ ${prefix}linkgroup
+│⭔ ${prefix}ephemeral 
+│⭔ ${prefix}setppgc
+│⭔ ${prefix}setsubject
+│⭔ ${prefix}setdesc 
+│⭔ ${prefix}setwelcome 
+│⭔ ${prefix}group 
+│⭔ ${prefix}editinfo 
+│⭔ ${prefix}nsfwgroup 
+│⭔ ${prefix}add @user
+│⭔ ${prefix}kick @user
+│⭔ ${prefix}hidetag 
+│⭔ ${prefix}tagall 
+│⭔ ${prefix}antilink 
+│⭔ ${prefix}mute 
+│⭔ ${prefix}promote @user
+│⭔ ${prefix}demote @user
+│       
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'stickers': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Stickers*
+│
+│⭔ ${prefix}sticker
+│⭔ ${prefix}smeme
+│⭔ ${prefix}ttp
+│⭔ ${prefix}attp
 │⭔ ${prefix}bully
 │⭔ ${prefix}cuddle
 │⭔ ${prefix}cry
@@ -10177,80 +10427,114 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}poke
 │⭔ ${prefix}dance
 │⭔ ${prefix}cringe
-│⭔ ${prefix}nsfw (query)
 │
 └───────⭓`
                         hisoka.sendImage(m.chat, global.thumb, anu, m)
                     }
                         break
-                    case 'claim_waifu': {
+                    case 'meme': {
                         anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
 
-┌──⭓ *Claim Waifu Menu*
+┌──⭓ *Meme*
 │
-│⭔ ${prefix}claimwaifu
-│⭔ ${prefix}unclaim
-│⭔ ${prefix}waifusaya
-│⭔ ${prefix}listwaifu
-│⭔ ${prefix}searchwaifu
-│⭔ ${prefix}searchwaifuanime
-│⭔ ${prefix}randomwaifu
-│⭔ ${prefix}pdkt
-│⭔ ${prefix}tutorclaim
+│⭔ ${prefix}meme
+│⭔ ${prefix}memeindo
+│⭔ ${prefix}darkjoke
 │
-└───────⭓
-bingung cara pake? ketik ${prefix}tutorclaim
-`
+└───────⭓`
                         hisoka.sendImage(m.chat, global.thumb, anu, m)
                     }
                         break
-                    case 'text_pro': {
+                    case 'group': {
                         anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-┌──⭓ *Text Pro Menu*
+
+┌──⭓ *Group*
+│
+│⭔ ${prefix}delete
+│⭔ ${prefix}vote 
+│⭔ ${prefix}devote
+│⭔ ${prefix}upvote
+│⭔ ${prefix}cekvote
+│⭔ ${prefix}hapusvote
+│⭔ ${prefix}afk
+│⭔ ${prefix}listonline
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'info': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Info*
+│
+│⭔ ${prefix}owner
+│⭔ ${prefix}infochat
+│⭔ ${prefix}quoted
+│⭔ ${prefix}listpc
+│⭔ ${prefix}listgc
+│⭔ ${prefix}speedtest
+│⭔ ${prefix}report
+│⭔ ${prefix}statusbot
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'database': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Database*
+│
+│⭔ ${prefix}setcmd
+│⭔ ${prefix}listcmd
+│⭔ ${prefix}delcmd
+│⭔ ${prefix}lockcmd
+│⭔ ${prefix}addmsg
+│⭔ ${prefix}listmsg
+│⭔ ${prefix}getmsg
+│⭔ ${prefix}delmsg
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'owner': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Owner*
+│
+│⭔ ${prefix}react 
+│⭔ ${prefix}chat 
+│⭔ ${prefix}join
+│⭔ ${prefix}leave
+│⭔ ${prefix}block @user
+│⭔ ${prefix}unblock @user
+│⭔ ${prefix}bcgroup 
+│⭔ ${prefix}bcall 
+│⭔ ${prefix}setppbot
+│⭔ ${prefix}setexif
+│⭔ ${prefix}setmenu 
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'secret': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *???*
+│
+│⭔ ${prefix}kenal luis
+│
+└───────⭓`
+                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    }
+                        break
+                    case 'textpro': {
+                        anu = `Halo, Kak ${user.name}
+
+┌──⭓ *Text Pro*
 │
 │⭔ ${prefix}3dchristmas
 │⭔ ${prefix}3ddeepsea
@@ -10290,30 +10574,8 @@ Mau cek lebih spesifik?
                         break
                     case 'ephoto': {
                         anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
 
-┌──⭓ *Ephoto Menu*
+┌──⭓ *Ephoto*
 │
 │⭔ ${prefix}ffcover
 │⭔ ${prefix}crossfire
@@ -10329,32 +10591,10 @@ Mau cek lebih spesifik?
                         hisoka.sendImage(m.chat, global.thumb, anu, m)
                     }
                         break
-                    case 'editor_photo': {
+                    case 'editor': {
                         anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
 
-┌──⭓ *Editor Photo Menu*
+┌──⭓ *Editor Photo*
 │
 │⭔ ${prefix}horny
 │⭔ ${prefix}gay
@@ -10379,7 +10619,7 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}triggered
 │⭔ ${prefix}trigger
 │⭔ ${prefix}fisheye
-│⭔ ${prefix}deepfry 
+│⭔ ${prefix}deepfry
 │⭔ ${prefix}imagecolor (hexcolor) 
 │⭔ ${prefix}removebg
 │⭔ ${prefix}1977
@@ -10408,205 +10648,20 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}willow
 │⭔ ${prefix}xpro2
 │
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'fun': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Fun Menu*
-│
-│⭔ ${prefix}simih
-│⭔ ${prefix}halah
-│⭔ ${prefix}hilih
-│⭔ ${prefix}huluh
-│⭔ ${prefix}heleh
-│⭔ ${prefix}holoh
-│⭔ ${prefix}jadian
-│⭔ ${prefix}jodohku
-│⭔ ${prefix}apakah
-│⭔ ${prefix}siapakah
-│⭔ ${prefix}bisakah
-│⭔ ${prefix}kapankah
-│⭔ ${prefix}cantikcek
-│⭔ ${prefix}gantengcek
-│⭔ ${prefix}persengay
-│⭔ ${prefix}persenlesbi
-│⭔ ${prefix}watak
-│⭔ ${prefix}hobbi
-│⭔ ${prefix}say
-│⭔ ${prefix}delttt
-│⭔ ${prefix}tictactoe
-│⭔ ${prefix}family100
-│⭔ ${prefix}tebak [option]
-│⭔ ${prefix}math [mode]
-│⭔ ${prefix}suitpvp [@tag]
-│⭔ ${prefix}transfer
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'game': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Game Menu*
-│
-│⭔ ${prefix}work
-│⭔ ${prefix}casino 
-│⭔ ${prefix}gacha bronze|silver|gold
-│⭔ ${prefix}mancing
-│⭔ ${prefix}jualikan (kode)
-│⭔ ${prefix}akuarium
-│⭔ ${prefix}adventure
-│⭔ ${prefix}shop (buy|sell) item
-│⭔ ${prefix}open (crate) (jumlah)
-│⭔ ${prefix}use (item) (jumlah)
-│⭔ ${prefix}feed (nama hewan)
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'primbon': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Primbon Menu*
-│
-│⭔ ${prefix}nomorhoki
-│⭔ ${prefix}artimimpi
-│⭔ ${prefix}artinama
-│⭔ ${prefix}ramaljodoh
-│⭔ ${prefix}ramaljodohbali
-│⭔ ${prefix}suamiistri
-│⭔ ${prefix}ramalcinta
-│⭔ ${prefix}cocoknama
-│⭔ ${prefix}pasangan
-│⭔ ${prefix}jadiannikah
-│⭔ ${prefix}sifatusaha
-│⭔ ${prefix}rezeki
-│⭔ ${prefix}pekerjaan
-│⭔ ${prefix}nasib
-│⭔ ${prefix}penyakit
-│⭔ ${prefix}tarot
-│⭔ ${prefix}fengshui
-│⭔ ${prefix}haribaik
-│⭔ ${prefix}harisangar
-│⭔ ${prefix}harisial
-│⭔ ${prefix}nagahari
-│⭔ ${prefix}arahrezeki
-│⭔ ${prefix}peruntungan
-│⭔ ${prefix}weton
-│⭔ ${prefix}karakter
-│⭔ ${prefix}keberuntungan
-│⭔ ${prefix}memancing
-│⭔ ${prefix}masasubur
-│⭔ ${prefix}zodiak
-│⭔ ${prefix}shio
-│
-└───────⭓`
+└───────⭓
+`
                         hisoka.sendImage(m.chat, global.thumb, anu, m)
                     }
                         break
                     case 'convert': {
                         anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
 
-┌──⭓ *Convert Menu*
+┌──⭓ *Convert*
 │
 │⭔ ${prefix}attp
 │⭔ ${prefix}ttp
 │⭔ ${prefix}toimage
 │⭔ ${prefix}removebg
-│⭔ ${prefix}sticker
 │⭔ ${prefix}shortlink
 │⭔ ${prefix}emojimix
 │⭔ ${prefix}emojimix2
@@ -10619,90 +10674,6 @@ Mau cek lebih spesifik?
 │⭔ ${prefix}ebinary
 │⭔ ${prefix}dbinary
 │⭔ ${prefix}styletext
-│⭔ ${prefix}smeme
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'main': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Main Menu*
-│
-│⭔ ${prefix}ping
-│⭔ ${prefix}owner
-│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete
-│⭔ ${prefix}infochat
-│⭔ ${prefix}quoted
-│⭔ ${prefix}listpc
-│⭔ ${prefix}listgc
-│⭔ ${prefix}listonline
-│⭔ ${prefix}speedtest
-│⭔ ${prefix}report
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'database': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Database Menu*
-│
-│⭔ ${prefix}setcmd
-│⭔ ${prefix}listcmd
-│⭔ ${prefix}delcmd
-│⭔ ${prefix}lockcmd
-│⭔ ${prefix}addmsg
-│⭔ ${prefix}listmsg
-│⭔ ${prefix}getmsg
-│⭔ ${prefix}delmsg
 │
 └───────⭓`
                         hisoka.sendImage(m.chat, global.thumb, anu, m)
@@ -10710,198 +10681,59 @@ Mau cek lebih spesifik?
                         break
                     case 'anonymous': {
                         anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
 
 ┌──⭓ *Anonymous Menu*
 │
 │⭔ ${prefix}anonymous / mutualan
-│⭔ ${prefix}menfess
 │
 └───────⭓`
                         hisoka.sendImage(m.chat, global.thumb, anu, m)
                     }
                         break
-                    case 'islamic': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Islamic Menu*
-│
-│⭔ ${prefix}iqra
-│⭔ ${prefix}hadist
-│⭔ ${prefix}alquran
-│⭔ ${prefix}juzamma
-│⭔ ${prefix}tafsirsurah
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
+                    default:{
+                        let sections = [{
+                            title: "Pilih menu dibawah ini",
+                            rows: [
+                                {title: "│˚.༄│ All ", rowId: "menu all", description: `${preMenu} Menampilkan semua command Bot`,m},
+                                {title: "│˚.༄│ Rpg ", rowId: "menu rpg", description: `${preMenu} Berpetualang di dunia isekai!`,m},
+                                {title: "│˚.༄│ Images ", rowId: "menu images", description: `${preMenu} Mencari Foto Random`,m},
+                                {title: "│˚.༄│ Game ", rowId: "menu game", description: `${preMenu} Bermacam macam Permainan!`,m},
+                                {title: "│˚.༄│ Fun ", rowId: "menu fun", description: `${preMenu} Fitur yang aman dan family friendly`,m},
+                                {title: "│˚.༄│ Primbon ", rowId: "menu primbon", description: `${preMenu} Ramalan Ramalan Jawa`,m},
+                                {title: "│˚.༄│ Anime ", rowId: "menu anime", description: `${preMenu} D-dasar wibu >\\<`,m},
+                                {title: "│˚.༄│ Downloaders ", rowId: "menu downloaders", description: `${preMenu} Ingin download sesuatu? miku bantu ya`,m},
+                                {title: "│˚.༄│ Vn ", rowId: "menu vn", description: `${preMenu} Pengubah suara yang unik`,m},
+                                {title: "│˚.༄│ Internet ", rowId: "menu internet", description: `${preMenu} Ingin mencari Informasi?`,m},
+                                {title: "│˚.༄│ Nsfw ", rowId: "menu nsfw", description: `${preMenu} M-mau ngapain hayo??`,m},
+                                {title: "│˚.༄│ Premium ", rowId: "menu premium", description: `${preMenu} Khusus pengguna premium ya kak`,m},
+                                {title: "│˚.༄│ Islamic ", rowId: "menu islamic", description: `${preMenu} Mari memperbaiki diri kita`,m},
+                                {title: "│˚.༄│ Chatolic ", rowId: "menu chatolic", description: `${preMenu} Cinta kasih tuhan`,m},
+                                {title: "│˚.༄│ Menfess ", rowId: "menu menfess", description: `${preMenu} Ingin menyatakan cinta kepada seseorang dengan rahasia? ><`,m},
+                                {title: "│˚.༄│ Music ", rowId: "menu music", description: `${preMenu} Saat kata-kata berhenti, musik dimulai`,m},
+                                {title: "│˚.༄│ Admin ", rowId: "menu admin", description: `${preMenu} Fitur khusus admin group!`,m},
+                                {title: "│˚.༄│ Stickers ", rowId: "menu stickers", description: `${preMenu} Ingin membuat stiker bareng Miku?`,m},
+                                {title: "│˚.༄│ Meme ", rowId: "menu meme", description: `${preMenu} Anak mim bgt coy`,m},
+                                {title: "│˚.༄│ Group ", rowId: "menu group", description: `${preMenu} Fitur khusus grup!`,m},
+                                {title: "│˚.༄│ Info ", rowId: "menu info", description: `${preMenu} Info tentang Bot Miku`,m},
+                                {title: "│˚.༄│ Database ", rowId: "menu database", description: `${preMenu} Simpan sesuatu di bot miku`,m},
+                                {title: "│˚.༄│ Owner ", rowId: "menu owner", description: `${preMenu} Fitur khusus owner`,m},
+                                {title: "│˚.༄│ ???? ", rowId: "menu secret", description: `${preMenu} Fitur tersembunyi`,m},
+                                {title: "│˚.༄│ TextPro ", rowId: "menu textpro", description: `${preMenu} Mengubah tulisan menjadi gambar`,m},
+                                {title: "│˚.༄│ EPhoto ", rowId: "menu ephoto", description: `${preMenu} Menempel tulisan di gambar`,m},
+                                {title: "│˚.༄│ Photo Editor ", rowId: "menu editor", description: `${preMenu} Mengubah gambar yang kamu miliki`,m},
+                                {title: "│˚.༄│ Convert ", rowId: "menu convert", description: `${preMenu} Mengubah sesuatu`,m},
+                                {title: "│˚.༄│ Anonymous ", rowId: "menu anonyous", description: `${preMenu} chatting anonim secara random (BETA)`,m},
+                            ]
+                        }]
+                        let listMessage = {
+                            text: `╭❀:ཻུ۪۪──────••───────╮\n      main menu      \n╰───────••─────❀:ུ۪۪─╯\nHalo, Kak ${user.name}`,
+                            footer: "Silahkan Pilih list dibawah ini",
+                            buttonText: "List Menu",  
+                            sections
+                        }
+                        hisoka.sendMessage(m.chat, listMessage)
+                        // hisoka.sendImage(m.chat, global.thumb, anu, m)
                     }
-                        break
-                    case 'chatolic': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Chatolic Menu*
-│
-│⭔ ${prefix}bible
-│⭔ ${prefix}biblelist
-│⭔ ${prefix}alkitab (indonesia version)
-│⭔ ${prefix}alkitablist (indonesia version)
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'voice_changer': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Voice Changer*
-│
-│⭔ ${prefix}bass
-│⭔ ${prefix}blown
-│⭔ ${prefix}deep
-│⭔ ${prefix}earrape
-│⭔ ${prefix}fast
-│⭔ ${prefix}fat
-│⭔ ${prefix}nightcore
-│⭔ ${prefix}reverse
-│⭔ ${prefix}robot
-│⭔ ${prefix}slow
-│⭔ ${prefix}tupai
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    case 'owner': {
-                        anu = `Halo, Kak ${user.name}
-Mau cek lebih spesifik?
--menu all
--menu group
--menu webzone
--menu downloader
--menu search
--menu random_photo
--menu claim_waifu
--menu text_pro
--menu ephoto
--menu editor_photo
--menu fun
--menu game
--menu primbon
--menu convert
--menu main
--menu database
--menu anonymous
--menu islamic
--menu chatolic
--menu voice_changer
--menu owner
-
-┌──⭓ *Owner Menu*
-│
-│⭔ ${prefix}react [emoji]
-│⭔ ${prefix}chat [option]
-│⭔ ${prefix}join [link]
-│⭔ ${prefix}leave
-│⭔ ${prefix}block @user
-│⭔ ${prefix}unblock @user
-│⭔ ${prefix}bcgroup [text]
-│⭔ ${prefix}bcall [text]
-│⭔ ${prefix}setppbot [image]
-│⭔ ${prefix}setexif
-│⭔ ${prefix}setmenu [option]
-│
-└───────⭓`
-                        hisoka.sendImage(m.chat, global.thumb, anu, m)
-                    }
-                        break
-                    default: return hisoka.sendImage(m.chat, global.thumb, anu, m)
                 }
             }
                 break
