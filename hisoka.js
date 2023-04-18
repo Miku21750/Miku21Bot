@@ -6852,30 +6852,47 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
             }
                 break
 
-            //ml
+           //ml
             case 'heroml': {
-                let link = ''
-                if (text) link = '?heroName=' + args[0]
-                let anu = await fetchJson('https://api.dazelpro.com/mobile-legends/hero' + link);
-                if (anu.success == false) throw `Error, tolong report dengan !report ${command} menu`
-                let txt = 'LIST HERO ML'
-                for (let i = 0; i < anu.hero.length; i++) {
-                    let hero = anu.hero[i]
-                    txt += `\n⭔ Hero Id : ${hero.hero_id}\n⭔Name : ${hero.hero_name}\n⭔Role : ${hero.hero_role}\n⭔Speciality : ${hero.hero_specially}\n___________________________________________`
+                if(!text) throw 'masukan  nama hero yang ingin dicari'
+                let word = text
+                m.reply(mess.wait)
+                let { mlbb } = require('./lib/scraper')
+                let anu = await mlbb(text)
+                if(anu.length == 0) return m.reply('tidak dapat ditemukan, coba lagi')
+                let role = ''
+                for (var i = 0; i < anu[1].role.length; i++){
+                    role = role + anu[1].role[i]
                 }
-                await hisoka.sendText(m.chat, txt, m)
+                let desc = ''
+                for ( var i = 0; i<anu[2].length;i++){
+                    let title = Object.keys(anu[2][i]);
+                    let val = Object.values(anu[2][i]);
+                    desc = desc + title + ' : '+ val
+                }
+                let txt = `HERO ${text} \n ${anu[3].desc} \n\n ROLE : ${role} \n\n ${desc}`
+                // let link = ''
+                // if (text) link = '?heroName=' + args[0]
+                // let anu = await fetchJson('https://api.dazelpro.com/mobile-legends/hero' + link);
+                // if (anu.success == false) throw `Error, tolong report dengan !report ${command} menu`
+                // let txt = 'LIST HERO ML'
+                // for (let i = 0; i < anu.hero.length; i++) {
+                //     let hero = anu.hero[i]
+                //     txt += `\n⭔ Hero Id : ${hero.hero_id}\n⭔Name : ${hero.hero_name}\n⭔Role : ${hero.hero_role}\n⭔Speciality : ${hero.hero_specially}\n___________________________________________`
+                // }
+                await hisoka.sendMessage(m.chat,{image: {url: 'https://liquipedia.net'+anu[0].profileImage }, caption: txt}, {quoted: m})
             }
                 break
-            case 'detailheroml': {
-                if (!args[0]) throw 'Masukan ID hero ml yang tertera di command !heroml'
-                let anu = await fetchJson('https://api.dazelpro.com/mobile-legends/hero/' + args[0]);
-                if (anu.success == false) throw `Masukan ID hero ml yang tertera di command !heroml`
-                let txt = `Detail Hero ${anu.hero[0].hero_name}`
-                let hero = anu.hero[0]
-                txt += `\n⭔ Hero Id : ${hero.hero_id}\n⭔Name : ${hero.hero_name}\n⭔Role : ${hero.hero_role}\n⭔Speciality : ${hero.hero_specially}\n⭔Durability : ${hero.hero_overview.hero_durability}\n⭔Offence : ${hero.hero_overview.hero_offence}\n⭔Ability : ${hero.hero_overview.hero_ability}\n⭔Difficulty : ${hero.hero_overview.hero_difficulty}\n___________________________________________`
-                await hisoka.sendText(m.chat, txt, m)
-            }
-                break
+            // case 'detailheroml': {
+            //     if (!args[0]) throw 'Masukan ID hero ml yang tertera di command !heroml'
+            //     let anu = await fetchJson('https://api.dazelpro.com/mobile-legends/hero/' + args[0]);
+            //     if (anu.success == false) throw `Masukan ID hero ml yang tertera di command !heroml`
+            //     let txt = `Detail Hero ${anu.hero[0].hero_name}`
+            //     let hero = anu.hero[0]
+            //     txt += `\n⭔ Hero Id : ${hero.hero_id}\n⭔Name : ${hero.hero_name}\n⭔Role : ${hero.hero_role}\n⭔Speciality : ${hero.hero_specially}\n⭔Durability : ${hero.hero_overview.hero_durability}\n⭔Offence : ${hero.hero_overview.hero_offence}\n⭔Ability : ${hero.hero_overview.hero_ability}\n⭔Difficulty : ${hero.hero_overview.hero_difficulty}\n___________________________________________`
+            //     await hisoka.sendText(m.chat, txt, m)
+            // }
+            //     break
 
             //ml end here
             case 'imagenobg': case 'removebg': case 'remove-bg': {
