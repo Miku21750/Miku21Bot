@@ -6853,24 +6853,27 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 break
 
            //ml
-            case 'heroml': {
+            case 'heromlbb': {
                 if(!text) throw 'masukan  nama hero yang ingin dicari'
                 let word = text
-                m.reply(mess.wait)
                 let { mlbb } = require('./lib/scraper')
                 let anu = await mlbb(text)
-                if(anu.length == 0) return m.reply('tidak dapat ditemukan, coba lagi')
+                console.log(anu)
+                if(anu == undefined) return m.reply('tidak dapat ditemukan, coba lagi')
+                m.reply(mess.wait)
                 let role = ''
                 for (var i = 0; i < anu[1].role.length; i++){
-                    role = role + anu[1].role[i]
+                    let txt = ' - ' + anu[1].role[i] + ' - '
+                    if(anu[1].role[i] == undefined) txt = ''
+                    role = role + txt
                 }
-                let desc = ''
+                let desc = '\n'
                 for ( var i = 0; i<anu[2].length;i++){
                     let title = Object.keys(anu[2][i]);
                     let val = Object.values(anu[2][i]);
-                    desc = desc + title + ' : '+ val
+                    desc = desc + title + ' '+ val + '\n'
                 }
-                let txt = `HERO ${text} \n ${anu[3].desc} \n\n ROLE : ${role} \n\n ${desc}`
+                let txt = `HERO ${text} \n\n ROLE : ${role} \n\n ${desc} \n\n \n ${anu[3].desc}`
                 // let link = ''
                 // if (text) link = '?heroName=' + args[0]
                 // let anu = await fetchJson('https://api.dazelpro.com/mobile-legends/hero' + link);
