@@ -4621,7 +4621,7 @@ Love Exp kamu belum cukup. Love Exp kamu sekarang ${user.waifuexp}. Butuh 300 Lo
                                             hisoka.sendText(m.sender, textlewd, m)
                                         } else {
                                             let word = waifu.name
-                                            // let anu = await fetchJson(`https://api.zahwazein.xyz/searching/pixiv?query=${word}&apikey=keymikuzenz21`)
+                                            // let anu = await fetchJson(`https://api.zahwazein.xyz/searching/pixiv?query=${word}&apikey=zenzkey_efe229fabb37`)
                                             // let mess = `${mau}\n`
                                             // for(var i in anu.result){
                                             //     var key = i;
@@ -5194,13 +5194,13 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                 break
             case 'todtruth': {
                 // return m.reply('lagi error mohon maaf')
-                let res = await fetchJson(`https://api.zahwazein.xyz/entertainment/truth?apikey=keymikuzenz21`)
+                let res = await fetchJson(`https://api.zahwazein.xyz/entertainment/truth?apikey=zenzkey_efe229fabb37`)
                 hisoka.sendText(m.chat, res.result, m)
             }
                 break
             case 'toddare': {
                 // return m.reply('lagi error mohon maaf')
-                let res = await fetchJson('https://api.zahwazein.xyz/entertainment/dare?apikey=keymikuzenz21')
+                let res = await fetchJson('https://api.zahwazein.xyz/entertainment/dare?apikey=zenzkey_efe229fabb37')
                 hisoka.sendText(m.chat, res.result, m)
             }
                 break
@@ -5295,7 +5295,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                 } else if (args[0] === 'bendera') {
                     if (tebakkimia.hasOwnProperty(m.chat)) throw "Masih Ada Sesi Yang Belum Diselesaikan!"
                     // return m.reply('lagi error maaf')
-                    let anu = await fetchJson('https://api.zahwazein.xyz/entertainment/tebakbendera?apikey=keymikuzenz21')
+                    let anu = await fetchJson('https://api.zahwazein.xyz/entertainment/tebakbendera?apikey=zenzkey_efe229fabb37')
                     let res = anu.result
                     hisoka.sendImage(m.chat, res.img, `Silahkan Tebak Bendera Di Atas Ini\nClue : ${res.flag}\n\nWaktu : 60s`, m).then(() => {
                         tebakkimia[m.chat] = res.name.toLowerCase()
@@ -6496,7 +6496,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                         //     buttons: status,
                         //     headerType: 1
                         // }
-                        //hisoka.sendMessage(m.chat, { image: {url: `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`}, caption: `Photo Editor ${command}` }, { quoted: m })
+                        //hisoka.sendMessage(m.chat, { image: {url: `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37`}, caption: `Photo Editor ${command}` }, { quoted: m })
                         hisoka.sendMessage(i, { image: mdia, caption: txt })
                     }
                     m.reply('Suksess broadcast')
@@ -6714,7 +6714,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let { floNime } = require('./lib/uploader')
                 let fatGans = await floNime(dwnld)
                 //let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans.data.url}
-                let smeme = `https://api.zahwazein.xyz/creator/smeme?text=${atas}&text2=${bawah}&url=${fatGans.data.url}&apikey=keymikuzenz21`
+                let smeme = `https://api.zahwazein.xyz/creator/smeme?text=${atas}&text2=${bawah}&url=${fatGans.data.url}&apikey=zenzkey_efe229fabb37`
                 // let smeme = `https://api.lolhuman.xyz/api/memecreator?apikey=keymikulolhuman21&text1=${atas}&text2=${bawah}&img=${fatGans.data.url}`
                 /*
                     let media = await quoted.download()
@@ -6908,7 +6908,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                     let { floNime } = require('./lib/uploader')
                     let fatGans = await floNime(dwnld)
                     console.log(fatGans)
-                    //https://api.zahwazein.xyz/convert/sticker-nobg?url=&apikey=keymikuzenz21
+                    //https://api.zahwazein.xyz/convert/sticker-nobg?url=&apikey=zenzkey_efe229fabb37
                     let encmedia = await hisoka.sendMessage(m.chat, { image: { url: `https://api.lolhuman.xyz/api/removebg?apikey=keymikulolhuman21&img=${fatGans.data.url}` }, caption: `Photo Editor ${command}` }, { quoted: m })
                     await fs.unlinkSync(encmedia)
                 } else {
@@ -7095,7 +7095,7 @@ untuk download silahkan ${prefix}ytmp3 ${anu.url} untuk lagu, atau ${prefix}ytmp
                 // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
                 //for the sake of ramadhan, nsfw will be only in private chat
                 if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
-                // let anu = await fetchJson(`https://api.zahwazein.xyz/searching/pixiv?query=${word}&apikey=keymikuzenz21`)
+                // let anu = await fetchJson(`https://api.zahwazein.xyz/searching/pixiv?query=${word}&apikey=zenzkey_efe229fabb37`)
                 // let mess = 'PIXIV SEARCHER\n'
                 // for(var i in anu.result){
                 //     var key = i;
@@ -7217,7 +7217,7 @@ ${global.sp} yuki
                 if (!args[0]) return m.reply(helptxt)
                 // return m.reply('mohon maaf fitur sedang error')
                 m.reply(mess.wait)
-                let img = `https://api.zahwazein.xyz/randomanime/v2/${args[0]}?apikey=keymikuzenz21`
+                let img = `https://api.zahwazein.xyz/randomanime/v2/${args[0]}?apikey=zenzkey_efe229fabb37`
                 try {
                     hisoka.sendImage(m.chat, img, `NIH`, m)
                 } catch (e) {
@@ -7277,13 +7277,13 @@ ${global.sp} yuki
                 // return m.reply('maaf lagi error')
                 if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/randomimage/${command}?apikey=keymikuzenz21` }, caption: `NIH` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/randomimage/${command}?apikey=zenzkey_efe229fabb37` }, caption: `NIH` }, { quoted: m })
             }
                 break
             case 'meme': case 'memeindo': {
                 // return m.reply('maaf lagi error')
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/randomimage/${command}?apikey=keymikuzenz21` }, caption: `NIH` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/randomimage/${command}?apikey=zenzkey_efe229fabb37` }, caption: `NIH` }, { quoted: m })
             }
                 break
             case 'darkjoke': {
@@ -7301,15 +7301,15 @@ ${global.sp} yuki
                 //if not premium return
                 if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 return m.reply('maaf lagi error')
-                // let anu = await fetchJson('https://api.zahwazein.xyz/animeweb/nekopoi/latest?apikey=keymikuzenz21')
-                axios.get('https://api.zahwazein.xyz/animeweb/nekopoi/latest?apikey=keymikuzenz21').then(({ data }) => {
+                // let anu = await fetchJson('https://api.zahwazein.xyz/animeweb/nekopoi/latest?apikey=zenzkey_efe229fabb37')
+                axios.get('https://api.zahwazein.xyz/animeweb/nekopoi/latest?apikey=zenzkey_efe229fabb37').then(({ data }) => {
                     let res = data.data
                     let rand = res[Math.floor(Math.random() * res.length)]
                     console.log(rand)
                     let txt = `Title : ${rand.title}\nId : ${rand.id}\n\nDesc : ${rand.description}`
                     // hisoka.sendImage(m.chat, `${rand.image}`, txt,m)
                     hisoka.sendMessage(m.chat, { image: { url: rand.image }, caption: txt }, { quoted: m })
-                    //hisoka.sendMessage(m.chat, {image: {url : `https://api.zahwazein.xyz/creator/${command}?text=${text}&apikey=keymikuzenz21`}, caption: `Creator ${command}`}, {quoted:m})
+                    //hisoka.sendMessage(m.chat, {image: {url : `https://api.zahwazein.xyz/creator/${command}?text=${text}&apikey=zenzkey_efe229fabb37`}, caption: `Creator ${command}`}, {quoted:m})
                 })
             }
                 break
@@ -7322,7 +7322,7 @@ ${global.sp} yuki
                 if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 //if not premium return
                 if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
-                let data = await fetchJson('https://api.zahwazein.xyz/downloader/hentaivid/longer?apikey=keymikuzenz21')
+                let data = await fetchJson('https://api.zahwazein.xyz/downloader/hentaivid/longer?apikey=zenzkey_efe229fabb37')
                 if (data.status != 'OK') throw 'Error, tolong report dengan menggunakan fitur !report'
                 let res = data.result
                 let txt = `Title : ${res.title}\n Category : ${res.category}\n\n${res.link}`
@@ -7451,11 +7451,11 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     // return m.reply('maaf lagi error')
                     m.reply(mess.wait)
                     //hisoka.sendMessage(m.chat, { image: { url: random.male }, caption: `Couple Male` }, { quoted: m })
-                    hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/api/morensfw/${text}?apikey=keymikuzenz21` }, caption: `NIH` }, { quoted: m })
+                    hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/api/morensfw/${text}?apikey=zenzkey_efe229fabb37` }, caption: `NIH` }, { quoted: m })
                 } else if (text === 'hentaigif') {
                     m.reply(mess.wait)
                     //
-                    hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/api/morensfw/${text}?apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
+                    hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/api/morensfw/${text}?apikey=zenzkey_efe229fabb37`, m, { packname: global.packname, author: global.author })
                 } else if (text === 'loli' || text === 'chiisaihentai' || text === 'yaoi' || text === 'hololewd' || text === 'sideoppai' || text === 'animearmpits' || text === 'lewdanimegirls' || text === 'biganimetiddies') {
                     m.reply(mess.wait)
                     try {
@@ -7506,7 +7506,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 // if (m.isGroup && group.nsfw == false) throw 'Tidak Bisa menggunakan Fitur ini, silahkan join Gc NFSW atau private message bot'
                 //for the sake of ramadhan, nsfw will be only in private chat
                 if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
-                let anu = await fetchJson(`https://api.zahwazein.xyz/randomtext/cersex?apikey=keymikuzenz21`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/randomtext/cersex?apikey=zenzkey_efe229fabb37`)
                 let res = anu.result
                 let txt = res.Cerita
                 hisoka.sendText(m.chat, txt, m)
@@ -7657,14 +7657,14 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 if(!m.quoted) throw `Reply text yang ingin ditranslate`
                 if(!args[0]) throw ('masukan kode bahasa (id,en,fr,dll)')
                 kodebahasa = args[0]
-                let anu = await fetchJson(`https://api.zahwazein.xyz/information/translate/${kodebahasa}?apikey=keymikuzenz21&query=${m.quoted.text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/information/translate/${kodebahasa}?apikey=zenzkey_efe229fabb37&query=${m.quoted.text}`)
                 if(anu.status == false) return m.reply('error, tolong hubungi owner')
                 hisoka.sendText(m.chat, anu.result ,m);
             }
             break
             case 'kbbi' :{
                 if(!text) throw `Kirim text nya, contoh : ${prefix + command} text`
-                let anu = await fetchJson(`https://api.zahwazein.xyz/information/kbbi?apikey=keymikuzenz21&query=${text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/information/kbbi?apikey=zenzkey_efe229fabb37&query=${text}`)
                 if(anu.status == false) return m.reply('error, tolong hubungi owner')
                 hisoka.sendText(m.chat,`Title : ${anu.result.title}\n\n${anu.result.arti}`)
             }
@@ -7704,7 +7704,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             }
                 break
             case 'motivasi': case 'dilanquote': case 'bucinquote': case 'katasenja': case 'pantun': case 'jawaquote': case 'faktaunik': case 'muslimquote': {
-                let anu = await fetchJson(`https://api.zahwazein.xyz/randomtext/${command}?apikey=keymikuzenz21`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/randomtext/${command}?apikey=zenzkey_efe229fabb37`)
                 let buttons = [
                     { buttonId: command, buttonText: { displayText: 'Next' }, type: 1 }
                 ]
@@ -7733,14 +7733,14 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 // return m.reply('maaf lagi error')
                 if (!text) throw `Example : ${prefix + command} text`
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/textpro/${command}?text=${text}&apikey=keymikuzenz21` }, caption: `Text Pro ${command}` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/textpro/${command}?text=${text}&apikey=zenzkey_efe229fabb37` }, caption: `Text Pro ${command}` }, { quoted: m })
             }
                 break
             case 'ffcover': case 'crossfire': case 'galaxy': case 'glass': case 'neon': case 'beach': case 'blackpink': case 'igcertificate': case 'ytcertificate': {
                 // return m.reply('maaf lagi error')
                 if (!text) throw 'No Query Text'
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/ephoto/${command}?text=${text}&apikey=keymikuzenz21` }, caption: `Ephoto ${command}` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/ephoto/${command}?text=${text}&apikey=zenzkey_efe229fabb37` }, caption: `Ephoto ${command}` }, { quoted: m })
             }
                 break
             case 'agedetect': {
@@ -7765,7 +7765,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let { floNime } = require('./lib/uploader')
                     let fatGans = await floNime(dwnld)
                     console.log(fatGans)
-                    let encmedia = await hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21` }, caption: `Photo Editor ${command}` }, { quoted: m })
+                    let encmedia = await hisoka.sendMessage(m.chat, { image: { url: `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37` }, caption: `Photo Editor ${command}` }, { quoted: m })
                     await fs.unlinkSync(encmedia)
                 } else {
                     throw `Reply Gambar`
@@ -7777,7 +7777,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             let { floNime } = require('./lib/uploader')
             let fatGans = await floNime(dwnld)
             //let smeme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas)}/${encodeURIComponent(bawah)}.png?background=${fatGans.data.url}
-            let smeme = `https://api.zahwazein.xyz/creator/smeme?text=${atas}&text2=${bawah}&url=${fatGans.data.url}&apikey=keymikuzenz21` */
+            let smeme = `https://api.zahwazein.xyz/creator/smeme?text=${atas}&text2=${bawah}&url=${fatGans.data.url}&apikey=zenzkey_efe229fabb37` */
 
             }
                 break
@@ -7789,7 +7789,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let fatGans = await floNime(dwnld)
                     console.log(fatGans)
                     //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
-                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37
                     let encmedia = await hisoka.sendMessage(m.chat, { image: { url: `https://api.lolhuman.xyz/api/filter/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}` }, caption: `Photo Editor ${command}` }, { quoted: m })
                     await fs.unlinkSync(encmedia)
                 } else {
@@ -7807,7 +7807,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let fatGans = await floNime(dwnld)
                     console.log(fatGans)
                     //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
-                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37
                     let encmedia = await hisoka.sendMessage(m.chat, { image: { url: `https://api.lolhuman.xyz/api/imagecolor?apikey=keymikulolhuman21&img=${fatGans.data.url}&hex=${args[0]}` }, caption: `Photo Editor ${command}` }, { quoted: m })
                     await fs.unlinkSync(encmedia)
                 } else {
@@ -7824,7 +7824,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let fatGans = await floNime(dwnld)
                     console.log(fatGans)
                     //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
-                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37
                     let encmedia = await hisoka.sendMessage(m.chat, { image: { url: `https://api.lolhuman.xyz/api/editor/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}` }, caption: `Photo Editor ${command}` }, { quoted: m })
                     await fs.unlinkSync(encmedia)
                 } else {
@@ -7841,7 +7841,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let fatGans = await floNime(dwnld)
                     console.log(fatGans)
                     //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
-                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
+                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37
                     let encmedia = await hisoka.sendMessage(m.chat, { image: { url: `https://api.lolhuman.xyz/api/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}` }, caption: `Photo Editor ${command}` }, { quoted: m })
                     await fs.unlinkSync(encmedia)
                 } else {
@@ -7858,8 +7858,8 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             //         let fatGans = await floNime(dwnld)
             //         console.log(fatGans)
             //         //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
-            //         //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
-            //         //hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
+            //         //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37
+            //         //hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37`, m, { packname: global.packname, author: global.author })
             //         hisoka.sendImageAsSticker(m.chat, `https://api.lolhuman.xyz/api/editor/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}`,m, { packname: global.packname, author: global.author })
             //         await fs.unlinkSync(encmedia)
             //     }else {
@@ -7876,8 +7876,8 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let fatGans = await floNime(dwnld)
                     console.log(fatGans)
                     //https://api.lolhuman.xyz/api/creator1/trigger?apikey=keymikulolhuman21&img=https://i.postimg.cc/CM34YRFb/photo-2021-02-05-10-13-39.jpg
-                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21
-                    //hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
+                    //https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37
+                    //hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37`, m, { packname: global.packname, author: global.author })
                     let encmedia = await hisoka.sendImageAsSticker(m.chat, `https://api.lolhuman.xyz/api/creator1/${command}?apikey=keymikulolhuman21&img=${fatGans.data.url}`, m, { packname: global.packname, author: global.author })
                     await fs.unlinkSync(encmedia)
                 } else {
@@ -7888,7 +7888,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             case 'pet': {
                 /* }else if(text === 'hentaigif'){
                     m.reply(mess.wait)
-                    hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/api/morensfw/${text}?apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author }) */
+                    hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/api/morensfw/${text}?apikey=zenzkey_efe229fabb37`, m, { packname: global.packname, author: global.author }) */
                 // return m.reply('maaf lagi error')
                 if (!quoted) throw 'Reply Image'
                 m.reply(mess.wait)
@@ -7896,7 +7896,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     let dwnld = await quoted.download()
                     let { floNime } = require('./lib/uploader')
                     let fatGans = await floNime(dwnld)
-                    hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=keymikuzenz21`, m, { packname: global.packname, author: global.author })
+                    hisoka.sendImageAsSticker(m.chat, `https://api.zahwazein.xyz/photoeditor/${command}?url=${fatGans.data.url}?v=4&apikey=zenzkey_efe229fabb37`, m, { packname: global.packname, author: global.author })
                 } else {
                     throw `Reply Gambar`
                 }
@@ -8169,15 +8169,15 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             case 'bmkg': {
                 if (!text) return m.reply(`Example : ${prefix + command} type (${prefix + command} cuaca jakarta\n\nList Type : \n1. gempa\n2.cuaca (masukan nama kota)`)
                 // if(args[0] === 'gempa'){
-                //     let anu = await fetchJson(`https://api.zahwazein.xyz/information/bmkg/gempa?apikey=keymikuzenz21`)
+                //     let anu = await fetchJson(`https://api.zahwazein.xyz/information/bmkg/gempa?apikey=zenzkey_efe229fabb37`)
                 //     let res = anu.result
                 //     let txt = `⭔ *Tanggal :* ${res.tanggal}\n⭔ *Jam :* ${res.jam}\n⭔ *Lokasi :* ${res.wilayah}\n⭔ *Coordinat :* ${res.coordinates}\n⭔ *Magnitude :* ${res.magnitude}\n⭔ *Kedalaman :* ${res.kedalaman}\n⭔ *Dirasakan :* ${res.dirasakan}\n⭔ *Keterangan :* ${res.potensi}`
                 //     hisoka.sendImage(m.chat, anu.result.shakemap, txt, m)
                 // }else if(!args[4]){
-                //     let anu = await fetchJson(`https://api.zahwazein.xyz/information/bmkg/weather/${args[2]}?apikey=keymikuzenz21`)
+                //     let anu = await fetchJson(`https://api.zahwazein.xyz/information/bmkg/weather/${args[2]}?apikey=zenzkey_efe229fabb37`)
                 //     let res = anu.result
                 // }else if(args[4]){
-                //     let anu = await fetchJson(`https://api.zahwazein.xyz/information/bmkg/weather/${args[2]}/${args[4]}?apikey=keymikuzenz21`)
+                //     let anu = await fetchJson(`https://api.zahwazein.xyz/information/bmkg/weather/${args[2]}/${args[4]}?apikey=zenzkey_efe229fabb37`)
                 //     let res = anu.result
                 // }
                 switch (args[0]) {
@@ -8205,7 +8205,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 break
             case 'hitungwr': {
                 if (!args[0] || !args[1] || !args[2]) throw `Example : ${prefix + command} (total match) (total winrate) (request winrate)`
-                let anu = await fetchJson(`https://api.zahwazein.xyz/information/hitungwr?apikey=keymikuzenz21&text=${args[0]}&text2=${args[1]}&text3=${args[2]}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/information/hitungwr?apikey=zenzkey_efe229fabb37&text=${args[0]}&text2=${args[1]}&text3=${args[2]}`)
                 let res = anu.result
                 m.reply(res.description)
             }
@@ -8266,7 +8266,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 // m.reply('bug, tiktokdl dimatikan sementara')
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                //https://api.zahwazein.xyz/downloader/tiktok?apikey=keymikuzenz21&url=https://www.tiktok.com/@bestpart_lai/video/7133205394347937029?_r=1&_t=8UwAHZLVFpp&is_from_webapp=v1&item_id=7133205394347937029
+                //https://api.zahwazein.xyz/downloader/tiktok?apikey=zenzkey_efe229fabb37&url=https://www.tiktok.com/@bestpart_lai/video/7133205394347937029?_r=1&_t=8UwAHZLVFpp&is_from_webapp=v1&item_id=7133205394347937029
                 let anu = await fetchJson(`https://api.lolhuman.xyz/api/tiktok?apikey=keymikulolhuman21&url=${text}`)
                 if (!anu) throw 'Cannot download link'
                 if (anu.status == false) throw 'Cannot download link'
@@ -8305,7 +8305,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 // m.reply('bug, tiktokdl dimatikan sementara')
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                // let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/tiktok?apikey=keymikuzenz21&url=${text}`)
+                // let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/tiktok?apikey=zenzkey_efe229fabb37&url=${text}`)
                 // if(!anu) throw 'Cannot download link'
                 // if(anu.status == false) throw 'Cannot download link'
                 // if(!anu.download.wm) throw 'Cannot download link, Silahkan coba tiktoknowm, atau coba lagi'
@@ -8372,7 +8372,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     for (let media of anu.result) hisoka.sendFileUrl(m.chat, media, `Download Url Instagram From ${isUrl(text)[0]}`, m)
                 }
                 // else if (/\/stories\/([^\s&]+)/.test(isUrl(text)[0])) {
-                //     let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/instagram/story/v2?apikey=keymikuzenz21&url=${text}`)
+                //     let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/instagram/story/v2?apikey=zenzkey_efe229fabb37&url=${text}`)
                 //     if(anu.status == false) return 'Link tidak dapat didownload, coba lagi'
                 //     for (let media of anu.result) hisoka.sendFileUrl(m.chat, media, `Download Url Instagram From ${isUrl(text)[0]}`, m)
                 // }
@@ -8397,7 +8397,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             case 'twitdl': case 'twitter': {
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/twitter?apikey=keymikuzenz21&url=${text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/twitter?apikey=zenzkey_efe229fabb37&url=${text}`)
                 //hisoka.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
                 let buttons = [
                     { buttonId: `twittermp3 ${text}`, buttonText: { displayText: '► Audio' }, type: 1 }
@@ -8424,7 +8424,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 return m.reply('maaf lagi error')
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/twitter?apikey=keymikuzenz21&url=${text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/twitter?apikey=zenzkey_efe229fabb37&url=${text}`)
                 let buttons = [
                     { buttonId: `twitter ${text}`, buttonText: { displayText: '► Video' }, type: 1 }
                 ]
@@ -8495,7 +8495,7 @@ Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan c
                 break
             case 'mediafire':{
                 if (!text) throw `masukan link`
-                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/mediafire?apikey=keymikuzenz21&url=${text}`)
+                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/mediafire?apikey=zenzkey_efe229fabb37&url=${text}`)
                 
             }
             break
@@ -9101,7 +9101,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 break
             case 'gsmarena': {
                 if (!text) throw `Example : ${prefix + command} samsung`
-                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/gsmarena?query=${text}&apikey=keymikuzenz21`)
+                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/gsmarena?query=${text}&apikey=zenzkey_efe229fabb37`)
                 let { judul, rilis, thumb, ukuran, type, storage, display, inchi, pixel, videoPixel, ram, chipset, batrai, merek_batre, detail } = res.result
                 let capt = `⭔ Title: ${judul}
 ⭔ Realease: ${rilis}
@@ -9159,7 +9159,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 break
             case 'wattpad': {
                 if (!text) throw `Example : ${prefix + command} love`
-                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/wattpad?apikery=keymikuzenz21&query=${text}`)
+                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/wattpad?apikery=zenzkey_efe229fabb37&query=${text}`)
                 let { judul, dibaca, divote, bab, waktu, url, thumb, description } = res.result[0]
                 let capt = `Wattpad From ${text}\n\n`
                 capt += `⭔ Judul: ${judul}\n`
@@ -9174,7 +9174,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 break
             case 'webtoons': {
                 if (!text) throw `Example : ${prefix + command} love`
-                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/webtoons?apikery=keymikuzenz21&query=${text}`)
+                let res = await fetchJson(`https://api.zahwazein.xyz/webzone/webtoons?apikery=zenzkey_efe229fabb37&query=${text}`)
                 let capt = `Webtoons Search From : ${text}\n\n`
                 for (let i of res.result) {
                     capt += `⭔ Judul: ${i.judul}\n`
