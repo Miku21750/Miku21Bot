@@ -7507,9 +7507,8 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 //for the sake of ramadhan, nsfw will be only in private chat
                 if (m.isGroup) throw 'Tidak Bisa menggunakan Fitur ini di group chat, silahkan private message bot'
                 let anu = await fetchJson(`https://api.zahwazein.xyz/randomtext/cersex?apikey=zenzkey_efe229fabb37`)
-                let res = anu.result
-                let txt = res.Cerita
-                hisoka.sendText(m.chat, txt, m)
+                let res = anu.result.Cerita
+                hisoka.sendText(m.chat, res, m)
             }
                 break
             case 'doujindesu': {
