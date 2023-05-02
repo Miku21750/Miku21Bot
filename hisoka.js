@@ -7460,7 +7460,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     m.reply(mess.wait)
                     try {
                         // hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random/nsfw/${text}?apikey=keymikulolhuman21`, `NIH`, m)
-                        let anu = await fetchJson(`https://api.lolhuman.xyz/api/random/${command}?apikey=keymikulolhuman21`)
+                        let anu = await fetchJson(`https://api.lolhuman.xyz/api/random/${text}?apikey=keymikulolhuman21`)
                         hisoka.sendText(m.chat,anu.message,m);
                     } catch (e) {
                         m.reply(e)
