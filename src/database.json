@@ -10859,7 +10859,11 @@
     "6285813181510@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
+<<<<<<< HEAD
       "limit": "Infinity",
+=======
+      "limit": 100,
+>>>>>>> 6f40ef13d0ba8679e2aad2d53f090d596c6b46a7
       "premium": true,
       "money": 52247,
       "banned": false,
