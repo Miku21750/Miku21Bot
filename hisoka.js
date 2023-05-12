@@ -7762,7 +7762,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
 
                 }
             }
-            case 'horny': case 'gay': case 'contrast': case 'pixelate': case 'sepia': case 'brighten': case 'greyscale': case 'circle': case 'blur': case 'invert': case '2x': case 'glass': case 'wasted': case 'wanted': case 'gun': case 'passed': case 'comrade': case 'jail': {
+            case 'horny': case 'gay': case 'jadianime':  case 'contrast': case 'pixelate': case 'sepia': case 'brighten': case 'greyscale': case 'circle': case 'blur': case 'invert': case '2x': case 'glass': case 'wasted': case 'wanted': case 'gun': case 'passed': case 'comrade': case 'jail': {
                 // return m.reply('maaf lagi error')
                 if (!quoted) throw 'Reply Image'
                 m.reply(mess.wait)
