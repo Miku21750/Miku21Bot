@@ -8403,27 +8403,35 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             case 'twitdl': case 'twitter': {
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/twitter?apikey=zenzkey_84e726d5c4d0&url=${text}`)
+                let anu = await fetchJson(`https://api.lolhuman.xyz/api/twitter?apikey=keymikulolhuman21&url=${text}`)
                 //hisoka.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
                 let buttons = [
                     { buttonId: `twittermp3 ${text}`, buttonText: { displayText: '► Audio' }, type: 1 }
                 ]
-                let vid = '';
-                var resolusi = 0;
-                for (let i = 0; i < anu.result.link.length; i++) {
-                    if (resolusi < anu.result.link[i].bitrate) {
-                        resolusi = anu.result.link[i].bitrate
-                        vid = anu.result.link[i].url
-                    }
-                }
-                let buttonMessage = {
-                    video: { url: anu.result.hd || anu.result.sd },
-                    caption: `NIH`,
-                    footer: 'Press The Button Below',
-                    buttons: buttons,
-                    headerType: 5
-                }
-                hisoka.sendMessage(m.chat, { video: { url: anu.result.url } })
+                let res =  anu.result
+                let link = res.link.pop()
+                hisoka.sendMessage(m.chat, { video: { url: link }, caption: res.title })
+                // let anu = await fetchJson(`https://api.zahwazein.xyz/downloader/twitter?apikey=zenzkey_84e726d5c4d0&url=${text}`)
+                // //hisoka.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.filesizeF}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP3\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
+                // let buttons = [
+                //     { buttonId: `twittermp3 ${text}`, buttonText: { displayText: '► Audio' }, type: 1 }
+                // ]
+                // let vid = '';
+                // var resolusi = 0;
+                // for (let i = 0; i < anu.result.link.length; i++) {
+                //     if (resolusi < anu.result.link[i].bitrate) {
+                //         resolusi = anu.result.link[i].bitrate
+                //         vid = anu.result.link[i].url
+                //     }
+                // }
+                // let buttonMessage = {
+                //     video: { url: anu.result.hd || anu.result.sd },
+                //     caption: `NIH`,
+                //     footer: 'Press The Button Below',
+                //     buttons: buttons,
+                //     headerType: 5
+                // }
+                // hisoka.sendMessage(m.chat, { video: { url: anu.result.url } })
             }
                 break
             case 'twittermp3': case 'twitteraudio': {
