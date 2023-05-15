@@ -9427,28 +9427,32 @@ ${date}
 │⭔ Money        : ${user.money} MIKO
 │⭔ Job          : ${user.job}
 │⭔ Job Level    : ${user.joblevel}`
-                if(user.coupleUser !== '' || user.coupleUser !== undefined){
-                    profile +=`
-│⭔ Pacar      : @${user.coupleUser.split`@`[0]}
-                    `
-                }else{
-                    profile +=`
-│⭔ Pacar      : Anime
-                    `
+                if(user.coupleUser !== undefined){
+                    if(user.coupleUser !== ''){
+                        profile +=`
+│⭔ Pacar      : @${user.coupleUser.split`@`[0]}`
+                    }else{
+                        profile +=`
+│⭔ Pacar      : Anime`
+                    }
                 }
-                if (user.waifu !== null || user.waifu !== undefined) {
-                    profile += `
+                if(user.waifu !== undefined){
+                    if (user.waifu !== null) {
+                        profile += `
 │⭔ Married      : ${user.nikah}
 │⭔ Married With : ${waifu.name} KODE ${user.waifu}`
-                    if(user.waifu2 !== null || user.waifu2 !== undefined){
-                        let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu2}`)
-                        let res = anu.data
-                        waifu2 = res
-                        profile += ` & ${waifu2.name} KODE ${user.waifu2}`
-                    }
-                } else {
-                    profile += `
+                        if(user.waifu2 !== undefined){
+                            if(user.waifu2 !== null){
+                                let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu2}`)
+                                let res = anu.data
+                                waifu2 = res
+                                profile += ` & ${waifu2.name} KODE ${user.waifu2}`
+                            }
+                        }
+                    } else {
+                        profile += `
 │⭔ Married With : No one yet`
+                    }
                 }
                 profile += `
 │⭔ Limit        : ${user.limit}
