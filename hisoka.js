@@ -4205,6 +4205,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 }
                 // user.waifu = waifu.mal_id
                 if(user.waifu != null){
+                    if (user.waifu2 != null) return hisoka.sendText(m.chat, `Anda sudah memiliki maks. 2 waifu/husbu`, m)
                     user.waifu2 = waifu.mal_id
                 }else{
                     return hisoka.sendText(m.chat, `Anda sudah memiliki waifu/husbu, Upgrade Premium jika ingin menambah 1 lagi`, m)
