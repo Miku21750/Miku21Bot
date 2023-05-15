@@ -157,6 +157,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 if(!('coupleUser' in user)) user.coupleUser = '';
                 //set waifu 
                 if (!'waifu' in user) user.waifu = null
+                if (!'waifu2' in user) user.waifu2 = null
                 if (!isNumber(user.waifuexp)) user.waifuexp = 0
                 if (!('rumah' in user)) user.rumah = false
                 if (!isNumber(user.kasur)) user.kasur = 0
@@ -248,6 +249,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 number: m.sender,
                 coupleUser: '',
                 waifu: null,
+                waifu2: null,
                 waifuexp: 0,
                 rumah: false,
                 kasur: 0,
@@ -4188,7 +4190,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
             case 'claimwaifu': {
                 if (!text) throw `Masukan ID waifu/husbu yang tertera pada MAL. jika ingin tahu lebih lanjut bisa gunakan ${prefix} malsearch (text), atau cari sendiri di mal itu sendiri`
                 let user = global.db.data.users[m.sender]
-                if (user.waifu != null) return hisoka.sendText(m.chat, `Anda sudah memiliki waifu/husbu`, m)
+                if (user.waifu != null && !isPremium) return hisoka.sendText(m.chat, `Anda sudah memiliki waifu/husbu, Upgrade Premium jika ingin menambah 1 lagi`, m)
                 let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${args[0]}`)
                 let res = anu.data
                 let waifu = res
@@ -4201,7 +4203,12 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     //console.log(global.db.data.users[key].waifu, waifu.mal_id)
                     if (global.db.data.users[key].waifu == waifu.mal_id) return hisoka.sendText(m.chat, `Waifu/Husbu sudah diclaim oleh ${global.db.data.users[key].name} @${global.db.data.users[key].number.split('@')[0]}`, m, { mentions: menst })
                 }
-                user.waifu = waifu.mal_id
+                // user.waifu = waifu.mal_id
+                if(user.waifu != null){
+                    user.waifu2 = waifu.mal_id
+                }else{
+                    return hisoka.sendText(m.chat, `Anda sudah memiliki waifu/husbu, Upgrade Premium jika ingin menambah 1 lagi`, m)
+                }
                 hisoka.sendImage(m.chat, waifu.images.jpg.image_url || waifu.images.webp.image_url, `${user.name} telah mengambil waifu/husbu ${waifu.name} \n\n Silahkan Cek !pdkt untuk berinteraksi dengan waifu/husbu mu`, m)
                 //if(waifu.claim === true) return hisoka.sendTextWithMentions(m.chat, `Waifu/Husbu sudah diclaim oleh ${waifu.with} @${waifu.number.split('@')[0]}`, m)
 
@@ -4212,38 +4219,98 @@ Dengan dipecat, akan mengurangi sebagian dari job level
             case 'unclaim': {
                 let user = global.db.data.users[m.sender]
                 if (!user.waifu) throw `Anda tidak memiliki waifu/husbu`
-                let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu}`)
-                let res = anu.data
-                let waifu = res
-                if (!waifu) throw `Waifu/Husbu tidak ditemukan`
-                user.waifu = null
-                hisoka.sendText(m.chat, ` waifu/husbu ${waifu.name} telah di unclaim`, m)
-                user.waifuexp = 0
+                let switch_waifu = (args[0] || '').toLowerCase()
+                if(!args[0]) return m.reply('waifu keberapa yang ingin di unclaim? (unclaim waifu1 / unlcaim waifu2)')
+                switch(switch_waifu){
+                    case 'waifu1':{
+                        let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu}`)
+                        let res = anu.data
+                        let waifu = res
+                        if (!waifu) throw `Waifu/Husbu tidak ditemukan`
+                        user.waifu = null
+                        hisoka.sendText(m.chat, ` waifu/husbu ${waifu.name} telah di unclaim`, m)
+                        user.waifuexp = 0
+                    }
+                    break;
+                    case 'waifu2':{
+                        if (!user.waifu2) throw `Anda tidak memiliki waifu/husbu kedua`
+                        let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu2}`)
+                        let res = anu.data
+                        let waifu = res
+                        if (!waifu) throw `Waifu/Husbu tidak ditemukan`
+                        user.waifu2 = null
+                        hisoka.sendText(m.chat, ` waifu/husbu ${waifu.name} telah di unclaim`, m)
+                    }
+                    break;
+                    default: m.reply('waifu keberapa yang ingin di unclaim? (unclaim waifu1 / unclaim waifu2)')
+                    break;
+                }
+                // let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu}`)
+                // let res = anu.data
+                // let waifu = res
+                // if (!waifu) throw `Waifu/Husbu tidak ditemukan`
+                // user.waifu = null
+                // hisoka.sendText(m.chat, ` waifu/husbu ${waifu.name} telah di unclaim`, m)
+                // user.waifuexp = 0
             }
                 break
             case 'waifusaya': case 'mywaifu': {
                 let user = global.db.data.users[m.sender]
                 if (!user.waifu) throw `Anda tidak memiliki waifu/husbu`
-                let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu}`)
-                let res = anu.data
-                let waifu = res
-                let claim = false
-                let number = ''
-                let keys = Object.keys(global.db.data.users)
-                for (let i = 0; i < keys.length; i++) {
-                    //console.log('p')
-                    let key = keys[i], arr = global.db.data.users[key]
-                    let menst = [global.db.data.users[key].number]
-                    //console.log(global.db.data.users[key].waifu, waifu.mal_id)
-                    if (global.db.data.users[key].waifu == waifu.mal_id) {
-                        claim = true
-                        number = key
+                let switch_waifu = (args[0] || '').toLowerCase()
+                if(!args[0]) return m.reply('waifu keberapa yang ingin di lihat? (waifusaya 1 / waifusaya 2)')
+                switch(switch_waifu){
+                    case '1':{
+                        let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu}`)
+                        let res = anu.data
+                        let waifu = res
+                        let claim = false
+                        let number = ''
+                        let keys = Object.keys(global.db.data.users)
+                        for (let i = 0; i < keys.length; i++) {
+                            //console.log('p')
+                            let key = keys[i], arr = global.db.data.users[key]
+                            let menst = [global.db.data.users[key].number]
+                            //console.log(global.db.data.users[key].waifu, waifu.mal_id)
+                            if (global.db.data.users[key].waifu == waifu.mal_id) {
+                                claim = true
+                                number = key
+                            }
+                        }
+                        let datawaifu = `*Waifu/Husbu Saya*\n\nNama : ${waifu.name}\n\nMal Id : ${waifu.mal_id}\n\nClaim : ${claim}\n\nWith : @${number.split('@')[0]}\n\nMarried : ${user.nikah}\n\nStatus:\nLove EXP:${user.waifuexp}\n\nDesc:\n${waifu.about}`
+                        //Deskripsi : ${waifu.desc}\n\n
+                        let menst = [number]
+                        await hisoka.sendImage(m.chat, waifu.images.jpg.image_url || waifu.images.webp.image_url, datawaifu, m, { mentions: menst })
                     }
+                    break;
+                    case '2':{
+                        if (!user.waifu2) throw `Anda tidak memiliki waifu/husbu kedua`
+                        let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu2}`)
+                        let res = anu.data
+                        let waifu = res
+                        let claim = false
+                        let number = ''
+                        let keys = Object.keys(global.db.data.users)
+                        for (let i = 0; i < keys.length; i++) {
+                            //console.log('p')
+                            let key = keys[i], arr = global.db.data.users[key]
+                            let menst = [global.db.data.users[key].number]
+                            //console.log(global.db.data.users[key].waifu, waifu.mal_id)
+                            if (global.db.data.users[key].waifu2 == waifu.mal_id) {
+                                claim = true
+                                number = key
+                            }
+                        }
+                        let datawaifu = `*Waifu/Husbu Saya*\n\nNama : ${waifu.name}\n\nMal Id : ${waifu.mal_id}\n\nClaim : ${claim}\n\nWith : @${number.split('@')[0]}\n\nMarried : ${user.nikah}\n\nStatus:\nLove EXP:${user.waifuexp}\n\nDesc:\n${waifu.about}`
+                        //Deskripsi : ${waifu.desc}\n\n
+                        let menst = [number]
+                        await hisoka.sendImage(m.chat, waifu.images.jpg.image_url || waifu.images.webp.image_url, datawaifu, m, { mentions: menst })
+                    }
+                    break;
+                    default: m.reply('waifu keberapa yang ingin di lihat? (statuswaifu 1 / statuswaifu 2)')
+                    break;
                 }
-                let datawaifu = `*Waifu/Husbu Saya*\n\nNama : ${waifu.name}\n\nMal Id : ${waifu.mal_id}\n\nClaim : ${claim}\n\nWith : @${number.split('@')[0]}\n\nMarried : ${user.nikah}\n\nStatus:\nLove EXP:${user.waifuexp}\n\nDesc:\n${waifu.about}`
-                //Deskripsi : ${waifu.desc}\n\n
-                let menst = [number]
-                await hisoka.sendImage(m.chat, waifu.images.jpg.image_url || waifu.images.webp.image_url, datawaifu, m, { mentions: menst })
+                
             }
                 break
             //see one status of the list 
@@ -4390,6 +4457,7 @@ claim waifu dengan nomor character, misal : "claimwaifu 40016". Untuk no charact
                 break
             //interaction with waifu
             case 'pdkt': {
+                return m.reply('on beta karena button rusak (+ banyak yg minta 2 waifu njing)')
                 let pdkt = (args[0] || '').toLowerCase()
                 let interaksi = (args[1] || '').toLowerCase()
                 let inte_type = (args[1] || '').toLowerCase()
@@ -9365,6 +9433,12 @@ ${date}
                     profile += `
 │⭔ Married      : ${user.nikah}
 │⭔ Married With : ${waifu.name} KODE ${user.waifu}`
+                    if(user.waifu2 !== null){
+                        let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu2}`)
+                        let res = anu.data
+                        waifu2 = res
+                        profile += ` & ${waifu2.name} KODE ${user.waifu2}`
+                    }
                 } else {
                     profile += `
 │⭔ Married With : No one yet`
