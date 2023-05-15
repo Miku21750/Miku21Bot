@@ -9427,7 +9427,7 @@ ${date}
 │⭔ Money        : ${user.money} MIKO
 │⭔ Job          : ${user.job}
 │⭔ Job Level    : ${user.joblevel}`
-                if(user.coupleUser !== ''){
+                if(user.coupleUser !== '' || user.coupleUser == undefined){
                     profile +=`
 │⭔ Pacar      : @${user.coupleUser.split`@`[0]}
                     `
@@ -9436,11 +9436,11 @@ ${date}
 │⭔ Pacar      : Anime
                     `
                 }
-                if (user.waifu !== null) {
+                if (user.waifu !== null || user.waifu == undefined) {
                     profile += `
 │⭔ Married      : ${user.nikah}
 │⭔ Married With : ${waifu.name} KODE ${user.waifu}`
-                    if(user.waifu2 !== null){
+                    if(user.waifu2 !== null || user.waifu2 == undefined){
                         let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu2}`)
                         let res = anu.data
                         waifu2 = res
