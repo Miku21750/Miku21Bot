@@ -4202,6 +4202,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     let menst = [global.db.data.users[key].number]
                     //console.log(global.db.data.users[key].waifu, waifu.mal_id)
                     if (global.db.data.users[key].waifu == waifu.mal_id) return hisoka.sendText(m.chat, `Waifu/Husbu sudah diclaim oleh ${global.db.data.users[key].name} @${global.db.data.users[key].number.split('@')[0]}`, m, { mentions: menst })
+                    if (global.db.data.users[key].waifu2 == waifu.mal_id) return hisoka.sendText(m.chat, `Waifu/Husbu sudah diclaim oleh ${global.db.data.users[key].name} @${global.db.data.users[key].number.split('@')[0]}`, m, { mentions: menst })
                 }
                 // user.waifu = waifu.mal_id
                 if(user.waifu != null){
@@ -4332,6 +4333,11 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     let menst = [global.db.data.users[key].number]
                     //console.log(global.db.data.users[key].waifu, waifu.mal_id)
                     if (global.db.data.users[key].waifu == waifu.mal_id) {
+                        claim = true
+                        user = global.db.data.users[key]
+                        num.push(key)
+                        number = key
+                    }else if (global.db.data.users[key].waifu2 == waifu.mal_id) {
                         claim = true
                         user = global.db.data.users[key]
                         num.push(key)
