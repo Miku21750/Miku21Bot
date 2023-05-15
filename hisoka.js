@@ -1335,14 +1335,14 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                         if (global.db.data.users[m.sender].money >= potion * count) {
                                             global.db.data.users[m.sender].money -= potion * count
                                             global.db.data.users[m.sender].potion += count * 1
-                                            hisoka.sendText(m.chat, `Succes membeli ${count} Potion dengan harga ${potion * count} MIKO\n\nGunakan potion dengan ketik: *${prefix}use potion <jumlah>*`, m)
-                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Potion dengan harga ${potion * count} MIKO`,)
+                                            hisoka.sendText(m.chat, `Succes membeli ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(potion * count)} MIKO\n\nGunakan potion dengan ketik: *${prefix}use potion <jumlah>*`, m)
+                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(potion * count)} MIKO`,)
                                         break
                                     case 'diamond':
                                         if (global.db.data.users[m.sender].money >= Bdiamond * count) {
                                             global.db.data.users[m.sender].diamond += count * 1
                                             global.db.data.users[m.sender].money -= Bdiamond * count
-                                            hisoka.sendText(m.chat, `Succes membeli ${count} Diamond dengan harga ${Bdiamond * count} MIKO`, m)
+                                            hisoka.sendText(m.chat, `Succes membeli ${count} Diamond dengan harga ${new Intl.NumberFormat('id-ID').format(Bdiamond * count)} MIKO`, m)
                                         } else hisoka.sendText(m.chat, `MIKO anda tidak cukup`, m)
 
                                         break
@@ -1350,32 +1350,32 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                         if (global.db.data.users[m.sender].money >= Bcommon * count) {
                                             global.db.data.users[m.sender].common += count * 1
                                             global.db.data.users[m.sender].money -= Bcommon * count
-                                            hisoka.sendText(m.chat, `Succes membeli ${count} Common crate dengan harga ${Bcommon * count} MIKO`, m)
-                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Common crate dengan harga ${Bcommon * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open common*`, m)
+                                            hisoka.sendText(m.chat, `Succes membeli ${count} Common crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bcommon * count)} MIKO`, m)
+                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Common crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bcommon * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open common*`, m)
 
                                         break
                                     case 'uncommon':
                                         if (global.db.data.users[m.sender].money >= Buncommon * count) {
                                             global.db.data.users[m.sender].uncommon += count * 1
                                             global.db.data.users[m.sender].money -= Buncommon * count
-                                            hisoka.sendText(m.chat, `Succes membeli ${count} Uncommon crate dengan harga ${Buncommon * count} MIKO`, m)
-                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Uncommon crate dengan harga ${Buncommon * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open uncommon*`, m)
+                                            hisoka.sendText(m.chat, `Succes membeli ${count} Uncommon crate dengan harga ${new Intl.NumberFormat('id-ID').format(Buncommon * count)} MIKO`, m)
+                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Uncommon crate dengan harga ${new Intl.NumberFormat('id-ID').format(Buncommon * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open uncommon*`, m)
 
                                         break
                                     case 'mythic':
                                         if (global.db.data.users[m.sender].money >= Bmythic * count) {
                                             global.db.data.users[m.sender].mythic += count * 1
                                             global.db.data.users[m.sender].money -= Bmythic * count
-                                            hisoka.sendText(m.chat, `Succes membeli ${count} Mythic crate dengan harga ${Bmythic * count} MIKO`, m)
-                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Mythic crate dengan harga ${Bmythic * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open mythic*`, m)
+                                            hisoka.sendText(m.chat, `Succes membeli ${count} Mythic crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bmythic * count)} MIKO`, m)
+                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Mythic crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bmythic * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open mythic*`, m)
 
                                         break
                                     case 'legendary':
                                         if (global.db.data.users[m.sender].money >= Blegendary * count) {
                                             global.db.data.users[m.sender].legendary += count * 1
                                             global.db.data.users[m.sender].money -= Blegendary * count
-                                            hisoka.sendText(m.chat, `Succes membeli ${count} Legendary crate dengan harga ${Blegendary * count} MIKO`, m)
-                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Legendary crate dengan harga ${Blegendary * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open legendary*`, m)
+                                            hisoka.sendText(m.chat, `Succes membeli ${count} Legendary crate dengan harga ${new Intl.NumberFormat('id-ID').format(Blegendary * count)} MIKO`, m)
+                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Legendary crate dengan harga ${new Intl.NumberFormat('id-ID').format(Blegendary * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open legendary*`, m)
 
                                         break
 
@@ -1383,16 +1383,16 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                         if (global.db.data.users[m.sender].money >= Bpetcrate * count) {
                                             global.db.data.users[m.sender].pet += count * 1
                                             global.db.data.users[m.sender].money -= Bpetcrate * count
-                                            hisoka.sendText(m.chat, `Succes membeli ${count} Pet Crate dengan harga ${Bpetcrate * count} MIKO`, m)
-                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Pet Crate dengan harga ${Bpetcrate * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open petcrate*`, m)
+                                            hisoka.sendText(m.chat, `Succes membeli ${count} Pet Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bpetcrate * count)} MIKO`, m)
+                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Pet Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bpetcrate * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open petcrate*`, m)
                                     }
                                         break
                                     case 'sampah':
                                         if (global.db.data.users[m.sender].money >= Bsampah * count) {
                                             global.db.data.users[m.sender].sampah += count * 1
                                             global.db.data.users[m.sender].money -= Bsampah * count
-                                            hisoka.sendText(m.chat, `Succes membeli ${count} Sampah dengan harga ${Bsampah * count} MIKO`, m)
-                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Sampah dengan harga ${Bsampah * count} MIKO`.trim(), m)
+                                            hisoka.sendText(m.chat, `Succes membeli ${count} Sampah dengan harga ${new Intl.NumberFormat('id-ID').format(Bsampah * count)} MIKO`, m)
+                                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Sampah dengan harga ${new Intl.NumberFormat('id-ID').format(Bsampah * count)} MIKO`.trim(), m)
 
                                         break
                                     case 'armor':
@@ -1400,8 +1400,8 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                         if (global.db.data.users[m.sender].money > armor) {
                                             global.db.data.users[m.sender].armor += 1
                                             global.db.data.users[m.sender].money -= armor * 1
-                                            hisoka.sendText(m.chat, `Succes membeli armor seharga ${armor} MIKO`, m)
-                                        } else hisoka.sendText(m.chat, `uang mu tidak cukup untuk membeli armor seharga ${armor} MIKO`, m)
+                                            hisoka.sendText(m.chat, `Succes membeli armor seharga ${new Intl.NumberFormat('id-ID').format(armor)} MIKO`, m)
+                                        } else hisoka.sendText(m.chat, `uang mu tidak cukup untuk membeli armor seharga ${new Intl.NumberFormat('id-ID').format(armor)} MIKO`, m)
 
                                         break
                                     default:
@@ -1414,49 +1414,49 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                         if (global.db.data.users[m.sender].potion >= count * 1) {
                                             global.db.data.users[m.sender].money += Spotion * count
                                             global.db.data.users[m.sender].potion -= count * 1
-                                            hisoka.sendText(m.chat, `Succes menjual ${count} Potion dengan harga ${Spotion * count} MIKO`.trim(), m)
+                                            hisoka.sendText(m.chat, `Succes menjual ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(Spotion * count)} MIKO`.trim(), m)
                                         } else hisoka.sendText(m.chat, `Potion kamu tidak cukup`.trim(), m)
                                         break
                                     case 'common':
                                         if (global.db.data.users[m.sender].common >= count * 1) {
                                             global.db.data.users[m.sender].money += Scommon * count
                                             global.db.data.users[m.sender].common -= count * 1
-                                            hisoka.sendText(m.chat, `Succes menjual ${count} Common Crate dengan harga ${Scommon * count} MIKO`.trim(), m)
+                                            hisoka.sendText(m.chat, `Succes menjual ${count} Common Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Scommon * count)} MIKO`.trim(), m)
                                         } else hisoka.sendText(m.chat, `Common Crate kamu tidak cukup`.trim(), m)
                                         break
                                     case 'uncommon':
                                         if (global.db.data.users[m.sender].uncommon >= count * 1) {
                                             global.db.data.users[m.sender].money += Suncommon * count
                                             global.db.data.users[m.sender].uncommon -= count * 1
-                                            hisoka.sendText(m.chat, `Succes menjual ${count} Uncommon Crate dengan harga ${Suncommon * count} MIKO`.trim(), m)
+                                            hisoka.sendText(m.chat, `Succes menjual ${count} Uncommon Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Suncommon * count)} MIKO`.trim(), m)
                                         } else hisoka.sendText(m.chat, `Uncommon Crate kamu tidak cukup`.trim(), m)
                                         break
                                     case 'mythic':
                                         if (global.db.data.users[m.sender].mythic >= count * 1) {
                                             global.db.data.users[m.sender].money += Smythic * count
                                             global.db.data.users[m.sender].mythic -= count * 1
-                                            hisoka.sendText(m.chat, `Succes menjual ${count} Mythic Crate dengan harga ${Smythic * count} MIKO`.trim(), m)
+                                            hisoka.sendText(m.chat, `Succes menjual ${count} Mythic Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Smythic * count)} MIKO`.trim(), m)
                                         } else hisoka.sendText(m.chat, `Mythic Crate kamu tidak cukup`.trim(), m)
                                         break
                                     case 'legendary':
                                         if (global.db.data.users[m.sender].legendary >= count * 1) {
                                             global.db.data.users[m.sender].money += Slegendary * count
                                             global.db.data.users[m.sender].legendary -= count * 1
-                                            hisoka.sendText(m.chat, `Succes menjual ${count} Legendary Crate dengan harga ${Slegendary * count} MIKO`.trim(), m)
+                                            hisoka.sendText(m.chat, `Succes menjual ${count} Legendary Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Slegendary * count)} MIKO`.trim(), m)
                                         } else hisoka.sendText(m.chat, `Legendary Crate kamu tidak cukup`.trim(), m)
                                         break
                                     case 'sampah':
                                         if (global.db.data.users[m.sender].sampah >= count * 1) {
                                             global.db.data.users[m.sender].sampah -= count * 1
                                             global.db.data.users[m.sender].money += Ssampah * count
-                                            hisoka.sendText(m.chat, `Succes menjual ${count} sampah, dan anda mendapatkan ${Ssampah * count} MIKO`, m)
+                                            hisoka.sendText(m.chat, `Succes menjual ${count} sampah, dan anda mendapatkan ${new Intl.NumberFormat('id-ID').format(Ssampah * count)} MIKO`, m)
                                         } else hisoka.sendText(m.chat, `Sampah anda tidak cukup`, m)
                                         break
                                     case 'diamond':
                                         if (global.db.data.users[m.sender].diamond >= count * 1) {
                                             global.db.data.users[m.sender].diamond -= count * 1
                                             global.db.data.users[m.sender].money += Sdiamond * count
-                                            hisoka.sendText(m.chat, `Succes menjual ${count} Diamond, dan anda mendapatkan ${Sdiamond * count} MIKO`, m)
+                                            hisoka.sendText(m.chat, `Succes menjual ${count} Diamond, dan anda mendapatkan ${new Intl.NumberFormat('id-ID').format(Sdiamond * count)} MIKO`, m)
                                         } else hisoka.sendText(m.chat, `Diamond anda tidak cukup`, m)
                                         break
                                     default:
@@ -1473,15 +1473,15 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 if (global.db.data.users[m.sender].money >= potion * count) {
                                     global.db.data.users[m.sender].money -= potion * count
                                     global.db.data.users[m.sender].potion += count * 1
-                                    hisoka.sendText(m.chat, `Succes membeli ${count} Potion dengan harga ${potion * count} MIKO\n\nGunakan potion dengan ketik: *${prefix}   <jumlah>*`, m)
-                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Potion dengan harga ${potion * count} MIKO`, m)
+                                    hisoka.sendText(m.chat, `Succes membeli ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(potion * count)} MIKO\n\nGunakan potion dengan ketik: *${prefix}   <jumlah>*`, m)
+                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(potion * count)} MIKO`, m)
 
                                 break
                             case 'diamond':
                                 if (global.db.data.users[m.sender].money >= Bdiamond * count) {
                                     global.db.data.users[m.sender].diamond += count * 1
                                     global.db.data.users[m.sender].money -= Bdiamond * count
-                                    hisoka.sendText(m.chat, `Succes membeli ${count} Diamond dengan harga ${Bdiamond * count} MIKO`, m)
+                                    hisoka.sendText(m.chat, `Succes membeli ${count} Diamond dengan harga ${new Intl.NumberFormat('id-ID').format(Bdiamond * count)} MIKO`, m)
                                 } else hisoka.sendText(m.chat, `MIKO anda tidak cukup`, m)
 
                                 break
@@ -1489,40 +1489,40 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 if (global.db.data.users[m.sender].money >= Bcommon * count) {
                                     global.db.data.users[m.sender].common += count * 1
                                     global.db.data.users[m.sender].money -= Bcommon * count
-                                    hisoka.sendText(m.chat, `Succes membeli ${count} Common crate dengan harga ${Bcommon * count} MIKO`, m)
-                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Common crate dengan harga ${Bcommon * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open common*`, m)
+                                    hisoka.sendText(m.chat, `Succes membeli ${count} Common crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bcommon * count)} MIKO`, m)
+                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Common crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bcommon * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open common*`, m)
 
                                 break
                             case 'uncommon':
                                 if (global.db.data.users[m.sender].money >= Buncommon * count) {
                                     global.db.data.users[m.sender].uncommon += count * 1
                                     global.db.data.users[m.sender].money -= Buncommon * count
-                                    hisoka.sendText(m.chat, `Succes membeli ${count} Uncommon crate dengan harga ${Buncommon * count} MIKO`, m)
-                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Uncommon crate dengan harga ${Buncommon * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open uncommon*`, m)
+                                    hisoka.sendText(m.chat, `Succes membeli ${count} Uncommon crate dengan harga ${new Intl.NumberFormat('id-ID').format(Buncommon * count)} MIKO`, m)
+                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Uncommon crate dengan harga ${new Intl.NumberFormat('id-ID').format(Buncommon * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open uncommon*`, m)
 
                                 break
                             case 'mythic':
                                 if (global.db.data.users[m.sender].money >= Bmythic * count) {
                                     global.db.data.users[m.sender].mythic += count * 1
                                     global.db.data.users[m.sender].money -= Bmythic * count
-                                    hisoka.sendText(m.chat, `Succes membeli ${count} Mythic crate dengan harga ${Bmythic * count} MIKO`, m)
-                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Mythic crate dengan harga ${Bmythic * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open mythic*`, m)
+                                    hisoka.sendText(m.chat, `Succes membeli ${count} Mythic crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bmythic * count)} MIKO`, m)
+                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Mythic crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bmythic * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open mythic*`, m)
 
                                 break
                             case 'legendary':
                                 if (global.db.data.users[m.sender].money >= Blegendary * count) {
                                     global.db.data.users[m.sender].legendary += count * 1
                                     global.db.data.users[m.sender].money -= Blegendary * count
-                                    hisoka.sendText(m.chat, `Succes membeli ${count} Legendary crate dengan harga ${Blegendary * count} MIKO`, m)
-                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Legendary crate dengan harga ${Blegendary * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open legendary*`, m)
+                                    hisoka.sendText(m.chat, `Succes membeli ${count} Legendary crate dengan harga ${new Intl.NumberFormat('id-ID').format(Blegendary * count)} MIKO`, m)
+                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Legendary crate dengan harga ${new Intl.NumberFormat('id-ID').format(Blegendary * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open legendary*`, m)
 
                                 break
                             case 'sampah':
                                 if (global.db.data.users[m.sender].money >= Bsampah * count) {
                                     global.db.data.users[m.sender].sampah += count * 1
                                     global.db.data.users[m.sender].money -= Bsampah * count
-                                    hisoka.sendText(m.chat, `Succes membeli ${count} Sampah dengan harga ${Bsampah * count} MIKO`, m)
-                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Sampah dengan harga ${Bsampah * count} MIKO`.trim(), m)
+                                    hisoka.sendText(m.chat, `Succes membeli ${count} Sampah dengan harga ${new Intl.NumberFormat('id-ID').format(Bsampah * count)} MIKO`, m)
+                                } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Sampah dengan harga ${new Intl.NumberFormat('id-ID').format(Bsampah * count)} MIKO`.trim(), m)
 
                                 break
                             case 'armor':
@@ -1530,9 +1530,9 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 if (global.db.data.users[m.sender].money > armor * 1) {
                                     global.db.data.users[m.sender].armor += 1
                                     global.db.data.users[m.sender].money -= armor * 1
-                                    hisoka.sendText(m.chat, `Succes membeli armor seharga ${armor} MIKO`, m)
+                                    hisoka.sendText(m.chat, `Succes membeli armor seharga ${new Intl.NumberFormat('id-ID').format(armor)} MIKO`, m)
 
-                                } else hisoka.sendText(m.chat, `uang mu tidak cukup untuk membeli armor seharga ${armor} MIKO`, m)
+                                } else hisoka.sendText(m.chat, `uang mu tidak cukup untuk membeli armor seharga ${new Intl.NumberFormat('id-ID').format(armor)} MIKO`, m)
 
                                 break
                             default:
@@ -1545,49 +1545,49 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 if (global.db.data.users[m.sender].potion >= count * 1) {
                                     global.db.data.users[m.sender].money += Spotion * count
                                     global.db.data.users[m.sender].potion -= count * 1
-                                    hisoka.sendText(m.chat, `Succes menjual ${count} Potion dengan harga ${Spotion * count} MIKO`.trim(), m)
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(Spotion * count)} MIKO`.trim(), m)
                                 } else hisoka.sendText(m.chat, `Potion kamu tidak cukup`.trim(), m)
                                 break
                             case 'common':
                                 if (global.db.data.users[m.sender].common >= count * 1) {
                                     global.db.data.users[m.sender].money += Scommon * count
                                     global.db.data.users[m.sender].common -= count * 1
-                                    hisoka.sendText(m.chat, `Succes menjual ${count} Common Crate dengan harga ${Scommon * count} MIKO`.trim(), m)
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Common Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Scommon * count)} MIKO`.trim(), m)
                                 } else hisoka.sendText(m.chat, `Common Crate kamu tidak cukup`.trim(), m)
                                 break
                             case 'uncommon':
                                 if (global.db.data.users[m.sender].uncommon >= count * 1) {
                                     global.db.data.users[m.sender].money += Suncommon * count
                                     global.db.data.users[m.sender].uncommon -= count * 1
-                                    hisoka.sendText(m.chat, `Succes menjual ${count} Uncommon Crate dengan harga ${Suncommon * count} MIKO`.trim(), m)
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Uncommon Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Suncommon * count)} MIKO`.trim(), m)
                                 } else hisoka.sendText(m.chat, `Uncommon Crate kamu tidak cukup`.trim(), m)
                                 break
                             case 'mythic':
                                 if (global.db.data.users[m.sender].mythic >= count * 1) {
                                     global.db.data.users[m.sender].money += Smythic * count
                                     global.db.data.users[m.sender].mythic -= count * 1
-                                    hisoka.sendText(m.chat, `Succes menjual ${count} Mythic Crate dengan harga ${Smythic * count} MIKO`.trim(), m)
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Mythic Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Smythic * count)} MIKO`.trim(), m)
                                 } else hisoka.sendText(m.chat, `Mythic Crate kamu tidak cukup`.trim(), m)
                                 break
                             case 'legendary':
                                 if (global.db.data.users[m.sender].legendary >= count * 1) {
                                     global.db.data.users[m.sender].money += Slegendary * count
                                     global.db.data.users[m.sender].legendary -= count * 1
-                                    hisoka.sendText(m.chat, `Succes menjual ${count} Legendary Crate dengan harga ${Slegendary * count} MIKO`.trim(), m)
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Legendary Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Slegendary * count)} MIKO`.trim(), m)
                                 } else hisoka.sendText(m.chat, `Legendary Crate kamu tidak cukup`.trim(), m)
                                 break
                             case 'sampah':
                                 if (global.db.data.users[m.sender].sampah >= count * 1) {
                                     global.db.data.users[m.sender].sampah -= count * 1
                                     global.db.data.users[m.sender].money += Ssampah * count
-                                    hisoka.sendText(m.chat, `Succes menjual ${count} sampah, dan anda mendapatkan ${Ssampah * count} MIKO`.trim(), m)
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} sampah, dan anda mendapatkan ${new Intl.NumberFormat('id-ID').format(Ssampah * count)} MIKO`.trim(), m)
                                 } else hisoka.sendText(m.chat, `Sampah anda tidak cukup`.trim(), m)
                                 break
                             case 'diamond':
                                 if (global.db.data.users[m.sender].diamond >= count * 1) {
                                     global.db.data.users[m.sender].diamond -= count * 1
                                     global.db.data.users[m.sender].money += Sdiamond * count
-                                    hisoka.sendText(m.chat, `Succes menjual ${count} Diamond, dan anda mendapatkan ${Sdiamond * count} MIKO`, m)
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Diamond, dan anda mendapatkan ${new Intl.NumberFormat('id-ID').format(Sdiamond * count)} MIKO`, m)
                                 } else hisoka.sendText(m.chat, `Diamond anda tidak cukup`, m)
                                 break
                             default:
@@ -1617,15 +1617,15 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         if (global.db.data.users[m.sender].money >= potion * count) {
                             global.db.data.users[m.sender].money -= potion * count
                             global.db.data.users[m.sender].potion += count * 1
-                            hisoka.sendText(m.chat, `Succes membeli ${count} Potion dengan harga ${potion * count} MIKO\n\nGunakan potion dengan ketik: *${prefix}   <jumlah>*`, m)
-                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Potion dengan harga ${potion * count} MIKO`, m)
+                            hisoka.sendText(m.chat, `Succes membeli ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(potion * count)} MIKO\n\nGunakan potion dengan ketik: *${prefix}   <jumlah>*`, m)
+                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(potion * count)} MIKO`, m)
 
                         break
                     case 'diamond':
                         if (global.db.data.users[m.sender].money >= Bdiamond * count) {
                             global.db.data.users[m.sender].diamond += count * 1
                             global.db.data.users[m.sender].money -= Bdiamond * count
-                            hisoka.sendText(m.chat, `Succes membeli ${count} Diamond dengan harga ${Bdiamond * count} MIKO`, m)
+                            hisoka.sendText(m.chat, `Succes membeli ${count} Diamond dengan harga ${new Intl.NumberFormat('id-ID').format(Bdiamond * count)} MIKO`, m)
                         } else hisoka.sendText(m.chat, `MIKO anda tidak cukup`, m)
 
                         break
@@ -1633,40 +1633,40 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         if (global.db.data.users[m.sender].money >= Bcommon * count) {
                             global.db.data.users[m.sender].common += count * 1
                             global.db.data.users[m.sender].money -= Bcommon * count
-                            hisoka.sendText(m.chat, `Succes membeli ${count} Common crate dengan harga ${Bcommon * count} MIKO`, m)
-                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Common crate dengan harga ${Bcommon * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open common*`, m)
+                            hisoka.sendText(m.chat, `Succes membeli ${count} Common crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bcommon * count)} MIKO`, m)
+                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Common crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bcommon * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open common*`, m)
 
                         break
                     case 'uncommon':
                         if (global.db.data.users[m.sender].money >= Buncommon * count) {
                             global.db.data.users[m.sender].uncommon += count * 1
                             global.db.data.users[m.sender].money -= Buncommon * count
-                            hisoka.sendText(m.chat, `Succes membeli ${count} Uncommon crate dengan harga ${Buncommon * count} MIKO`, m)
-                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Uncommon crate dengan harga ${Buncommon * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open uncommon*`, m)
+                            hisoka.sendText(m.chat, `Succes membeli ${count} Uncommon crate dengan harga ${new Intl.NumberFormat('id-ID').format(Buncommon * count)} MIKO`, m)
+                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Uncommon crate dengan harga ${new Intl.NumberFormat('id-ID').format(Buncommon * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open uncommon*`, m)
 
                         break
                     case 'mythic':
                         if (global.db.data.users[m.sender].money >= Bmythic * count) {
                             global.db.data.users[m.sender].mythic += count * 1
                             global.db.data.users[m.sender].money -= Bmythic * count
-                            hisoka.sendText(m.chat, `Succes membeli ${count} Mythic crate dengan harga ${Bmythic * count} MIKO`, m)
-                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Mythic crate dengan harga ${Bmythic * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open mythic*`, m)
+                            hisoka.sendText(m.chat, `Succes membeli ${count} Mythic crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bmythic * count)} MIKO`, m)
+                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Mythic crate dengan harga ${new Intl.NumberFormat('id-ID').format(Bmythic * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open mythic*`, m)
 
                         break
                     case 'legendary':
                         if (global.db.data.users[m.sender].money >= Blegendary * count) {
                             global.db.data.users[m.sender].legendary += count * 1
                             global.db.data.users[m.sender].money -= Blegendary * count
-                            hisoka.sendText(m.chat, `Succes membeli ${count} Legendary crate dengan harga ${Blegendary * count} MIKO`, m)
-                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Legendary crate dengan harga ${Blegendary * count} MIKO\n\nBuka crate dengan ketik: *${prefix}open legendary*`, m)
+                            hisoka.sendText(m.chat, `Succes membeli ${count} Legendary crate dengan harga ${new Intl.NumberFormat('id-ID').format(Blegendary * count)} MIKO`, m)
+                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Legendary crate dengan harga ${new Intl.NumberFormat('id-ID').format(Blegendary * count)} MIKO\n\nBuka crate dengan ketik: *${prefix}open legendary*`, m)
 
                         break
                     case 'sampah':
                         if (global.db.data.users[m.sender].money >= Bsampah * count) {
                             global.db.data.users[m.sender].sampah += count * 1
                             global.db.data.users[m.sender].money -= Bsampah * count
-                            hisoka.sendText(m.chat, `Succes membeli ${count} Sampah dengan harga ${Bsampah * count} MIKO`, m)
-                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Sampah dengan harga ${Bsampah * count} MIKO`.trim(), m)
+                            hisoka.sendText(m.chat, `Succes membeli ${count} Sampah dengan harga ${new Intl.NumberFormat('id-ID').format(Bsampah * count)} MIKO`, m)
+                        } else hisoka.sendText(m.chat, `Uang anda tidak cukup untuk membeli ${count} Sampah dengan harga ${new Intl.NumberFormat('id-ID').format(Bsampah * count)} MIKO`.trim(), m)
 
                         break
                     case 'armor':
@@ -1674,9 +1674,9 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         if (global.db.data.users[m.sender].money > armor * 1) {
                             global.db.data.users[m.sender].armor += 1
                             global.db.data.users[m.sender].money -= armor * 1
-                            hisoka.sendText(m.chat, `Succes membeli armor seharga ${armor} MIKO`, m)
+                            hisoka.sendText(m.chat, `Succes membeli armor seharga ${new Intl.NumberFormat('id-ID').format(armor)} MIKO`, m)
 
-                        } else hisoka.sendText(m.chat, `uang mu tidak cukup untuk membeli armor seharga ${armor} MIKO`, m)
+                        } else hisoka.sendText(m.chat, `uang mu tidak cukup untuk membeli armor seharga ${new Intl.NumberFormat('id-ID').format(armor)} MIKO`, m)
 
                         break
                     default:
@@ -1693,54 +1693,54 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
                 switch (type) {
                     case 'potion':
-                        if (global.db.data.users[m.sender].potion >= count * 1) {
-                            global.db.data.users[m.sender].money += Spotion * count
-                            global.db.data.users[m.sender].potion -= count * 1
-                            hisoka.sendText(m.chat, `Succes menjual ${count} Potion dengan harga ${Spotion * count} MIKO`.trim(), m)
-                        } else hisoka.sendText(m.chat, `Potion kamu tidak cukup`.trim(), m)
-                        break
-                    case 'common':
-                        if (global.db.data.users[m.sender].common >= count * 1) {
-                            global.db.data.users[m.sender].money += Scommon * count
-                            global.db.data.users[m.sender].common -= count * 1
-                            hisoka.sendText(m.chat, `Succes menjual ${count} Common Crate dengan harga ${Scommon * count} MIKO`.trim(), m)
-                        } else hisoka.sendText(m.chat, `Common Crate kamu tidak cukup`.trim(), m)
-                        break
-                    case 'uncommon':
-                        if (global.db.data.users[m.sender].uncommon >= count * 1) {
-                            global.db.data.users[m.sender].money += Suncommon * count
-                            global.db.data.users[m.sender].uncommon -= count * 1
-                            hisoka.sendText(m.chat, `Succes menjual ${count} Uncommon Crate dengan harga ${Suncommon * count} MIKO`.trim(), m)
-                        } else hisoka.sendText(m.chat, `Uncommon Crate kamu tidak cukup`.trim(), m)
-                        break
-                    case 'mythic':
-                        if (global.db.data.users[m.sender].mythic >= count * 1) {
-                            global.db.data.users[m.sender].money += Smythic * count
-                            global.db.data.users[m.sender].mythic -= count * 1
-                            hisoka.sendText(m.chat, `Succes menjual ${count} Mythic Crate dengan harga ${Smythic * count} MIKO`.trim(), m)
-                        } else hisoka.sendText(m.chat, `Mythic Crate kamu tidak cukup`.trim(), m)
-                        break
-                    case 'legendary':
-                        if (global.db.data.users[m.sender].legendary >= count * 1) {
-                            global.db.data.users[m.sender].money += Slegendary * count
-                            global.db.data.users[m.sender].legendary -= count * 1
-                            hisoka.sendText(m.chat, `Succes menjual ${count} Legendary Crate dengan harga ${Slegendary * count} MIKO`.trim(), m)
-                        } else hisoka.sendText(m.chat, `Legendary Crate kamu tidak cukup`.trim(), m)
-                        break
-                    case 'sampah':
-                        if (global.db.data.users[m.sender].sampah >= count * 1) {
-                            global.db.data.users[m.sender].sampah -= count * 1
-                            global.db.data.users[m.sender].money += Ssampah * count
-                            hisoka.sendText(m.chat, `Succes menjual ${count} sampah, dan anda mendapatkan ${Ssampah * count} MIKO`.trim(), m)
-                        } else hisoka.sendText(m.chat, `Sampah anda tidak cukup`.trim(), m)
-                        break
-                    case 'diamond':
-                        if (global.db.data.users[m.sender].diamond >= count * 1) {
-                            global.db.data.users[m.sender].diamond -= count * 1
-                            global.db.data.users[m.sender].money += Sdiamond * count
-                            hisoka.sendText(m.chat, `Succes menjual ${count} Diamond, dan anda mendapatkan ${Sdiamond * count} MIKO`, m)
-                        } else hisoka.sendText(m.chat, `Diamond anda tidak cukup`, m)
-                        break
+                                if (global.db.data.users[m.sender].potion >= count * 1) {
+                                    global.db.data.users[m.sender].money += Spotion * count
+                                    global.db.data.users[m.sender].potion -= count * 1
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Potion dengan harga ${new Intl.NumberFormat('id-ID').format(Spotion * count)} MIKO`.trim(), m)
+                                } else hisoka.sendText(m.chat, `Potion kamu tidak cukup`.trim(), m)
+                                break
+                            case 'common':
+                                if (global.db.data.users[m.sender].common >= count * 1) {
+                                    global.db.data.users[m.sender].money += Scommon * count
+                                    global.db.data.users[m.sender].common -= count * 1
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Common Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Scommon * count)} MIKO`.trim(), m)
+                                } else hisoka.sendText(m.chat, `Common Crate kamu tidak cukup`.trim(), m)
+                                break
+                            case 'uncommon':
+                                if (global.db.data.users[m.sender].uncommon >= count * 1) {
+                                    global.db.data.users[m.sender].money += Suncommon * count
+                                    global.db.data.users[m.sender].uncommon -= count * 1
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Uncommon Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Suncommon * count)} MIKO`.trim(), m)
+                                } else hisoka.sendText(m.chat, `Uncommon Crate kamu tidak cukup`.trim(), m)
+                                break
+                            case 'mythic':
+                                if (global.db.data.users[m.sender].mythic >= count * 1) {
+                                    global.db.data.users[m.sender].money += Smythic * count
+                                    global.db.data.users[m.sender].mythic -= count * 1
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Mythic Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Smythic * count)} MIKO`.trim(), m)
+                                } else hisoka.sendText(m.chat, `Mythic Crate kamu tidak cukup`.trim(), m)
+                                break
+                            case 'legendary':
+                                if (global.db.data.users[m.sender].legendary >= count * 1) {
+                                    global.db.data.users[m.sender].money += Slegendary * count
+                                    global.db.data.users[m.sender].legendary -= count * 1
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Legendary Crate dengan harga ${new Intl.NumberFormat('id-ID').format(Slegendary * count)} MIKO`.trim(), m)
+                                } else hisoka.sendText(m.chat, `Legendary Crate kamu tidak cukup`.trim(), m)
+                                break
+                            case 'sampah':
+                                if (global.db.data.users[m.sender].sampah >= count * 1) {
+                                    global.db.data.users[m.sender].sampah -= count * 1
+                                    global.db.data.users[m.sender].money += Ssampah * count
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} sampah, dan anda mendapatkan ${new Intl.NumberFormat('id-ID').format(Ssampah * count)} MIKO`.trim(), m)
+                                } else hisoka.sendText(m.chat, `Sampah anda tidak cukup`.trim(), m)
+                                break
+                            case 'diamond':
+                                if (global.db.data.users[m.sender].diamond >= count * 1) {
+                                    global.db.data.users[m.sender].diamond -= count * 1
+                                    global.db.data.users[m.sender].money += Sdiamond * count
+                                    hisoka.sendText(m.chat, `Succes menjual ${count} Diamond, dan anda mendapatkan ${new Intl.NumberFormat('id-ID').format(Sdiamond * count)} MIKO`, m)
+                                } else hisoka.sendText(m.chat, `Diamond anda tidak cukup`, m)
+                                break
                     default:
                         return hisoka.sendText(m.chat, `Apa yang mau dijual? cek inv`, m)
                 }
@@ -1797,7 +1797,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 
             hph: *${hp}*
             Armor: *${armor == 0 ? 'Tidak Punya' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}*\n
-            MIKO: *${money}*
+            MIKO: *${ new Intl.NumberFormat('id-ID').format(money)}*
             Level: *${level}*
             Exp: *${exp}*
 
@@ -1977,7 +1977,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ce = (_ce * 1)
                                 let cu = (_cu * 1)
                                 let Hcom = `
-            Anda telah membuka *Common crate* dan mendapatkan:${cm > 0 ? `\nMIKO: ${cm}` : ''}${ce > 0 ? `\nExp: ${ce} *exp*` : ''}${cp > 0 ? `\nPotion: ${cp} *potion*` : ''}${cc > 0 ? `\ncommon crate: ${cc} *crate*` : ''}${cu > 0 ? `\nUncommon crate: ${cu} *crate*` : ''}
+            Anda telah membuka *Common crate* dan mendapatkan:${cm > 0 ? `\nMIKO: $new Intl.NumberFormat('id-ID').format(cm)}` : ''}${ce > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(ce)} *exp*` : ''}${cp > 0 ? `\nPotion: ${cp} *potion*` : ''}${cc > 0 ? `\ncommon crate: ${cc} *crate*` : ''}${cu > 0 ? `\nUncommon crate: ${cu} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].common >= 1) {
                                     global.db.data.users[m.sender].common -= 1
@@ -2001,7 +2001,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ce1 = (_ce1 * 1)
                                 let cu1 = (_cu1 * 1)
                                 let Hcom1 = `
-            Anda telah membuka *Common crate* dan mendapatkan:${cm1 > 0 ? `\nMIKO: ${cm1}` : ''}${ce1 > 0 ? `\nExp: ${ce1} *exp*` : ''}${cp1 > 0 ? `\nPotion: ${cp1} *potion*` : ''}${cc1 > 0 ? `\ncommon crate: ${cc1} *crate*` : ''}${cu1 > 0 ? `\nUncommon crate: ${cu1} *crate*` : ''}
+            Anda telah membuka *Common crate* dan mendapatkan:${cm1 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(cm1)}` : ''}${ce1 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(ce1)} *exp*` : ''}${cp1 > 0 ? `\nPotion: ${cp1} *potion*` : ''}${cc1 > 0 ? `\ncommon crate: ${cc1} *crate*` : ''}${cu1 > 0 ? `\nUncommon crate: ${cu1} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].common >= 10) {
                                     global.db.data.users[m.sender].common -= 10
@@ -2025,7 +2025,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ce2 = (_ce2 * 1)
                                 let cu2 = (_cu2 * 1)
                                 let Hcom2 = `
-            Anda telah membuka *Common crate* dan mendapatkan:${cm2 > 0 ? `\nMIKO: ${cm2}` : ''}${ce2 > 0 ? `\nExp: ${ce2} *exp*` : ''}${cp2 > 0 ? `\nPotion: ${cp2} *potion*` : ''}${cc2 > 0 ? `\ncommon crate: ${cc2} *crate*` : ''}${cu2 > 0 ? `\nUncommon crate: ${cu2} *crate*` : ''}
+            Anda telah membuka *Common crate* dan mendapatkan:${cm2 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(cm2)}` : ''}${ce2 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(ce2)} *exp*` : ''}${cp2 > 0 ? `\nPotion: ${cp2} *potion*` : ''}${cc2 > 0 ? `\ncommon crate: ${cc2} *crate*` : ''}${cu2 > 0 ? `\nUncommon crate: ${cu2} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].common >= 100) {
                                     global.db.data.users[m.sender].common -= 100
@@ -2049,7 +2049,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ce3 = (_ce3 * 1)
                                 let cu3 = (_cu3 * 1)
                                 let Hcom3 = `
-            Anda telah membuka *Common crate* dan mendapatkan:${cm3 > 0 ? `\nMIKO: ${cm3}` : ''}${ce3 > 0 ? `\nExp: ${ce3} *exp*` : ''}${cp3 > 0 ? `\nPotion: ${cp3} *potion*` : ''}${cc3 > 0 ? `\ncommon crate: ${cc3} *crate*` : ''}${cu3 > 0 ? `\nUncommon crate: ${cu3} *crate*` : ''}
+            Anda telah membuka *Common crate* dan mendapatkan:${cm3 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(cm3)}` : ''}${ce3 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(ce3)} *exp*` : ''}${cp3 > 0 ? `\nPotion: ${cp3} *potion*` : ''}${cc3 > 0 ? `\ncommon crate: ${cc3} *crate*` : ''}${cu3 > 0 ? `\nUncommon crate: ${cu3} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].common >= 1000) {
                                     global.db.data.users[m.sender].common -= 1000
@@ -2084,7 +2084,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let uu = (_uu * 1)
                                 let uc = (_uc * 1)
                                 let Hun = `
-            Anda telah membuka *Uncommon crate* dan mendapatkan:${um > 0 ? `\nMIKO: ${um}` : ''}${ue > 0 ? `\nExp: ${ue} *exp*` : ''}${ud > 0 ? `\nDiamond: ${ud} *diamond*` : ''}${up > 0 ? `\nPotion: ${up} *potion*` : ''}${uc > 0 ? `\nCommon crate: ${uc} *crate*` : ''}${uu > 0 ? `\nUncommon crate: ${uu} *crate*` : ''}
+            Anda telah membuka *Uncommon crate* dan mendapatkan:${um > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(um)}` : ''}${ue > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(ue)} *exp*` : ''}${ud > 0 ? `\nDiamond: ${ud} *diamond*` : ''}${up > 0 ? `\nPotion: ${up} *potion*` : ''}${uc > 0 ? `\nCommon crate: ${uc} *crate*` : ''}${uu > 0 ? `\nUncommon crate: ${uu} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].uncommon >= 1) {
                                     global.db.data.users[m.sender].uncommon -= 1
@@ -2117,7 +2117,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let uu1 = (_uu1 * 1)
                                 let uc1 = (_uc1 * 1)
                                 let Hun1 = `
-            Anda telah membuka *Uncommon crate* dan mendapatkan:${um1 > 0 ? `\nMIKO: ${um1}` : ''}${ue1 > 0 ? `\nExp: ${ue1} *exp*` : ''}${ud1 > 0 ? `\nDiamond: ${ud1} *diamond*` : ''}${up1 > 0 ? `\nPotion: ${up1} *potion*` : ''}${uc1 > 0 ? `\nCommon crate: ${uc1} *crate*` : ''}${uu1 > 0 ? `\nUncommon crate: ${uu1} *crate*` : ''}
+            Anda telah membuka *Uncommon crate* dan mendapatkan:${um1 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(um1)}` : ''}${ue1 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(ue1)} *exp*` : ''}${ud1 > 0 ? `\nDiamond: ${ud1} *diamond*` : ''}${up1 > 0 ? `\nPotion: ${up1} *potion*` : ''}${uc1 > 0 ? `\nCommon crate: ${uc1} *crate*` : ''}${uu1 > 0 ? `\nUncommon crate: ${uu1} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].uncommon >= 10) {
                                     global.db.data.users[m.sender].uncommon -= 10
@@ -2150,7 +2150,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let uu2 = (_uu2 * 1)
                                 let uc2 = (_uc2 * 1)
                                 let Hun2 = `
-            Anda telah membuka *Uncommon crate* dan mendapatkan:${um2 > 0 ? `\nMIKO: ${um2}` : ''}${ue2 > 0 ? `\nExp: ${ue2} *exp*` : ''}${ud2 > 0 ? `\nDiamond: ${ud2} *diamond*` : ''}${up2 > 0 ? `\nPotion: ${up2} *potion*` : ''}${uc2 > 0 ? `\nCommon crate: ${uc2} *crate*` : ''}${uu2 > 0 ? `\nUncommon crate: ${uu2} *crate*` : ''}
+            Anda telah membuka *Uncommon crate* dan mendapatkan:${um2 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(um2)}` : ''}${ue2 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(ue2)} *exp*` : ''}${ud2 > 0 ? `\nDiamond: ${ud2} *diamond*` : ''}${up2 > 0 ? `\nPotion: ${up2} *potion*` : ''}${uc2 > 0 ? `\nCommon crate: ${uc2} *crate*` : ''}${uu2 > 0 ? `\nUncommon crate: ${uu2} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].uncommon >= 100) {
                                     global.db.data.users[m.sender].uncommon -= 100
@@ -2183,7 +2183,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let uu3 = (_uu3 * 1)
                                 let uc3 = (_uc3 * 1)
                                 let Hun3 = `
-            Anda telah membuka *Uncommon crate* dan mendapatkan:${um3 > 0 ? `\nMIKO: ${um3}` : ''}${ue3 > 0 ? `\nExp: ${ue3} *exp*` : ''}${ud3 > 0 ? `\nDiamond: ${ud3} *diamond*` : ''}${up3 > 0 ? `\nPotion: ${up3} *potion*` : ''}${uc3 > 0 ? `\nCommon crate: ${uc3} *crate*` : ''}${uu3 > 0 ? `\nUncommon crate: ${uu3} *crate*` : ''}
+            Anda telah membuka *Uncommon crate* dan mendapatkan:${um3 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(um3)}` : ''}${ue3 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(ue3)} *exp*` : ''}${ud3 > 0 ? `\nDiamond: ${ud3} *diamond*` : ''}${up3 > 0 ? `\nPotion: ${up3} *potion*` : ''}${uc3 > 0 ? `\nCommon crate: ${uc3} *crate*` : ''}${uu3 > 0 ? `\nUncommon crate: ${uu3} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].uncommon >= 1000) {
                                     global.db.data.users[m.sender].uncommon -= 1000
@@ -2225,7 +2225,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ml = (_ml * 1)
                                 let md = (_md * 1)
                                 let Mychat = `
-            Anda telah membuka *Mythic crate* dan mendapatkan:${mm > 0 ? `\nMIKO: ${mm}` : ''}${me > 0 ? `\nExp: ${me} *exp*` : ''}${md > 0 ? `\nDiamond: ${md} *diamond*` : ''}${mp > 0 ? `\nPotion: ${mp} *potion*` : ''}${mc > 0 ? `\nCommon crate: ${mc} *crate*` : ''}${mu > 0 ? `\nUncommon crate: ${mu} *crate*` : ''}
+            Anda telah membuka *Mythic crate* dan mendapatkan:${mm > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(mm)}` : ''}${me > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(me)} *exp*` : ''}${md > 0 ? `\nDiamond: ${md} *diamond*` : ''}${mp > 0 ? `\nPotion: ${mp} *potion*` : ''}${mc > 0 ? `\nCommon crate: ${mc} *crate*` : ''}${mu > 0 ? `\nUncommon crate: ${mu} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].mythic >= 1) {
                                     console.log(global.db.data.users[m.sender].mythic)
@@ -2266,7 +2266,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ml1 = (_ml1 * 1)
                                 let md1 = (_md1 * 1)
                                 let Mychat1 = `
-            Anda telah membuka *Mythic crate* dan mendapatkan:${mm1 > 0 ? `\nMIKO: ${mm1}` : ''}${me1 > 0 ? `\nExp: ${me1} *exp*` : ''}${md1 > 0 ? `\nDiamond: ${md1} *diamond*` : ''}${mp1 > 0 ? `\nPotion: ${mp1} *potion*` : ''}${mc1 > 0 ? `\nCommon crate: ${mc1} *crate*` : ''}${mu1 > 0 ? `\nUncommon crate: ${mu1} *crate*` : ''}
+            Anda telah membuka *Mythic crate* dan mendapatkan:${mm1 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(mm1)}` : ''}${me1 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(me1)} *exp*` : ''}${md1 > 0 ? `\nDiamond: ${md1} *diamond*` : ''}${mp1 > 0 ? `\nPotion: ${mp1} *potion*` : ''}${mc1 > 0 ? `\nCommon crate: ${mc1} *crate*` : ''}${mu1 > 0 ? `\nUncommon crate: ${mu1} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].mythic >= 10) {
                                     global.db.data.users[m.sender].mythic -= 10
@@ -2305,7 +2305,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ml2 = (_ml2 * 1)
                                 let md2 = (_md2 * 1)
                                 let Mychat2 = `
-            Anda telah membuka *Mythic crate* dan mendapatkan:${mm2 > 0 ? `\nMIKO: ${mm2}` : ''}${me2 > 0 ? `\nExp: ${me2} *exp*` : ''}${md2 > 0 ? `\nDiamond: ${md2} *diamond*` : ''}${mp2 > 0 ? `\nPotion: ${mp2} *potion*` : ''}${mc2 > 0 ? `\nCommon crate: ${mc2} *crate*` : ''}${mu2 > 0 ? `\nUncommon crate: ${mu2} *crate*` : ''}
+            Anda telah membuka *Mythic crate* dan mendapatkan:${mm2 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(mm2)}` : ''}${me2 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(me2)} *exp*` : ''}${md2 > 0 ? `\nDiamond: ${md2} *diamond*` : ''}${mp2 > 0 ? `\nPotion: ${mp2} *potion*` : ''}${mc2 > 0 ? `\nCommon crate: ${mc2} *crate*` : ''}${mu2 > 0 ? `\nUncommon crate: ${mu2} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].mythic >= 100) {
                                     global.db.data.users[m.sender].mythic -= 100
@@ -2336,7 +2336,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ml3 = (_ml3 * 1)
                                 let md3 = (_md3 * 1)
                                 let Mychat3 = `
-            Anda telah membuka *Mythic crate* dan mendapatkan:${mm3 > 0 ? `\nMIKO: ${mm3}` : ''}${me3 > 0 ? `\nExp: ${me3} *exp*` : ''}${md3 > 0 ? `\nDiamond: ${md3} *diamond*` : ''}${mp3 > 0 ? `\nPotion: ${mp3} *potion*` : ''}${mc3 > 0 ? `\nCommon crate: ${mc3} *crate*` : ''}${mu3 > 0 ? `\nUncommon crate: ${mu3} *crate*` : ''}
+            Anda telah membuka *Mythic crate* dan mendapatkan:${mm3 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(mm3)}` : ''}${me3 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(me3)} *exp*` : ''}${md3 > 0 ? `\nDiamond: ${md3} *diamond*` : ''}${mp3 > 0 ? `\nPotion: ${mp3} *potion*` : ''}${mc3 > 0 ? `\nCommon crate: ${mc3} *crate*` : ''}${mu3 > 0 ? `\nUncommon crate: ${mu3} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].mythic >= 1000) {
                                     global.db.data.users[m.sender].mythic -= 1000
@@ -2384,7 +2384,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ld = (_ld * 1)
                                 let lmm = (_lmm * 1)
                                 let Lechat = `
-            Anda telah membuka *Legendary crate* dan mendapatkan:${lm > 0 ? `\nMIKO: ${lm}` : ''}${le > 0 ? `\nExp: ${le} *exp*` : ''}${ld > 0 ? `\nDiamond: ${ld} *diamond*` : ''}${lp > 0 ? `\nPotion: ${lp} *potion*` : ''}${lc > 0 ? `\nCommon crate: ${lc} *crate*` : ''}${lu > 0 ? `\nUncommon crate: ${lu} *crate*` : ''}
+            Anda telah membuka *Legendary crate* dan mendapatkan:${lm > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(lm)}` : ''}${le > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(le)} *exp*` : ''}${ld > 0 ? `\nDiamond: ${ld} *diamond*` : ''}${lp > 0 ? `\nPotion: ${lp} *potion*` : ''}${lc > 0 ? `\nCommon crate: ${lc} *crate*` : ''}${lu > 0 ? `\nUncommon crate: ${lu} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].legendary >= 1) {
                                     global.db.data.users[m.sender].legendary -= 1
@@ -2426,7 +2426,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ld1 = (_ld1 * 1)
                                 let lmm1 = (_lmm1 * 1)
                                 let Lechat1 = `
-            Anda telah membuka *Legendary crate* dan mendapatkan:${lm1 > 0 ? `\nMIKO: ${lm1}` : ''}${le1 > 0 ? `\nExp: ${le1} *exp*` : ''}${ld1 > 0 ? `\nDiamond: ${ld1} *diamond*` : ''}${lp1 > 0 ? `\nPotion: ${lp1} *potion*` : ''}${lc1 > 0 ? `\nCommon crate: ${lc1} *crate*` : ''}${lu1 > 0 ? `\nUncommon crate: ${lu1} *crate*` : ''}
+            Anda telah membuka *Legendary crate* dan mendapatkan:${lm1 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(lm1)}` : ''}${le1 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(le1)} *exp*` : ''}${ld1 > 0 ? `\nDiamond: ${ld1} *diamond*` : ''}${lp1 > 0 ? `\nPotion: ${lp1} *potion*` : ''}${lc1 > 0 ? `\nCommon crate: ${lc1} *crate*` : ''}${lu1 > 0 ? `\nUncommon crate: ${lu1} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].legendary >= 10) {
                                     global.db.data.users[m.sender].legendary -= 10
@@ -2468,7 +2468,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ld2 = (_ld2 * 1)
                                 let lmm2 = (_lmm2 * 1)
                                 let Lechat2 = `
-            Anda telah membuka *Legendary crate* dan mendapatkan:${lm2 > 0 ? `\nMIKO: ${lm2}` : ''}${le2 > 0 ? `\nExp: ${le2} *exp*` : ''}${ld2 > 0 ? `\nDiamond: ${ld2} *diamond*` : ''}${lp2 > 0 ? `\nPotion: ${lp2} *potion*` : ''}${lc2 > 0 ? `\nCommon crate: ${lc2} *crate*` : ''}${lu2 > 0 ? `\nUncommon crate: ${lu2} *crate*` : ''}
+            Anda telah membuka *Legendary crate* dan mendapatkan:${lm2 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(lm2)}` : ''}${le2 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(le2)} *exp*` : ''}${ld2 > 0 ? `\nDiamond: ${ld2} *diamond*` : ''}${lp2 > 0 ? `\nPotion: ${lp2} *potion*` : ''}${lc2 > 0 ? `\nCommon crate: ${lc2} *crate*` : ''}${lu2 > 0 ? `\nUncommon crate: ${lu2} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].legendary >= 100) {
                                     global.db.data.users[m.sender].legendary -= 100
@@ -2510,7 +2510,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                                 let ld3 = (_ld3 * 1)
                                 let lmm3 = (_lmm3 * 1)
                                 let Lechat3 = `
-            Anda telah membuka *Legendary crate* dan mendapatkan:${lm3 > 0 ? `\nMIKO: ${lm3}` : ''}${le3 > 0 ? `\nExp: ${le3} *exp*` : ''}${ld3 > 0 ? `\nDiamond: ${ld3} *diamond*` : ''}${lp3 > 0 ? `\nPotion: ${lp3} *potion*` : ''}${lc3 > 0 ? `\nCommon crate: ${lc3} *crate*` : ''}${lu3 > 0 ? `\nUncommon crate: ${lu3} *crate*` : ''}
+            Anda telah membuka *Legendary crate* dan mendapatkan:${lm3 > 0 ? `\nMIKO: ${ new Intl.NumberFormat('id-ID').format(lm3)}` : ''}${le3 > 0 ? `\nExp: ${ new Intl.NumberFormat('id-ID').format(le3)} *exp*` : ''}${ld3 > 0 ? `\nDiamond: ${ld3} *diamond*` : ''}${lp3 > 0 ? `\nPotion: ${lp3} *potion*` : ''}${lc3 > 0 ? `\nCommon crate: ${lc3} *crate*` : ''}${lu3 > 0 ? `\nUncommon crate: ${lu3} *crate*` : ''}
             `.trim()
                                 if (global.db.data.users[m.sender].legendary >= 1000) {
                                     global.db.data.users[m.sender].legendary -= 1000
@@ -2738,7 +2738,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 let exp = user.exp
                 let getexp = Math.floor(Math.random() * (10 - 1) + 1)
                 exp += getexp
-                hisoka.sendText(m.chat, `${user.name} mendapatkan gaji sebesar ${getmoney} MIKO dan mendapat exp sebesar ${getexp}\nJumlah MIKO kamu : ${money}`, m)
+                hisoka.sendText(m.chat, `${user.name} mendapatkan gaji sebesar ${getmoney} MIKO dan mendapat exp sebesar ${getexp}\nJumlah MIKO kamu : ${ new Intl.NumberFormat('id-ID').format(money)}`, m)
                 user.exp = exp
                 user.money = money
             }
@@ -2964,7 +2964,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 if (gacha1 > gacha2) {
                     win = Math.floor(kasih * 2)
                     money += win
-                    hisoka.sendText(m.chat, `Hasil : ${user.name} = ${gacha1}, bot = ${gacha2} \n ${user.name} mendapatkan ${win} MIKO dari casino`, m)
+                    hisoka.sendText(m.chat, `Hasil : ${user.name} = ${gacha1}, bot = ${gacha2} \n ${user.name} mendapatkan ${ new Intl.NumberFormat('id-ID').format(win)} MIKO dari casino`, m)
                     console.log(money)
                     user.money = money
                 } else {
@@ -3081,7 +3081,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 // //If initial dealing equals 21, so ace and a facecard, they win 1.5 times their bet
                 // //setting the variable equal to true allows the computer to differentiate getting Black Jack and having a normal hand of 21 later on
                 if(userValue === 21){
-                    hisoka.sendText(m.chat, `│  Black Jack! You have have won ${Math.floor(kasih * 3)} MIKO\n│`, m)
+                    hisoka.sendText(m.chat, `│  Black Jack! You have have won ${ new Intl.NumberFormat('id-ID').format(Math.floor(kasih * 3))} MIKO\n│`, m)
                     money += (kasih * 3)
                     //adding exp
                     let exp = user.exp
@@ -3182,7 +3182,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 // }
                 let completetxt = txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider
                 if(userValue === 21){
-                    hisoka.sendText(m.chat, completetxt+`│  Black Jack! You have have won ${Math.floor(kasih * 2.5)} MIKO\n│`, m)
+                    hisoka.sendText(m.chat, completetxt+`│  Black Jack! You have have won ${ new Intl.NumberFormat('id-ID').format(Math.floor(kasih * 2.5))} MIKO\n│`, m)
                     money += (kasih * 2.5)
                     //adding exp
                     let exp = user.exp
@@ -3251,7 +3251,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                 // hisoka.sendText(m.chat, txt, m)
                 let completetxt = txtheader+divider+txt_cardDealer+txt_dealerValue+divider+txt_cardUser+txt_userValue+divider
                 if(dealerValue < userValue || dealerValue > 21){
-                    hisoka.sendText(m.chat, completetxt+`\n\n│  WIN! You have have won ${Math.floor(kasih * 2.5)} MIKO\n│`, m)
+                    hisoka.sendText(m.chat, completetxt+`\n\n│  WIN! You have have won ${ new Intl.NumberFormat('id-ID').format(Math.floor(kasih * 2.5))} MIKO\n│`, m)
                     money += (kasih * 2.5)
                     //adding exp
                     let exp = user.exp
@@ -3533,7 +3533,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                             for (let j in user) {
                                 if (user[j].money === top5[i]) {
                                     //use tag number instead of name
-                                    text += `${i + 1}. @${j.split('@')[0]} = ${user[j].money} MIKO\n`
+                                    text += `${i + 1}. @${j.split('@')[0]} = ${ new Intl.NumberFormat('id-ID').format(user[j].money)} MIKO\n`
                                     org.push(j)
                                     //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
 
@@ -3773,7 +3773,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     for (let j in user) {
                         if (user[j].money === top5[i]) {
                             //use tag number instead of name
-                            text += `${i + 1}. @${j.split('@')[0]} = ${user[j].money} MIKO\n`
+                            text += `${i + 1}. @${j.split('@')[0]} = ${ new Intl.NumberFormat('id-ID').format(user[j].money)} MIKO\n`
                             org.push(j)
                             //text += `${i+1}. @${user[j].number.split('@')[0]} - ${top5[i]} MIKO\n`
 
@@ -9423,8 +9423,8 @@ ${date}
 │
 │*BOT FEATURE*
 │⭔ Level        : ${user.level}
-│⭔ Exp          : ${user.exp}
-│⭔ Money        : ${user.money} MIKO
+│⭔ Exp          : ${ new Intl.NumberFormat('id-ID').format(user.exp)}
+│⭔ Money        : ${ new Intl.NumberFormat('id-ID').format(user.money)} MIKO
 │⭔ Job          : ${user.job}
 │⭔ Job Level    : ${user.joblevel}`
                 if(user.coupleUser !== undefined){
@@ -9474,13 +9474,14 @@ ${date}
             case 'money': case 'koin': case 'coin': case 'miko': {
                 let user = global.db.data.users[m.sender]
                 if (m.mentionedJid[0]) user = global.db.data.users[m.mentionedJid[0]]
-                hisoka.sendText(m.chat, `⭔ Money : ${user.money} MIKO `, m)
+                var titik =  new Intl.NumberFormat('id-ID').format(user.money)
+                hisoka.sendText(m.chat, `⭔ Money : ${titik} MIKO `, m)
             }
                 break
             case 'level': case 'exp': {
                 let user = global.db.data.users[m.sender]
                 if (m.mentionedJid[0]) user = global.db.data.users[m.mentionedJid[0]]
-                hisoka.sendText(m.chat, `⭔ Level : ${user.level}\n⭔ Exp : ${user.exp}\n⭔ nextLevel : ${user.nextLevelExp}`, m)
+                hisoka.sendText(m.chat, `⭔ Level : ${user.level}\n⭔ Exp : ${ new Intl.NumberFormat('id-ID').format(user.exp)}\n⭔ nextLevel : ${ new Intl.NumberFormat('id-ID').format(user.nextLevelExp)}`, m)
             }
                 break
             case 'job': {
