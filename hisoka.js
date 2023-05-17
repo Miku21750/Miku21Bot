@@ -6948,7 +6948,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                     let val = Object.values(anu[2][i]);
                     desc = desc + title + ' '+ val + '\n'
                 }
-                let txt = `HERO ${text} \n\n ROLE : ${role} \n\n ${desc} \n\n \n ${anu[3].desc}`
+                let txt = `HERO ${text} \n\n ROLE : ${role} \n\n ${desc} \n\n \n ${anu[8].desc}`
                 // let link = ''
                 // if (text) link = '?heroName=' + args[0]
                 // let anu = await fetchJson('https://api.dazelpro.com/mobile-legends/hero' + link);
