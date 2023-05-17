@@ -6960,7 +6960,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 // }
                 await hisoka.sendMessage(m.chat,{image: {url: 'https://liquipedia.net'+anu[0].profileImage }, caption: txt}, {quoted: m})
                 for(let i = 0; i < anu[5].length;i++){
-                    let txtSkill = `Skill Name : ${anu[5][i]}\nAbility : ${anu[6][i]}\n\n${anu[7][i][1]}`
+                    let txtSkill = `Skill Name : ${anu[5][i]}\nAbility : ${anu[6][i]}\n\n${anu[7][i][0]}`
                     await hisoka.sendMessage(m.chat, {image: {url : 'https://liquipedia.net'+anu[4][i].skillImage }, caption: txtSkill}, {quoted: m})
                 }
                 // await hisoka.sendMessage(m.chat)
