@@ -6959,6 +6959,11 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 //     txt += `\n⭔ Hero Id : ${hero.hero_id}\n⭔Name : ${hero.hero_name}\n⭔Role : ${hero.hero_role}\n⭔Speciality : ${hero.hero_specially}\n___________________________________________`
                 // }
                 await hisoka.sendMessage(m.chat,{image: {url: 'https://liquipedia.net'+anu[0].profileImage }, caption: txt}, {quoted: m})
+                for(let i = 0; i < anu[5].length;i++){
+                    let txtSkill = `Skill Name : ${anu[5][i]}\nAbility : ${anu[6][i]}\n\n${anu[7][i][1]}`
+                    await hisoka.sendMessage(m.chat, {image: {url : 'https://liquipedia.net'+anu[4][i].skillImage }, caption: txtSkill}, {quoted: m})
+                }
+                // await hisoka.sendMessage(m.chat)
             }
                 break
             // case 'detailheroml': {
