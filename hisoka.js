@@ -45,6 +45,7 @@ const levelling = require('./lib/levelling')
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const { blackJackPlayer, blackJackDealer } = require('./src/Player.js')
 const ps = require("prompt-sync")
+const angkaTerbilang = require('@develoka/angka-terbilang-js')
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom, getGroupAdmins } = require('./lib/myfunc')
 //const { wait } = require('../termux-bot-wa/lib/functions')
 // const multer = require('multer')
@@ -9451,7 +9452,7 @@ ${date}
 │*BOT FEATURE*
 │⭔ Level        : ${user.level}
 │⭔ Exp          : ${ new Intl.NumberFormat('id-ID').format(user.exp)}
-│⭔ Money        : ${ new Intl.NumberFormat('id-ID').format(user.money)} MIKO
+│⭔ Money        : ${ new Intl.NumberFormat('id-ID').format(user.money)} (${angkaTerbilang(user.money)}) MIKO
 │⭔ Job          : ${user.job}
 │⭔ Job Level    : ${user.joblevel}`
                 if(user.coupleUser !== undefined){
@@ -9502,7 +9503,7 @@ ${date}
                 let user = global.db.data.users[m.sender]
                 if (m.mentionedJid[0]) user = global.db.data.users[m.mentionedJid[0]]
                 var titik =  new Intl.NumberFormat('id-ID').format(user.money)
-                hisoka.sendText(m.chat, `⭔ Money : ${titik} MIKO `, m)
+                hisoka.sendText(m.chat, `⭔ Money : ${titik} MIKO \n Terbilang : ${angkaTerbilang(user.money)}`, m)
             }
                 break
             case 'level': case 'exp': {
