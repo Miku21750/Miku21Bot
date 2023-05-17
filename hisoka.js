@@ -8672,11 +8672,11 @@ ${id}`)
             }
             break;
             case 'kisahnabi':{
-                if(!args[0]) throw 'Masukan No urut(1-27), Example: kisahnabi 8'
+                if(!args[0]) throw 'Masukan No urut(1-28), Example: kisahnabi 8'
                 m.reply(mess.wait)
                 let anu = await fetchJson(`https://api.fatiharridho.my.id/api/islam/kisahnabi?apikey=CepnjxCv5V`)
                 if(!anu.result) throw ('error, mohon lapor owner')
-                let res = anu.result[args[0]]
+                let res = anu.result[parseInt(args[0]) - 1]
                 let txt = `Nama : ${res.name}\nTempat: ${res.tmp}\n\n${res.description}`
                 hisoka.sendMessage(m.chat, {image:{ url: res.image_url}, caption: txt}, {quoted: m})
             }
