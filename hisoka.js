@@ -8659,6 +8659,17 @@ ${id}`)
                 }
             }
                 break
+            case 'tahlil':{
+                m.reply(mess.wait)
+                let anu = await fetchJson(`https://api.fatiharridho.my.id/api/islam/tahlil?apikey=CepnjxCv5V`)
+                if(!anu.result) throw ('error, mohon lapor owner')
+                let res = anu.result
+                let txt = `Based on ${res.based_on}\nLink : ${res.source}`
+                for(var i = 0; i<res.data.length;i++){
+                    txt += `\n\n${res.data[i].id} ${res.data[i].title}\n${res.data[i].arabic}\n\n${res.data[i].translation}`
+                }
+                hisoka.sendText(m.chat, txt, m)
+            }
             case 'alquran': {
                 if (!args[0]) throw `Contoh penggunaan:\n${prefix + command} 1 2\n\nmaka hasilnya adalah surah Al-Fatihah ayat 2 beserta audionya, dan ayatnya 1 aja`
                 if (!args[1]) throw `Contoh penggunaan:\n${prefix + command} 1 2\n\nmaka hasilnya adalah surah Al-Fatihah ayat 2 beserta audionya, dan ayatnya 1 aja`
