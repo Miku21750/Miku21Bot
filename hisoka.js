@@ -9503,7 +9503,7 @@ ${date}
                 let user = global.db.data.users[m.sender]
                 if (m.mentionedJid[0]) user = global.db.data.users[m.mentionedJid[0]]
                 var titik =  new Intl.NumberFormat('id-ID').format(user.money)
-                hisoka.sendText(m.chat, `⭔ Money : ${titik} MIKO \n Terbilang : ${angkaTerbilang(user.money)}`, m)
+                hisoka.sendText(m.chat, `⭔ Money : ${titik} MIKO \n Terbilang : ${angkaTerbilang(user.money)} MIKO`, m)
             }
                 break
             case 'level': case 'exp': {
