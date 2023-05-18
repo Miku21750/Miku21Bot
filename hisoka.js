@@ -3927,7 +3927,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     return hisoka.sendText(m.chat, `Gunakan format ${prefix}transfer <type> <jumlah> <@tag>\ncontoh penggunaan: *${prefix}transfer money 100 @tag*`.trim(), m)
                 } else try {
                     let type = (args[0] || '').toLowerCase()
-                    let count = args[1] && args[1].length > 0 ? Math.min(9999999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
+                    let count = args[1] && args[1].length > 0 ? Math.min(999999999999999, Math.max(parseInt(args[1]), 1)) : Math.min(1)
                     let who = m.mentionedJid ? m.mentionedJid[0] : (args[2].replace(/[@ .+-]/g, '').replace(' ', '') + '@s.whatsapp.net')
                     if (!m.mentionedJid || !args[2]) throw 'Tag salah satu, atau ketik Nomernya!!'
                     let users = global.db.data.users
@@ -5583,7 +5583,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
             case 'hobby': case 'hobi': case 'hobbi': case 'hoby': {
                 if (!text) throw `Example : ${prefix + command} Nandog`
                 hobby = text
-                hob = ["ngeue sapi", "ngeue kambing", "Memasak", "Membantu Atok", "jilatin gambar anime", "cium layar hp", "nonton hentai", "Mabar", "Nobar", "Sosmed an", "Membantu Orang lain", "Nonton Anime", "Nonton Drakor", "Naik Motor", "Nyanyi", "Menari", "Bertumbuk", "Menggambar", "Foto fotoan Ga jelas", "Maen Game", "Berbicara Sendiri"]
+                hob = ["ngeue sapi", "ngeue kambing", "Memasak", "Membantu Atok","main ep ep","ngabisin uang", "jilatin gambar anime", "cium layar hp", "nonton hentai", "Mabar", "Nobar", "Sosmed an", "Membantu Orang lain", "Nonton Anime", "Nonton Drakor", "Naik Motor", "Nyanyi", "Menari", "Bertumbuk", "Menggambar", "Foto fotoan Ga jelas", "Maen Game", "Berbicara Sendiri"]
                 const by = hob[Math.floor(Math.random() * hob.length)]
                 hisoka.sendText(m.chat, `Pertanyaan : ${hobby}\n\nJawaban : *${by}*`, m)
             }
@@ -5591,7 +5591,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
             case 'watak': {
                 if (!text) throw `Example : ${prefix + command} Nandog`
                 watak = text
-                wa = ["penyayang", "pemurah", "Pemarah", "Pemaaf", "Penurut", "Baik", "baperan", "Baik Hati", "penyabar", "Uwu", "top deh, pokoknya", "Suka Membantu", "alay", "jamet", "furry", "satir", "hornian", "stres", "horny"]
+                wa = ["penyayang", "pemurah", "Pemarah", "Pemaaf", "Penurut","berotak senku","dongo", "Baik", "baperan", "Baik Hati", "penyabar", "Uwu", "top deh, pokoknya", "Suka Membantu", "alay", "jamet", "furry", "satir", "hornian", "stres", "horny"]
                 const tak = wa[Math.floor(Math.random() * wa.length)]
                 hisoka.sendText(m.chat, `Pertanyaan : ${watak}\n\nJawaban : *${tak}*`, m)
             }
