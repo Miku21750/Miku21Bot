@@ -4238,6 +4238,7 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                                 // let res = anu.data
                                 // waifu2 = res
                                 user.waifu = user.waifu2
+                                user.waifu2 = null
                                 // profile += ` & ${waifu2.name} KODE ${user.waifu2}`
                             }
                         }
