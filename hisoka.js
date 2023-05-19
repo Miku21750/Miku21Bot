@@ -4210,12 +4210,12 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                     if (user.waifu2 != null) return hisoka.sendText(m.chat, `Anda sudah memiliki maks. 2 waifu/husbu`, m)
                     user.waifu2 = waifu.mal_id
                 }else{
-                    return hisoka.sendText(m.chat, `Anda sudah memiliki waifu/husbu, Upgrade Premium jika ingin menambah 1 lagi`, m)
+                    user.waifu = waifu.mal_id
+                    // return hisoka.sendText(m.chat, `Anda sudah memiliki waifu/husbu, Upgrade Premium jika ingin menambah 1 lagi`, m)
                 }
                 hisoka.sendImage(m.chat, waifu.images.jpg.image_url || waifu.images.webp.image_url, `${user.name} telah mengambil waifu/husbu ${waifu.name} \n\n Silahkan Cek !pdkt untuk berinteraksi dengan waifu/husbu mu`, m)
                 //if(waifu.claim === true) return hisoka.sendTextWithMentions(m.chat, `Waifu/Husbu sudah diclaim oleh ${waifu.with} @${waifu.number.split('@')[0]}`, m)
 
-                //user.waifu = waifu.mal_id
                 //hisoka.sendImage(m.chat, waifu.images.jpg.image_url,`${user.name} telah mengambil waifu/husbu ${waifu.name} \n\n Silahkan Cek !pdkt untuk berinteraksi dengan waifu/husbu mu`, m)
             }
                 break
