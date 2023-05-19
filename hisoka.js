@@ -4231,8 +4231,17 @@ Dengan dipecat, akan mengurangi sebagian dari job level
                         let waifu = res
                         if (!waifu) throw `Waifu/Husbu tidak ditemukan`
                         user.waifu = null
-                        hisoka.sendText(m.chat, ` waifu/husbu ${waifu.name} telah di unclaim`, m)
                         user.waifuexp = 0
+                        if(user.waifu2 !== undefined){
+                            if(user.waifu2 !== null){
+                                // let anu = await fetchJson(`https://api.jikan.moe/v4/characters/${user.waifu2}`)
+                                // let res = anu.data
+                                // waifu2 = res
+                                user.waifu = user.waifu2
+                                // profile += ` & ${waifu2.name} KODE ${user.waifu2}`
+                            }
+                        }
+                        hisoka.sendText(m.chat, ` waifu/husbu ${waifu.name} telah di unclaim`, m)
                     }
                     break;
                     case 'waifu2':{
