@@ -1063,7 +1063,7 @@ Kamu akan mencapai Job level ${level + 1} setelah ${nextLevel} EXP
                     let user = global.db.data.users[m.sender]
                     let media = await hisoka.downloadAndSaveMediaMessage(quoted,m.sender)
                     user.ppprofile = media
-                    m.reply('done, ',+media)
+                    m.reply('done')
                 }catch(e){
                     m.reply(e)
                 }
