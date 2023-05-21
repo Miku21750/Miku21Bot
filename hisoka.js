@@ -7536,12 +7536,12 @@ ${global.sp} thighs
 ${global.sp} yuri
 ${global.sp} lolipai
 ${global.sp} loli 
-${global.sp} chiisaihentai 
-${global.sp} yaoi 
-${global.sp} hololewd 
-${global.sp} sideoppai 
+${global.sp} chiisaihentai (closed)
+${global.sp} yaoi (closed)
+${global.sp} hololewd (closed)
+${global.sp} sideoppai (closed)
 ${global.sp} animearmpits 
-${global.sp} lewdanimegirls 
+${global.sp} lewdanimegirls (closed) 
 ${global.sp} biganimetiddies 
 ${global.sp} feet 
 ${global.sp} ngif 
@@ -7549,9 +7549,9 @@ ${global.sp} gasm
 ${global.sp} anal 
 ${global.sp} feetg 
 ${global.sp} erok 
-${global.sp} holoero 
+${global.sp} holoero  
 ${global.sp} erokemo 
-${global.sp} foxgirl (kadang bukan nsfw, maap) 
+${global.sp} fox_girl (kadang bukan nsfw, maap) 
 ${global.sp} futanari 
 
 NOTE : Premium only. Minat? chat !owner atau !buypremium
@@ -7594,7 +7594,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                     } catch (e) {
                         m.reply(e)
                     }
-                }else if  (text === 'femdom' || text === 'feet' || text === 'feetg' || text === 'erok' || text === 'holoero' || text === 'erokemo' || text === 'foxgirl' || text === 'futanari') {
+                }else if  (text === 'femdom' || text === 'feet' || text === 'feetg' || text === 'erok' || text === 'holoero' || text === 'erokemo' || text === 'fox_girl' || text === 'futanari') {
                     m.reply(mess.wait)
                     try {
                         hisoka.sendImage(m.chat, `https://api.lolhuman.xyz/api/random2/${text}?apikey=keymikulolhuman21`, `NIH`, m)
