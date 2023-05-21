@@ -7463,7 +7463,7 @@ ${global.sp} yuki
                 if (!args[0]) throw 'Masukan text'
                 m.reply(mess.wait)
                 let anu = await fetchJson(`https://api.lolhuman.xyz/api/nhentaipdf/${args[0]}?apikey=keymikulolhuman21`)
-                if (anu) {
+                if (anu.status == 200) {
                     return hisoka.sendMessage(m.chat, { document: { url: anu.result }, mimetype: 'application/pdf', fileName: `${text}.pdf` })
                 } else {
                     anu = await fetchJson(`https://api.lolhuman.xyz/api/nhentai/${args[0]}?apikey=keymikulolhuman21`)
