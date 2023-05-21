@@ -1057,25 +1057,30 @@ Kamu akan mencapai Job level ${level + 1} setelah ${nextLevel} EXP
                 break
             case 'changeppprofile':{
                 if(!quoted) throw 'Reply Gambar'
+                if(!isPremium) throw 'Khusus member premium, tertarik? hubungi !owner'
                 try{
                     m.reply(mess.wait)
                     let user = global.db.data.users[m.sender]
                     let media = await hisoka.downloadAndSaveMediaMessage(quoted,m.sender)
                     user.ppprofile = media
+                    m.reply('done, ',+media)
                 }catch(e){
                     m.reply(e)
                 }
-
-                /* m.reply(mess.wait)
-                        let media = await hisoka.downloadAndSaveMediaMessage(quoted)
-                        let ran = getRandom('.mp3')
-                        exec(`ffmpeg -i ${media} ${set} ${ran}`, (err, stderr, stdout) => {
-                            fs.unlinkSync(media)
-                            if (err) return m.reply(err)
-                            let buff = fs.readFileSync(ran)
-                            hisoka.sendMessage(m.chat, { audio: buff, mimetype: 'audio/mpeg' }, { quoted: m })
-                            fs.unlinkSync(ran)
-                        }) */
+            }
+            break
+            case 'defaultname':{
+                m.reply(mess.wait)
+                let user = global.db.data.users[m.sender]
+                user.name = m.pushName
+                m.reply('done, '+user.name)
+            }
+            break
+            case 'defaultppprofile':{
+                m.reply(mess.wait)
+                let user = global.db.data.users[m.sender]
+                user.ppprofile = null
+                m.reply('done')
             }
             break
             case 'afk': {
