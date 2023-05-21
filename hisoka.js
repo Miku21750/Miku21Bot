@@ -153,6 +153,8 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 if (isPremium) user.premium = isPremium
                 //set name use name or pushname
                 if (!('name' in user)) user.name = m.pushName
+                //set profile pict
+                if(!('ppprofile' in user)) user.ppprofile = null
                 //getnumber
                 if (!('number' in user)) user.number = m.sender
                 if(!('coupleUser' in user)) user.coupleUser = '';
@@ -247,6 +249,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
                 nextLevel: 0,
                 nextLevelExp: 10,
                 name: m.pushName,
+                ppprofile: null,
                 number: m.sender,
                 coupleUser: '',
                 waifu: null,
@@ -1052,6 +1055,29 @@ Kamu akan mencapai Job level ${level + 1} setelah ${nextLevel} EXP
                 hisoka.sendText(m.chat, `Namamu telah diganti menjadi ${user.name}`)
             }
                 break
+            case 'changeppprofile':{
+                if(!quoted) throw 'Reply Gambar'
+                try{
+                    m.reply(mess.wait)
+                    let user = global.db.data.users[m.sender]
+                    let media = await hisoka.downloadAndSaveMediaMessage(quoted,m.sender)
+                    user.ppprofile = media
+                }catch(e){
+                    m.reply(e)
+                }
+
+                /* m.reply(mess.wait)
+                        let media = await hisoka.downloadAndSaveMediaMessage(quoted)
+                        let ran = getRandom('.mp3')
+                        exec(`ffmpeg -i ${media} ${set} ${ran}`, (err, stderr, stdout) => {
+                            fs.unlinkSync(media)
+                            if (err) return m.reply(err)
+                            let buff = fs.readFileSync(ran)
+                            hisoka.sendMessage(m.chat, { audio: buff, mimetype: 'audio/mpeg' }, { quoted: m })
+                            fs.unlinkSync(ran)
+                        }) */
+            }
+            break
             case 'afk': {
                 let user = global.db.data.users[m.sender]
                 user.afkTime = + new Date
@@ -8905,6 +8931,7 @@ GLO Glossary
                     m.reply(e)
                 }
                 break
+            
             case 'setcmd': {
                 if (!m.quoted) throw 'Reply Pesan!'
                 if (!m.quoted.fileSha256) throw 'SHA256 Hash Missing'
@@ -9445,11 +9472,24 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     couple = true
                     org = [user.coupleUser]
                 }
+                let ppuser
                 try {
                     ppuser = await hisoka.profilePictureUrl(m.sender, 'image')
                     if (m.mentionedJid[0]) ppuser = await hisoka.profilePictureUrl(m.mentionedJid[0], 'image')
                 } catch {
                     ppuser = 'https://mycipongkor.com/wp-content/uploads/2022/05/Foto-profil-WA-kosong-senyum-min.jpg'
+                }
+                if(user.ppprofile !== undefined){
+                    if(user.ppprofile !== null){
+                        ppuser = './'+user.ppprofile
+                        /* let dir = "./src/lolipai"
+                    let files = fs.readdirSync('./src/lolipai')
+                    let chosenFile = files[Math.floor(Math.random() * files.length)]
+                    hisoka.sendImage(m.chat, './src/lolipai/' + chosenFile, `nih`, m)
+                    console.log(chosenFile)
+                    m.reply('test') */
+                        
+                    }
                 }
                 profile = `┌──⭓ *Profile
 │
