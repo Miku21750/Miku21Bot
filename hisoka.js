@@ -5796,7 +5796,7 @@ Jika hanya ingin mengganti jenis, ketik ${prefix + command} jenis (Nomor jenis y
                     let nametxt = args?.join(" ").split("|")[2] ?? db.data.users[users].name 
                     let dwlnd = await hisoka.profilePictureUrl(m.mentionedJid[0], 'image')
                     let { floNime } = require('./lib/uploader')
-                    let link = await floNime(dwnld)
+                    let link = await floNime(dwlnd)
                     try {
                         await hisoka.sendMessage(m.chat, {image: {url: `https://api.lolhuman.xyz/api/bubblechat?apikey=keymikulolhuman21&avatar=${link}&name=${name}&text=${txt}`},caption: text}, {quoted: m})
                     }catch(e){
