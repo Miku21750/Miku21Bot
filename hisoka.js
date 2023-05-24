@@ -7771,6 +7771,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 break
             case 'chatgpt':{
                 if (!text) throw `Example ${prefix + command} contoh kode html`
+                if(!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 let txt = ''
                 let anu = await fetchJson(`https://api.lolhuman.xyz/api/openai?apikey=keymikulolhuman21&text=${text}&user=${m.sender}`)
                 if(anu.status != 200) return m.reply('error, tolong hubungi owner')
@@ -7781,7 +7782,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 if(!text) throw `Example ${prefix + command} anime, high detailed, feet`
                 m.reply(mess.wait)
                 try {
-                    hisoka.sendMessage(m.chat, {image: {url: `https://api.lolhuman.xyz/api/diffusion-prompt?apikey=keymikulolhuman21&prompt=${text}`}, caption: 'NIH'}, {quoted : m});
+                    await hisoka.sendMessage(m.chat, {image: {url: `https://api.lolhuman.xyz/api/diffusion-prompt?apikey=keymikulolhuman21&prompt=${text}`}, caption: 'NIH'}, {quoted : m});
                 }catch(e){
                     m.reply(e)
                 }
