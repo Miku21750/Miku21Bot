@@ -7777,6 +7777,16 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
                 hisoka.sendText(m.chat, anu.result, m);
             }
             break
+            case 'diffusion':{
+                if(!text) throw `Example ${prefix + command} anime, high detailed, feet`
+                let anu = await fetchJson(`https://api.lolhuman.xyz/api/diffusion-prompt?apikey=keymikulolhuman21&prompt=${text}`)
+                try {
+                    hisoka.sendMessage(m.chat, {image: anu, caption: 'NIH'}, {quoted : m});
+                }catch(e){
+                    m.reply(e)
+                }
+            }
+            break
             case 'translate':{
                 /* if (!m.quoted && !text) throw `Kirim/reply text dengan caption ${prefix + command}`
                 ter = command[1].toLowerCase()
