@@ -7779,6 +7779,7 @@ NOTE : Premium only. Minat? chat !owner atau !buypremium
             break
             case 'diffusion':{
                 if(!text) throw `Example ${prefix + command} anime, high detailed, feet`
+                m.reply(mess.wait)
                 let anu = await fetchJson(`https://api.lolhuman.xyz/api/diffusion-prompt?apikey=keymikulolhuman21&prompt=${text}`)
                 try {
                     hisoka.sendMessage(m.chat, {image: anu, caption: 'NIH'}, {quoted : m});
