@@ -51,7 +51,8 @@ global.premium = ['6289602254720','6285742434445','6285771892336','6285724327261
 //6281229008933 = ??(kel panti) = 30h (28 Oktober 2022)
 //6285813181510 = Pikri = 30 h (started 7 juni 2022)
 //6289602254720 = depin = 30h (started 12 Aug 2022)
-//6289668201679 = nala (nekonightmare) = 30 h (started 31 mei 2023)
+//6289668201679 = nala (nekonightmare) = 30 h (started 31 April 2023)
+//6283179074242= hana (nekonighmare) = 30h (started 27 mei 2023)
 //62895328092331 = prhan (nekonightmare) = 60h (started 1 April 2023)
 //6285742434445 = aang (nekonightmare) = 60h(started 15 mei 2023)
 global.packname = 'Miku21Bot'
