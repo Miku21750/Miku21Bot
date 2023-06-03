@@ -10371,7 +10371,7 @@
     "6285748016882@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 60000,
       "banned": false,
@@ -48279,7 +48279,7 @@
     "6285815025998@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 80597,
       "banned": false,
@@ -48471,7 +48471,7 @@
     "6281515248025@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 80900,
       "banned": false,
@@ -93449,7 +93449,7 @@
     "6285852715009@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 50000,
       "banned": false,
@@ -93529,7 +93529,8 @@
       "lastclaim": 0,
       "lastweekly": 0,
       "lastmonthly": 0,
-      "coupleUser": ""
+      "coupleUser": "",
+      "ppprofile": null
     },
     "6289521920015@s.whatsapp.net": {
       "afkTime": -1,
@@ -109993,7 +109994,7 @@
       "lastclaim": 1673859067423,
       "lastweekly": 1674642502941,
       "lastmonthly": 1673054655273,
-      "report": "min, ini ada bug claimwaifu",
+      "report": "jadianime error",
       "coupleUser": "62895622807893@s.whatsapp.net",
       "waifu2": 198570,
       "ppprofile": "6289602254720@s.whatsapp.net.jpg"
@@ -117611,7 +117612,7 @@
       "money": 0,
       "banned": false,
       "bannedReason": "",
-      "exp": 22,
+      "exp": 30,
       "jobexp": 0,
       "joblevel": 0,
       "jobcode": 0,
@@ -129144,7 +129145,7 @@
     "6281275660598@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity",
+      "limit": 100,
       "premium": false,
       "money": 0,
       "banned": false,
@@ -129224,7 +129225,8 @@
       "lastclaim": 0,
       "lastweekly": 0,
       "lastmonthly": 0,
-      "coupleUser": ""
+      "coupleUser": "",
+      "ppprofile": null
     },
     "628892134361@s.whatsapp.net": {
       "afkTime": -1,
@@ -133047,8 +133049,8 @@
       "ppprofile": null
     },
     "6285338765114@s.whatsapp.net": {
-      "afkTime": -1,
-      "afkReason": "",
+      "afkTime": 1685748815461,
+      "afkReason": "turu",
       "limit": 100,
       "premium": false,
       "money": 1081200655037047.6,
@@ -138642,8 +138644,8 @@
       "ppprofile": null
     },
     "62895328092331@s.whatsapp.net": {
-      "afkTime": 1685638541880,
-      "afkReason": "Rasah mprovokasi wong su, senengane kok ngerendahke herex, salahe opo wong anggo cb, rasah taitu nek gelem rene mampir nganjuk su, cah herex wes sabar weroh postingan kongono, dijarke malah ngelunjak, karepmu opo su.😡",
+      "afkTime": 1685692114668,
+      "afkReason": "warpath",
       "limit": "Infinity",
       "premium": true,
       "money": 0,
@@ -139678,8 +139680,8 @@
       "ppprofile": null
     },
     "6281328169751@s.whatsapp.net": {
-      "afkTime": -1,
-      "afkReason": "",
+      "afkTime": 1685719202582,
+      "afkReason": "bobo cakep",
       "limit": 100,
       "premium": false,
       "money": 0,
@@ -148182,6 +148184,15 @@
       "nsfw": false,
       "welcome": "",
       "bye": null
+    },
+    "6285768125267@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false,
+      "antibadword": false,
+      "badword": null,
+      "nsfw": false,
+      "welcome": "",
+      "bye": null
     }
   },
   "database": {},
@@ -148357,6 +148368,13 @@
       "mentionedJid": [],
       "creator": "6281528527369@s.whatsapp.net",
       "at": 1685603607230,
+      "locked": false
+    },
+    "91,208,151,213,133,55,150,122,50,243,65,238,149,157,71,218,127,123,75,244,97,72,149,221,89,150,1,89,255,231,78,162": {
+      "text": "!afk liat bini lagi marah",
+      "mentionedJid": [],
+      "creator": "6281528527369@s.whatsapp.net",
+      "at": 1685693760681,
       "locked": false
     }
   },
@@ -153128,8 +153146,8 @@
     },
     "6289602254720@s.whatsapp.net": {
       "user": "6289602254720@s.whatsapp.net",
-      "message": "min, ini ada bug claimwaifu",
-      "chat": "120363105977195325@g.us"
+      "message": "jadianime error",
+      "chat": "6288219611202-1564149232@g.us"
     },
     "6289524135264@s.whatsapp.net": {
       "user": "6289524135264@s.whatsapp.net",
