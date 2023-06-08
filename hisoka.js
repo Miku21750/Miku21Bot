@@ -7173,11 +7173,16 @@ untuk download silahkan ${prefix}ytmp3 ${anu.url} untuk lagu, atau ${prefix}ytmp
                 //if (!isPremium) throw 'Tidak Bisa menggunakan Fitur ini, silahkan upgrade ke premium'
                 let { ytv } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27`
-                let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo?apikey=keymikulolhuman21&url=${text}`)
+                // let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo?apikey=keymikulolhuman21&url=${text}`)
+                // if (anu.status == 500) return m.reply("Masukan Link yang benar / Error, hubungi Owner")
+                // let media = anu.result
+                // hisoka.sendMessage(m.chat, { video: { url: media.link.link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.link.size}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP4\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
+                // hisoka.sendMessage(m.chat, { document: { url: media.link.link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4` }, { quoted: m })
+                let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo2?apikey=keymikulolhuman21&url=${text}`)
                 if (anu.status == 500) return m.reply("Masukan Link yang benar / Error, hubungi Owner")
                 let media = anu.result
-                hisoka.sendMessage(m.chat, { video: { url: media.link.link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.link.size}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP4\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
-                hisoka.sendMessage(m.chat, { document: { url: media.link.link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { video: { url: media.link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `⭔ Title : ${media.title}\n⭔ File Size : ${media.size}\n⭔ Url : ${isUrl(text)}\n⭔ Ext : MP4\n⭔ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { document: { url: media.link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4` }, { quoted: m })
             }
                 break
             case 'getmusic': {
