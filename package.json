@@ -23,6 +23,7 @@
   "dependencies": {
     "@adiwajshing/baileys": "github:Auties00/Baileys",
     "@bochilteam/scraper": "^3.0.0",
+    "@develoka/angka-terbilang-js": "^1.4.2",
     "awesome-phonenumber": "^2.73.0",
     "axios": "^0.24.0",
     "brainly-scraper-v2": "^2.2.8",

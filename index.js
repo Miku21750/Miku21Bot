@@ -150,10 +150,18 @@ async function startHisoka() {
             console.log(metadata, welcome, participants)
             for (let num of participants) {
                 // Get Profile Picture User
+                let user = global.db.data.users[num]
+                let ppuser
                 try {
-                    ppuser = await hisoka.profilePictureUrl(num, 'image')
+                    ppuser = await hisoka.profilePictureUrl(m.sender, 'image')
+                    if (m.mentionedJid[0]) ppuser = await hisoka.profilePictureUrl(m.mentionedJid[0], 'image')
                 } catch {
                     ppuser = 'https://mycipongkor.com/wp-content/uploads/2022/05/Foto-profil-WA-kosong-senyum-min.jpg'
+                }
+                if(user.ppprofile !== undefined){
+                    if(user.ppprofile !== null){
+                        ppuser = './'+user.ppprofile
+                    }
                 }
 
                 // Get Profile Picture Group
